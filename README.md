@@ -19,7 +19,7 @@ This project aims to build a non-partisan, data-driven election prediction model
 The project is broken down into several key steps:
 
 1. **Data Collection**: 
-   - We use polling data from FiveThirtyEight ( You can find that data yourself [Here](https://github.com/fivethirtyeight/data/tree/master/polls)) to collect historical polling information for different elections. (NOTE: I will be adding more resources as time goes on. FiveThirtyEight is just a jumping off point.)
+   - I used polling data from FiveThirtyEight ( You can find that data yourself [Here](https://github.com/fivethirtyeight/data/tree/master/polls)) to collect historical polling information for different elections. (NOTE: I will be adding more resources as time goes on. FiveThirtyEight is just a jumping off point.)
    - The raw data is stored in a CSV file, which is then cleaned and processed.
 
 2. **Data Cleaning**: 
