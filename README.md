@@ -1,4 +1,4 @@
-Buy Me a Coffee [Here](https://ko-fi.com/keithpotz)
+Buy Me a Coffee [Here](https://ko-fi.com/keithpotz) to support my work 
 # Election Prediction Project
 
 **Status**: 🚧 Work in Progress
