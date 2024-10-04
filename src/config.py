@@ -1,1 +1,1 @@
-DB_CONNECTION_STRING = "postgresql://postgres:Shogun12@localhost:5432/election_db" 
+DB_CONNECTION_STRING = "postgresql://USERNAME:PASSWORD@localhost:5432/election_db" 
