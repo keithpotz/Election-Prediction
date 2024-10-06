@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the dataset (assuming it's in the /data/ folder)
-data = pd.read_csv('../ep/data/polling_data/raw_polls.csv')
+data = pd.read_csv('ep/Election-Prediction/data/polling_data/raw_polls.csv')
 
 # Step 1: Check Historical Coverage
 data['modeldate'] = pd.to_datetime(data['modeldate'], errors='coerce')

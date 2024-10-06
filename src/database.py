@@ -55,7 +55,7 @@ def save_data_to_db(cleaned_file_path, engine):
 
 # Main function to call database setup and save data
 if __name__ == "__main__":
-    cleaned_file_path = '../ep/data/polling_data/cleaned_polls.csv'  # Path to your cleaned data
+    cleaned_file_path = '../ep/Election-Prediction/data/polling_data/cleaned_polls.csv'  # Path to your cleaned data
     engine = setup_database()  # Set up the connection to the database
     save_data_to_db(cleaned_file_path, engine)  # Save the cleaned data into the database
     print("Cleaned polling data has been successfully loaded into the database.")

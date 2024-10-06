@@ -36,13 +36,22 @@ def encode_data(data):
 # Step 4: Select features and the target variable for the model
 def select_features(data):
     # Drop columns that are not used as features (example: dates and the target)
-    features = data.drop(columns=['pct_estimate', 'modeldate', 'contestdate'])  # Adjust based on actual columns
+    columns_to_drop = ['pct_estimate', 'modeldate', 'contestdate']
+    columns_to_drop = [col for col in columns_to_drop if col in data.columns]
+    features = data.drop(columns = columns_to_drop)
+
+     # Adjust based on actual columns
     target = data['pct_estimate']  # The target we're trying to predict (percentage estimate)
     
     return features, target
 
 # Step 5: Split the data into training and testing sets
 def split_data(features, target):
+    #Ensure there is data to split
+    if features.empty or target.empty:
+        print("Error: Features or target data is empty.")
+        return None, None, None, None
+    
     X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
 
     # Ensure that all column names are strings
@@ -54,15 +63,25 @@ def split_data(features, target):
 
     return X_train, X_test, y_train, y_test
 
-# Step 6: Train a logistic regression model
+# Step 6: Train a Forest regression model
 def train_model(X_train, y_train):
-    rf = RandomForestRegressor(n_estimators=100, random_state=42)
 
+    if X_train is None or y_train is None:
+        print("Error: Training data is not available.")
+        return None
+    
+    rf = RandomForestRegressor(n_estimators=100, random_state=42)
     rf.fit(X_train, y_train)
+
     return rf
 
 # Step 7: Evaluate the model's performance
 def evaluate_model(model, X_test, y_test):
+
+    if model is None or X_test is None or y_test is None:
+        print("Error: Model or test data is not available.")
+        return 
+    
     y_pred = model.predict(X_test)
 
     mse = mean_squared_error(y_test, y_pred)

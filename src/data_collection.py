@@ -16,6 +16,6 @@ def fetch_polling_data():
 if __name__ == "__main__":
     polling_data = fetch_polling_data()
     if polling_data is not None:
-        polling_data.to_csv('../ep/data/polling_data/raw_polls.csv', index=False)
+        polling_data.to_csv('../ep/Election-Prediction/data/polling_data/raw_polls.csv', index=False)
 
         print("Polling data successfully saved.")

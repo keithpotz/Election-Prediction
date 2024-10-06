@@ -33,14 +33,14 @@ def clean_polling_data(file_path):
             data[col] = pd.to_datetime(data[col], format='%y-%m-%d', errors='coerce') # convert invalid dates like '0' to NaT
 
     # Save the cleaned data
-    os.makedirs('../ep/data/polling_data', exist_ok=True)
-    data.to_csv('../ep/data/polling_data/cleaned_polls.csv', index=False)
+    os.makedirs('../ep/Election-Prediction/data/polling_data', exist_ok=True)
+    data.to_csv('../ep/Election-Prediction/data/polling_data/cleaned_polls.csv', index=False)
 
     return data
 
 # Main function to call the clean_polling_data function
 if __name__ == "__main__":
-    file_path = '../ep/data/polling_data/raw_polls.csv'  # Replace with the path to your raw data file
+    file_path = '../ep/Election-Prediction/data/polling_data/raw_polls.csv'  # Replace with the path to your raw data file
     cleaned_data = clean_polling_data(file_path)
-    print("Polling data cleaned and saved to ../ep/data/polling_data/cleaned_polls.csv")
+    print("Polling data cleaned and saved to ../ep/Election-Prediction/data/polling_data/cleaned_polls.csv")
     print(cleaned_data.head())
