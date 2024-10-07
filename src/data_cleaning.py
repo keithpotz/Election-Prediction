@@ -8,7 +8,7 @@ def clean_polling_data(file_path):
     # 1. Drop irrelevant columns
     irrelevant_columns = ['timestamp', 'comment', 'sponsor_ids', 'pollster_rating_id', 'notes', 'url','pollster_id','pollster','sponsors','display_name','pollster_name','pollster_rating_name','ranked_choice_round',
     'sponsor_candidate_id','sponsor_candidate','sponsor_candidate_party','endorsed_candidate_id','endorsed_candidate_name','endorsed_candidate_party','url_article',
-    'url_topline','url_crosstab','source','internal','partisan','poll_start_date','poll_end_date','methodology','population','population_full','created_at','poll_start','subpopulation','poll_end_date','poll_start_date','tracking','seat_number']  
+    'url_topline','url_crosstab','source','internal','partisan','poll_start_date','poll_end_date','methodology','population_full','created_at','poll_start','subpopulation','poll_end_date','poll_start_date','tracking','seat_number']  
     # Add the actual irrelevant columns from the dataset
     data.drop(columns=irrelevant_columns, inplace=True, errors='ignore')
     
