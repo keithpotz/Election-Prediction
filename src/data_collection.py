@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import os
 
 # Function to fetch polling data from FiveThirtyEight's GitHub
 def fetch_polling_data():
@@ -16,6 +17,10 @@ def fetch_polling_data():
 if __name__ == "__main__":
     polling_data = fetch_polling_data()
     if polling_data is not None:
-        polling_data.to_csv('../ep/Election-Prediction/data/polling_data/raw_polls.csv', index=False)
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        save_path = os.path.join(base_dir, '../data/polling_data/raw_polls.csv')
+
+        polling_data.to_csv(save_path, index=False)
+
 
         print("Polling data successfully saved.")
