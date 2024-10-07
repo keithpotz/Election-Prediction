@@ -3,6 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 import pandas as pd
 import os
+from pathlib import Path
 
 # Define the base model for the polling data table
 Base = declarative_base()
@@ -49,13 +50,28 @@ def save_data_to_db(cleaned_file_path, engine):
             party=row['party']
         )
         session.add(poll)
+    
+    #Commit session to database
+    try:
+        session.commit()
+        print("Cleaned polling data has been successfully loaded into the database")
+    except Exception as e:
+        session.rollback()
+        print(f"an error has occured {e}")
+    finally:
+        session.close()
+
 
     # Commit the session to the database
     session.commit()
 
 # Main function to call database setup and save data
 if __name__ == "__main__":
-    cleaned_file_path = '../ep/Election-Prediction/data/polling_data/cleaned_polls.csv'  # Path to your cleaned data
+   #Using pathlib to construct paths
+    base_dir = Path(__file__).resolve().parent
+    data_dir = base_dir /'..' / 'data' / 'polling_data'
+    cleaned_file_path = data_dir /'cleaned_polls.csv'
+
     engine = setup_database()  # Set up the connection to the database
     save_data_to_db(cleaned_file_path, engine)  # Save the cleaned data into the database
     print("Cleaned polling data has been successfully loaded into the database.")

@@ -8,7 +8,7 @@ def clean_polling_data(file_path):
     # 1. Drop irrelevant columns
     irrelevant_columns = ['timestamp', 'comment', 'sponsor_ids', 'pollster_rating_id', 'notes', 'url','pollster_id','pollster','sponsors','display_name','pollster_name','pollster_rating_name','ranked_choice_round',
     'sponsor_candidate_id','sponsor_candidate','sponsor_candidate_party','endorsed_candidate_id','endorsed_candidate_name','endorsed_candidate_party','url_article',
-    'url_topline','url_crosstab','source','internal','partisan','poll_start_date','poll_end_date',]  
+    'url_topline','url_crosstab','source','internal','partisan','poll_start_date','poll_end_date','methodology','population','population_full','created_at','poll_start','subpopulation','poll_end_date','poll_start_date','tracking','seat_number']  
     # Add the actual irrelevant columns from the dataset
     data.drop(columns=irrelevant_columns, inplace=True, errors='ignore')
     
@@ -33,14 +33,20 @@ def clean_polling_data(file_path):
             data[col] = pd.to_datetime(data[col], format='%y-%m-%d', errors='coerce') # convert invalid dates like '0' to NaT
 
     # Save the cleaned data
-    os.makedirs('../ep/Election-Prediction/data/polling_data', exist_ok=True)
-    data.to_csv('../ep/Election-Prediction/data/polling_data/cleaned_polls.csv', index=False)
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    save_dir = os.path.join(base_dir, '../data/polling_data')
+    os.makedirs(save_dir, exist_ok=True)
+    save_path = os.path.join(save_dir, 'cleaned_polls.csv')
+
+    data.to_csv(save_path, index=False)
 
     return data
 
 # Main function to call the clean_polling_data function
 if __name__ == "__main__":
-    file_path = '../ep/Election-Prediction/data/polling_data/raw_polls.csv'  # Replace with the path to your raw data file
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(base_dir, '../data/polling_data/raw_polls.csv') #Construct path to raw data file
+    cleaned_data = clean_polling_data(file_path)
     cleaned_data = clean_polling_data(file_path)
     print("Polling data cleaned and saved to ../ep/Election-Prediction/data/polling_data/cleaned_polls.csv")
     print(cleaned_data.head())
