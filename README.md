@@ -7,7 +7,7 @@ This project aims to build a non-partisan, data-driven election prediction model
 
 ## Things to do still:
 - [] collect additional data to enhance model training
-- [] Experiemtn with more complex machine learning models
+- [] Experiment with more complex machine learning models
 - [] Implement  election_model.py
 - [] fininsh modeling.py
 - [] Implement cross-validation and other evaluation techniques
