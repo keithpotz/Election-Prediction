@@ -1,8 +1,10 @@
+import joblib
 import pandas as pd
 from sqlalchemy import create_engine
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
+import os
 
 # Step 1: Load data from PostgreSQL
 def load_data():
@@ -95,6 +97,15 @@ def train_model(X_train, y_train):
     
     rf = RandomForestRegressor(n_estimators=100, random_state=42)
     rf.fit(X_train, y_train)
+    
+    #Save the model
+    models_dir =os.path.join('...', 'ep', 'Election-Perdiciton', 'models')
+    os.makedirs(models_dir, exist_ok=True)
+
+    model_path=os.path.join(models_dir, 'random_forest_model.pkl')
+    joblib.dump(rf,model_path)
+    print(f"model have been saved to {model_path}")
+
 
     return rf
 
