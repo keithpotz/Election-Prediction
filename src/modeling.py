@@ -15,8 +15,14 @@ def preprocess_data(data):
     print("Missing values before cleanup:")
     print(data.isnull().sum())
 
-    # Handle missing values by dropping rows with missing values (adjust as needed)
-    data.dropna(inplace=True)
+    #Convert specific columns that may have non-numeric values
+    data['population_full'] = pd.to_numeric(data['population_full'], errors = 'coerce').fillna(0)
+    data['population'] = pd.to_numeric(data['population'], errors='coerce').fillna(0)
+    data['sample_size'] = pd.to_numeric(data['sample_size'], errors='coerce').fillna(0)
+    data['pct'] = pd.to_numeric(data['pct'], errors='coerce').fillna(0)
+
+
+    data.fillna({'pct_estimate': 0, 'modeldate': '1970-01-01', 'contestdate': '1970-01-01'}, inplace=True)
 
     print("Missing values after cleanup:")
     print(data.isnull().sum())
@@ -28,13 +34,25 @@ def encode_data(data):
     # One-hot encode categorical variables (race, state, candidate_name)
     data = pd.get_dummies(data, columns=['race', 'state', 'candidate_name'], drop_first=True)
 
+    #label encode the 'party' coloumn to keep it a 3 letter designator either DEM or REP
+    if 'party' in data.columns:
+        party_mapping = {'DEM': 0, 'REP':1}
+        data['party'] = data['party'].map(party_mapping)
+
     # Clean up column names to replace "__" with "_" (if needed)
     data.columns = data.columns.str.replace('__', '_')
+
+    print(f"Data shape after encoding: {data.shape}")
 
     return data
 
 # Step 4: Select features and the target variable for the model
 def select_features(data):
+
+    if 'pct_estimate' not in data.columns:
+        print("Error: 'pct_estimate' column not found in data. ")
+        return None, None
+    
     # Drop columns that are not used as features (example: dates and the target)
     columns_to_drop = ['pct_estimate', 'modeldate', 'contestdate']
     columns_to_drop = [col for col in columns_to_drop if col in data.columns]
@@ -42,6 +60,9 @@ def select_features(data):
 
      # Adjust based on actual columns
     target = data['pct_estimate']  # The target we're trying to predict (percentage estimate)
+
+    print(f"Features shape: {features.shape}")
+    print(f"Target shape: {target.shape}")
     
     return features, target
 
@@ -60,6 +81,8 @@ def split_data(features, target):
 
     print("X_train columns: ", X_train.columns)  # Debugging print
     print("X_test columns: ", X_test.columns)    # Debugging print
+    print(f"X_train shape: {X_train.shape}, y_train shape: {y_train.shape}")
+    print(f"X_test shape: {X_test.shape}, y_test shape: {y_test.shape}")
 
     return X_train, X_test, y_train, y_test
 
