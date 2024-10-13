@@ -77,7 +77,7 @@ project-directory/
 ### Step 1: clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/keithpotz/Election-Prediction.git
 ```
 ### Step 2 Install required Python packages in your directory
 
