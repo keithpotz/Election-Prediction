@@ -5,3 +5,4 @@ beautifulsoup4
 scikit-learn
 sqlalchemy
 psycopg2 
+pytest
