@@ -133,7 +133,9 @@ def train_model(X_train, y_train):
 
     model_path=os.path.join(models_dir, 'random_forest_model.pkl')
     joblib.dump(rf,model_path)
-    print(f"model have been saved to {model_path}")
+    features_path = os.path.join(models_dir, 'training_features.pki')
+    joblib.dump(X_train.columns.tolist(), features_path)
+    print(f"model and features  have been saved to {model_path} and {features_path}")
 
 
     return rf
