@@ -36,7 +36,7 @@ def clean_polling_data(file_path):
 
     # Save the cleaned data
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    save_dir = os.path.join(base_dir, '../data/polling_data')
+    save_dir = os.path.join(base_dir, '../src/data/polling_data')
     os.makedirs(save_dir, exist_ok=True)
     save_path = os.path.join(save_dir, 'cleaned_polls.csv')
 
@@ -47,7 +47,7 @@ def clean_polling_data(file_path):
 # Main function to call the clean_polling_data function
 if __name__ == "__main__":
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(base_dir, '../data/polling_data/raw_polls.csv') #Construct path to raw data file
+    file_path = os.path.join(base_dir, '../src/data/polling_data/raw_polls.csv') #Construct path to raw data file
     cleaned_data = clean_polling_data(file_path)
-    print("Polling data cleaned and saved to ../ep/Election-Prediction/data/polling_data/cleaned_polls.csv")
+    print("Polling data cleaned and saved to ../ep/Election-Prediction/src/data/polling_data/cleaned_polls.csv")
     print(cleaned_data.head())

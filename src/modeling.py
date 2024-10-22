@@ -36,7 +36,7 @@ def preprocess_data(data):
         'modeldate': '1970-01-01',  # Default fallback date
         'contestdate': '1970-01-01',  # Default fallback date
         'race': 'Unknown',  # Fill missing 'race' with 'Unknown'
-        'pct_estimate': 0,  # Fill missing 'pct_estimate' with 0 if needed
+        'pct': 0,  # Fill missing 'pct_estimate' with 0 if needed
     }, inplace=True)
 
     # Convert 'modeldate' and 'contestdate' to datetime format
@@ -50,18 +50,25 @@ def preprocess_data(data):
 
     return data
 
-
-
 # Step 3: Encode categorical variables (race, state, candidate_name)
 def encode_data(data):
-    # One-hot encode categorical variables (race, state, candidate_name)
-    data = pd.get_dummies(data, columns=['race', 'state', 'candidate_name'], drop_first=True)
-
-    #label encode the 'party' coloumn to keep it a 3 letter designator either DEM or REP
+    # List of categorical columns that need to be encoded
+    columns_to_encode = ['race', 'state', 'candidate_name']
+    
+    # Check if these columns exist in the data before encoding
+    available_columns = [col for col in columns_to_encode if col in data.columns]
+    
+    if available_columns:
+        # One-hot encode the available categorical columns
+        data = pd.get_dummies(data, columns=available_columns, drop_first=True)
+    else:
+        print(f"Warning: None of the columns {columns_to_encode} are available for encoding.")
+    
+    # Label encode the 'party' column to keep it a 3-letter designator either DEM or REP
     if 'party' in data.columns:
-        party_mapping = {'DEM': 0, 'REP':1}
+        party_mapping = {'DEM': 0, 'REP': 1}
         data['party'] = data['party'].map(party_mapping)
-
+    
     # Clean up column names to replace "__" with "_" (if needed)
     data.columns = data.columns.str.replace('__', '_')
 
@@ -69,20 +76,21 @@ def encode_data(data):
 
     return data
 
+
 # Step 4: Select features and the target variable for the model
 def select_features(data):
 
-    if 'pct_estimate' not in data.columns:
-        print("Error: 'pct_estimate' column not found in data. ")
+    if 'pct' not in data.columns:
+        print("Error: 'pct' column not found in data. ")
         return None, None
     
     # Drop columns that are not used as features (example: dates and the target)
-    columns_to_drop = ['pct_estimate', 'modeldate', 'contestdate']
+    columns_to_drop = ['pct', 'modeldate', 'contestdate']
     columns_to_drop = [col for col in columns_to_drop if col in data.columns]
     features = data.drop(columns = columns_to_drop)
 
      # Adjust based on actual columns
-    target = data['pct_estimate']  # The target we're trying to predict (percentage estimate)
+    target = data['pct']  # The target we're trying to predict (percentage estimate)
 
     print(f"Features shape: {features.shape}")
     print(f"Target shape: {target.shape}")
@@ -120,7 +128,7 @@ def train_model(X_train, y_train):
     rf.fit(X_train, y_train)
     
     #Save the model
-    models_dir =os.path.join(os.path.dirname(__file__),'../models')
+    models_dir =os.path.join(os.path.dirname(__file__),'../src/models')
     os.makedirs(models_dir, exist_ok=True)
 
     model_path=os.path.join(models_dir, 'random_forest_model.pkl')

@@ -18,7 +18,7 @@ if __name__ == "__main__":
     polling_data = fetch_polling_data()
     if polling_data is not None:
         base_dir = os.path.dirname(os.path.abspath(__file__))
-        save_path = os.path.join(base_dir, '../data/polling_data/raw_polls.csv')
+        save_path = os.path.join(base_dir, '../src/data/polling_data/raw_polls.csv')
 
         polling_data.to_csv(save_path, index=False)
 
