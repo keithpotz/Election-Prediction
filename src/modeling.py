@@ -17,19 +17,40 @@ def preprocess_data(data):
     print("Missing values before cleanup:")
     print(data.isnull().sum())
 
-    #Convert specific columns that may have non-numeric values
-    data['population_full'] = pd.to_numeric(data['population_full'], errors = 'coerce').fillna(0)
-    data['population'] = pd.to_numeric(data['population'], errors='coerce').fillna(0)
-    data['sample_size'] = pd.to_numeric(data['sample_size'], errors='coerce').fillna(0)
+    # Ensure 'sample_size' exists and convert it to numeric, filling non-numeric values with 0
+    if 'sample_size' in data.columns:
+        data['sample_size'] = pd.to_numeric(data['sample_size'], errors='coerce').fillna(0)
+    else:
+        raise ValueError("Missing required 'sample_size' column")
+
+    # Ensure 'pct' exists and convert it to numeric, filling non-numeric values with 0
+    if 'pct' not in data.columns:
+        raise ValueError("Missing required 'pct' column")
     data['pct'] = pd.to_numeric(data['pct'], errors='coerce').fillna(0)
 
+    # Drop rows with missing values in essential columns
+    data.dropna(subset=['candidate_name', 'candidate_id'], inplace=True)
 
-    data.fillna({'pct_estimate': 0, 'modeldate': '1970-01-01', 'contestdate': '1970-01-01'}, inplace=True)
+    # Fill missing values in other important columns
+    data.fillna({
+        'modeldate': '1970-01-01',  # Default fallback date
+        'contestdate': '1970-01-01',  # Default fallback date
+        'race': 'Unknown',  # Fill missing 'race' with 'Unknown'
+        'pct_estimate': 0,  # Fill missing 'pct_estimate' with 0 if needed
+    }, inplace=True)
+
+    # Convert 'modeldate' and 'contestdate' to datetime format
+    if 'modeldate' in data.columns:
+        data['modeldate'] = pd.to_datetime(data['modeldate'], errors='coerce').fillna(pd.Timestamp('1970-01-01'))
+    if 'contestdate' in data.columns:
+        data['contestdate'] = pd.to_datetime(data['contestdate'], errors='coerce').fillna(pd.Timestamp('1970-01-01'))
 
     print("Missing values after cleanup:")
     print(data.isnull().sum())
-    
+
     return data
+
+
 
 # Step 3: Encode categorical variables (race, state, candidate_name)
 def encode_data(data):
@@ -99,7 +120,7 @@ def train_model(X_train, y_train):
     rf.fit(X_train, y_train)
     
     #Save the model
-    models_dir =os.path.join('...', 'ep', 'Election-Perdiciton', 'models')
+    models_dir =os.path.join(os.path.dirname(__file__),'../models')
     os.makedirs(models_dir, exist_ok=True)
 
     model_path=os.path.join(models_dir, 'random_forest_model.pkl')
