@@ -80,7 +80,7 @@ if __name__ == "__main__":
 
     if model is not None and trained_features is not None:
     # Step 2: Load the new data to predict
-     new_data_path = r'C:\Users\keith\desktop\ep\Election-Prediction\src\data\polling_data\cleaned_polls.csv'
+     new_data_path = r'YOURPATH'
     new_data = load_new_data(new_data_path)
 
     # Step 3: Prepare the data for prediction
