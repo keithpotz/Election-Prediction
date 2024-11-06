@@ -8,7 +8,7 @@ import os
 
 # Step 1: Load data from PostgreSQL
 def load_data():
-    engine = create_engine("postgresql://postgres:Shogun12@localhost:5432/election_db")  # Replace with your connection string
+    engine = create_engine("YOURUSER:PASSWORD")  # Replace with your connection string
     data = pd.read_sql_table('polling_data', con=engine)
     return data
 
