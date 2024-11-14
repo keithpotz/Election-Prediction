@@ -50,6 +50,13 @@ Before running the project, make sure you have the following installed:
   - `sqlalchemy`
   - `psycopg2`
   - `scikit-learn`
+  - `joblib`
+  - `matplotlib`
+  - `numpy`
+  - `fastapi`
+  - `uvicorn`
+  - `streamlit`
+
 
 ## Project Structure
 
