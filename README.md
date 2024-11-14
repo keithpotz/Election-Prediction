@@ -1,4 +1,3 @@
-Buy Me a Coffee [Here](https://ko-fi.com/keithpotz) to support my work 
 # Election Prediction Project
 
 **Status**: 🚧 Work in Progress
@@ -82,7 +81,7 @@ project-directory/
 ### Step 1: clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/keithpotz/Election-Perdiction.git
 ```
 ### Step 2 Install required Python packages in your directory
 
