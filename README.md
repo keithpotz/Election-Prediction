@@ -6,7 +6,6 @@ Buy Me a Coffee [Here](https://ko-fi.com/keithpotz) to support my work
 This project aims to build a non-partisan, data-driven election prediction model using historical polling data. The goal is to use data from sources like FiveThirtyEight to train machine learning models that can predict election outcomes, starting with the 2024 U.S. presidential election.
 
 ## Things to do still:
-- [] collect additional data to enhance model training
 - [x] Experiment with more complex machine learning models
 - [x] Implement  election_model.py
 - [x] fininsh modeling.py
