@@ -9,7 +9,7 @@ This project aims to build a non-partisan, data-driven election prediction model
 - [x] Implement  election_model.py
 - [x] fininsh modeling.py
 - [x] Implement cross-validation and other evaluation techniques
-- [] Create a user interface to visulize predictions
+- [x] Create a user interface to visulize predictions
 - [] Develop documentation and contribution guidelines.
 
 ## Project Overview
