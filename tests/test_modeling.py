@@ -97,9 +97,8 @@ def test_select_features(sample_data):
     data = preprocess_data(sample_data)
     data = encode_data(data)
     features, target = select_features(data)
-    assert 'pct_estimate' not in features.columns, "Target variable should not be part of features"
+    assert 'pct' not in features.columns, "Target variable 'pct' should not be part of features"
     assert len(features) == len(target), "Features and target should have the same number of rows"
-    assert 'pct' in features.columns
 
 # Test data splitting
 def test_split_data(sample_data):
@@ -110,8 +109,8 @@ def test_split_data(sample_data):
     assert len(X_train) > 0 and len(X_test) > 0, "Training and test sets should not be empty"
     assert len(y_train) == len(X_train), "Mismatch between training features and labels"
     assert len(y_test) == len(X_test), "Mismatch between test features and labels"
-    assert 'pct' in X_train.columns
-    assert 'pct' in X_test.columns
+    assert 'pct' not in X_train.columns, "Target 'pct' should not be in training features"
+    assert 'pct' not in X_test.columns, "Target 'pct' should not be in test features"
 
 # Test model training
 def test_train_model(sample_data):

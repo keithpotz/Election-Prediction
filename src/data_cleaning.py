@@ -15,24 +15,22 @@ def clean_polling_data(file_path):
     # 2. Handle missing values
     # Drop rows with missing values in key columns like 'candidate_name' and 'pct'
     data.dropna(subset=['candidate_name', 'pct'], inplace=True)
-    data['state'].fillna('Unknown', inplace=True)
-    #removes rows where 'Unknown' is present
-    data = data[data['state'] != 'Unkown']
-    # Optionally fill remaining missing values with 0
-    data.fillna(0, inplace=True)
+    data['state'] = data['state'].fillna('Unknown')
+    data = data[data['state'] != 'Unknown']
+    data = data.fillna(0)
 
     # 3. Rename columns
     rename_columns = {
-        'start_date': 'poll_start_date',  # Replace with relevant column renames if necessary
+        'start_date': 'poll_start_date',
         'end_date': 'poll_end_date'
     }
     data.rename(columns=rename_columns, inplace=True)
-   
+
     # 4. Convert date columns to datetime format
-    date_columns = ['start_date', 'end_date']
+    date_columns = ['poll_start_date', 'poll_end_date']
     for col in date_columns:
         if col in data.columns:
-            data[col] = pd.to_datetime(data[col], format='%y-%m-%d', errors='coerce') # convert invalid dates like '0' to NaT
+            data[col] = pd.to_datetime(data[col], format='%Y-%m-%d', errors='coerce')
 
     # Save the cleaned data
     base_dir = os.path.dirname(os.path.abspath(__file__))

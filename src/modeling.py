@@ -8,7 +8,10 @@ import os
 
 # Step 1: Load data from PostgreSQL
 def load_data():
-    engine = create_engine("YOURUSER:PASSWORD")  # Replace with your connection string
+    connection_string = os.getenv("DB_CONNECTION_STRING")
+    if connection_string is None:
+        raise ValueError("DB_CONNECTION_STRING environment variable is not set!")
+    engine = create_engine(connection_string)
     data = pd.read_sql_table('polling_data', con=engine)
     return data
 
@@ -67,7 +70,7 @@ def encode_data(data):
     # Label encode the 'party' column to keep it a 3-letter designator either DEM or REP
     if 'party' in data.columns:
         party_mapping = {'DEM': 0, 'REP': 1}
-        data['party'] = data['party'].map(party_mapping)
+        data['party'] = data['party'].map(party_mapping).fillna(2).astype(int)
     
     # Clean up column names to replace "__" with "_" (if needed)
     data.columns = data.columns.str.replace('__', '_')
@@ -133,7 +136,7 @@ def train_model(X_train, y_train):
 
     model_path=os.path.join(models_dir, 'random_forest_model.pkl')
     joblib.dump(rf,model_path)
-    features_path = os.path.join(models_dir, 'training_features.pki')
+    features_path = os.path.join(models_dir, 'training_features.pkl')
     joblib.dump(X_train.columns.tolist(), features_path)
     print(f"model and features  have been saved to {model_path} and {features_path}")
 
