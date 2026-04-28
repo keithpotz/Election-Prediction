@@ -1,138 +1,125 @@
 # Election Prediction Project
 
-**Status**: 🚧 Work in Progress
+A non-partisan, data-driven US presidential election prediction dashboard built with Python and Streamlit. Uses XGBoost trained on county-level historical results (2000–2024) combined with live economic and approval data to forecast state-by-state outcomes and Electoral College totals.
 
-This project aims to build a non-partisan, data-driven election prediction model using historical polling data. The goal is to use data from sources like FiveThirtyEight to train machine learning models that can predict election outcomes, starting with the 2024 U.S. presidential election.
+## Features
 
-## Things to do still:
-- [x] Experiment with more complex machine learning models
-- [x] Implement  election_model.py
-- [x] fininsh modeling.py
-- [x] Implement cross-validation and other evaluation techniques
-- [x] Create a user interface to visulize predictions
-- [] Develop documentation and contribution guidelines.
-
-## Project Overview
-
-The project is broken down into several key steps:
-
-1. **Data Collection**: 
-   - I used polling data from FiveThirtyEight ( You can find that data yourself [Here](https://github.com/fivethirtyeight/data/tree/master/polls)) to collect historical polling information for different elections. (NOTE: I will be adding more resources as time goes on. FiveThirtyEight is just a jumping off point.)
-   - The raw data is stored in a CSV file, which is then cleaned and processed.
-
-2. **Data Cleaning**: 
-   - Unnecessary columns are removed, missing values are handled, and data types are converted.
-   - The cleaned data is stored in a separate CSV file for use in model training.
-
-3. **Database Integration**: 
-   - The cleaned data is loaded into a PostgreSQL database using SQLAlchemy for easy querying and management.
-
-4. **Model Training**: 
-   - Data is extracted from the database and preprocessed for model training.
-   - The model is trained using various machine learning algorithms (e.g., Linear Regression) to make predictions.
-   - The model's performance is evaluated using metrics like Mean Squared Error (MSE) and R-squared.
-
-5. **Future Enhancements** (To Do):
-   - Implement other models like Decision Trees, Random Forests, or Neural Networks.
-   - Expand the dataset to include more features such as demographics, economic indicators, and more.
-   - Create a visual interface for users to explore predictions.
-   - Implement more robust evaluation and cross-validation techniques.
-
-## Prerequisites
-
-Before running the project, make sure you have the following installed:
-
-- Python 3.8+
-- PostgreSQL
-- Required Python packages (install using `pip install -r requirements.txt`):
-  - `pandas`
-  - `sqlalchemy`
-  - `psycopg2`
-  - `scikit-learn`
-  - `joblib`
-  - `matplotlib`
-  - `numpy`
-  - `fastapi`
-  - `uvicorn`
-  - `streamlit`
-
+- **Interactive Dashboard** — 4-tab Streamlit app with choropleth maps, EC breakdowns, and confidence intervals
+- **Live Data** — Pulls GDP, unemployment, CPI, and consumer confidence from the FRED API in real time
+- **XGBoost Model** — Trained on 71,840 county-level rows with Leave-One-Election-Out (LOEO) cross-validation and recency weighting
+- **Confidence Intervals** — Three models (median, 2.5th, 97.5th percentile) for 95% CI on every state prediction
+- **Approval Adjustment** — Incumbent party vote share adjusted live based on current approval polling
+- **PostgreSQL Backend** — Cleaned historical data stored and queried from a local PostgreSQL database
+- **Prediction History** — Save predictions and track EC vote trends over time
 
 ## Project Structure
 
-```plaintext
-project-directory/
-│
-├── data/
-│   ├── raw/               # Directory for raw data files
-│   ├── cleaned/           # Directory for cleaned data files
-│   └── polling_data.csv   # Example of raw polling data file
+```
+Election-Prediction/
 │
 ├── src/
-│   ├── data_collection.py # Script to collect data from APIs and sources
-│   ├── data_cleaning.py   # Script to clean the data
-│   ├── database.py        # Script to load data into the database
-│   ├── modeling.py        # Script to train and evaluate the model
-│   └── __init__.py        # Initialize the src module
+│   ├── app.py                  # Streamlit dashboard (4 tabs)
+│   ├── config.py               # DB connection string + FRED API key
+│   ├── data_cleaning.py        # Merges raw CSVs, outputs cleaned_polls.csv
+│   ├── feature_engineering.py  # Builds ML features, outputs featured_data.csv
+│   ├── modeling.py             # Trains XGBoost models, saves to src/models/
+│   ├── database.py             # Bulk-inserts cleaned data into PostgreSQL
+│   ├── data_sources.py         # Live FRED + approval data fetching
+│   ├── electoral_votes.py      # EV allocations and EC calculation
+│   └── data/
+│       ├── polling_data/
+│       │   ├── complete_data.csv           # MIT Election Lab state-level 1976–2020
+│       │   ├── 2024president.csv           # 2024 state-level results
+│       │   ├── countypres_2000-2024.csv    # County-level results 2000–2024
+│       │   ├── GDP.csv / unemployment.csv  # Local FRED economic data
+│       │   └── Silver Bulletin Trump approval polls - Sheet1.csv
+│       ├── cleaned_polls.csv   # Output of data_cleaning.py
+│       └── featured_data.csv   # Output of feature_engineering.py
 │
-└── README.md              # Project README file
-
- ```
- ## Setup
-### Step 1: clone the repository
-
-```bash
-git clone https://github.com/keithpotz/Election-Perdiction.git
+└── src/models/
+    ├── xgb_model_mid.pkl       # Main XGBoost model (MSE objective)
+    ├── xgb_model_lo.pkl        # 2.5th percentile quantile model
+    ├── xgb_model_hi.pkl        # 97.5th percentile quantile model
+    └── training_features.pkl   # Feature column list (must stay in sync)
 ```
-### Step 2 Install required Python packages in your directory
+
+## Prerequisites
+
+- Python 3.8+
+- PostgreSQL (running on port 5433)
+- A free [FRED API key](https://fred.stlouisfed.org/docs/api/api_key.html)
+
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 3: Setup your PostgreSQL:
-Create Database and then connect in config.py
+## Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/keithpotz/Election-Perdiction.git
+cd Election-Perdiction
+```
+
+### 2. Configure database and API key
+
+Edit `src/config.py`:
+
 ```python
-export DB_CONNECTION_STRING='postgresql://username:password@localhost:5432/your_database_name'
+DB_CONNECTION_STRING = "postgresql://username:password@localhost:5433/election_db"
+FRED_API_KEY = "your_fred_api_key_here"
 ```
-#### **Note:*** 
-Make sure that you change your USERNAME and PASSWORD and the DATABASE_NAME to what you have setup on your machine.
 
-## Then run the scripts:
+Or set the environment variable:
 
-### Data Collection:
 ```bash
-python src/data_collection.py
+export DB_CONNECTION_STRING='postgresql://username:password@localhost:5433/election_db'
 ```
-### Data Cleaning:
+
+### 3. Run the data pipeline (in order)
+
 ```bash
+# Clean and merge raw vote data
 python src/data_cleaning.py
-```
 
-### Load Data into Database
+# Build ML features (fetches CPI + consumer confidence from FRED)
+python src/feature_engineering.py
 
-```bash
+# Train XGBoost models (saves 3 pkl files to src/models/)
+python src/modeling.py
+
+# Load cleaned data into PostgreSQL
 python src/database.py
 ```
 
-### Train the model
+### 4. Launch the dashboard
 
 ```bash
-python src/modeling.py
+streamlit run src/app.py
 ```
 
----
+## Model Details
 
-## Current Limitations
+| Setting | Value |
+|---|---|
+| Algorithm | XGBoost |
+| Training rows | 71,840 county-level records (2000–2024) |
+| Validation | Leave-One-Election-Out (LOEO) |
+| Sample weighting | Recency-weighted (2024 = 5x, 2000 = 1x) |
+| Target | Candidate vote share (0–100%) |
 
-#### Incomplete Dataset: 
-The project currently uses historical polling data up to the 2020 election. Further data collection and preprocessing are required to improve prediction accuracy.
+**Features:** `year`, `totalvotes`, `gdp_growth`, `unemployment`, `inflation`, `consumer_confidence`, `is_incumbent`, `incumbent_on_ballot`, `consecutive_terms`, `state_lean`, `county_lean`, `turnout_delta`, one-hot state, one-hot party
 
-#### Basic Model:
+## Data Sources
 
-The model currently uses simple linear regression. Future versions will explore more complex models and feature engineering techniques.
+- [MIT Election Data + Science Lab](https://electionlab.mit.edu/data) — State-level results 1976–2020
+- [MIT MEDSL County Results](https://electionlab.mit.edu/data) — County-level results 2000–2024
+- [FRED API](https://fred.stlouisfed.org/) — GDP, unemployment, CPI (CPIAUCSL), consumer confidence (UMCSENT)
+- [Silver Bulletin](https://www.silverscaling.com/) — Trump approval polling (manual CSV download)
 
+## Contributions
 
-
-## Contributions:
-
-This project is open source and contributions are welcome! Please feel free to fork the repository, make improvements, and submit a pull request.
+Open source — forks and pull requests welcome.
