@@ -1,5 +1,12 @@
 # Election Prediction Project
 
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white)
+![XGBoost](https://img.shields.io/badge/Model-XGBoost-orange)
+![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-336791?logo=postgresql&logoColor=white)
+![FRED API](https://img.shields.io/badge/Data-FRED%20API-green)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
 A non-partisan, data-driven US presidential election prediction dashboard built with Python and Streamlit. Uses XGBoost trained on county-level historical results (2000–2024) combined with live economic and approval data to forecast state-by-state outcomes and Electoral College totals.
 
 ## Features
@@ -119,6 +126,29 @@ streamlit run src/app.py
 - [MIT MEDSL County Results](https://electionlab.mit.edu/data) — County-level results 2000–2024
 - [FRED API](https://fred.stlouisfed.org/) — GDP, unemployment, CPI (CPIAUCSL), consumer confidence (UMCSENT)
 - [Silver Bulletin](https://www.silverscaling.com/) — Trump approval polling (manual CSV download)
+
+## Troubleshooting
+
+**`could not connect to server` on startup**
+PostgreSQL isn't running, or is on the wrong port. This project expects port `5433`. Check your running instances and update `DB_CONNECTION_STRING` in `src/config.py` or your environment variable to match.
+
+**`relation "elections" does not exist`**
+The database tables haven't been created yet. Run `python src/database.py` to bulk-insert the cleaned data and initialize the schema.
+
+**`FileNotFoundError: featured_data.csv`**
+The feature engineering step hasn't been run yet, or was run out of order. Follow the pipeline order strictly: `data_cleaning.py` → `feature_engineering.py` → `modeling.py` → `database.py`.
+
+**`KeyError` or feature mismatch when making a prediction**
+The model `.pkl` files are out of sync with `training_features.pkl`. This happens when `feature_engineering.py` is updated but the models aren't retrained. Re-run `python src/modeling.py` to regenerate all three model files.
+
+**`FRED API` returns no data / `KeyError` on economic indicators**
+Your FRED API key is missing or invalid. Get a free key at [fred.stlouisfed.org](https://fred.stlouisfed.org/docs/api/api_key.html) and set it in `src/config.py` or as `FRED_API_KEY` in your environment.
+
+**Approval rating chart shows no data**
+The Silver Bulletin approval CSV must be downloaded manually and placed at `src/data/polling_data/Silver Bulletin Trump approval polls - Sheet1.csv`. The filename must match exactly.
+
+**`streamlit: command not found`**
+Streamlit isn't installed or your virtual environment isn't activated. Run `pip install -r requirements.txt` inside your active environment.
 
 ## Contributions
 
