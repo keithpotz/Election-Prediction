@@ -7,7 +7,7 @@
 ![FRED API](https://img.shields.io/badge/Data-FRED%20API-green)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-A non-partisan, data-driven US election prediction dashboard built with Python and Streamlit. Uses XGBoost trained on county-level historical results (2000–2024) combined with live economic, polling, and approval data to forecast state-by-state presidential outcomes and Electoral College totals — plus a 2026 midterm House/Senate projection.
+A non-partisan, data-driven US election prediction dashboard built with Python and Streamlit. Uses XGBoost trained on county-level historical results (2000–2024) combined with live economic, polling, and approval data to forecast state-by-state presidential outcomes and Electoral College totals plus a 2026 midterm House/Senate projection.
 
 ## Features
 
