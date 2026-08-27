@@ -1,6 +1,7 @@
 import pandas as pd
 import requests
 import os
+import io
 
 BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR  = os.path.join(BASE_DIR, 'data/polling_data')
@@ -137,6 +138,60 @@ def compute_county_lean(county_df):
     return lean
 
 
+def _load_house_raw():
+    """
+    MEDSL's Dataverse export of house_1976_2024.csv double-encodes each data row:
+    the whole row is wrapped in one quoted field, with any original embedded quotes
+    backslash-escaped. Unwrap it before handing to pandas' normal CSV parser.
+    """
+    path = os.path.join(DATA_DIR, 'house_1976_2024.csv')
+    with open(path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+    fixed = [lines[0]]
+    for line in lines[1:]:
+        inner = line.rstrip('\n')[1:-1].replace('\\"', '"')
+        fixed.append(inner + '\n')
+    return pd.read_csv(io.StringIO(''.join(fixed)), low_memory=False)
+
+
+def normalize_party(series):
+    """Bucket a raw party column down to DEMOCRAT/REPUBLICAN/OTHER."""
+    return series.str.upper().apply(lambda x: x if x in ['DEMOCRAT', 'REPUBLICAN'] else 'OTHER')
+
+def load_house_races():
+    """
+    All US House general-election, non-special-election rows (regular contests only —
+    specials are excluded so this represents 'the normal election that cycle', matching
+    the convention used everywhere else this data feeds a national margin/seat count).
+    """
+    house = _load_house_raw()
+    house = house[
+        (house['office'] == 'US HOUSE') & (house['stage'] == 'GEN') &
+        (house['mode'] == 'TOTAL') & (~house['special'])
+    ].copy()
+    house['party']          = normalize_party(house['party'])
+    house['candidatevotes'] = pd.to_numeric(house['candidatevotes'], errors='coerce').fillna(0)
+    return house
+
+def national_house_margin_by_year(house=None):
+    """National two-party House popular vote margin (Dem - Rep, pct points) per election year."""
+    house = house if house is not None else load_house_races()
+    national = house.groupby(['year', 'party'])['candidatevotes'].sum().unstack(fill_value=0)
+    dem, rep = national.get('DEMOCRAT', 0), national.get('REPUBLICAN', 0)
+    return ((dem - rep) / (dem + rep) * 100).round(2)
+
+def load_prior_midterm_house_margin():
+    """
+    National two-party US House popular vote margin (Dem - Rep, pct points) from the
+    midterm election two years before each presidential election year.
+    """
+    margin = national_house_margin_by_year()
+    return {
+        pres_year: margin[pres_year - 2]
+        for pres_year in ELECTION_YEARS if (pres_year - 2) in margin.index
+    }
+
+
 def compute_turnout_delta(county_df):
     """Percent change in county totalvotes from the prior election cycle."""
     tv = (
@@ -166,9 +221,7 @@ def build_features():
     county = pd.read_csv(os.path.join(DATA_DIR, 'countypres_2000-2024.csv'))
     county = county[county['mode'] == 'TOTAL'].copy()
 
-    county['party'] = county['party'].str.upper().apply(
-        lambda x: x if x in ['DEMOCRAT', 'REPUBLICAN'] else 'OTHER'
-    )
+    county['party'] = normalize_party(county['party'])
     county = county[pd.to_numeric(county['totalvotes'], errors='coerce') > 0]
     county['candidatevotes'] = pd.to_numeric(county['candidatevotes'], errors='coerce').fillna(0)
     county['totalvotes']     = pd.to_numeric(county['totalvotes'],     errors='coerce')
@@ -202,18 +255,21 @@ def build_features():
     print("Computing county partisan lean...")
     county['county_lean'] = county['county_fips'].map(compute_county_lean(county))
 
+    print("Computing prior midterm House margin...")
+    county['prior_midterm_house_margin'] = county['year'].map(load_prior_midterm_house_margin())
+
     keep = [
         'year', 'state', 'state_po', 'county_name', 'county_fips',
         'party', 'candidatevotes', 'totalvotes', 'pct',
         'gdp_growth', 'unemployment', 'inflation', 'consumer_confidence',
         'is_incumbent', 'incumbent_on_ballot', 'consecutive_terms',
-        'state_lean', 'county_lean', 'turnout_delta',
+        'state_lean', 'county_lean', 'turnout_delta', 'prior_midterm_house_margin',
     ]
     county = county[keep].dropna(subset=['gdp_growth', 'unemployment', 'state_lean', 'county_lean'])
 
     save_path = os.path.join(DATA_DIR, 'featured_data.csv')
     county.to_csv(save_path, index=False)
-    print(f"\nFeatured data saved → {save_path}")
+    print(f"\nFeatured data saved -> {save_path}")
     print(f"Shape: {county.shape}")
     print(county[['year', 'state', 'party', 'pct', 'inflation', 'consumer_confidence',
                   'incumbent_on_ballot', 'consecutive_terms', 'turnout_delta']].head())

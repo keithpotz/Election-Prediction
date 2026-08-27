@@ -4,10 +4,14 @@ requests
 beautifulsoup4
 scikit-learn
 sqlalchemy
-psycopg2 
+psycopg2
 pytest
 joblib
 matplotlib
 fastapi
 uvicorn
 streamlit
+plotly
+xgboost
+lxml
+scipy

@@ -1,0 +1,36 @@
+state,is_special,incumbent,open_seat,consensus_rating
+ALABAMA,False,Tommy Tuberville,True,-30.0
+ALASKA,False,Dan Sullivan,False,-0.58
+ARKANSAS,False,Tom Cotton,False,-28.75
+COLORADO,False,John Hickenlooper,False,30.0
+DELAWARE,False,Chris Coons,False,30.0
+FLORIDA,True,Ashley Moody,False,-18.67
+GEORGIA,False,Jon Ossoff,False,11.33
+IDAHO,False,Jim Risch,False,-30.0
+ILLINOIS,False,Dick Durbin,True,30.0
+IOWA,False,Joni Ernst,True,-2.58
+KANSAS,False,Roger Marshall,False,-16.83
+KENTUCKY,False,Mitch McConnell,True,-30.0
+LOUISIANA,False,Bill Cassidy,True,-26.25
+MAINE,False,Susan Collins,False,2.33
+MASSACHUSETTS,False,Ed Markey,False,30.0
+MICHIGAN,False,Gary Peters,True,2.25
+MINNESOTA,False,Tina Smith,True,16.83
+MISSISSIPPI,False,Cindy Hyde-Smith,False,-28.75
+MONTANA,False,Steve Daines,True,-24.33
+NEBRASKA,False,Pete Ricketts,False,-12.33
+NEW HAMPSHIRE,False,Jeanne Shaheen,True,11.92
+NEW JERSEY,False,Cory Booker,False,30.0
+NEW MEXICO,False,Ben Ray Luján,False,28.75
+NORTH CAROLINA,False,Thom Tillis,True,11.33
+OHIO,True,Jon Husted,False,1.17
+OKLAHOMA,False,Alan S. Armstrong,True,-30.0
+OREGON,False,Jeff Merkley,False,30.0
+RHODE ISLAND,False,Jack Reed,False,30.0
+SOUTH CAROLINA,False,Darline Graham,False,-18.08
+SOUTH DAKOTA,False,Mike Rounds,False,-30.0
+TENNESSEE,False,Bill Hagerty,False,-30.0
+TEXAS,False,John Cornyn,True,-0.33
+VIRGINIA,False,Mark Warner,False,30.0
+WEST VIRGINIA,False,Shelley Moore Capito,False,-30.0
+WYOMING,False,Cynthia Lummis,True,-30.0

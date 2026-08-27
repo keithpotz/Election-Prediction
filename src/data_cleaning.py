@@ -1,51 +1,76 @@
 import pandas as pd
 import os
 
-def clean_polling_data(file_path):
-    # Load the data
-    data = pd.read_csv(file_path, low_memory=False)
-    
-    # 1. Drop irrelevant columns
-    irrelevant_columns = ['timestamp', 'comment', 'sponsor_ids', 'pollster_rating_id', 'notes', 'url','pollster_id','pollster','sponsors','display_name','pollster_name','pollster_rating_name','ranked_choice_round',
-    'sponsor_candidate_id','sponsor_candidate','sponsor_candidate_party','endorsed_candidate_id','endorsed_candidate_name','endorsed_candidate_party','url_article',
-    'url_topline','url_crosstab','source','internal','partisan','methodology','population_full','created_at','subpopulation','tracking','seat_number', 'population']  
-    # Add the actual irrelevant columns from the dataset
-    data.drop(columns=irrelevant_columns, inplace=True, errors='ignore')
-    
-    # 2. Handle missing values
-    # Drop rows with missing values in key columns like 'candidate_name' and 'pct'
-    data.dropna(subset=['candidate_name', 'pct'], inplace=True)
+def load_and_merge(base_path, supplement_path=None):
+    """Load base dataset and optionally merge a supplemental file, normalizing columns."""
+    def normalize(df):
+        if 'candidatevotes' in df.columns and 'votes' not in df.columns:
+            df = df.rename(columns={'candidatevotes': 'votes'})
+        return df
+
+    base = normalize(pd.read_csv(base_path, low_memory=False))
+
+    if supplement_path and os.path.exists(supplement_path):
+        supp = normalize(pd.read_csv(supplement_path, low_memory=False))
+        # Remove any overlapping years from base before merging
+        if 'year' in supp.columns and 'year' in base.columns:
+            overlap_years = supp['year'].unique()
+            base = base[~base['year'].isin(overlap_years)]
+        base = pd.concat([base, supp], ignore_index=True)
+
+    return base
+
+def clean_polling_data(file_path, supplement_path=None):
+    data = load_and_merge(file_path, supplement_path)
+
+    # 2. Filter to general elections only, exclude write-ins
+    # Keep rows where stage is GEN or where stage is missing (older datasets don't have this column)
+    if 'stage' in data.columns:
+        data = data[(data['stage'] == 'GEN') | (data['stage'].isna())]
+    if 'writein' in data.columns:
+        data = data[data['writein'].astype(str).str.upper() == 'FALSE']
+
+    # 3. Drop rows where totalvotes is 0 or missing (prevents division by zero)
+    data = data[pd.to_numeric(data['totalvotes'], errors='coerce').fillna(0) > 0]
+
+    # 4. Compute vote percentage from raw vote counts
+    data['pct'] = (data['votes'] / data['totalvotes'] * 100).round(2)
+
+    # 5. Rename columns to match the rest of the pipeline
+    data = data.rename(columns={
+        'candidate': 'candidate_name',
+        'party_simplified': 'party',
+        'totalvotes': 'sample_size',
+    })
+
+    # 5. Add a poll_id from the row index
+    data = data.reset_index(drop=True)
+    data['poll_id'] = data.index + 1
+
+    # 6. Keep only columns useful for modeling
+    keep_columns = ['poll_id', 'year', 'state', 'state_po', 'candidate_name', 'party', 'votes', 'pct', 'sample_size']
+    data = data[keep_columns]
+
+    # 7. Handle missing values
+    data = data.dropna(subset=['candidate_name', 'pct'])
     data['state'] = data['state'].fillna('Unknown')
     data = data[data['state'] != 'Unknown']
     data = data.fillna(0)
 
-    # 3. Rename columns
-    rename_columns = {
-        'start_date': 'poll_start_date',
-        'end_date': 'poll_end_date'
-    }
-    data.rename(columns=rename_columns, inplace=True)
-
-    # 4. Convert date columns to datetime format
-    date_columns = ['poll_start_date', 'poll_end_date']
-    for col in date_columns:
-        if col in data.columns:
-            data[col] = pd.to_datetime(data[col], format='%Y-%m-%d', errors='coerce')
-
-    # Save the cleaned data
+    # 8. Save cleaned data
     base_dir = os.path.dirname(os.path.abspath(__file__))
     save_dir = os.path.join(base_dir, '../src/data/polling_data')
     os.makedirs(save_dir, exist_ok=True)
     save_path = os.path.join(save_dir, 'cleaned_polls.csv')
-
     data.to_csv(save_path, index=False)
 
     return data
 
-# Main function to call the clean_polling_data function
 if __name__ == "__main__":
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(base_dir, '../src/data/polling_data/raw_polls.csv') #Construct path to raw data file
-    cleaned_data = clean_polling_data(file_path)
-    print("Polling data cleaned and saved to ../ep/Election-Prediction/src/data/polling_data/cleaned_polls.csv")
+    file_path        = os.path.join(base_dir, 'data/polling_data/complete_data.csv')
+    supplement_path  = os.path.join(base_dir, 'data/polling_data/2024president.csv')
+    cleaned_data = clean_polling_data(file_path, supplement_path)
+    print(f"Cleaned data saved to src/data/polling_data/cleaned_polls.csv")
+    print(f"Shape: {cleaned_data.shape}")
     print(cleaned_data.head())
