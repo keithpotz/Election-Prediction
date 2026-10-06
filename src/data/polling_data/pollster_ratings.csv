@@ -1,0 +1,546 @@
+pollster_rating_id,pollster,aliases,n_polls,n_races,first_cycle,last_cycle,mean_abs_error,plus_minus,house_effect,grade_538,pollscore_538
+10,American Viewpoint,American Viewpoint,21,16.0,1998.0,2022.0,4.469,-1.563,-3.531,1.2,0.1
+5,ASA Marketing Group,ASA Marketing Group,3,1.0,2006.0,2006.0,4.587,-1.562,2.178,,
+67,Cygnal,Cygnal,55,36.0,2014.0,2022.0,3.62,-1.561,-1.543,2.1,-1.1
+228,New England College Polling Center,New England College Polling Center,40,9.0,2012.0,2014.0,4.076,-1.561,-0.772,,-0.3
+60,Cooper & Secrest,Cooper & Secrest,8,7.0,2002.0,2008.0,5.172,-1.549,0.737,,0.3
+345,University of Arkansas Department of Political Science,University of Arkansas Department of Political Science,13,13.0,2004.0,2022.0,4.938,-1.545,-1.711,2.5,-0.4
+375,Ward Research,Ward Research,18,15.0,1998.0,2014.0,6.211,-1.389,1.677,2.0,-0.2
+329,"Drake Research & Strategy, Inc.","Drake Research & Strategy, Inc.",12,5.0,1998.0,2002.0,5.169,-1.386,2.156,,0.0
+13,Angus Reid Global,Angus Reid Global,39,21.0,2010.0,2020.0,3.33,-1.272,1.226,2.0,-0.1
+366,University of Wisconsin-Milwaukee Institute for Survey and Policy Research,University of Wisconsin-Milwaukee Institute for Survey and Policy Research,3,3.0,1998.0,2008.0,1.425,-1.206,1.118,,0.0
+44,Capital Survey Research Center,Capital Survey Research Center,7,4.0,2000.0,2008.0,3.082,-1.109,1.334,,0.0
+347,University of Connecticut,University of Connecticut,32,21.0,1998.0,2012.0,5.025,-1.106,0.773,,-0.6
+275,RT Strategies,RT Strategies,74,43.0,2006.0,2006.0,5.738,-1.103,3.032,,-0.3
+754,The Washington Post/George Mason University Schar School of Policy and Government,The Washington Post/George Mason University Schar School of Policy and Government,11,7.0,2016.0,2021.0,2.463,-1.103,1.404,2.7,-0.8
+180,Maine People's Resource Center,Maine People's Resource Center,29,14.0,2010.0,2016.0,4.947,-1.068,-1.16,1.9,-0.4
+56,Cole Hargrave Snodgrass & Associates,Cole Hargrave Snodgrass & Associates,12,10.0,2000.0,2020.0,4.586,-1.065,-1.635,1.5,0.1
+305,Siena College,Siena College,121,61.0,2002.0,2022.0,6.838,-1.051,1.175,2.7,-0.8
+208,Middle Tennessee State University,Middle Tennessee State University,9,9.0,2004.0,2016.0,6.39,-1.045,-0.928,,-0.3
+304,Selzer & Co.,Selzer & Co.,81,49.0,1998.0,2022.0,4.4,-1.034,0.517,2.8,-1.2
+658,Indiana State University Department of Multidisciplinary Studies,Indiana State University Department of Multidisciplinary Studies,2,1.0,2006.0,2006.0,4.0,-1.024,1.137,,0.0
+380,Western New England University Polling Institute,Western New England University Polling Institute,20,11.0,2010.0,2022.0,2.879,-1.01,1.021,2.5,-0.5
+132,Harper Polling,Harper Polling,21,15.0,2013.0,2020.0,3.756,-1.004,-0.68,,-0.3
+546,AtlasIntel,AtlasIntel,16,14.0,2020.0,2022.0,2.206,-0.979,-1.007,2.7,-0.8
+318,Strategic National,Strategic National,6,5.0,2016.0,2020.0,3.337,-0.955,-0.79,1.6,-0.2
+185,Market Research Insight,Market Research Insight,18,4.0,2003.0,2016.0,4.965,-0.949,0.883,,-0.2
+177,MFour Mobile Research,MFour Mobile Research,8,2.0,2012.0,2012.0,3.391,-0.939,1.256,,-0.1
+240,OnPoint,OnPoint,7,6.0,2006.0,2006.0,2.307,-0.93,0.362,,0.0
+355,University of Massachusetts Lowell Center for Public Opinion,University of Massachusetts Lowell Center for Public Opinion,37,24.0,2012.0,2022.0,3.585,-0.903,-0.443,2.9,-1.0
+129,Grove Insight,Grove Insight,56,43.0,2002.0,2012.0,4.32,-0.889,3.869,,-0.2
+524,Odney,Odney,2,1.0,2014.0,2014.0,4.56,-0.882,-0.882,1.5,0.2
+811,The New York Times,The New York Times,8,8.0,2000.0,2010.0,4.427,-0.878,2.221,,-0.4
+280,Research & Polling Inc.,Research & Polling Inc.,63,33.0,1998.0,2022.0,4.852,-0.874,-0.511,2.1,-0.9
+32,Blum & Weprin Associates,Blum & Weprin Associates,27,10.0,1998.0,2010.0,6.551,-0.867,0.152,,-0.1
+219,Muhlenberg College Institute of Public Opinion,Muhlenberg College Institute of Public Opinion,62,22.0,2002.0,2022.0,3.533,-0.828,0.064,2.8,-1.0
+503,JMC Analytics/Bold Blue Campaigns,JMC Analytics/Bold Blue Campaigns,5,5.0,2018.0,2018.0,6.715,-0.825,-0.093,,0.1
+387,Wirthlin Worldwide,Wirthlin Worldwide,9,4.0,1998.0,2002.0,2.772,-0.822,-1.275,,-0.1
+461,1892 Polling,1892 Polling,3,3.0,2018.0,2020.0,1.317,-0.817,-1.136,1.3,0.1
+576,Penta,Penta,3,2.0,2010.0,2012.0,6.421,-0.797,2.219,,0.2
+340,Tulchin Research,Tulchin Research,12,10.0,2010.0,2020.0,4.454,-0.79,2.667,0.9,0.3
+316,Starboard Communications,Starboard Communications,3,3.0,2016.0,2020.0,2.839,-0.781,-0.747,1.7,-0.4
+57,Columbus Dispatch,Columbus Dispatch,29,17.0,1998.0,2016.0,4.11,-0.772,1.212,,-0.1
+179,Magellan Strategies,Magellan Strategies,28,22.0,2000.0,2018.0,4.608,-0.749,-2.286,1.9,-0.1
+184,Market Decisions Research,Market Decisions Research,4,4.0,2000.0,2008.0,4.664,-0.744,0.177,,0.0
+448,The New York Times/Siena College,The New York Times/Siena College,187,123.0,2016.0,2022.0,4.878,-0.74,0.237,3.0,-1.5
+555,RMG Research,RMG Research,48,29.0,2020.0,2022.0,4.959,-0.739,-0.424,2.3,-0.4
+766,Mark Blankenship Enterprises,Mark Blankenship Enterprises,2,2.0,2008.0,2020.0,7.53,-0.713,-0.713,,
+198,MassINC Polling Group,MassINC Polling Group,41,17.0,2010.0,2022.0,4.01,-0.712,0.91,2.8,-0.8
+244,OpinionWorks,OpinionWorks,9,8.0,2010.0,2022.0,4.481,-0.711,0.756,1.8,-0.2
+470,Blueprint Polling,Blueprint Polling,3,3.0,2018.0,2022.0,2.393,-0.708,-0.101,2.4,-0.3
+88,Emerson College,Emerson College,305,189.0,2013.0,2022.0,4.627,-0.7,-1.322,2.9,-1.1
+263,Public Policy Polling,Public Policy Polling,617,281.0,2008.0,2022.0,4.424,-0.698,0.929,1.4,0.0
+457,University of California Berkeley Institute of Governmental Studies,University of California Berkeley Institute of Governmental Studies,13,11.0,2018.0,2022.0,3.873,-0.697,1.956,2.5,-0.2
+197,Mason-Dixon Polling & Strategy,Mason-Dixon Polling & Strategy,604,333.0,1998.0,2022.0,5.151,-0.694,-1.062,2.6,-1.1
+162,Kiley & Company,Kiley & Company,9,5.0,2010.0,2014.0,5.075,-0.675,2.032,,0.5
+325,SurveyUSA,SurveyUSA,1202,436.0,1998.0,2022.0,4.76,-0.671,-0.456,2.8,-1.3
+70,Dan Jones & Associates,Dan Jones & Associates,61,33.0,2000.0,2016.0,5.82,-0.662,-0.337,1.9,-0.4
+274,RRH Elections,RRH Elections,6,6.0,2013.0,2019.0,3.603,-0.657,-0.95,1.9,-0.2
+449,Research Co.,Research Co.,58,56.0,2018.0,2022.0,3.921,-0.654,-0.449,2.4,-0.5
+583,John Zogby Strategies,John Zogby Strategies,5,3.0,2020.0,2022.0,1.713,-0.654,-0.862,1.8,0.0
+195,Marquette University Law School,Marquette University Law School,36,13.0,2012.0,2022.0,3.405,-0.652,-0.079,3.0,-1.1
+3,ABC News/The Washington Post,ABC News/The Washington Post,137,56.0,1998.0,2022.0,3.458,-0.652,0.664,3.0,-1.2
+144,TIPP Insights,TIPP Insights,47,10.0,2000.0,2022.0,2.679,-0.643,-0.889,1.8,-0.4
+333,Tarrance Group,Tarrance Group,57,49.0,1998.0,2022.0,5.619,-0.621,-4.329,1.6,-0.4
+246,Orion Strategies,Orion Strategies,3,3.0,2008.0,2010.0,3.886,-0.615,0.743,1.8,0.0
+572,Leger,Leger,25,10.0,2016.0,2020.0,3.328,-0.609,-0.715,2.0,0.0
+303,Scripps Howard,Scripps Howard,6,5.0,1998.0,2002.0,5.317,-0.603,-0.997,,0.0
+62,Crantford Research,Crantford Research,4,3.0,2010.0,2014.0,3.56,-0.601,1.806,1.8,0.0
+2,A&A Research,A&A Research,3,3.0,2000.0,2002.0,2.562,-0.589,-0.649,,0.0
+73,Data Orbital,Data Orbital,22,8.0,2016.0,2022.0,2.725,-0.586,-0.365,2.9,-0.9
+98,Florida International University/Univision,Florida International University/Univision,1,1.0,2008.0,2008.0,1.802,-0.562,-0.562,,0.0
+425,Ogden & Fry,Ogden & Fry,3,2.0,2014.0,2020.0,3.952,-0.55,-1.797,1.6,0.1
+350,University of Georgia School of Public and International Affairs,University of Georgia School of Public and International Affairs,14,5.0,2018.0,2022.0,1.613,-0.544,-0.707,2.2,-0.2
+93,Feldman Group,Feldman Group,13,9.0,2004.0,2012.0,5.481,-0.537,1.633,,0.2
+76,DHM Research,DHM Research,25,15.0,2000.0,2022.0,3.035,-0.533,-0.093,2.1,-0.2
+321,Strategies 360,Strategies 360,17,17.0,2012.0,2022.0,4.369,-0.526,0.625,1.3,0.1
+257,Praecones Analytica,Praecones Analytica,3,3.0,2016.0,2016.0,1.812,-0.519,-0.874,2.0,0.0
+249,Pan Atlantic Research,Pan Atlantic Research,46,36.0,1998.0,2022.0,6.798,-0.515,0.239,2.1,-0.1
+19,BIGresearch,BIGresearch,1,1.0,2003.0,2003.0,1.89,-0.515,-0.607,,0.0
+234,Northern Arizona University Social Research Laboratory,Northern Arizona University Social Research Laboratory,10,8.0,2000.0,2008.0,4.607,-0.512,-1.117,,0.0
+256,Potomac Incorporated,Potomac Incorporated,13,6.0,1998.0,2006.0,4.653,-0.51,0.01,,0.1
+406,Data Targeting,Data Targeting,5,2.0,2016.0,2020.0,3.722,-0.504,-2.125,1.4,0.0
+104,Opinion Dynamics,Opinion Dynamics,54,24.0,1998.0,2012.0,3.365,-0.502,-1.17,,-0.4
+118,Global Strategy Group,Global Strategy Group,93,75.0,2004.0,2022.0,5.53,-0.501,3.393,1.8,-0.5
+127,Greenberg Quinlan Rosner/American Viewpoint,Greenberg Quinlan Rosner/American Viewpoint,9,6.0,2010.0,2016.0,4.144,-0.497,0.248,,-0.3
+523,East Carolina University Center for Survey Research,East Carolina University Center for Survey Research,18,8.0,2020.0,2022.0,3.597,-0.489,-0.325,2.6,-0.5
+173,Louis Harris & Associates,Louis Harris & Associates,2,1.0,1998.0,1998.0,0.859,-0.481,0.598,,-0.4
+591,Cardinal Point Analytics (CardinalGPS),Cardinal Point Analytics (CardinalGPS),3,3.0,2020.0,2020.0,2.488,-0.481,-1.284,1.6,0.1
+407,Echelon Insights,Echelon Insights,15,12.0,2016.0,2022.0,2.929,-0.475,-0.162,2.7,-0.8
+96,Fleming & Associates,Fleming & Associates,36,25.0,1998.0,2022.0,6.275,-0.472,-0.24,1.9,-0.1
+83,Dynamics Marketing,Dynamics Marketing,1,1.0,2000.0,2000.0,3.019,-0.469,-0.469,,0.0
+155,Alaska Survey Research,Alaska Survey Research,32,19.0,2004.0,2022.0,6.632,-0.466,0.315,1.9,-0.1
+84,EPIC-MRA,EPIC-MRA,90,32.0,1998.0,2022.0,5.305,-0.445,0.864,1.9,-0.7
+51,Ciruli Associates,Ciruli Associates,32,14.0,1998.0,2016.0,4.085,-0.444,-2.012,1.6,0.1
+133,Harris Insights & Analytics,Harris Insights & Analytics,254,125.0,1998.0,2022.0,4.898,-0.44,0.649,1.5,-0.1
+728,BSP Research/Shaw & Company Research,BSP Research/Shaw & Company Research,5,5.0,2022.0,2022.0,1.277,-0.439,0.216,2.0,-0.3
+422,Mercyhurst University Center for Applied Politics,Mercyhurst University Center for Applied Politics,6,6.0,2010.0,2016.0,2.541,-0.434,0.309,,-0.1
+368,Valley Research,Valley Research,14,8.0,1998.0,2004.0,5.095,-0.427,-1.146,,0.0
+812,FTI Consulting,FTI Consulting,64,21.0,2006.0,2012.0,3.641,-0.424,-0.23,,-0.5
+338,Trafalgar Group,Trafalgar Group,147,73.0,2016.0,2022.0,3.927,-0.421,-3.781,0.7,0.6
+123,Gordon S. Black Corp.,Gordon S. Black Corp.,3,2.0,1998.0,1998.0,5.596,-0.417,0.162,,-0.4
+103,Beacon Research/Shaw & Co. Research,Beacon Research/Shaw & Co. Research,118,58.0,2008.0,2022.0,4.158,-0.415,0.129,2.8,-1.1
+364,University of Washington Center for Survey Research,University of Washington Center for Survey Research,13,7.0,2006.0,2012.0,3.49,-0.411,1.421,,0.0
+166,Landmark Communications,Landmark Communications,42,16.0,2010.0,2022.0,3.999,-0.406,-1.284,2.1,-0.6
+517,Ragnar Research Partners,Ragnar Research Partners,2,2.0,2020.0,2020.0,4.802,-0.405,0.004,1.3,0.2
+108,Frederick Polls,Frederick Polls,10,10.0,2010.0,2022.0,5.081,-0.403,0.121,1.6,-0.1
+92,Fairleigh Dickinson University,Fairleigh Dickinson University,51,28.0,2001.0,2021.0,4.349,-0.39,1.034,2.6,-0.6
+306,Singularis Group,Singularis Group,1,1.0,2016.0,2016.0,0.799,-0.388,-0.312,1.4,0.1
+149,Indiana University Public Opinion Laboratory,Indiana University Public Opinion Laboratory,5,5.0,2000.0,2004.0,5.156,-0.384,1.034,,-0.4
+36,CBS News/The New York Times,CBS News/The New York Times,63,32.0,1998.0,2016.0,4.544,-0.38,1.116,,-0.4
+319,Myers Research & Strategic Services,Myers Research & Strategic Services,5,3.0,2000.0,2006.0,4.348,-0.374,1.031,,0.2
+372,Vox Populi Polling,Vox Populi Polling,34,26.0,2014.0,2018.0,4.791,-0.374,-0.079,,-0.4
+26,Becker Institute,Becker Institute,10,10.0,1998.0,2006.0,7.011,-0.371,1.966,,0.0
+117,Glengariff Group,Glengariff Group,30,17.0,2006.0,2022.0,4.952,-0.366,1.549,1.5,-0.2
+170,Lincoln Institute,Lincoln Institute,2,2.0,2000.0,2000.0,4.132,-0.366,0.18,,0.0
+40,CVOTER,CVOTER,16,2.0,2012.0,2016.0,2.451,-0.366,-0.711,1.8,-0.1
+245,Øptimus Analytics,Øptimus Analytics,24,8.0,2014.0,2020.0,5.401,-0.363,-1.068,,-0.2
+270,RAND (American Life Panel),RAND (American Life Panel),11,2.0,2012.0,2016.0,2.263,-0.363,1.395,,0.0
+336,Temple University Institute for Survey Research,Temple University Institute for Survey Research,9,5.0,2004.0,2008.0,4.145,-0.361,0.601,,-0.4
+79,Dittman Research,Dittman Research,12,7.0,2006.0,2022.0,4.688,-0.358,-0.002,1.7,-0.3
+189,Escalent,Escalent,1,1.0,2002.0,2002.0,1.123,-0.356,-0.418,,0.2
+156,JMC Analytics,JMC Analytics,20,13.0,2014.0,2020.0,4.458,-0.349,0.137,1.8,-0.1
+105,Frank N. Magid Associates Inc.,Frank N. Magid Associates Inc.,9,2.0,2002.0,2002.0,6.735,-0.345,-2.184,,0.0
+806,Global Strategy Group/Lester & Associates,Global Strategy Group/Lester & Associates,3,2.0,2014.0,2016.0,5.532,-0.329,1.222,,0.2
+58,Constituent Dynamics/RT Strategies,Constituent Dynamics/RT Strategies,2,1.0,2006.0,2006.0,2.938,-0.323,0.082,,0.0
+491,Research Consultants,Research Consultants,1,1.0,2018.0,2018.0,0.928,-0.312,0.312,,
+227,Neighborhood Research and Media,Neighborhood Research and Media,5,3.0,2009.0,2012.0,8.262,-0.306,-0.336,1.3,0.3
+291,Rivercity Polling,Rivercity Polling,1,1.0,2010.0,2010.0,6.672,-0.304,-0.86,,0.2
+462,Strategic Research Associates,Strategic Research Associates,10,5.0,2018.0,2018.0,3.388,-0.29,-0.547,1.8,-0.1
+464,Mason Strategies,Mason Strategies,1,1.0,2018.0,2018.0,1.89,-0.289,-0.289,1.9,-0.1
+161,Keating Research,Keating Research,9,6.0,2012.0,2022.0,3.358,-0.287,0.855,1.5,0.1
+757,KAConsulting,KAConsulting,10,9.0,2021.0,2022.0,3.557,-0.287,-0.616,1.5,-0.1
+488,NRCC,NRCC,1,1.0,2012.0,2012.0,1.207,-0.287,-0.438,,
+644,The Polling Company Inc./National Research Inc.,The Polling Company Inc./National Research Inc.,2,1.0,2017.0,2017.0,4.5,-0.283,0.8,,0.2
+391,YouGov,YouGov,785,409.0,2004.0,2022.0,4.825,-0.282,0.27,3.0,-1.1
+215,Monmouth University Polling Institute,Monmouth University Polling Institute,169,106.0,2005.0,2022.0,5.336,-0.281,-0.278,2.9,-0.9
+94,Field Research Corp. (Field Poll),Field Research Corp. (Field Poll),34,16.0,1998.0,2014.0,5.594,-0.278,1.069,,-0.2
+250,PSB Research,PSB Research,47,46.0,1998.0,2010.0,6.613,-0.277,2.914,1.6,0.1
+494,Saint Anselm College Survey Center,Saint Anselm College Survey Center,25,16.0,2008.0,2022.0,4.908,-0.274,0.831,2.4,-0.5
+481,Keating Research/Magellan Strategies,Keating Research/Magellan Strategies,3,3.0,2018.0,2022.0,3.528,-0.269,0.223,,
+326,Susquehanna Polling & Research Inc.,Susquehanna Polling & Research Inc.,75,46.0,2006.0,2022.0,4.674,-0.266,-0.674,2.3,-0.3
+409,Expedition Strategies,Expedition Strategies,2,2.0,2018.0,2020.0,5.422,-0.261,0.333,1.2,0.3
+455,Keating Research/OnSight Public Affairs/Melanson,Keating Research/OnSight Public Affairs/Melanson,5,3.0,2018.0,2020.0,1.595,-0.26,0.216,,-0.4
+204,Meeting Street Insights,Meeting Street Insights,5,5.0,2016.0,2020.0,5.25,-0.259,-0.446,1.4,0.2
+810,CBS News,CBS News,38,14.0,1998.0,2018.0,3.321,-0.256,0.912,,-0.6
+323,Suffolk University,Suffolk University,158,124.0,2002.0,2022.0,4.641,-0.256,0.861,2.9,-1.0
+178,MSR Group,MSR Group,3,3.0,2004.0,2004.0,3.468,-0.256,0.306,1.8,0.0
+623,Breakthrough Campaigns,Breakthrough Campaigns,1,1.0,2020.0,2020.0,2.098,-0.25,-0.25,1.5,0.1
+168,"Lauer, Lalley, Victoria","Lauer, Lalley, Victoria",1,1.0,1998.0,1998.0,1.659,-0.25,0.25,,0.2
+394,Zimmerman & Associates/Marketing Intelligence,Zimmerman & Associates/Marketing Intelligence,4,3.0,2006.0,2008.0,3.548,-0.248,-0.053,,0.0
+416,HighGround Inc.,HighGround Inc.,10,8.0,2016.0,2022.0,3.021,-0.246,-0.25,1.8,-0.3
+624,Innovative Research Group,Innovative Research Group,1,1.0,2020.0,2020.0,0.604,-0.239,-0.216,2.1,-0.1
+500,University of Utah Hinckley Institute of Politics,University of Utah Hinckley Institute of Politics,1,1.0,2018.0,2018.0,0.258,-0.238,0.019,,0.0
+418,Just Win Strategies,Just Win Strategies,2,2.0,2016.0,2016.0,9.928,-0.237,-0.245,,
+171,Loras College Public Opinion Survey Center,Loras College Public Opinion Survey Center,22,13.0,2014.0,2016.0,6.316,-0.226,-0.786,,0.1
+63,CJ&N,CJ&N,2,1.0,2010.0,2010.0,2.1,-0.218,-0.218,,0.0
+613,Fabrizio Ward/Hart Research Associates/AARP Research,Fabrizio Ward/Hart Research Associates/AARP Research,2,2.0,2020.0,2020.0,0.927,-0.216,0.11,,
+20,BK Strategies,BK Strategies,4,4.0,2016.0,2020.0,6.489,-0.214,-1.571,1.3,0.3
+681,Communication Express,Communication Express,1,1.0,2014.0,2014.0,1.878,-0.212,-0.441,,
+578,David Binder Research,David Binder Research,5,5.0,2020.0,2022.0,5.076,-0.211,-0.012,1.7,-0.2
+183,Marist College,Marist College,254,141.0,1998.0,2022.0,4.876,-0.21,0.583,2.9,-0.9
+271,RBI Strategies & Research,RBI Strategies & Research,4,4.0,2010.0,2020.0,2.679,-0.208,0.871,1.3,0.2
+697,CWS Research,CWS Research,1,1.0,2022.0,2022.0,0.097,-0.207,-0.193,1.6,0.2
+479,Illinois Public Opinion,Illinois Public Opinion,1,1.0,2016.0,2016.0,1.436,-0.205,0.037,,-0.1
+248,PSI,PSI,2,1.0,2000.0,2000.0,2.5,-0.203,-0.412,,0.0
+238,Old Dominion University,Old Dominion University,3,3.0,2012.0,2013.0,2.901,-0.203,0.601,,0.0
+530,Edgewater Research/My People Vote,Edgewater Research/My People Vote,2,1.0,2019.0,2019.0,1.7,-0.203,-0.028,2.0,-0.1
+617,MWR Strategies,MWR Strategies,2,2.0,2018.0,2018.0,1.786,-0.2,-0.352,,0.0
+264,Public Strategies Inc.,Public Strategies Inc.,1,1.0,2010.0,2010.0,1.327,-0.196,-0.342,,0.0
+388,Wood Communications Group,Wood Communications Group,3,2.0,2010.0,2010.0,1.744,-0.195,0.058,,0.0
+696,NewsNation,NewsNation,2,1.0,2022.0,2022.0,2.527,-0.195,-0.107,1.6,0.0
+102,Forward Strategies,Forward Strategies,2,2.0,2010.0,2010.0,1.303,-0.19,0.344,,0.0
+221,Hart Research Associates/Public Opinion Strategies,Hart Research Associates/Public Opinion Strategies,72,19.0,1998.0,2022.0,3.858,-0.188,0.54,2.6,-0.7
+230,New Mexico State University,New Mexico State University,1,1.0,2000.0,2000.0,0.061,-0.184,-0.062,,0.0
+684,Conquest Communications Group,Conquest Communications Group,2,2.0,2006.0,2013.0,3.266,-0.184,-0.644,,
+279,Remington Research Group,Remington Research Group,71,37.0,2012.0,2022.0,6.126,-0.169,-2.011,2.6,-0.6
+24,Basswood Research,Basswood Research,13,10.0,2004.0,2020.0,10.269,-0.166,-2.987,1.1,0.3
+135,Harvard University,Harvard University,2,1.0,2002.0,2002.0,5.831,-0.166,-0.166,,-0.4
+114,Lake Research Partners/The Tarrance Group,Lake Research Partners/The Tarrance Group,85,15.0,2000.0,2016.0,3.464,-0.164,-1.175,2.5,-0.5
+362,University of Tennessee,University of Tennessee,6,3.0,2002.0,2004.0,3.929,-0.159,-1.066,,0.0
+729,Pioneer Polling/Tarrance Group,Pioneer Polling/Tarrance Group,1,1.0,2022.0,2022.0,1.637,-0.159,-0.112,2.0,-0.1
+662,Adrian Gray Consulting,Adrian Gray Consulting,1,1.0,2014.0,2014.0,3.825,-0.156,-0.156,,0.2
+28,Belden Russonello,Belden Russonello,6,3.0,2004.0,2004.0,3.469,-0.153,-0.068,,-0.4
+412,Garin-Hart-Yang/Global Strategy Group,Garin-Hart-Yang/Global Strategy Group,1,1.0,2012.0,2012.0,0.873,-0.152,0.096,,0.2
+265,Purple Strategies,Purple Strategies,11,8.0,2012.0,2013.0,2.807,-0.152,0.198,,0.2
+349,University of Florida Bob Graham Center for Public Service,University of Florida Bob Graham Center for Public Service,2,1.0,2014.0,2014.0,1.078,-0.145,-0.021,,-0.4
+97,Florida Atlantic University Business and Economics Polling Initiative,Florida Atlantic University Business and Economics Polling Initiative,12,7.0,2016.0,2022.0,5.016,-0.143,-0.045,2.0,0.0
+288,Richmond Times-Dispatch,Richmond Times-Dispatch,6,4.0,2000.0,2004.0,2.648,-0.14,0.722,,0.0
+673,Victory Insights,Victory Insights,2,2.0,2022.0,2022.0,9.558,-0.139,-0.139,1.3,0.1
+213,Mitchell Research & Communications,Mitchell Research & Communications,70,20.0,1998.0,2022.0,5.128,-0.138,-0.842,2.4,-0.2
+666,Tufts University Public Opinion Lab,Tufts University Public Opinion Lab,2,2.0,2020.0,2022.0,3.121,-0.138,-0.073,1.8,0.0
+52,Clarity Campaign Labs,Clarity Campaign Labs,27,23.0,2012.0,2022.0,5.528,-0.134,2.166,1.6,-0.2
+480,In Lux Research,In Lux Research,1,1.0,2018.0,2018.0,4.444,-0.134,0.653,,
+635,AYTM,AYTM,4,4.0,2020.0,2020.0,3.64,-0.132,0.024,,0.0
+749,University of Wisconsin-Milwaukee Center for Urban Initiatives and Research,University of Wisconsin-Milwaukee Center for Urban Initiatives and Research,1,1.0,2002.0,2002.0,1.703,-0.13,-0.3,,0.0
+80,Diversified Research Inc,Diversified Research Inc,1,1.0,2006.0,2006.0,2.387,-0.128,-0.073,,0.2
+651,Reconnect Research/Probolsky Research,Reconnect Research/Probolsky Research,2,2.0,2020.0,2020.0,1.652,-0.128,-0.073,,0.0
+724,Bruno Political Consulting,Bruno Political Consulting,3,3.0,2022.0,2022.0,12.964,-0.121,-0.109,,
+760,Gannett New Jersey,Gannett New Jersey,8,4.0,2000.0,2002.0,5.078,-0.119,0.165,,0.0
+751,Landmark Communications/Rosetta Stone Communications,Landmark Communications/Rosetta Stone Communications,5,2.0,2016.0,2016.0,2.659,-0.119,0.27,,0.0
+411,Florida Southern College Center for Polling and Policy Research,Florida Southern College Center for Polling and Policy Research,2,2.0,2018.0,2018.0,2.536,-0.11,-0.165,,
+30,Benenson Strategy Group,Benenson Strategy Group,39,33.0,2005.0,2022.0,6.137,-0.107,4.323,1.5,0.1
+460,Thirty-Ninth Street Strategies,Thirty-Ninth Street Strategies,1,1.0,2018.0,2018.0,2.03,-0.104,-0.148,1.4,0.1
+471,Civiqs,Civiqs,72,53.0,2018.0,2022.0,5.052,-0.102,1.101,2.4,-0.2
+273,RMS Research,RMS Research,1,1.0,2000.0,2000.0,3.677,-0.097,-0.491,,0.1
+694,Fabrizio Lee & Associates/Impact Research,Fabrizio Lee & Associates/Impact Research,14,14.0,2022.0,2022.0,3.341,-0.097,0.2,1.7,-0.3
+592,DKC Analytics,DKC Analytics,2,1.0,2020.0,2020.0,4.0,-0.094,-0.298,,0.0
+498,University of Illinois Springfield Survey Research Office,University of Illinois Springfield Survey Research Office,2,2.0,2014.0,2014.0,3.284,-0.094,-0.049,2.5,-0.4
+46,Central Surveys Inc.,Central Surveys Inc.,1,1.0,2004.0,2004.0,1.668,-0.094,0.113,,0.0
+486,Montana State University Bozeman Human Ecology Learning and Problem Solving Lab,Montana State University Bozeman Human Ecology Learning and Problem Solving Lab,6,6.0,2018.0,2020.0,7.226,-0.091,-0.177,,
+140,Hill Research Consultants,Hill Research Consultants,7,7.0,1998.0,2012.0,5.163,-0.09,-1.287,0.8,0.7
+45,The Castleton Polling Institute,The Castleton Polling Institute,3,3.0,2016.0,2016.0,6.033,-0.089,0.128,,
+403,Bellwether Research & Consulting,Bellwether Research & Consulting,1,1.0,2008.0,2008.0,3.194,-0.084,-0.144,,
+522,Data for Progress,Data for Progress,141,68.0,2019.0,2022.0,4.922,-0.083,-0.249,2.6,-1.2
+682,Battleground Polling,Battleground Polling,1,1.0,2014.0,2014.0,3.922,-0.078,-0.06,,
+37,Big Village,Big Village,188,99.0,2006.0,2022.0,4.68,-0.078,0.04,1.2,1.7
+277,Rasmussen Reports,Rasmussen Reports,253,103.0,2012.0,2022.0,4.653,-0.077,-1.015,,
+430,Southern Illinois University Paul Simon Public Policy Institute,Southern Illinois University Paul Simon Public Policy Institute,8,8.0,2010.0,2018.0,3.939,-0.076,0.06,2.5,-0.5
+807,"California State University, Sacramento","California State University, Sacramento",1,1.0,2016.0,2016.0,5.891,-0.07,0.518,,0.0
+196,Marshall Marketing,Marshall Marketing,6,3.0,2008.0,2008.0,3.79,-0.069,-0.082,,0.0
+188,Market Solutions Group,Market Solutions Group,4,2.0,2000.0,2004.0,3.297,-0.061,-0.495,,0.0
+361,University of South Alabama Polling Group,University of South Alabama Polling Group,12,9.0,1998.0,2010.0,6.212,-0.057,-1.195,,0.0
+301,Schoen Cooperman Research,Schoen Cooperman Research,4,4.0,2010.0,2022.0,3.865,-0.056,-0.102,1.5,0.0
+465,1st Tuesday Campaigns,1st Tuesday Campaigns,1,1.0,2018.0,2018.0,3.814,-0.052,-0.033,,
+620,Socioanalítica Research,Socioanalítica Research,1,1.0,2020.0,2020.0,3.604,-0.051,-0.028,,
+385,The Winston Group,The Winston Group,29,16.0,2004.0,2022.0,3.938,-0.048,0.333,2.5,-0.5
+38,CPEC,CPEC,1,1.0,2020.0,2020.0,3.735,-0.048,-0.02,,0.1
+469,Bold Blue Campaigns,Bold Blue Campaigns,1,1.0,2018.0,2018.0,3.041,-0.046,-0.026,,
+90,"Fabrizio, Lee & Associates","Fabrizio, Lee & Associates",15,14.0,2008.0,2022.0,4.312,-0.044,-1.701,1.7,-0.1
+514,co/efficient,co/efficient,21,18.0,2019.0,2022.0,5.219,-0.042,-1.987,1.1,0.3
+287,Richard Day Research,Richard Day Research,12,10.0,1998.0,2006.0,7.111,-0.042,-1.016,,0.0
+187,Market Shares Corp.,Market Shares Corp.,52,33.0,1998.0,2012.0,5.771,-0.04,0.406,,0.0
+730,Stetson University Center for Public Opinion Research,Stetson University Center for Public Opinion Research,2,2.0,2022.0,2022.0,10.408,-0.037,-0.037,1.5,0.3
+11,Analytical Group,Analytical Group,1,1.0,2002.0,2002.0,4.036,-0.037,0.106,,0.0
+593,Colby College,Colby College,11,6.0,2020.0,2020.0,8.802,-0.037,0.054,,0.1
+339,Triumph Campaigns,Triumph Campaigns,1,1.0,2015.0,2015.0,4.229,-0.035,-0.332,,0.0
+65,Cromer Group,Cromer Group,1,1.0,2006.0,2006.0,3.927,-0.034,-0.068,,0.2
+47,Centre College,Centre College,1,1.0,2016.0,2016.0,2.719,-0.034,0.051,,0.0
+202,McKeon & Associates,McKeon & Associates,2,2.0,2014.0,2014.0,3.888,-0.032,-0.099,,-0.1
+95,Financial Dynamics,Financial Dynamics,1,1.0,2005.0,2005.0,4.727,-0.031,0.013,,0.0
+181,Manhattanville College,Manhattanville College,4,2.0,1998.0,1998.0,13.513,-0.03,0.03,,0.0
+192,Marketing Research Institute,Marketing Research Institute,1,1.0,2002.0,2002.0,7.401,-0.03,-0.575,,0.2
+310,Southern Media & Opinion Research,Southern Media & Opinion Research,8,7.0,2000.0,2016.0,5.783,-0.025,1.222,,0.0
+115,GfK Group,GfK Group,31,21.0,2008.0,2016.0,4.241,-0.024,0.701,,-0.4
+7,Abt Associates,Abt Associates,22,11.0,2004.0,2017.0,3.749,-0.021,0.157,2.5,-0.4
+351,University of Houston Hobby School of Public Affairs,University of Houston Hobby School of Public Affairs,2,2.0,2014.0,2016.0,5.683,-0.015,0.374,2.2,-0.3
+379,Western Kentucky University Social Science Research Center,Western Kentucky University Social Science Research Center,4,4.0,2014.0,2016.0,9.94,-0.013,-0.166,,0.2
+152,Iona University Political Science Department,Iona University Political Science Department,2,1.0,2010.0,2010.0,5.15,-0.012,0.012,,0.0
+381,Wick Communications,Wick Communications,2,1.0,2006.0,2006.0,4.335,-0.006,0.255,,0.2
+307,SocialSphere,SocialSphere,10,4.0,2014.0,2018.0,3.761,-0.005,-0.416,1.7,0.0
+606,Benenson Strategy Group/GS Strategy Group,Benenson Strategy Group/GS Strategy Group,3,3.0,2018.0,2020.0,4.147,-0.004,0.348,,
+527,BWD Global,BWD Global,1,1.0,2014.0,2014.0,4.354,0.0,-0.389,,0.1
+334,The Tyson Group,The Tyson Group,27,14.0,2004.0,2020.0,3.81,0.001,0.12,1.1,0.1
+42,CallFire,CallFire,5,5.0,2012.0,2012.0,3.35,0.003,-0.115,,0.2
+482,Latino Decisions,Latino Decisions,5,5.0,2018.0,2020.0,4.506,0.004,0.454,,0.0
+109,GBAO,GBAO,47,36.0,2010.0,2022.0,5.641,0.012,2.387,1.2,0.1
+337,The Polling Company Inc.,The Polling Company Inc.,30,25.0,2006.0,2018.0,6.238,0.013,-2.882,,0.1
+661,Seven Letter Insight,Seven Letter Insight,1,1.0,2022.0,2022.0,2.535,0.019,0.112,1.6,0.1
+324,SurveyMonkey,SurveyMonkey,344,148.0,2016.0,2022.0,6.066,0.02,0.898,2.0,0.2
+154,Ipsos,Ipsos,461,130.0,2002.0,2022.0,5.211,0.026,0.372,2.8,-0.9
+360,University of North Florida Public Opinion Research Lab,University of North Florida Public Opinion Research Lab,19,14.0,2004.0,2022.0,4.471,0.026,0.719,2.8,-0.6
+674,University of Georgia Survey Research Center,University of Georgia Survey Research Center,1,1.0,1998.0,1998.0,9.78,0.027,-0.027,,0.0
+87,Elway Research,Elway Research,36,25.0,1998.0,2022.0,4.55,0.028,2.415,1.9,-0.2
+609,"University of Nevada, Las Vegas Lee Business School","University of Nevada, Las Vegas Lee Business School",6,5.0,2020.0,2020.0,3.098,0.032,0.068,,-0.2
+216,Montana State University Billings,Montana State University Billings,28,28.0,2000.0,2022.0,5.32,0.034,1.129,1.5,0.3
+300,Schapiro Group,Schapiro Group,1,1.0,2000.0,2000.0,5.687,0.037,0.172,,0.0
+134,Harstad Strategic Research,Harstad Strategic Research,31,23.0,2002.0,2020.0,5.854,0.04,3.529,1.0,0.6
+145,IMGE Insights,IMGE Insights,3,1.0,2017.0,2017.0,5.917,0.041,-0.203,,0.1
+755,The Washington Post/University of Maryland Center for Democracy and Civic Engagement,The Washington Post/University of Maryland Center for Democracy and Civic Engagement,5,5.0,2014.0,2022.0,6.943,0.044,0.715,2.5,-0.3
+698,Texas Hispanic Policy Foundation,Texas Hispanic Policy Foundation,1,1.0,2022.0,2022.0,3.903,0.046,0.073,,
+804,NSON Opinion Strategy/In Lux Research,NSON Opinion Strategy/In Lux Research,2,2.0,2018.0,2018.0,6.636,0.048,0.119,,
+335,TeleResearch Corporation,TeleResearch Corporation,1,1.0,2002.0,2002.0,5.018,0.049,0.578,,0.0
+255,Polling Company/Global Strategy Group,Polling Company/Global Strategy Group,5,2.0,2000.0,2000.0,3.725,0.049,-0.819,,-0.4
+241,Opinion Consultants,Opinion Consultants,2,2.0,2006.0,2006.0,6.621,0.056,-0.318,,0.0
+458,University of Texas at Tyler Center for Opinion Research,University of Texas at Tyler Center for Opinion Research,6,5.0,2018.0,2022.0,4.193,0.057,0.09,1.8,0.1
+66,CrossTarget,CrossTarget,2,1.0,2010.0,2010.0,7.736,0.065,-1.506,,0.1
+492,The Right Strategy Group,The Right Strategy Group,1,1.0,2018.0,2018.0,8.605,0.07,0.07,,
+714,San Jose State,San Jose State,2,2.0,2004.0,2006.0,3.962,0.077,-0.179,,
+99,The Florida Poll,The Florida Poll,5,5.0,2000.0,2010.0,4.614,0.079,0.046,,0.0
+582,Denno Research,Denno Research,3,3.0,2012.0,2014.0,4.383,0.082,-0.303,1.8,0.0
+218,Morning Consult,Morning Consult,165,33.0,2016.0,2022.0,4.516,0.085,0.397,1.9,-0.3
+588,Auburn University at Montgomery Department of Political Science and Public Administration,Auburn University at Montgomery Department of Political Science and Public Administration,4,2.0,2020.0,2020.0,7.51,0.093,0.111,1.5,0.2
+182,MarblePort,MarblePort,1,1.0,2015.0,2015.0,6.229,0.098,-0.465,,0.1
+734,Alloy Analytics,Alloy Analytics,1,1.0,2022.0,2022.0,4.669,0.101,-0.114,1.6,0.1
+212,Missouri State University Center for Social Science and Public Policy Research,Missouri State University Center for Social Science and Public Policy Research,2,2.0,2010.0,2010.0,6.358,0.101,0.101,,0.0
+438,icitizen,icitizen,2,2.0,2016.0,2016.0,9.412,0.104,0.184,,0.1
+378,West Virginia Research Center,West Virginia Research Center,3,2.0,2000.0,2000.0,4.854,0.107,-0.278,,0.0
+160,KRC Research,KRC Research,17,11.0,1998.0,2006.0,7.472,0.108,1.063,,-0.3
+1,20/20 Insight,20/20 Insight,5,5.0,2012.0,2018.0,3.498,0.114,0.887,1.1,0.4
+655,The McDonald Group,The McDonald Group,3,3.0,2008.0,2008.0,5.883,0.117,0.5,,
+139,High Point University Survey Research Center,High Point University Survey Research Center,14,7.0,2010.0,2016.0,4.196,0.118,0.558,2.5,-0.4
+354,University of Massachusetts Department of Political Science,University of Massachusetts Department of Political Science,4,4.0,1998.0,2000.0,4.738,0.119,0.259,,0.0
+328,TMR Research,TMR Research,1,1.0,1998.0,1998.0,5.591,0.122,0.51,,0.0
+647,Public Policy Polling/Harper Polling,Public Policy Polling/Harper Polling,1,1.0,2013.0,2013.0,6.482,0.122,0.145,,0.0
+665,Sky Research,Sky Research,1,1.0,2017.0,2017.0,8.726,0.126,-0.269,,0.1
+225,National Research,National Research,40,32.0,2008.0,2021.0,5.209,0.126,-2.381,2.0,-0.5
+190,Market Trends Pacific,Market Trends Pacific,1,1.0,2002.0,2002.0,4.544,0.127,0.271,,0.0
+119,Global Strategy Group/National Research (Philadelphia Inquirer),Global Strategy Group/National Research (Philadelphia Inquirer),11,4.0,2012.0,2012.0,4.134,0.13,0.157,,0.0
+721,ActiVote,ActiVote,8,8.0,2022.0,2022.0,5.34,0.131,0.281,,
+731,Ohio Northern University Institute for Civics and Public Policy,Ohio Northern University Institute for Civics and Public Policy,2,2.0,2022.0,2022.0,6.986,0.131,-0.488,1.5,0.2
+21,Bannon Communications Research,Bannon Communications Research,4,2.0,2002.0,2004.0,10.952,0.141,3.364,,0.3
+293,Lester & Associates,Lester & Associates,2,2.0,2010.0,2012.0,6.289,0.142,0.677,1.3,0.4
+267,Quinnipiac University,Quinnipiac University,409,148.0,1998.0,2022.0,5.281,0.144,0.154,2.8,-0.5
+584,Whitman Insight Strategies,Whitman Insight Strategies,2,2.0,2020.0,2020.0,5.72,0.15,0.197,1.6,0.0
+138,Hendrix College,Hendrix College,23,17.0,2010.0,2022.0,8.247,0.152,0.534,0.9,0.6
+232,"Normington, Petts & Associates","Normington, Petts & Associates",46,44.0,2002.0,2020.0,7.459,0.156,3.652,0.7,0.6
+50,Christopher Newport University Wason Center for Civic Leadership,Christopher Newport University Wason Center for Civic Leadership,31,15.0,2008.0,2021.0,5.195,0.158,0.531,2.8,-0.6
+121,Gonzales Research & Marketing Strategies Inc.,Gonzales Research & Marketing Strategies Inc.,17,15.0,2000.0,2020.0,5.736,0.16,-1.43,1.2,0.4
+459,Pacific Market Research,Pacific Market Research,2,2.0,2018.0,2018.0,7.477,0.161,-0.271,1.5,0.1
+776,Scott Rasmussen (Rasmussen Reports),Scott Rasmussen (Rasmussen Reports),1099,368.0,2000.0,2012.0,4.985,0.164,-1.405,,-0.3
+587,Reconnect Research/Roanoke College Institute for Policy and Opinion Research,Reconnect Research/Roanoke College Institute for Policy and Opinion Research,2,2.0,2020.0,2020.0,4.901,0.168,0.318,,-0.4
+77,Decision Forecasting,Decision Forecasting,3,3.0,2000.0,2000.0,8.094,0.175,-0.017,,0.0
+359,University of North Carolina School of Journalism and Mass Communication,University of North Carolina School of Journalism and Mass Communication,1,1.0,2004.0,2004.0,12.105,0.175,0.175,,0.0
+302,SEA Polling & Strategic Design,SEA Polling & Strategic Design,16,13.0,2000.0,2022.0,4.65,0.178,0.695,1.6,0.0
+125,Great Lakes Strategies Group,Great Lakes Strategies Group,1,1.0,2010.0,2010.0,7.535,0.18,-0.334,,0.3
+358,University of New Orleans Survey Research Center,University of New Orleans Survey Research Center,10,9.0,2000.0,2020.0,5.916,0.18,0.017,2.0,0.0
+222,GQR Research/Public Opinion Strategies,GQR Research/Public Opinion Strategies,1,1.0,2002.0,2002.0,8.709,0.186,0.197,,-0.4
+243,InsiderAdvantage,InsiderAdvantage,163,63.0,2004.0,2022.0,4.56,0.191,-0.722,2.0,-0.3
+86,Elon University,Elon University,18,9.0,2008.0,2016.0,4.677,0.193,-0.043,2.5,-0.6
+748,GreatBlue Research,GreatBlue Research,5,3.0,2008.0,2020.0,4.924,0.195,-0.938,2.0,-0.1
+664,The Kitchens Group,The Kitchens Group,4,3.0,2008.0,2012.0,8.204,0.196,1.36,1.4,0.3
+631,Cometrends,Cometrends,1,1.0,2020.0,2020.0,7.604,0.2,0.223,,0.1
+632,Bluegrass Community and Technical College,Bluegrass Community and Technical College,2,2.0,2020.0,2020.0,10.934,0.203,0.203,,0.2
+272,RKM Research and Communications Inc.,RKM Research and Communications Inc.,33,20.0,1998.0,2016.0,6.763,0.203,-0.082,,-0.1
+148,Independent Market Research,Independent Market Research,2,2.0,1998.0,1998.0,5.758,0.209,0.542,,0.0
+376,We Ask America,We Ask America,77,45.0,2010.0,2020.0,5.027,0.211,-1.339,,-0.2
+259,Probolsky Research,Probolsky Research,1,1.0,2018.0,2018.0,13.397,0.215,-0.215,1.3,0.3
+314,St. Pete Polls,St. Pete Polls,42,18.0,2012.0,2022.0,5.377,0.216,-2.437,2.4,-0.3
+706,Sachs Media,Sachs Media,3,2.0,2022.0,2022.0,12.073,0.218,0.218,1.5,0.1
+29,Bendixen & Amandi International,Bendixen & Amandi International,6,4.0,2006.0,2020.0,3.778,0.218,0.91,1.0,0.4
+508,Spry Strategies,Spry Strategies,3,2.0,2019.0,2020.0,5.176,0.218,-1.328,1.5,0.2
+176,Lycoming College Polling Institute,Lycoming College Polling Institute,6,3.0,2006.0,2010.0,6.822,0.219,0.418,,0.0
+703,Nelson Research,Nelson Research,2,1.0,2022.0,2022.0,5.817,0.221,-0.363,1.4,0.2
+516,Univision/Latino Decisions/North Star Opinion Research,Univision/Latino Decisions/North Star Opinion Research,6,6.0,2020.0,2020.0,5.292,0.221,0.34,,0.1
+686,Bold Decision,Bold Decision,1,1.0,2022.0,2022.0,7.732,0.229,0.449,1.3,0.3
+695,NRSC,NRSC,1,1.0,2017.0,2017.0,10.374,0.232,0.959,1.2,0.2
+667,University of Wyoming Survey & Analysis Center,University of Wyoming Survey & Analysis Center,3,3.0,2016.0,2020.0,13.245,0.233,0.233,0.6,1.2
+262,Public Policy Institute of California,Public Policy Institute of California,35,18.0,1998.0,2022.0,6.113,0.236,-0.66,2.5,-0.4
+663,Detroit Free Press,Detroit Free Press,2,2.0,2002.0,2004.0,7.2,0.237,-0.278,,0.0
+506,Climate Nexus,Climate Nexus,3,3.0,2020.0,2020.0,5.825,0.245,0.292,,
+640,Gazette Communications,Gazette Communications,2,2.0,2002.0,2002.0,8.064,0.256,0.6,,0.0
+48,Change Research,Change Research,136,83.0,2017.0,2022.0,5.602,0.258,0.565,1.4,0.6
+628,Public First,Public First,1,1.0,2020.0,2020.0,8.604,0.263,0.286,1.7,0.1
+352,University of Illinois at Chicago,University of Illinois at Chicago,1,1.0,1998.0,1998.0,14.097,0.263,-0.313,,0.0
+393,Zia Poll,Zia Poll,6,2.0,2016.0,2020.0,4.37,0.265,-1.193,0.9,0.4
+186,Market Research Institute Inc.,Market Research Institute Inc.,9,9.0,1998.0,2004.0,5.878,0.268,0.455,,0.0
+298,Uplift Campaigns,Uplift Campaigns,2,1.0,2016.0,2016.0,5.046,0.272,0.458,1.6,0.2
+141,Hoffman Research Group,Hoffman Research Group,6,5.0,2008.0,2022.0,4.979,0.273,0.002,1.7,0.1
+147,Illinois Wesleyan University Department of Political Science,Illinois Wesleyan University Department of Political Science,3,3.0,1998.0,2002.0,8.178,0.274,-1.262,,0.1
+164,Knowledge Networks,Knowledge Networks,8,4.0,2003.0,2008.0,6.71,0.279,0.26,,-0.4
+456,East Tennessee State University Applied Social Research Laboratory,East Tennessee State University Applied Social Research Laboratory,2,2.0,2018.0,2018.0,9.897,0.292,0.361,,0.2
+233,North Star Opinion Research,North Star Opinion Research,18,16.0,1998.0,2016.0,4.976,0.293,-2.419,1.1,0.3
+296,SMS Research & Marketing Services,SMS Research & Marketing Services,1,1.0,2004.0,2004.0,9.745,0.297,-0.375,,0.0
+630,The Justice Collaborative Institute,The Justice Collaborative Institute,2,2.0,2020.0,2020.0,6.671,0.299,0.37,1.3,0.2
+53,Clarus Research Group,Clarus Research Group,6,4.0,2009.0,2015.0,6.027,0.299,-0.086,,0.0
+556,Amber Integrated,Amber Integrated,16,10.0,2020.0,2022.0,11.004,0.3,0.091,1.5,0.3
+253,Pew Research Center,Pew Research Center,52,18.0,1998.0,2022.0,4.329,0.304,0.534,2.5,-0.4
+390,Yankelovich Partners Inc.,Yankelovich Partners Inc.,9,3.0,1998.0,2000.0,4.523,0.304,-0.693,,-0.4
+365,University of Wisconsin Survey Center,University of Wisconsin Survey Center,11,7.0,2000.0,2008.0,7.178,0.304,1.761,,-0.3
+220,Multi-Quest International,Multi-Quest International,4,4.0,2000.0,2015.0,6.532,0.308,0.442,1.5,0.2
+451,Slingshot Strategies,Slingshot Strategies,3,2.0,2018.0,2022.0,3.613,0.31,0.358,1.4,0.1
+545,Beacon Research,Beacon Research,1,1.0,2022.0,2022.0,7.903,0.312,0.338,0.9,0.4
+107,Franklin Pierce University Marlin Fitzwater Center for Communication,Franklin Pierce University Marlin Fitzwater Center for Communication,17,9.0,2000.0,2004.0,6.279,0.312,2.036,,0.0
+450,Carroll Strategies,Carroll Strategies,5,5.0,2018.0,2018.0,9.879,0.312,-0.405,,0.4
+113,Garin-Hart-Yang Research Group,Garin-Hart-Yang Research Group,93,80.0,1998.0,2022.0,5.747,0.316,3.349,1.0,0.2
+124,Gravis Marketing,Gravis Marketing,215,123.0,2012.0,2020.0,5.115,0.316,-0.645,2.0,-0.9
+423,"Meredith College Department of History, Political Science, and International Studies","Meredith College Department of History, Political Science, and International Studies",11,7.0,2016.0,2022.0,5.381,0.321,0.435,1.6,0.3
+290,Riley Research Associates,Riley Research Associates,16,11.0,2000.0,2018.0,3.788,0.323,-0.388,2.0,-0.1
+499,University of Montana Social Science Research Laboratory,University of Montana Social Science Research Laboratory,2,2.0,2018.0,2018.0,5.841,0.324,0.669,,0.1
+397,AP-NORC,AP-NORC,4,3.0,2018.0,2022.0,5.532,0.329,0.581,2.0,0.2
+85,Ed Renwick/Loyola University New Orleans,Ed Renwick/Loyola University New Orleans,4,4.0,2003.0,2008.0,8.162,0.329,1.121,,0.1
+433,University of Delaware Center for Political Communication,University of Delaware Center for Political Communication,8,8.0,2000.0,2020.0,6.435,0.33,1.756,,
+513,Harper Polling/Clarity Campaign Labs,Harper Polling/Clarity Campaign Labs,1,1.0,2019.0,2019.0,6.988,0.333,0.333,,0.1
+437,Victory Research,Victory Research,16,13.0,2000.0,2022.0,5.346,0.335,-0.308,1.8,-0.3
+580,University of Colorado American Politics Research Lab,University of Colorado American Politics Research Lab,2,2.0,2016.0,2016.0,6.715,0.336,0.712,,0.2
+191,MarketAide Services Inc.,MarketAide Services Inc.,1,1.0,2002.0,2002.0,11.219,0.339,0.361,,0.0
+680,Causeway Solutions,Causeway Solutions,1,1.0,2018.0,2018.0,8.401,0.342,-0.417,,
+111,GaPundit.com,GaPundit.com,2,2.0,2014.0,2014.0,8.256,0.342,0.353,,0.1
+649,Southern Research Group,Southern Research Group,1,1.0,2003.0,2003.0,7.777,0.344,0.344,,0.0
+207,MRG Research,MRG Research,30,19.0,2010.0,2020.0,7.764,0.344,-3.536,1.1,0.6
+733,African American Research Collaborative,African American Research Collaborative,3,3.0,2022.0,2022.0,10.484,0.344,0.385,0.8,0.8
+386,Winthrop University Center for Public Opinion & Policy Research,Winthrop University Center for Public Opinion & Policy Research,10,10.0,2008.0,2016.0,5.227,0.345,-0.433,2.5,-0.3
+276,Rainmaker Media Group,Rainmaker Media Group,1,1.0,2008.0,2008.0,12.121,0.35,0.35,,0.1
+126,GQR,GQR,167,93.0,1998.0,2022.0,4.999,0.354,2.653,2.0,0.1
+41,"California State University, Bakersfield","California State University, Bakersfield",1,1.0,2000.0,2000.0,9.853,0.357,-0.875,,0.0
+236,Ohio State University,Ohio State University,3,3.0,2000.0,2000.0,6.428,0.357,0.493,,-0.4
+612,LOC Wick,LOC Wick,1,1.0,2020.0,2020.0,14.934,0.359,0.359,,
+629,Open Model Project,Open Model Project,2,2.0,2020.0,2020.0,5.652,0.36,-0.56,,0.2
+737,Tomahawk Strategies,Tomahawk Strategies,1,1.0,2022.0,2022.0,17.064,0.363,0.376,0.9,0.5
+61,Craciun Research Group,Craciun Research Group,5,5.0,2002.0,2016.0,9.17,0.367,0.738,,0.3
+490,Patinkin Research Strategies,Patinkin Research Strategies,11,6.0,2020.0,2022.0,5.137,0.369,0.751,1.3,0.5
+720,Osage Research,Osage Research,2,1.0,2022.0,2022.0,8.038,0.37,-1.147,1.0,0.6
+120,Glover Park Group,Glover Park Group,1,1.0,2012.0,2012.0,11.363,0.371,-0.453,,0.1
+392,Zata3,Zata3,1,1.0,2010.0,2010.0,6.227,0.375,0.375,,0.2
+369,Victoria Research & Consulting,Victoria Research & Consulting,7,7.0,2004.0,2022.0,7.249,0.379,2.143,1.5,0.2
+483,Lighthouse Research,Lighthouse Research,2,2.0,2020.0,2020.0,7.136,0.38,0.065,,
+217,Moore Information Group,Moore Information Group,45,36.0,1998.0,2022.0,6.46,0.386,-3.286,0.6,0.7
+14,Impact Research,Impact Research,84,65.0,2004.0,2022.0,6.376,0.387,3.652,1.5,-0.2
+814,"Fabrizio, Lee & Associates/McLaughlin & Associates","Fabrizio, Lee & Associates/McLaughlin & Associates",4,4.0,1998.0,2012.0,7.651,0.39,-1.017,,0.3
+463,Michigan State University Institute for Public Policy and Social Research,Michigan State University Institute for Public Policy and Social Research,3,3.0,2016.0,2018.0,7.095,0.394,0.432,2.5,-0.6
+525,Victory Enterprises,Victory Enterprises,1,1.0,2017.0,2017.0,13.903,0.396,-0.396,1.6,0.1
+112,Gallup,Gallup,156,47.0,1998.0,2018.0,4.334,0.399,-0.983,2.5,-0.4
+27,Behavior Research Center (Rocky Mountain Poll),Behavior Research Center (Rocky Mountain Poll),16,11.0,1998.0,2012.0,5.15,0.402,1.723,,0.1
+68,DCCC Targeting and Analytics Department,DCCC Targeting and Analytics Department,32,32.0,2012.0,2022.0,6.65,0.405,3.243,1.1,0.1
+6,Abacus Associates,Abacus Associates,4,3.0,2006.0,2010.0,8.27,0.417,-0.055,,0.2
+610,Brandwatch Qriously,Brandwatch Qriously,9,1.0,2020.0,2020.0,5.489,0.42,0.517,,0.4
+75,Datamar Analytics,Datamar Analytics,8,3.0,2006.0,2008.0,4.997,0.425,-1.468,,0.0
+619,J.L. Partners,J.L. Partners,3,1.0,2020.0,2020.0,6.937,0.427,0.487,1.6,0.2
+311,Southern Opinion Research,Southern Opinion Research,4,1.0,1998.0,1998.0,7.811,0.434,0.526,,0.0
+309,Southeastern Louisiana University Social Science Research Center,Southeastern Louisiana University Social Science Research Center,6,6.0,2000.0,2008.0,8.043,0.436,0.176,,0.2
+284,Wick,Wick,26,21.0,2018.0,2022.0,4.594,0.439,-2.046,1.4,0.1
+23,Baselice & Associates,Baselice & Associates,2,2.0,1998.0,2003.0,10.26,0.443,-0.064,1.4,0.3
+235,Noble Predictive Insights,Noble Predictive Insights,22,11.0,2016.0,2022.0,4.312,0.444,-0.485,2.4,-0.4
+106,Franklin & Marshall College Center for Opinion Research,Franklin & Marshall College Center for Opinion Research,53,32.0,2004.0,2022.0,5.445,0.446,0.656,2.4,-0.1
+17,Aspen Media & Market Research,Aspen Media & Market Research,3,3.0,2006.0,2006.0,7.455,0.446,0.778,,0.0
+81,Dixie Strategies,Dixie Strategies,10,7.0,2016.0,2018.0,5.49,0.446,-0.734,,0.5
+260,Public Opinion Strategies,Public Opinion Strategies,194,149.0,1998.0,2022.0,6.241,0.449,-4.454,1.6,0.3
+330,Target Insyght,Target Insyght,11,9.0,2014.0,2022.0,5.481,0.455,0.477,1.0,0.3
+648,University of Southern California Schwarzenegger Institute for State and Global Policy,University of Southern California Schwarzenegger Institute for State and Global Policy,3,3.0,2020.0,2022.0,5.783,0.458,0.964,1.5,0.4
+370,Virginia Commonwealth University L. Douglas Wilder School of Government and Public Affairs,Virginia Commonwealth University L. Douglas Wilder School of Government and Public Affairs,9,8.0,2000.0,2021.0,5.231,0.464,0.157,2.1,-0.1
+346,University of Cincinnati (Ohio Poll),University of Cincinnati (Ohio Poll),52,14.0,1998.0,2012.0,4.923,0.471,-2.805,,0.2
+414,Goucher College Sarah T. Hughes Center for Politics,Goucher College Sarah T. Hughes Center for Politics,6,6.0,2016.0,2022.0,6.433,0.473,0.053,,
+382,Wiese Research Associates,Wiese Research Associates,6,3.0,2012.0,2012.0,7.045,0.48,0.578,,0.1
+174,Louisville Courier-Journal,Louisville Courier-Journal,15,9.0,1998.0,2007.0,5.673,0.483,-0.075,,0.0
+357,University of New Hampshire Survey Center,University of New Hampshire Survey Center,194,72.0,2000.0,2022.0,6.24,0.486,1.373,2.6,-0.3
+292,Roanoke College Institute for Policy and Opinion Research,Roanoke College Institute for Policy and Opinion Research,29,18.0,2000.0,2021.0,5.273,0.487,1.141,2.6,-0.4
+137,Hellenthal & Associates,Hellenthal & Associates,5,4.0,2006.0,2014.0,7.002,0.489,0.34,,0.2
+33,Braun Research,Braun Research,12,10.0,2010.0,2020.0,7.686,0.489,0.888,2.3,-0.3
+78,Diamond State Consulting Group,Diamond State Consulting Group,2,2.0,2010.0,2014.0,9.078,0.491,-1.2,,0.2
+344,University of Alabama at Birmingham,University of Alabama at Birmingham,6,3.0,1998.0,2002.0,7.573,0.491,-1.831,,0.1
+353,University of Iowa Hawkeye Poll Cooperative,University of Iowa Hawkeye Poll Cooperative,2,2.0,2012.0,2018.0,8.367,0.501,0.132,,0.2
+142,Howey Politics/DePauw University,Howey Politics/DePauw University,9,6.0,2008.0,2012.0,6.635,0.518,0.433,,0.0
+59,Consumer Logic,Consumer Logic,4,4.0,2000.0,2004.0,9.264,0.518,0.398,,0.0
+687,Lake Research Partners/Ivan Moore,Lake Research Partners/Ivan Moore,1,1.0,2002.0,2002.0,18.147,0.54,0.594,,
+297,SSRS,SSRS,71,40.0,1998.0,2022.0,5.102,0.554,1.874,2.4,-0.2
+383,WPA Intelligence,WPA Intelligence,45,27.0,2002.0,2022.0,7.008,0.559,-2.763,1.7,-0.1
+678,ARW Strategies,ARW Strategies,1,1.0,2022.0,2022.0,18.746,0.562,0.562,,
+15,Arizona State University Morrison Institute for Public Policy,Arizona State University Morrison Institute for Public Policy,15,9.0,1998.0,2016.0,5.888,0.571,1.957,1.7,0.1
+377,West Chester University,West Chester University,16,13.0,2000.0,2008.0,6.469,0.583,0.869,,0.1
+564,brilliant corners Research & Strategies,brilliant corners Research & Strategies,5,4.0,2008.0,2020.0,11.31,0.595,1.374,1.0,0.4
+268,Repass,Repass,9,9.0,2011.0,2022.0,8.598,0.595,1.332,0.7,1.7
+432,University of Akron Ray C. Bliss Institute of Applied Politics,University of Akron Ray C. Bliss Institute of Applied Politics,5,5.0,2006.0,2018.0,8.486,0.597,-0.755,,
+476,Fallon Research & Communications,Fallon Research & Communications,2,2.0,2022.0,2022.0,10.821,0.598,0.7,,
+172,Los Angeles Times,Los Angeles Times,38,29.0,1998.0,2008.0,5.537,0.602,0.978,,-0.4
+317,Stockton University William J. Hughes Center for Public Policy,Stockton University William J. Hughes Center for Public Policy,26,16.0,2012.0,2021.0,5.529,0.608,0.718,2.6,-0.5
+396,ccAdvertising,ccAdvertising,78,77.0,2010.0,2014.0,7.11,0.609,-5.769,,0.4
+585,Kiaer Research,Kiaer Research,2,2.0,2020.0,2020.0,10.616,0.637,0.712,1.4,0.5
+657,Mercury Public Affairs,Mercury Public Affairs,2,1.0,2006.0,2006.0,10.104,0.638,-1.39,,0.2
+163,Kimball Political Consulting,Kimball Political Consulting,10,5.0,2012.0,2012.0,6.476,0.64,-1.129,,0.1
+704,University of Nevada Department of Political Science,University of Nevada Department of Political Science,2,2.0,2022.0,2022.0,7.867,0.641,1.066,1.4,0.5
+709,Premise,Premise,2,1.0,2022.0,2022.0,9.637,0.653,0.741,1.9,0.1
+475,The Eppstein Group,The Eppstein Group,1,1.0,2018.0,2018.0,15.701,0.653,-0.761,,
+237,Ohio University,Ohio University,5,4.0,2000.0,2008.0,6.01,0.664,1.675,,0.1
+739,Edison Research,Edison Research,2,2.0,2016.0,2020.0,9.461,0.665,0.767,,
+543,Swayable,Swayable,68,43.0,2020.0,2020.0,5.802,0.669,0.746,,0.0
+315,Minneapolis Star Tribune,Minneapolis Star Tribune,28,9.0,1998.0,2006.0,6.368,0.679,2.478,,0.1
+646,WT&S Consulting,WT&S Consulting,3,1.0,2017.0,2017.0,10.592,0.695,-1.099,,0.2
+725,South Dakota State University School of American and Global Studies,South Dakota State University School of American and Global Studies,2,2.0,2022.0,2022.0,20.645,0.7,0.7,,
+100,Forman Center,Forman Center,3,2.0,1998.0,1998.0,9.488,0.702,1.603,,0.0
+89,Ethridge & Associates LLC,Ethridge & Associates LLC,9,7.0,2000.0,2002.0,6.048,0.703,-0.9,,0.0
+402,Ball State University Bowen Center for Public Affairs,Ball State University Bowen Center for Public Affairs,3,3.0,2016.0,2016.0,13.272,0.712,0.733,1.6,0.3
+389,Y2 Analytics,Y2 Analytics,13,10.0,2014.0,2020.0,7.655,0.714,-1.029,1.1,0.2
+401,Baldwin Wallace University Community Research Institute,Baldwin Wallace University Community Research Institute,22,11.0,2016.0,2022.0,6.841,0.716,0.881,2.1,0.0
+478,GS Strategy Group,GS Strategy Group,6,6.0,2012.0,2018.0,8.094,0.717,-1.363,1.3,0.3
+322,Strategy Research,Strategy Research,6,2.0,2016.0,2017.0,9.475,0.724,-1.139,,0.2
+621,Global Marketing Research Services,Global Marketing Research Services,2,1.0,2020.0,2020.0,10.534,0.726,0.769,1.7,0.2
+419,KFF,KFF,14,14.0,2016.0,2022.0,5.89,0.727,0.627,2.5,-0.3
+332,TargetSmart,TargetSmart,9,7.0,2016.0,2020.0,7.297,0.729,1.143,2.0,0.0
+477,Go Right Strategies,Go Right Strategies,2,1.0,2018.0,2018.0,12.743,0.733,-0.733,,0.4
+167,Lauer Johnson Research,Lauer Johnson Research,2,2.0,2004.0,2006.0,10.306,0.736,1.324,,0.3
+474,DeSales University Kamran Afshar Data Analytics Center,DeSales University Kamran Afshar Data Analytics Center,3,2.0,2018.0,2020.0,9.872,0.743,1.133,,0.3
+467,Axis Research,Axis Research,2,2.0,2017.0,2018.0,11.089,0.751,-1.132,,
+131,Hampton University Center for Public Policy,Hampton University Center for Public Policy,6,3.0,2013.0,2017.0,6.534,0.758,-1.162,1.4,0.4
+74,Data West Polling,Data West Polling,2,2.0,2002.0,2002.0,13.096,0.764,0.959,,0.0
+239,OnMessage Inc.,OnMessage Inc.,37,32.0,2002.0,2022.0,6.762,0.769,-3.885,1.1,0.2
+158,Jeffrey Stonecash,Jeffrey Stonecash,1,1.0,2006.0,2006.0,17.143,0.782,-1.0,,0.3
+395,Zogby Analytics,Zogby Analytics,621,185.0,1998.0,2020.0,5.475,0.792,-0.255,1.2,0.7
+258,Princeton Survey Research Associates International,Princeton Survey Research Associates International,76,26.0,1998.0,2017.0,5.349,0.798,0.978,,-0.4
+622,Strategies Unlimited,Strategies Unlimited,1,1.0,2020.0,2020.0,27.938,0.8,0.8,,
+343,University of Southern California Dornsife Center for Economic and Social Research,University of Southern California Dornsife Center for Economic and Social Research,22,5.0,2016.0,2020.0,5.197,0.806,-0.384,2.4,-0.2
+331,TargetPoint,TargetPoint,5,5.0,2018.0,2018.0,7.751,0.809,-1.101,1.3,0.0
+101,Fort Hays State University Docking Institute of Public Affairs,Fort Hays State University Docking Institute of Public Affairs,6,5.0,2014.0,2020.0,9.563,0.815,-2.356,0.9,1.0
+373,WCIA-TV,WCIA-TV,2,2.0,1998.0,1998.0,18.264,0.822,-0.882,,0.0
+452,Thomas Partners Strategies,Thomas Partners Strategies,2,1.0,2018.0,2018.0,15.554,0.827,-0.827,1.0,0.3
+165,Lake Research Partners,Lake Research Partners,35,32.0,2002.0,2022.0,7.22,0.83,3.972,1.2,0.1
+286,Rice University,Rice University,4,2.0,2002.0,2002.0,11.161,0.832,1.138,,0.0
+501,VCreek/AMG,VCreek/AMG,5,3.0,2018.0,2020.0,12.12,0.846,-0.278,1.1,0.3
+64,Digital Research,Digital Research,56,35.0,2000.0,2020.0,7.702,0.853,-0.039,1.4,0.2
+405,Clearview Research,Clearview Research,2,2.0,2020.0,2020.0,13.585,0.857,0.885,0.8,0.6
+413,Global Strategy Group/GBAO (Navigator Research),Global Strategy Group/GBAO (Navigator Research),11,3.0,2020.0,2022.0,6.292,0.865,1.069,1.3,0.3
+454,Targoz Market Research,Targoz Market Research,29,27.0,2018.0,2022.0,5.866,0.874,0.056,1.8,0.1
+226,Neighbor,Neighbor,1,1.0,1998.0,1998.0,17.095,0.875,-0.875,,0.0
+175,Lucid,Lucid,46,27.0,2016.0,2018.0,5.246,0.877,1.885,,0.2
+415,Hickman Analytics,Hickman Analytics,7,6.0,2012.0,2019.0,8.069,0.879,0.88,1.0,0.5
+294,Rossman Group,Rossman Group,5,5.0,2008.0,2010.0,8.805,0.896,-1.474,,0.1
+9,American Research Group,American Research Group,329,195.0,1998.0,2022.0,5.869,0.899,-0.686,2.3,-0.2
+143,University of Minnesota Hubert H. Humphrey School of Public Affairs,University of Minnesota Hubert H. Humphrey School of Public Affairs,17,9.0,2004.0,2010.0,6.042,0.899,0.882,,0.2
+726,Ascend Action,Ascend Action,12,6.0,2022.0,2022.0,12.376,0.9,1.401,0.7,1.7
+31,Big Ten,Big Ten,19,10.0,2008.0,2008.0,6.549,0.914,0.808,,0.2
+732,Patriot Polling,Patriot Polling,10,8.0,2022.0,2022.0,5.997,0.916,-1.886,1.1,0.6
+159,Jim Meader (KELOLAND-TV),Jim Meader (KELOLAND-TV),8,4.0,2000.0,2002.0,5.334,0.967,2.057,,0.0
+616,Citizen Data,Citizen Data,12,12.0,2020.0,2020.0,7.552,0.977,1.215,0.9,0.5
+371,Voter/Consumer Research,Voter/Consumer Research,18,14.0,1998.0,2014.0,6.819,0.986,-2.545,,0.5
+4,APC Research,APC Research,4,2.0,2014.0,2014.0,8.034,0.99,1.079,,0.1
+699,Phillips Academy,Phillips Academy,9,9.0,2022.0,2022.0,5.903,0.999,-0.918,1.7,0.2
+497,American Pulse Research & Polling,American Pulse Research & Polling,12,10.0,2018.0,2022.0,11.437,1.002,-0.668,,0.8
+269,RABA Research,RABA Research,6,4.0,2016.0,2020.0,10.608,1.056,1.32,1.3,0.6
+194,Marketing Workshop,Marketing Workshop,14,6.0,1998.0,2002.0,11.602,1.057,-0.317,,0.1
+116,Glascock Group,Glascock Group,1,1.0,2014.0,2014.0,18.857,1.107,1.25,,0.2
+313,St. Norbert College Strategic Research Institute,St. Norbert College Strategic Research Institute,17,16.0,1998.0,2016.0,7.03,1.136,1.291,1.4,0.2
+193,Marketing Resource Group (MRG),Marketing Resource Group (MRG),20,16.0,2000.0,2020.0,7.413,1.137,-0.925,1.8,0.1
+49,Cherry Communications,Cherry Communications,13,8.0,2014.0,2022.0,6.448,1.153,-1.256,1.0,0.2
+312,St. Cloud State University,St. Cloud State University,17,17.0,1998.0,2022.0,6.995,1.163,1.925,1.4,0.9
+16,Arthur J. Finkelstein & Associates,Arthur J. Finkelstein & Associates,1,1.0,2012.0,2012.0,22.879,1.168,-1.172,,0.4
+431,Texas Lyceum,Texas Lyceum,5,5.0,2010.0,2014.0,8.324,1.174,0.124,,
+308,SoonerPoll.com,SoonerPoll.com,47,18.0,2004.0,2022.0,8.88,1.178,0.497,1.8,0.3
+35,Brown University A. Alfred Taubman Center for American Politics and Policy,Brown University A. Alfred Taubman Center for American Politics and Policy,17,16.0,2000.0,2014.0,8.721,1.226,-0.168,,0.2
+69,DFM Research,DFM Research,16,15.0,2008.0,2020.0,11.111,1.234,1.541,1.3,0.3
+299,Saint Leo University Polling Institute,Saint Leo University Polling Institute,10,7.0,2014.0,2018.0,6.49,1.237,1.407,1.3,0.8
+285,Quest Research Group,Quest Research Group,14,6.0,2006.0,2010.0,11.077,1.249,0.452,,0.1
+562,Redfield & Wilton Strategies,Redfield & Wilton Strategies,58,18.0,2020.0,2022.0,6.188,1.251,1.724,1.8,0.4
+677,The Political Matrix/The Listener Group,The Political Matrix/The Listener Group,13,6.0,2018.0,2022.0,8.506,1.305,0.403,0.7,0.7
+205,Mellman Group,Mellman Group,55,42.0,2000.0,2022.0,6.444,1.317,3.909,1.2,0.2
+128,Greg Smith & Associates,Greg Smith & Associates,4,4.0,2006.0,2010.0,13.927,1.352,0.018,,0.1
+210,Millersville University Center for Politics and Public Affairs,Millersville University Center for Politics and Public Affairs,10,5.0,1998.0,2002.0,11.234,1.365,-0.841,,0.1
+214,Momentum Analysis,Momentum Analysis,9,7.0,2006.0,2012.0,9.074,1.405,1.398,,0.3
+559,Opinium,Opinium,8,3.0,2020.0,2022.0,8.339,1.44,1.56,1.2,1.0
+130,EMC Research,EMC Research,28,21.0,2000.0,2020.0,6.832,1.441,2.014,0.9,0.6
+71,Dane & Associates,Dane & Associates,4,3.0,2008.0,2012.0,14.282,1.493,-1.599,,0.2
+91,FM3 Research,FM3 Research,28,22.0,1998.0,2022.0,6.905,1.567,3.948,0.7,0.6
+242,Opinion Research Associates,Opinion Research Associates,21,10.0,2000.0,2014.0,9.133,1.57,3.326,,0.9
+54,Clemson University,Clemson University,2,2.0,2006.0,2006.0,17.914,1.611,0.206,,-0.2
+428,Public Religion Research Institute,Public Religion Research Institute,11,5.0,2012.0,2020.0,7.34,1.64,2.292,1.8,0.4
+295,Rutgers University Eagleton Center for Public Interest Polling,Rutgers University Eagleton Center for Public Interest Polling,35,16.0,2000.0,2021.0,7.151,1.721,0.048,2.3,0.0
+203,McLaughlin & Associates,McLaughlin & Associates,78,62.0,2000.0,2022.0,7.471,1.742,-4.697,0.5,1.6
+289,Riggs Research Services,Riggs Research Services,1,1.0,2010.0,2010.0,33.653,1.812,1.812,,0.4
+25,Baydoun Consulting,Baydoun Consulting,8,3.0,2010.0,2012.0,10.134,1.851,-1.64,,0.4
+55,Clout Research,Clout Research,26,18.0,2012.0,2022.0,7.618,1.934,-4.157,0.7,0.9
+211,Minnesota State University Moorhead Public Affairs Institute,Minnesota State University Moorhead Public Affairs Institute,7,7.0,2000.0,2008.0,11.657,1.963,1.934,,0.1
+231,Nielson Brothers Polling,Nielson Brothers Polling,9,9.0,2010.0,2020.0,15.092,2.054,2.299,,1.4
+157,Jayhawk Consulting Services,Jayhawk Consulting Services,2,1.0,2018.0,2018.0,28.791,2.078,2.078,0.9,1.5
+715,Center Street PAC,Center Street PAC,14,10.0,2022.0,2022.0,9.972,2.39,4.055,1.0,1.0
+136,Hays Research Group,Hays Research Group,11,6.0,2006.0,2014.0,10.525,2.527,3.194,1.1,0.9
+758,Thomas Partners Strategies/Øptimus,Thomas Partners Strategies/Øptimus,8,1.0,2018.0,2018.0,14.747,2.534,-2.534,,0.1
+633,"Long Island University Steven S. Hornstein Center for Policy, Polling, and Analysis","Long Island University Steven S. Hornstein Center for Policy, Polling, and Analysis",6,4.0,2020.0,2022.0,12.893,2.546,2.985,1.1,1.8
+727,Brigham Young University Center for the Study of Elections and Democracy,Brigham Young University Center for the Study of Elections and Democracy,4,4.0,2014.0,2014.0,16.441,2.684,3.679,1.3,0.5

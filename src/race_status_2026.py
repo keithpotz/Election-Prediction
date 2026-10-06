@@ -25,6 +25,14 @@ DATA_DIR = os.path.join(BASE_DIR, 'data/polling_data')
 STATUS_CSV = os.path.join(DATA_DIR, 'senate_race_status_2026.csv')
 
 SENATE_WIKI_URL = "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections"
+GOVERNOR_WIKI_URL = "https://en.wikipedia.org/wiki/2026_United_States_gubernatorial_elections"
+GOVERNOR_STATUS_CSV = os.path.join(DATA_DIR, 'governor_race_status_2026.csv')
+
+# office -> (predictions page, cache file, incumbent column header)
+OFFICES = {
+    'senate':   (SENATE_WIKI_URL,   STATUS_CSV,          'Senator'),
+    'governor': (GOVERNOR_WIKI_URL, GOVERNOR_STATUS_CSV, 'Governor'),
+}
 
 # Wikipedia's bot policy blocks pandas'/urllib's default generic User-Agent (403);
 # needs a descriptive one, per https://meta.wikimedia.org/wiki/User-Agent_policy.
@@ -67,7 +75,8 @@ def _parse_incumbent_status(text):
     if not m:
         return text, False
     name, status = m.group(1).strip(), m.group(2).lower()
-    open_seat = 'retir' in status or 'renomination' in status or 'running for' in status
+    open_seat = any(k in status for k in ('retir', 'renomination', 'running for', 'term-limited',
+                                          'term limited', 'lost', 'withdr', 'resign'))
     return name, open_seat
 
 def _parse_pvi(text):
@@ -82,10 +91,11 @@ def _parse_pvi(text):
 
 def _parse_last_election_party(text):
     """'60.10% R' -> 'REPUBLICAN', '62.58% R (2024 sp.)' -> 'REPUBLICAN', 'Appointed (2025)' -> None."""
-    m = re.match(r'^\s*[\d.]+%\s*(D|R|I)\b', str(text))
+    m = re.match(r'^\s*[\d.]+%\s*(DFL|D|R|I)\b', str(text))
     if not m:
         return None
-    return {'D': 'DEMOCRAT', 'R': 'REPUBLICAN', 'I': 'OTHER'}[m.group(1)]
+    # DFL = Minnesota's Democratic-Farmer-Labor party
+    return {'DFL': 'DEMOCRAT', 'D': 'DEMOCRAT', 'R': 'REPUBLICAN', 'I': 'OTHER'}[m.group(1)]
 
 def _find_predictions_table(tables):
     for t in tables:
@@ -93,14 +103,19 @@ def _find_predictions_table(tables):
         joined = ' '.join(cols).lower()
         if 'cook' in joined and 'state' in joined:
             return t
-    raise ValueError("Could not find the Senate Predictions table on the Wikipedia page — its layout may have changed.")
+    raise ValueError("Could not find the Predictions table on the Wikipedia page — its layout may have changed.")
 
 def scrape_senate_race_status(source=SENATE_WIKI_URL):
+    return scrape_race_status('senate', source)
+
+def scrape_race_status(office='senate', source=None):
     """
-    Fetches and parses the Predictions table. Returns a DataFrame with columns:
+    Fetches and parses an office's Predictions table. Returns a DataFrame with columns:
     state (uppercased, matching the rest of this codebase's convention), incumbent,
     open_seat (bool), consensus_rating (numeric, Dem-Rep margin-style: positive=D lean).
     """
+    url, _, incumbent_header = OFFICES[office]
+    source = source or url
     html = _fetch_html(source) if source.startswith('http') else source
     tables = pd.read_html(io.StringIO(html))
     table = _find_predictions_table(tables)
@@ -110,7 +125,7 @@ def scrape_senate_race_status(source=SENATE_WIKI_URL):
     ]
 
     state_col     = next(c for c in table.columns if c.endswith('_State') or c == 'State')
-    incumbent_col = next(c for c in table.columns if 'Senator' in c)
+    incumbent_col = next(c for c in table.columns if incumbent_header in c)
     pvi_col       = next((c for c in table.columns if 'PVI' in c), None)
     last_elec_col = next((c for c in table.columns if 'Last election' in c), None)
     rating_cols   = [c for c in table.columns if c.startswith('Ratings_')]
@@ -144,7 +159,7 @@ def scrape_senate_race_status(source=SENATE_WIKI_URL):
     non_null_consensus = df['consensus_rating'].notna().mean() if len(df) else 0
     if non_null_consensus < 0.5:
         raise ValueError(
-            f"Only {non_null_consensus:.0%} of scraped Senate races have a parseable "
+            f"Only {non_null_consensus:.0%} of scraped {office} races have a parseable "
             "consensus rating — Wikipedia's table structure may have changed. Check "
             "_find_predictions_table()/_rating_to_number() against the current page."
         )
@@ -152,26 +167,28 @@ def scrape_senate_race_status(source=SENATE_WIKI_URL):
 
 MAX_CACHE_AGE_HOURS = 24  # forecaster ratings move weekly near election day
 
-def load_or_scrape_race_status(refresh=False):
+def load_or_scrape_race_status(refresh=False, office='senate'):
     """
     Returns the cached CSV if it's fresh (< MAX_CACHE_AGE_HOURS old); otherwise re-scrapes
     Wikipedia and rewrites the cache. If the scrape fails (offline, layout change), falls
     back to the stale cache rather than losing the data entirely.
     """
-    cache_exists = os.path.exists(STATUS_CSV)
-    cache_fresh = cache_exists and (time.time() - os.path.getmtime(STATUS_CSV)) < MAX_CACHE_AGE_HOURS * 3600
+    cache_csv = OFFICES[office][1]
+    cache_exists = os.path.exists(cache_csv)
+    cache_fresh = cache_exists and (time.time() - os.path.getmtime(cache_csv)) < MAX_CACHE_AGE_HOURS * 3600
     if cache_fresh and not refresh:
-        return pd.read_csv(STATUS_CSV)
+        return pd.read_csv(cache_csv)
     try:
-        df = scrape_senate_race_status()
+        df = scrape_race_status(office)
     except Exception as e:
         if not cache_exists:
             raise
-        print(f"Senate race-status scrape failed, using stale cache: {e}")
-        return pd.read_csv(STATUS_CSV)
-    df.to_csv(STATUS_CSV, index=False)
+        print(f"{office} race-status scrape failed, using stale cache: {e}")
+        return pd.read_csv(cache_csv)
+    df.to_csv(cache_csv, index=False)
     return df
 
 if __name__ == '__main__':
-    df = load_or_scrape_race_status(refresh=True)
-    print(df.to_string())
+    for office in OFFICES:
+        print(f"\n=== {office} ===")
+        print(load_or_scrape_race_status(refresh=True, office=office).to_string())
