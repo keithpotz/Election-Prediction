@@ -1,10 +1,11 @@
- 
 # Ignore the config file to prevent leaking sensitive data
 src/config.py
 
 # Ignore virtual environments
+ep-env/
 election-env/
 
 # Ignore any temporary files
 *.pyc
 __pycache__/
+.pytest_cache/
