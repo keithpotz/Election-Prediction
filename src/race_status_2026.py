@@ -16,6 +16,7 @@ much more fragile than this one well-structured summary table.
 import os
 import re
 import io
+import time
 import requests
 import pandas as pd
 
@@ -69,6 +70,23 @@ def _parse_incumbent_status(text):
     open_seat = 'retir' in status or 'renomination' in status or 'running for' in status
     return name, open_seat
 
+def _parse_pvi(text):
+    """Cook PVI 'R+15' -> -15, 'D+6' -> +6, 'EVEN' -> 0 (Dem-positive, matching margins elsewhere)."""
+    text = str(text).upper().strip()
+    if text.startswith('EVEN'):
+        return 0.0
+    m = re.match(r'^(D|R)\+(\d+)', text)
+    if not m:
+        return float('nan')
+    return float(m.group(2)) if m.group(1) == 'D' else -float(m.group(2))
+
+def _parse_last_election_party(text):
+    """'60.10% R' -> 'REPUBLICAN', '62.58% R (2024 sp.)' -> 'REPUBLICAN', 'Appointed (2025)' -> None."""
+    m = re.match(r'^\s*[\d.]+%\s*(D|R|I)\b', str(text))
+    if not m:
+        return None
+    return {'D': 'DEMOCRAT', 'R': 'REPUBLICAN', 'I': 'OTHER'}[m.group(1)]
+
 def _find_predictions_table(tables):
     for t in tables:
         cols = [' '.join(str(x) for x in c) if isinstance(c, tuple) else str(c) for c in t.columns]
@@ -93,6 +111,8 @@ def scrape_senate_race_status(source=SENATE_WIKI_URL):
 
     state_col     = next(c for c in table.columns if c.endswith('_State') or c == 'State')
     incumbent_col = next(c for c in table.columns if 'Senator' in c)
+    pvi_col       = next((c for c in table.columns if 'PVI' in c), None)
+    last_elec_col = next((c for c in table.columns if 'Last election' in c), None)
     rating_cols   = [c for c in table.columns if c.startswith('Ratings_')]
 
     rows = []
@@ -101,6 +121,7 @@ def scrape_senate_race_status(source=SENATE_WIKI_URL):
         if state.lower().startswith('overall') or not state:
             continue
         name, open_seat = _parse_incumbent_status(r[incumbent_col])
+        last_elec = str(r[last_elec_col]) if last_elec_col else ''
         ratings = [_rating_to_number(r[c]) for c in rating_cols]
         ratings = [v for v in ratings if pd.notna(v)]
         consensus = round(sum(ratings) / len(ratings), 2) if ratings else float('nan')
@@ -109,6 +130,9 @@ def scrape_senate_race_status(source=SENATE_WIKI_URL):
             'is_special':       '(special)' in state.lower(),
             'incumbent':        name,
             'open_seat':        open_seat,
+            'appointed':        last_elec.lower().startswith('appointed'),
+            'last_election_party': _parse_last_election_party(last_elec),
+            'cook_pvi':         _parse_pvi(r[pvi_col]) if pvi_col else float('nan'),
             'consensus_rating': consensus,
         })
     df = pd.DataFrame(rows)
@@ -126,11 +150,25 @@ def scrape_senate_race_status(source=SENATE_WIKI_URL):
         )
     return df
 
+MAX_CACHE_AGE_HOURS = 24  # forecaster ratings move weekly near election day
+
 def load_or_scrape_race_status(refresh=False):
-    """Reads the cached CSV; scrapes and caches it if missing or refresh=True."""
-    if not refresh and os.path.exists(STATUS_CSV):
+    """
+    Returns the cached CSV if it's fresh (< MAX_CACHE_AGE_HOURS old); otherwise re-scrapes
+    Wikipedia and rewrites the cache. If the scrape fails (offline, layout change), falls
+    back to the stale cache rather than losing the data entirely.
+    """
+    cache_exists = os.path.exists(STATUS_CSV)
+    cache_fresh = cache_exists and (time.time() - os.path.getmtime(STATUS_CSV)) < MAX_CACHE_AGE_HOURS * 3600
+    if cache_fresh and not refresh:
         return pd.read_csv(STATUS_CSV)
-    df = scrape_senate_race_status()
+    try:
+        df = scrape_senate_race_status()
+    except Exception as e:
+        if not cache_exists:
+            raise
+        print(f"Senate race-status scrape failed, using stale cache: {e}")
+        return pd.read_csv(STATUS_CSV)
     df.to_csv(STATUS_CSV, index=False)
     return df
 

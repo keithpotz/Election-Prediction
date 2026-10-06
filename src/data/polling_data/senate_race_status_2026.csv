@@ -1,36 +1,36 @@
-state,is_special,incumbent,open_seat,consensus_rating
-ALABAMA,False,Tommy Tuberville,True,-30.0
-ALASKA,False,Dan Sullivan,False,-0.58
-ARKANSAS,False,Tom Cotton,False,-28.75
-COLORADO,False,John Hickenlooper,False,30.0
-DELAWARE,False,Chris Coons,False,30.0
-FLORIDA,True,Ashley Moody,False,-18.67
-GEORGIA,False,Jon Ossoff,False,11.33
-IDAHO,False,Jim Risch,False,-30.0
-ILLINOIS,False,Dick Durbin,True,30.0
-IOWA,False,Joni Ernst,True,-2.58
-KANSAS,False,Roger Marshall,False,-16.83
-KENTUCKY,False,Mitch McConnell,True,-30.0
-LOUISIANA,False,Bill Cassidy,True,-26.25
-MAINE,False,Susan Collins,False,2.33
-MASSACHUSETTS,False,Ed Markey,False,30.0
-MICHIGAN,False,Gary Peters,True,2.25
-MINNESOTA,False,Tina Smith,True,16.83
-MISSISSIPPI,False,Cindy Hyde-Smith,False,-28.75
-MONTANA,False,Steve Daines,True,-24.33
-NEBRASKA,False,Pete Ricketts,False,-12.33
-NEW HAMPSHIRE,False,Jeanne Shaheen,True,11.92
-NEW JERSEY,False,Cory Booker,False,30.0
-NEW MEXICO,False,Ben Ray Luján,False,28.75
-NORTH CAROLINA,False,Thom Tillis,True,11.33
-OHIO,True,Jon Husted,False,1.17
-OKLAHOMA,False,Alan S. Armstrong,True,-30.0
-OREGON,False,Jeff Merkley,False,30.0
-RHODE ISLAND,False,Jack Reed,False,30.0
-SOUTH CAROLINA,False,Darline Graham,False,-18.08
-SOUTH DAKOTA,False,Mike Rounds,False,-30.0
-TENNESSEE,False,Bill Hagerty,False,-30.0
-TEXAS,False,John Cornyn,True,-0.33
-VIRGINIA,False,Mark Warner,False,30.0
-WEST VIRGINIA,False,Shelley Moore Capito,False,-30.0
-WYOMING,False,Cynthia Lummis,True,-30.0
+state,is_special,incumbent,open_seat,appointed,last_election_party,cook_pvi,consensus_rating
+ALABAMA,False,Tommy Tuberville,True,False,REPUBLICAN,-15.0,-30.0
+ALASKA,False,Dan Sullivan,False,False,REPUBLICAN,-6.0,3.5
+ARKANSAS,False,Tom Cotton,False,False,REPUBLICAN,-15.0,-28.5
+COLORADO,False,John Hickenlooper,False,False,DEMOCRAT,6.0,30.0
+DELAWARE,False,Chris Coons,False,False,DEMOCRAT,8.0,30.0
+FLORIDA,True,Ashley Moody,False,True,,-5.0,-19.4
+GEORGIA,False,Jon Ossoff,False,False,DEMOCRAT,-1.0,16.4
+IDAHO,False,Jim Risch,False,False,REPUBLICAN,-18.0,-30.0
+ILLINOIS,False,Dick Durbin,True,False,DEMOCRAT,6.0,30.0
+IOWA,False,Joni Ernst,True,False,REPUBLICAN,-6.0,-0.3
+KANSAS,False,Roger Marshall,False,False,REPUBLICAN,-8.0,-5.7
+KENTUCKY,False,Mitch McConnell,True,False,REPUBLICAN,-15.0,-30.0
+LOUISIANA,False,Bill Cassidy,True,False,REPUBLICAN,-11.0,-25.5
+MAINE,False,Susan Collins,False,False,REPUBLICAN,4.0,2.8
+MASSACHUSETTS,False,Ed Markey,False,False,DEMOCRAT,14.0,30.0
+MICHIGAN,False,Gary Peters,True,False,DEMOCRAT,0.0,5.3
+MINNESOTA,False,Tina Smith,True,False,DEMOCRAT,3.0,11.1
+MISSISSIPPI,False,Cindy Hyde-Smith,False,False,REPUBLICAN,-11.0,-27.0
+MONTANA,False,Steve Daines,True,False,REPUBLICAN,-10.0,-25.5
+NEBRASKA,False,Pete Ricketts,False,False,REPUBLICAN,-10.0,-11.1
+NEW HAMPSHIRE,False,Jeanne Shaheen,True,False,DEMOCRAT,2.0,9.6
+NEW JERSEY,False,Cory Booker,False,False,DEMOCRAT,4.0,30.0
+NEW MEXICO,False,Ben Ray Luján,False,False,DEMOCRAT,4.0,28.5
+NORTH CAROLINA,False,Thom Tillis,True,False,REPUBLICAN,-1.0,11.8
+OHIO,True,Jon Husted,False,True,,-5.0,2.8
+OKLAHOMA,False,Alan Armstrong,True,True,,-17.0,-30.0
+OREGON,False,Jeff Merkley,False,False,DEMOCRAT,8.0,30.0
+RHODE ISLAND,False,Jack Reed,False,False,DEMOCRAT,8.0,30.0
+SOUTH CAROLINA,False,Darline Graham,False,True,,-8.0,-13.3
+SOUTH DAKOTA,False,Mike Rounds,False,False,REPUBLICAN,-15.0,-27.0
+TENNESSEE,False,Bill Hagerty,False,False,REPUBLICAN,-14.0,-30.0
+TEXAS,False,John Cornyn,True,False,REPUBLICAN,-6.0,1.8
+VIRGINIA,False,Mark Warner,False,False,DEMOCRAT,3.0,30.0
+WEST VIRGINIA,False,Shelley Moore Capito,False,False,REPUBLICAN,-21.0,-30.0
+WYOMING,False,Cynthia Lummis,True,False,REPUBLICAN,-23.0,-30.0

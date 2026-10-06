@@ -10,7 +10,9 @@ import plotly.graph_objects as go
 from datetime import datetime, date
 from electoral_votes import calculate_ec_result, calculate_predicted_ec
 from data_sources import fetch_all, fetch_approval_rating, fetch_generic_ballot, GENERIC_BALLOT_CSV_LIVE
-from midterms import predict_house_2026, predict_senate_2026, HOUSE_SEATS_TOTAL, HOUSE_MAJORITY
+from midterms import (
+    predict_house_2026, predict_senate_2026, HOUSE_SEATS_TOTAL, HOUSE_MAJORITY, SENATE_DEM_CONTROL_SEATS,
+)
 from fundamentals import fundamentals_adjustment
 from config import FRED_API_KEY
 
@@ -66,7 +68,7 @@ def load_senate_race_model():
     from midterms import build_senate_race_model
     return build_senate_race_model()
 
-@st.cache_data(ttl=86400)
+@st.cache_data(ttl=3600)  # the scraper itself re-fetches once its CSV cache is >24h old
 def load_senate_race_status():
     from midterms import load_race_status
     return load_race_status()
@@ -298,9 +300,10 @@ def build_senate_map(seat_df):
     df              = df.dropna(subset=['state_po'])
     df['color_val'] = df['predicted_winner'].map({'DEMOCRAT':0,'REPUBLICAN':1})
     df['hover']     = df.apply(
-        lambda r: f"<b>{r['state_po']}</b><br>Projected: {r['predicted_winner']}<br>"
+        lambda r: f"<b>{r['state_po']}</b>{' (special)' if r['special'] else ''}<br>"
+                  f"Projected: {r['predicted_winner']}<br>"
                   f"Margin: {r['predicted_margin']:+.1f}<br>Dem win prob: {r['dem_win_prob']:.0%}<br>"
-                  f"Incumbent: {r['incumbent_party']}",
+                  f"Incumbent: {r['incumbent_party']}{' (open seat)' if r['open_seat'] else ''}",
         axis=1
     )
     return _build_binary_state_choropleth(df, 'color_val', 'hover')
@@ -828,9 +831,9 @@ with tab_history:
 with tab_midterms:
     st.title("2026 Midterm Projections")
     st.caption(
-        "House: national generic-ballot swing model. Senate: the ~33 Class II seats up "
-        "this cycle, projected from state partisan lean + incumbency + national environment. "
-        "Structural models only — no per-race polling averages yet."
+        "House: national generic-ballot swing model. Senate: all 35 races on the ballot (33 Class II "
+        "seats plus the Florida and Ohio specials), simulated together with a shared national error "
+        "to get chamber-control odds. Structural models only, with no per-race polling averages yet."
     )
     st.divider()
 
@@ -887,15 +890,32 @@ with tab_midterms:
         st.pyplot(fig); plt.close()
 
     with col_senate:
-        st.subheader("U.S. Senate (Class II — seats up in 2026)")
+        st.subheader("U.S. Senate")
         s1, s2, s3 = st.columns(3)
-        s1.metric("Dem Seats Won",   senate['dem_seats_won'])
-        s2.metric("Rep Seats Won",   senate['rep_seats_won'])
-        s3.metric("Seats Flipped",   senate['net_seats_flipped'])
+        s1.metric("Dem Seats (median)", senate['dem_seats_median'],
+                  delta=f"{senate['dem_seats_median']-SENATE_DEM_CONTROL_SEATS:+d} vs {SENATE_DEM_CONTROL_SEATS}")
+        s2.metric("Rep Seats (median)", 100 - senate['dem_seats_median'])
+        s3.metric("Dem Control Probability", f"{senate['dem_control_prob']:.0%}")
+        st.caption(
+            f"90% simulated range: {senate['dem_seats_lo']}–{senate['dem_seats_hi']} Democratic seats. "
+            f"Not up this year: {senate['holdovers']['DEMOCRAT']} D / {senate['holdovers']['REPUBLICAN']} R. "
+            f"Democrats need {SENATE_DEM_CONTROL_SEATS} (VP Vance breaks ties)."
+        )
+
+        dist = senate['dem_seats_dist']
+        fig, ax = plt.subplots(figsize=(6,2.2))
+        ax.bar(dist.index, dist.values * 100,
+               color=["#1f77b4" if k >= SENATE_DEM_CONTROL_SEATS else "#d62728" for k in dist.index])
+        ax.axvline(SENATE_DEM_CONTROL_SEATS - 0.5, color="black", linestyle="--", linewidth=1)
+        ax.set_xlabel("Democratic seats after the election"); ax.set_ylabel("% of simulations")
+        st.pyplot(fig); plt.close()
+
         if senate['flipped_states']:
             st.caption(f"Projected flips: {', '.join(senate['flipped_states'])}")
         if senate['skipped_states']:
             st.caption(f"Skipped (insufficient source data): {', '.join(senate['skipped_states'])}")
+        for w in senate['warnings']:
+            st.warning(w)
 
     st.divider()
     st.subheader("Senate Race Map")
@@ -903,17 +923,23 @@ with tab_midterms:
 
     st.divider()
     st.subheader("Senate Race Detail")
+    err = senate['error_stats']
     st.caption(
-        "Model = this app's structural prediction (state lean + incumbency + national environment). "
-        "Consensus = average of ~12 professional forecasters (Cook, Sabato, Inside Elections, etc.), "
-        "scraped from Wikipedia. Shown side-by-side, not blended — where they disagree is informative."
+        "Model = state partisan lean + incumbency + national environment + the incumbent's past "
+        f"over/under-performance. Backtest (each cycle 2000–2024 predicted without seeing it): "
+        f"{err['winner_accuracy']:.0%} of {err['n_races']} races called correctly, typical miss "
+        f"±{err['state_sd']:.0f} pts per race plus ±{err['national_sd']:.1f} pts shared nationally. "
+        "No race-level polling yet. Consensus = average of ~10 professional forecasters, scraped "
+        "from Wikipedia, shown side by side and not blended. Where they disagree, the forecasters "
+        "are usually seeing polls or candidate news this model can't."
     )
     seat_display = senate['seats'].copy().sort_values('predicted_margin')
     seat_display['dem_win_prob'] = (seat_display['dem_win_prob']*100).round(1)
     seat_display = seat_display[[
-        'state','incumbent_party','open_seat','predicted_margin',
+        'state','special','incumbent_party','open_seat','lean','predicted_margin',
         'predicted_winner','dem_win_prob','consensus_rating',
     ]]
-    seat_display.columns = ['State','Incumbent Party','Open Seat','Model Margin (D−R)',
-                             'Model Winner','Model Dem Win Prob (%)','Consensus Rating (D−R)']
+    seat_display.columns = ['State','Special','Incumbent Party','Open Seat','Partisan Lean (D−R)',
+                             'Model Margin (D−R)','Model Winner','Model Dem Win Prob (%)',
+                             'Consensus Rating (D−R)']
     st.dataframe(seat_display, width='stretch', height=400)

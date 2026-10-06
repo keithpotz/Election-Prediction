@@ -1,0 +1,37 @@
+{
+  "published_at": "2026-10-06T13:05:40",
+  "model_version": "2026.10.06",
+  "generic_ballot_dem_margin": 8.8,
+  "generic_ballot_source": "Silver Bulletin generic ballot \u00b7 40 polls \u00b7 latest: 2026-10-04",
+  "house": {
+    "dem_seats": 240,
+    "rep_seats": 195,
+    "dem_control_prob": 0.96,
+    "dem_seat_lo": 219,
+    "dem_seat_hi": 262
+  },
+  "senate": {
+    "dem_control_prob": 0.586,
+    "dem_seats_median": 51,
+    "dem_seats_90pct": [
+      46,
+      57
+    ],
+    "holdovers": {
+      "DEMOCRAT": 34,
+      "REPUBLICAN": 31
+    },
+    "projected_flips": [
+      "MAINE",
+      "NORTH CAROLINA"
+    ],
+    "backtest": {
+      "rmse": 13.640786745141954,
+      "winner_accuracy": 0.8817733990147784,
+      "national_sd": 4.558808492639212,
+      "state_sd": 12.932759544271724,
+      "n_races": 406,
+      "n_years": 13
+    }
+  }
+}
