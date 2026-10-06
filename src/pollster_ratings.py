@@ -200,8 +200,10 @@ def match_pollster(name, ratings):
     return best
 
 def sponsor_party(name):
-    m = re.search(r'\((D|R)\)', str(name))
-    return {'D': 'DEMOCRAT', 'R': 'REPUBLICAN'}[m.group(1)] if m else None
+    """Sponsor marker Wikipedia puts after a pollster: (D), (R), or (I) for a poll paid
+    for by an independent candidate's campaign."""
+    m = re.search(r'\((D|R|I)\)', str(name))
+    return {'D': 'DEMOCRAT', 'R': 'REPUBLICAN', 'I': 'INDEPENDENT'}[m.group(1)] if m else None
 
 
 if __name__ == '__main__':

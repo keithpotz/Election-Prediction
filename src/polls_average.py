@@ -51,7 +51,13 @@ def annotate_polls(polls, ratings=None, sponsor_effects=None):
             cache[name] = (m['pollster'], float(m['house_effect']), float(m['plus_minus'])) if m is not None else (None, 0.0, None)
         matched, house, pm = cache[name]
         sponsor = sponsor_party(name)
-        if sponsor:
+        if sponsor == 'INDEPENDENT':
+            # An independent candidate's own poll leans toward them. They sit on the
+            # Dem side of the margin when no Democrat is running (Osborn, Achilles).
+            lean_toward_dem_side = p.get('dem_side_party') == 'INDEPENDENT'
+            correction = sponsor_effects['DEMOCRAT'] if lean_toward_dem_side else 0.0
+            qw = SPONSORED_WEIGHT
+        elif sponsor:
             correction, qw = sponsor_effects[sponsor], SPONSORED_WEIGHT
         elif matched:
             correction, qw = house, _quality_weight(pm)
@@ -75,15 +81,20 @@ def race_average(race_polls, as_of):
     recency = 0.5 ** (age / RECENCY_HALF_LIFE_DAYS)
     size = np.sqrt(p['sample_size'].fillna(600).clip(100, 3000) / 600)
     per_pollster = p.groupby('pollster')['pollster'].transform('size')
-    w = recency * size * p['quality_weight'] / np.sqrt(per_pollster)
+    base = recency * size / np.sqrt(per_pollster)
+    w = base * p['quality_weight']
     if w.sum() <= 0:
         return None
+    # Effective number of polls: how many equally-weighted polls this average is worth,
+    # scaled by average quality so that nine half-weight sponsored polls count as
+    # about 4.5 polls, not nine.
+    n_eff = base.sum() ** 2 / (base ** 2).sum() * (w.sum() / base.sum())
     return {
         'poll_avg':        float(np.average(p['adjusted_margin'], weights=w)),
         'raw_poll_avg':    float(np.average(p['margin'], weights=w)),
         'n_polls':         int(len(p)),
         'n_pollsters':     int(p['pollster'].nunique()),
-        'effective_polls': float(w.sum() ** 2 / (w ** 2).sum()),
+        'effective_polls': float(n_eff),
         'latest_poll':     p['end_date'].max().date().isoformat(),
     }
 
@@ -103,11 +114,14 @@ def all_race_averages(polls, as_of=None):
 
 
 # ── Backtest ──────────────────────────────────────────────────────────────────
-def backtest_poll_averages(types=('Sen-G', 'Gov-G'), min_cycle=2000):
+def backtest_poll_averages(types=('Sen-G', 'Gov-G'), min_cycle=2000, days_before=0):
     """
     Rebuilds each historical race's final polling average with the method above and
     compares it to the result. House effects for each cycle come only from *other*
     cycles' ratings, so a pollster's 2016 miss can't be used to "correct" its 2016 polls.
+
+    days_before: build the average as it stood this many days before the election (the
+    archive covers roughly the final 60 days), to measure how much averages drift.
 
     Returns per-race errors and a summary, including the split between a miss shared by
     every race in a cycle (correlated, e.g. 2016/2020 polling misses) and the per-race miss.
@@ -136,9 +150,11 @@ def backtest_poll_averages(types=('Sen-G', 'Gov-G'), min_cycle=2000):
         c['pollster'] = c['pollster_rating_id']
         c['sample_size'] = c['samplesize']
         for race, g in c.groupby('race'):
-            avg = race_average(g, pd.to_datetime(g['electiondate'].iloc[0]))
+            as_of = pd.to_datetime(g['electiondate'].iloc[0]) - pd.Timedelta(days=days_before)
+            avg = race_average(g, as_of)
             if avg:
                 rows.append({'cycle': cycle, 'race': race, 'type': g['type_simple'].iloc[0],
+                             'location': g['location'].iloc[0], 'days_before': days_before,
                              'actual': g['actual_margin'].iloc[0], **avg})
 
     df = pd.DataFrame(rows)
@@ -159,30 +175,59 @@ def backtest_poll_averages(types=('Sen-G', 'Gov-G'), min_cycle=2000):
 
 def fit_poll_error_model(df):
     """
-    Fits the per-race error of a final polling average (after removing the cycle-wide
-    shared miss) as  error_sd(n) = sqrt(floor + thin / n_eff):
-      floor  irreducible miss even with many polls
+    Fits the per-race error of a polling average (after removing the cycle-wide shared
+    miss) as  error_sd = sqrt(floor + thin / n_eff + drift * days_to_election):
+      floor  irreducible miss even with many polls on election eve
       thin   extra miss when an average rests on few polls
-    Least squares on squared residuals, constrained to be non-negative.
+      drift  extra variance per day still to go, since opinion can move before election day
+    `df` should pool backtests run at several days_before horizons.
+    Least squares on squared residuals; coefficients floored at sensible minimums.
     """
-    cycle_miss = df.groupby('cycle')['error'].transform('mean')
+    cycle_miss = df.groupby(['cycle', 'days_before'])['error'].transform('mean')
     e2 = (df['error'] - cycle_miss) ** 2
-    X = np.column_stack([np.ones(len(df)), 1.0 / df['effective_polls'].clip(lower=0.5)])
+    X = np.column_stack([np.ones(len(df)), 1.0 / df['effective_polls'].clip(lower=0.5), df['days_before']])
     coef, *_ = np.linalg.lstsq(X, e2.values, rcond=None)
-    floor, thin = max(coef[0], 1.0), max(coef[1], 0.0)
-    return {'floor': float(floor), 'thin': float(thin)}
+    return {'floor': float(max(coef[0], 1.0)), 'thin': float(max(coef[1], 0.0)),
+            'drift': float(max(coef[2], 0.0))}
 
-def poll_error_sd(effective_polls, model):
-    """Per-race (non-shared) polling-average error for a given number of effective polls."""
-    return float(np.sqrt(model['floor'] + model['thin'] / max(effective_polls, 0.5)))
+def poll_error_sd(effective_polls, model, days_to_election=0):
+    """Per-race (non-shared) polling-average error."""
+    return float(np.sqrt(model['floor'] + model['thin'] / max(effective_polls, 0.5)
+                         + model.get('drift', 0.0) * max(days_to_election, 0)))
+
+HORIZONS = (0, 14, 28, 42)
+
+def load_poll_error_model(refresh=False):
+    """The fitted error model, cached as JSON because fitting reruns the full
+    multi-horizon backtest (a few minutes)."""
+    import json, os
+    from pollster_ratings import DATA_DIR
+    path = os.path.join(DATA_DIR, 'poll_error_model.json')
+    if not refresh and os.path.exists(path):
+        with open(path) as f:
+            return json.load(f)
+    df, summaries = backtest_all_horizons()
+    model = fit_poll_error_model(df)
+    model['shared_miss_sd_by_days'] = {str(d): s['cycle_shared_miss_sd'] for d, s in summaries.items()}
+    model['rmse_by_days'] = {str(d): s['rmse_adjusted'] for d, s in summaries.items()}
+    with open(path, 'w') as f:
+        json.dump(model, f, indent=2)
+    return model
+
+def backtest_all_horizons(**kw):
+    frames, summaries = [], {}
+    for d in HORIZONS:
+        df, summ = backtest_poll_averages(days_before=d, **kw)
+        frames.append(df)
+        summaries[d] = summ
+    return pd.concat(frames, ignore_index=True), summaries
 
 if __name__ == '__main__':
-    df, summary = backtest_poll_averages()
-    for k, v in summary.items():
-        print(f"{k:26s} {v}")
+    df, summaries = backtest_all_horizons()
+    for d, summ in summaries.items():
+        print(f"{d:2d} days out: {summ['n_races']} races, RMSE {summ['rmse_adjusted']:.2f}, "
+              f"winners {summ['winner_accuracy']:.1%}, shared cycle miss sd {summ['cycle_shared_miss_sd']:.2f}")
     m = fit_poll_error_model(df)
-    print("\nError model:", m, {n: round(poll_error_sd(n, m), 2) for n in (1, 2, 4, 8, 16)})
-    df['n_bucket'] = pd.cut(df['effective_polls'], [0, 1.5, 3, 6, 100], labels=['~1', '1.5-3', '3-6', '6+'])
-    print("\nRMSE by effective number of polls:")
-    print(df.groupby('n_bucket', observed=True)['error'].agg(
-        races='size', rmse=lambda e: float(np.sqrt((e ** 2).mean()))).round(2).to_string())
+    print("\nError model:", {k: round(v, 3) for k, v in m.items()})
+    for d in HORIZONS:
+        print(f"  {d:2d} days out:", {n: round(poll_error_sd(n, m, d), 2) for n in (1, 4, 16)})

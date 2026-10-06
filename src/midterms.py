@@ -284,6 +284,16 @@ def senate_training_data():
                      'incumbent_strength': incumbent_strength(p['margin'], lean, incumbency)})
     return pd.DataFrame(rows)
 
+def senate_loco_predictions(train=None):
+    """Each historical race predicted by a model fit without that race's cycle."""
+    train = (train if train is not None else senate_training_data()).copy()
+    train['fund_pred'] = np.nan
+    for year in train['year'].unique():
+        test = train['year'] == year
+        m = LinearRegression().fit(train.loc[~test, SENATE_FEATURES], train.loc[~test, 'margin'])
+        train.loc[test, 'fund_pred'] = m.predict(train.loc[test, SENATE_FEATURES])
+    return train
+
 def evaluate_senate_model(train=None):
     """
     Leave-one-cycle-out backtest: for each election year, fit on every other year and
