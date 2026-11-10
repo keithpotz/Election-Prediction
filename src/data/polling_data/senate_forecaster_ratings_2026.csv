@@ -1,0 +1,421 @@
+state,forecaster,rating,value,market_tied
+ALABAMA,Cook,Solid R,-30.0,False
+ALABAMA,DDHQ,Safe R,-30.0,True
+ALABAMA,Econ,Safe R,-30.0,False
+ALABAMA,FPO,Safe R,-30.0,False
+ALABAMA,Fox,Solid R,-30.0,False
+ALABAMA,IE,Solid R,-30.0,False
+ALABAMA,MS NOW,Safe R,-30.0,False
+ALABAMA,NBC,Solid R,-30.0,False
+ALABAMA,RCP,Solid R,-30.0,True
+ALABAMA,Sabato,Safe R,-30.0,False
+ALABAMA,Silver,Solid R,-30.0,True
+ALABAMA,ST,Safe R,-30.0,False
+ALASKA,Cook,Tossup,0.0,False
+ALASKA,DDHQ,Tossup,0.0,True
+ALASKA,Econ,Tossup,0.0,False
+ALASKA,FPO,Lean D (flip),7.0,False
+ALASKA,Fox,Tossup,0.0,False
+ALASKA,IE,Tossup,0.0,False
+ALASKA,MS NOW,Tossup,0.0,False
+ALASKA,NBC,Tossup,0.0,False
+ALASKA,RCP,Tossup,0.0,True
+ALASKA,Sabato,Lean D (flip),7.0,False
+ALASKA,Silver,Tossup,0.0,True
+ALASKA,ST,Lean D (flip),7.0,False
+ARKANSAS,Cook,Solid R,-30.0,False
+ARKANSAS,DDHQ,Safe R,-30.0,True
+ARKANSAS,Econ,Safe R,-30.0,False
+ARKANSAS,FPO,Safe R,-30.0,False
+ARKANSAS,Fox,Solid R,-30.0,False
+ARKANSAS,IE,Solid R,-30.0,False
+ARKANSAS,MS NOW,Safe R,-30.0,False
+ARKANSAS,NBC,Solid R,-30.0,False
+ARKANSAS,RCP,Solid R,-30.0,True
+ARKANSAS,Sabato,Safe R,-30.0,False
+ARKANSAS,Silver,Solid R,-30.0,True
+ARKANSAS,ST,Safe R,-30.0,False
+COLORADO,Cook,Solid D,30.0,False
+COLORADO,DDHQ,Safe D,30.0,True
+COLORADO,Econ,Safe D,30.0,False
+COLORADO,FPO,Safe D,30.0,False
+COLORADO,Fox,Solid D,30.0,False
+COLORADO,IE,Solid D,30.0,False
+COLORADO,MS NOW,Safe D,30.0,False
+COLORADO,NBC,Solid D,30.0,False
+COLORADO,RCP,Solid D,30.0,True
+COLORADO,Sabato,Safe D,30.0,False
+COLORADO,Silver,Solid D,30.0,True
+COLORADO,ST,Safe D,30.0,False
+DELAWARE,Cook,Solid D,30.0,False
+DELAWARE,DDHQ,Safe D,30.0,True
+DELAWARE,Econ,Safe D,30.0,False
+DELAWARE,FPO,Safe D,30.0,False
+DELAWARE,Fox,Solid D,30.0,False
+DELAWARE,IE,Solid D,30.0,False
+DELAWARE,MS NOW,Safe D,30.0,False
+DELAWARE,NBC,Solid D,30.0,False
+DELAWARE,RCP,Solid D,30.0,True
+DELAWARE,Sabato,Safe D,30.0,False
+DELAWARE,Silver,Solid D,30.0,True
+DELAWARE,ST,Safe D,30.0,False
+FLORIDA,Cook,Likely R,-15.0,False
+FLORIDA,DDHQ,Likely R,-15.0,True
+FLORIDA,Econ,Likely R,-15.0,False
+FLORIDA,FPO,Likely R,-15.0,False
+FLORIDA,Fox,Solid R,-30.0,False
+FLORIDA,IE,Likely R,-15.0,False
+FLORIDA,MS NOW,Likely R,-15.0,False
+FLORIDA,NBC,Likely R,-15.0,False
+FLORIDA,RCP,Lean R,-7.0,True
+FLORIDA,Sabato,Likely R,-15.0,False
+FLORIDA,Silver,Likely R,-15.0,True
+FLORIDA,ST,Likely R,-15.0,False
+GEORGIA,Cook,Likely D,15.0,False
+GEORGIA,DDHQ,Likely D,15.0,True
+GEORGIA,Econ,Likely D,15.0,False
+GEORGIA,FPO,Safe D,30.0,False
+GEORGIA,Fox,Likely D,15.0,False
+GEORGIA,IE,Likely D,15.0,False
+GEORGIA,MS NOW,Lean D,7.0,False
+GEORGIA,NBC,Likely D,15.0,False
+GEORGIA,RCP,Likely D,15.0,True
+GEORGIA,Sabato,Likely D,15.0,False
+GEORGIA,Silver,Solid D,30.0,True
+GEORGIA,ST,Safe D,30.0,False
+IDAHO,Cook,Solid R,-30.0,False
+IDAHO,DDHQ,Safe R,-30.0,True
+IDAHO,Econ,Safe R,-30.0,False
+IDAHO,FPO,Safe R,-30.0,False
+IDAHO,Fox,Solid R,-30.0,False
+IDAHO,IE,Solid R,-30.0,False
+IDAHO,MS NOW,Safe R,-30.0,False
+IDAHO,NBC,Solid R,-30.0,False
+IDAHO,RCP,Solid R,-30.0,True
+IDAHO,Sabato,Safe R,-30.0,False
+IDAHO,Silver,Solid R,-30.0,True
+IDAHO,ST,Safe R,-30.0,False
+ILLINOIS,Cook,Solid D,30.0,False
+ILLINOIS,DDHQ,Safe D,30.0,True
+ILLINOIS,Econ,Safe D,30.0,False
+ILLINOIS,FPO,Safe D,30.0,False
+ILLINOIS,Fox,Solid D,30.0,False
+ILLINOIS,IE,Solid D,30.0,False
+ILLINOIS,MS NOW,Safe D,30.0,False
+ILLINOIS,NBC,Solid D,30.0,False
+ILLINOIS,RCP,Solid D,30.0,True
+ILLINOIS,Sabato,Safe D,30.0,False
+ILLINOIS,Silver,Solid D,30.0,True
+ILLINOIS,ST,Safe D,30.0,False
+IOWA,Cook,Tossup,0.0,False
+IOWA,DDHQ,Tossup,0.0,True
+IOWA,Econ,Lean R,-7.0,False
+IOWA,FPO,Tossup,0.0,False
+IOWA,Fox,Tossup,0.0,False
+IOWA,IE,Tossup,0.0,False
+IOWA,MS NOW,Lean R,-7.0,False
+IOWA,NBC,Tossup,0.0,False
+IOWA,RCP,Tossup,0.0,True
+IOWA,Sabato,Lean R,-7.0,False
+IOWA,Silver,Tossup,0.0,True
+IOWA,ST,Tossup,0.0,False
+KANSAS,Cook,Tossup,0.0,False
+KANSAS,DDHQ,Tossup,0.0,True
+KANSAS,Econ,Tossup,0.0,False
+KANSAS,FPO,Lean D (flip),7.0,False
+KANSAS,Fox,Tossup,0.0,False
+KANSAS,IE,Tossup,0.0,False
+KANSAS,MS NOW,Lean R,-7.0,False
+KANSAS,NBC,Tossup,0.0,False
+KANSAS,RCP,Tossup,0.0,True
+KANSAS,Sabato,Lean D (flip),7.0,False
+KANSAS,Silver,Lean D (flip),7.0,True
+KANSAS,ST,Lean D (flip),7.0,False
+KENTUCKY,Cook,Solid R,-30.0,False
+KENTUCKY,DDHQ,Likely R,-15.0,True
+KENTUCKY,Econ,Safe R,-30.0,False
+KENTUCKY,FPO,Safe R,-30.0,False
+KENTUCKY,Fox,Solid R,-30.0,False
+KENTUCKY,IE,Solid R,-30.0,False
+KENTUCKY,MS NOW,Safe R,-30.0,False
+KENTUCKY,NBC,Solid R,-30.0,False
+KENTUCKY,RCP,Solid R,-30.0,True
+KENTUCKY,Sabato,Safe R,-30.0,False
+KENTUCKY,Silver,Solid R,-30.0,True
+KENTUCKY,ST,Safe R,-30.0,False
+LOUISIANA,Cook,Solid R,-30.0,False
+LOUISIANA,DDHQ,Likely R,-15.0,True
+LOUISIANA,Econ,Likely R,-15.0,False
+LOUISIANA,FPO,Likely R,-15.0,False
+LOUISIANA,Fox,Solid R,-30.0,False
+LOUISIANA,IE,Likely R,-15.0,False
+LOUISIANA,MS NOW,Safe R,-30.0,False
+LOUISIANA,NBC,Solid R,-30.0,False
+LOUISIANA,RCP,Solid R,-30.0,True
+LOUISIANA,Sabato,Lean R,-7.0,False
+LOUISIANA,Silver,Likely R,-15.0,True
+LOUISIANA,ST,Likely R,-15.0,False
+MAINE,Cook,Tossup,0.0,False
+MAINE,DDHQ,Lean D (flip),7.0,True
+MAINE,Econ,Lean D (flip),7.0,False
+MAINE,FPO,Likely D (flip),15.0,False
+MAINE,Fox,Tossup,0.0,False
+MAINE,IE,Tossup,0.0,False
+MAINE,MS NOW,Tossup,0.0,False
+MAINE,NBC,Lean D (flip),7.0,False
+MAINE,RCP,Tossup,0.0,True
+MAINE,Sabato,Lean D (flip),7.0,False
+MAINE,Silver,Likely D (flip),15.0,True
+MAINE,ST,Lean D (flip),7.0,False
+MASSACHUSETTS,Cook,Solid D,30.0,False
+MASSACHUSETTS,DDHQ,Safe D,30.0,True
+MASSACHUSETTS,Econ,Safe D,30.0,False
+MASSACHUSETTS,FPO,Safe D,30.0,False
+MASSACHUSETTS,Fox,Solid D,30.0,False
+MASSACHUSETTS,IE,Solid D,30.0,False
+MASSACHUSETTS,MS NOW,Safe D,30.0,False
+MASSACHUSETTS,NBC,Solid D,30.0,False
+MASSACHUSETTS,RCP,Solid D,30.0,True
+MASSACHUSETTS,Sabato,Safe D,30.0,False
+MASSACHUSETTS,Silver,Solid D,30.0,True
+MASSACHUSETTS,ST,Safe D,30.0,False
+MICHIGAN,Cook,Lean D,7.0,False
+MICHIGAN,DDHQ,Likely D,15.0,True
+MICHIGAN,Econ,Lean D,7.0,False
+MICHIGAN,FPO,Likely D,15.0,False
+MICHIGAN,Fox,Tossup,0.0,False
+MICHIGAN,IE,Tilt D,3.0,False
+MICHIGAN,MS NOW,Tossup,0.0,False
+MICHIGAN,NBC,Lean D,7.0,False
+MICHIGAN,RCP,Tossup,0.0,True
+MICHIGAN,Sabato,Lean D,7.0,False
+MICHIGAN,Silver,Likely D,15.0,True
+MICHIGAN,ST,Likely D,15.0,False
+MINNESOTA,Cook,Lean D,7.0,False
+MINNESOTA,DDHQ,Likely D,15.0,True
+MINNESOTA,Econ,Lean D,7.0,False
+MINNESOTA,FPO,Likely D,15.0,False
+MINNESOTA,Fox,Lean D,7.0,False
+MINNESOTA,IE,Lean D,7.0,False
+MINNESOTA,MS NOW,Lean D,7.0,False
+MINNESOTA,NBC,Likely D,15.0,False
+MINNESOTA,RCP,Lean D,7.0,True
+MINNESOTA,Sabato,Likely D,15.0,False
+MINNESOTA,Silver,Likely D,15.0,True
+MINNESOTA,ST,Likely D,15.0,False
+MISSISSIPPI,Cook,Likely R,-15.0,False
+MISSISSIPPI,DDHQ,Likely R,-15.0,True
+MISSISSIPPI,Econ,Likely R,-15.0,False
+MISSISSIPPI,FPO,Safe R,-30.0,False
+MISSISSIPPI,Fox,Likely R,-15.0,False
+MISSISSIPPI,IE,Likely R,-15.0,False
+MISSISSIPPI,MS NOW,Likely R,-15.0,False
+MISSISSIPPI,NBC,Likely R,-15.0,False
+MISSISSIPPI,RCP,Likely R,-15.0,True
+MISSISSIPPI,Sabato,Likely R,-15.0,False
+MISSISSIPPI,Silver,Solid R,-30.0,True
+MISSISSIPPI,ST,Likely R,-15.0,False
+MONTANA,Cook,Solid R,-30.0,False
+MONTANA,DDHQ,Likely R,-15.0,True
+MONTANA,Econ,Likely R,-15.0,False
+MONTANA,FPO,Likely R,-15.0,False
+MONTANA,Fox,Solid R,-30.0,False
+MONTANA,IE,Solid R,-30.0,False
+MONTANA,MS NOW,Safe R,-30.0,False
+MONTANA,NBC,Likely R,-15.0,False
+MONTANA,RCP,Likely R,-15.0,True
+MONTANA,Sabato,Safe R,-30.0,False
+MONTANA,Silver,Likely R,-15.0,True
+MONTANA,ST,Safe R,-30.0,False
+NEBRASKA,Cook,Lean R,-7.0,False
+NEBRASKA,DDHQ,Lean R,-7.0,True
+NEBRASKA,Econ,Likely R,-15.0,False
+NEBRASKA,FPO,Likely R,-15.0,False
+NEBRASKA,Fox,Lean R,-7.0,False
+NEBRASKA,IE,Tilt R,-3.0,False
+NEBRASKA,MS NOW,Likely R,-15.0,False
+NEBRASKA,NBC,Lean R,-7.0,False
+NEBRASKA,RCP,Tossup,0.0,True
+NEBRASKA,Sabato,Lean R,-7.0,False
+NEBRASKA,Silver,Lean R,-7.0,True
+NEBRASKA,ST,Lean R,-7.0,False
+NEW HAMPSHIRE,Cook,Lean D,7.0,False
+NEW HAMPSHIRE,DDHQ,Likely D,15.0,True
+NEW HAMPSHIRE,Econ,Likely D,15.0,False
+NEW HAMPSHIRE,FPO,Likely D,15.0,False
+NEW HAMPSHIRE,Fox,Lean D,7.0,False
+NEW HAMPSHIRE,IE,Tilt D,3.0,False
+NEW HAMPSHIRE,MS NOW,Lean D,7.0,False
+NEW HAMPSHIRE,NBC,Lean D,7.0,False
+NEW HAMPSHIRE,RCP,Lean D,7.0,True
+NEW HAMPSHIRE,Sabato,Likely D,15.0,False
+NEW HAMPSHIRE,Silver,Solid D,30.0,True
+NEW HAMPSHIRE,ST,Safe D,30.0,False
+NEW JERSEY,Cook,Solid D,30.0,False
+NEW JERSEY,DDHQ,Safe D,30.0,True
+NEW JERSEY,Econ,Safe D,30.0,False
+NEW JERSEY,FPO,Safe D,30.0,False
+NEW JERSEY,Fox,Solid D,30.0,False
+NEW JERSEY,IE,Solid D,30.0,False
+NEW JERSEY,MS NOW,Safe D,30.0,False
+NEW JERSEY,NBC,Solid D,30.0,False
+NEW JERSEY,RCP,Solid D,30.0,True
+NEW JERSEY,Sabato,Safe D,30.0,False
+NEW JERSEY,Silver,Solid D,30.0,True
+NEW JERSEY,ST,Safe D,30.0,False
+NEW MEXICO,Cook,Solid D,30.0,False
+NEW MEXICO,DDHQ,Safe D,30.0,True
+NEW MEXICO,Econ,Safe D,30.0,False
+NEW MEXICO,FPO,Safe D,30.0,False
+NEW MEXICO,Fox,Solid D,30.0,False
+NEW MEXICO,IE,Solid D,30.0,False
+NEW MEXICO,MS NOW,Safe D,30.0,False
+NEW MEXICO,NBC,Solid D,30.0,False
+NEW MEXICO,RCP,Likely D,15.0,True
+NEW MEXICO,Sabato,Safe D,30.0,False
+NEW MEXICO,Silver,Solid D,30.0,True
+NEW MEXICO,ST,Safe D,30.0,False
+NORTH CAROLINA,Cook,Likely D (flip),15.0,False
+NORTH CAROLINA,DDHQ,Likely D (flip),15.0,True
+NORTH CAROLINA,Econ,Likely D (flip),15.0,False
+NORTH CAROLINA,FPO,Safe D (flip),30.0,False
+NORTH CAROLINA,Fox,Likely D (flip),15.0,False
+NORTH CAROLINA,IE,Lean D (flip),7.0,False
+NORTH CAROLINA,MS NOW,Lean D (flip),7.0,False
+NORTH CAROLINA,NBC,Likely D (flip),15.0,False
+NORTH CAROLINA,RCP,Likely D (flip),15.0,True
+NORTH CAROLINA,Sabato,Likely D (flip),15.0,False
+NORTH CAROLINA,Silver,Solid D (flip),30.0,True
+NORTH CAROLINA,ST,Safe D (flip),30.0,False
+OHIO,Cook,Tossup,0.0,False
+OHIO,DDHQ,Tossup,0.0,True
+OHIO,Econ,Tossup,0.0,False
+OHIO,FPO,Lean D (flip),7.0,False
+OHIO,Fox,Lean D (flip),7.0,False
+OHIO,IE,Tilt D (flip),3.0,False
+OHIO,MS NOW,Tossup,0.0,False
+OHIO,NBC,Tossup,0.0,False
+OHIO,RCP,Tossup,0.0,True
+OHIO,Sabato,Lean D (flip),7.0,False
+OHIO,Silver,Lean D (flip),7.0,True
+OHIO,ST,Lean D (flip),7.0,False
+OKLAHOMA,Cook,Solid R,-30.0,False
+OKLAHOMA,DDHQ,Safe R,-30.0,True
+OKLAHOMA,Econ,Safe R,-30.0,False
+OKLAHOMA,FPO,Safe R,-30.0,False
+OKLAHOMA,Fox,Solid R,-30.0,False
+OKLAHOMA,IE,Solid R,-30.0,False
+OKLAHOMA,MS NOW,Safe R,-30.0,False
+OKLAHOMA,NBC,Solid R,-30.0,False
+OKLAHOMA,RCP,Solid R,-30.0,True
+OKLAHOMA,Sabato,Safe R,-30.0,False
+OKLAHOMA,Silver,Solid R,-30.0,True
+OKLAHOMA,ST,Safe R,-30.0,False
+OREGON,Cook,Solid D,30.0,False
+OREGON,DDHQ,Safe D,30.0,True
+OREGON,Econ,Safe D,30.0,False
+OREGON,FPO,Safe D,30.0,False
+OREGON,Fox,Solid D,30.0,False
+OREGON,IE,Solid D,30.0,False
+OREGON,MS NOW,Safe D,30.0,False
+OREGON,NBC,Solid D,30.0,False
+OREGON,RCP,Solid D,30.0,True
+OREGON,Sabato,Safe D,30.0,False
+OREGON,Silver,Solid D,30.0,True
+OREGON,ST,Safe D,30.0,False
+RHODE ISLAND,Cook,Solid D,30.0,False
+RHODE ISLAND,DDHQ,Safe D,30.0,True
+RHODE ISLAND,Econ,Safe D,30.0,False
+RHODE ISLAND,FPO,Safe D,30.0,False
+RHODE ISLAND,Fox,Solid D,30.0,False
+RHODE ISLAND,IE,Solid D,30.0,False
+RHODE ISLAND,MS NOW,Safe D,30.0,False
+RHODE ISLAND,NBC,Solid D,30.0,False
+RHODE ISLAND,RCP,Solid D,30.0,True
+RHODE ISLAND,Sabato,Safe D,30.0,False
+RHODE ISLAND,Silver,Solid D,30.0,True
+RHODE ISLAND,ST,Safe D,30.0,False
+SOUTH CAROLINA,Cook,Lean R,-7.0,False
+SOUTH CAROLINA,DDHQ,Tossup,0.0,True
+SOUTH CAROLINA,Econ,Lean R,-7.0,False
+SOUTH CAROLINA,FPO,Lean R,-7.0,False
+SOUTH CAROLINA,Fox,Tossup,0.0,False
+SOUTH CAROLINA,IE,Tilt R,-3.0,False
+SOUTH CAROLINA,MS NOW,Lean R,-7.0,False
+SOUTH CAROLINA,NBC,Lean R,-7.0,False
+SOUTH CAROLINA,RCP,Tossup,0.0,True
+SOUTH CAROLINA,Sabato,Lean R,-7.0,False
+SOUTH CAROLINA,Silver,Lean R,-7.0,True
+SOUTH CAROLINA,ST,Lean R,-7.0,False
+SOUTH DAKOTA,Cook,Solid R,-30.0,False
+SOUTH DAKOTA,DDHQ,Safe R,-30.0,True
+SOUTH DAKOTA,Econ,Safe R,-30.0,False
+SOUTH DAKOTA,FPO,Safe R,-30.0,False
+SOUTH DAKOTA,Fox,Solid R,-30.0,False
+SOUTH DAKOTA,IE,Solid R,-30.0,False
+SOUTH DAKOTA,MS NOW,Safe R,-30.0,False
+SOUTH DAKOTA,NBC,Solid R,-30.0,False
+SOUTH DAKOTA,RCP,Solid R,-30.0,True
+SOUTH DAKOTA,Sabato,Safe R,-30.0,False
+SOUTH DAKOTA,Silver,Solid R,-30.0,True
+SOUTH DAKOTA,ST,Likely R,-15.0,False
+TENNESSEE,Cook,Solid R,-30.0,False
+TENNESSEE,DDHQ,Safe R,-30.0,True
+TENNESSEE,Econ,Safe R,-30.0,False
+TENNESSEE,FPO,Safe R,-30.0,False
+TENNESSEE,Fox,Solid R,-30.0,False
+TENNESSEE,IE,Solid R,-30.0,False
+TENNESSEE,MS NOW,Safe R,-30.0,False
+TENNESSEE,NBC,Solid R,-30.0,False
+TENNESSEE,RCP,Solid R,-30.0,True
+TENNESSEE,Sabato,Safe R,-30.0,False
+TENNESSEE,Silver,Solid R,-30.0,True
+TENNESSEE,ST,Safe R,-30.0,False
+TEXAS,Cook,Tossup,0.0,False
+TEXAS,DDHQ,Tossup,0.0,True
+TEXAS,Econ,Tossup,0.0,False
+TEXAS,FPO,Lean D (flip),7.0,False
+TEXAS,Fox,Tossup,0.0,False
+TEXAS,IE,Tilt D (flip),3.0,False
+TEXAS,MS NOW,Tossup,0.0,False
+TEXAS,NBC,Tossup,0.0,False
+TEXAS,RCP,Tossup,0.0,True
+TEXAS,Sabato,Lean D (flip),7.0,False
+TEXAS,Silver,Likely D (flip),15.0,True
+TEXAS,ST,Likely D (flip),15.0,False
+VIRGINIA,Cook,Solid D,30.0,False
+VIRGINIA,DDHQ,Safe D,30.0,True
+VIRGINIA,Econ,Safe D,30.0,False
+VIRGINIA,FPO,Safe D,30.0,False
+VIRGINIA,Fox,Solid D,30.0,False
+VIRGINIA,IE,Solid D,30.0,False
+VIRGINIA,MS NOW,Safe D,30.0,False
+VIRGINIA,NBC,Solid D,30.0,False
+VIRGINIA,RCP,Solid D,30.0,True
+VIRGINIA,Sabato,Safe D,30.0,False
+VIRGINIA,Silver,Solid D,30.0,True
+VIRGINIA,ST,Safe D,30.0,False
+WEST VIRGINIA,Cook,Solid R,-30.0,False
+WEST VIRGINIA,DDHQ,Safe R,-30.0,True
+WEST VIRGINIA,Econ,Safe R,-30.0,False
+WEST VIRGINIA,FPO,Safe R,-30.0,False
+WEST VIRGINIA,Fox,Solid R,-30.0,False
+WEST VIRGINIA,IE,Solid R,-30.0,False
+WEST VIRGINIA,MS NOW,Safe R,-30.0,False
+WEST VIRGINIA,NBC,Solid R,-30.0,False
+WEST VIRGINIA,RCP,Solid R,-30.0,True
+WEST VIRGINIA,Sabato,Safe R,-30.0,False
+WEST VIRGINIA,Silver,Solid R,-30.0,True
+WEST VIRGINIA,ST,Safe R,-30.0,False
+WYOMING,Cook,Solid R,-30.0,False
+WYOMING,DDHQ,Safe R,-30.0,True
+WYOMING,Econ,Safe R,-30.0,False
+WYOMING,FPO,Safe R,-30.0,False
+WYOMING,Fox,Solid R,-30.0,False
+WYOMING,IE,Solid R,-30.0,False
+WYOMING,MS NOW,Safe R,-30.0,False
+WYOMING,NBC,Solid R,-30.0,False
+WYOMING,RCP,Solid R,-30.0,True
+WYOMING,Sabato,Safe R,-30.0,False
+WYOMING,Silver,Solid R,-30.0,True
+WYOMING,ST,Safe R,-30.0,False

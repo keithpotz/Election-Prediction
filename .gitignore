@@ -9,3 +9,10 @@ election-env/
 *.pyc
 __pycache__/
 .pytest_cache/
+
+#gitignore the forcase cards
+forecasts/2026/cards/
+
+# Substack drafts and images
+forecasts/substack/
+

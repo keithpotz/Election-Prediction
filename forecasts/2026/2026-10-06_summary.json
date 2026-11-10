@@ -1,12 +1,21 @@
 {
-  "published_at": "2026-10-06T13:38:58",
-  "model_version": "2026.10.06b",
+  "published_at": "2026-10-06T23:35:00",
+  "model_version": "2026.10.06e",
   "days_to_election": 28,
-  "generic_ballot_dem_margin": 8.8,
-  "generic_ballot_source": "Silver Bulletin generic ballot \u00b7 40 polls \u00b7 latest: 2026-10-04",
+  "generic_ballot_dem_margin": 8.45,
+  "generic_ballot_source": "Average of FiftyPlusOne, NBC News (market-tied aggregators excluded)",
+  "poll_data_sources": "Polls: Wikipedia race and state House pages, compiled from pollsters' own releases. No prediction-market-affiliated data sources are used.",
+  "data_warnings": [
+    "[nominees unresolved] Governor \u00b7 Alaska: Several same-party candidates are on the general ballot and recent polls don't settle which matchup to use, so this race's polls are left out (fundamentals only)",
+    "[outlier poll] Senate \u00b7 Idaho: Peak Insights (R) (Aug 13): corrected margin -31.6 vs race average -5.4, from wikipedia",
+    "[outlier poll] Senate \u00b7 Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.4, from wikipedia",
+    "[outlier poll] Senate \u00b7 Idaho: Peak Insights (R) (Sep 30): corrected margin -22.6 vs race average -5.4, from wikipedia"
+  ],
+  "generic_ballot_bias_removed": 3.05,
+  "national_environment_used": 5.4,
   "senate": {
-    "dem_control_prob": 0.697,
-    "rep_control_prob": 0.292,
+    "dem_control_prob": 0.657,
+    "rep_control_prob": 0.328,
     "dem_seats_median": 52,
     "dem_seats_90pct": [
       46,
@@ -19,11 +28,11 @@
     }
   },
   "house": {
-    "dem_control_prob": 0.97,
-    "dem_seats_median": 244,
+    "dem_control_prob": 0.824,
+    "dem_seats_median": 231,
     "dem_seats_90pct": [
-      220,
-      278
+      209,
+      262
     ],
     "calibration": {
       "district_sd": 5.674489592527395,
@@ -45,7 +54,7 @@
   "governor": {
     "dem_governorships_median": 20,
     "dem_governorships_90pct": [
-      14,
+      13,
       27
     ],
     "races": 36

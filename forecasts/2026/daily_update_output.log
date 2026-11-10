@@ -1,0 +1,270 @@
+===== Wed 10/07/2026  7:00:00.33 ===== 
+796 Senate/governor polls (1 non-nominee matchups set aside), 201 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Aug 13): corrected margin -31.6 vs race average -5.4, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.4, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.6 vs race average -5.4, from wikipedia
+{
+  "published_at": "2026-10-07T07:04:13",
+  "model_version": "2026.10.07b",
+  "generic_ballot_dem_margin": 8.45
+}
+Senate Dem control 66%, House Dem control 82%, Dem governorships (median) 20
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+
+Daily update ok (249s): 997 polls, 3 data warnings, Senate D 66%, House D 82%
+===== Thu 10/08/2026  7:43:23.75 ===== 
+===== Fri 10/09/2026  8:07:14.03 ===== 
+828 Senate/governor polls (1 non-nominee matchups set aside), 223 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Aug 13): corrected margin -31.8 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -5.7, from wikipedia
+{
+  "published_at": "2026-10-09T08:11:19",
+  "model_version": "2026.10.08",
+  "generic_ballot_dem_margin": 8.4
+}
+Senate Dem control 52%, House Dem control 81%, Dem governorships (median) 19
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  137 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-10-09
+
+Daily update ok (256s): 1051 polls, 3 data warnings, Senate D 52%, House D 81%
+===== Sat 10/10/2026  7:00:01.64 ===== 
+842 Senate/governor polls (1 non-nominee matchups set aside), 225 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Aug 13): corrected margin -31.8 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -5.7, from wikipedia
+{
+  "published_at": "2026-10-10T07:04:20",
+  "model_version": "2026.10.08",
+  "generic_ballot_dem_margin": 8.4
+}
+Senate Dem control 52%, House Dem control 82%, Dem governorships (median) 19
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  137 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-10-10
+
+Daily update ok (267s): 1067 polls, 3 data warnings, Senate D 52%, House D 82%
+===== Sun 10/11/2026 12:41:41.72 ===== 
+===== Wed 10/14/2026  7:00:01.79 ===== 
+804 Senate/governor polls (0 non-nominee matchups set aside), 233 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -5.7, from wikipedia
+{
+  "published_at": "2026-10-14T07:04:20",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 8.35
+}
+Senate Dem control 53%, House Dem control 83%, Dem governorships (median) 19
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  137 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-10-14
+
+Daily update ok (268s): 1037 polls, 2 data warnings, Senate D 53%, House D 83%
+===== Thu 10/15/2026  7:00:01.82 ===== 
+821 Senate/governor polls (0 non-nominee matchups set aside), 238 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -5.7, from wikipedia
+{
+  "published_at": "2026-10-15T07:04:30",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 8.1
+}
+Senate Dem control 53%, House Dem control 82%, Dem governorships (median) 19
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  136 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-10-15
+
+Daily update ok (277s): 1059 polls, 2 data warnings, Senate D 53%, House D 82%
+===== Fri 10/16/2026  7:00:01.82 ===== 
+831 Senate/governor polls (0 non-nominee matchups set aside), 240 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -5.7, from wikipedia
+{
+  "published_at": "2026-10-16T07:04:25",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 8.1
+}
+Senate Dem control 53%, House Dem control 83%, Dem governorships (median) 19
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  136 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-10-16
+
+Daily update ok (273s): 1071 polls, 2 data warnings, Senate D 53%, House D 83%
+===== Mon 10/19/2026  7:00:01.90 ===== 
+851 Senate/governor polls (0 non-nominee matchups set aside), 243 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -4.9, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -4.9, from wikipedia
+{
+  "published_at": "2026-10-19T07:05:00",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 8.25
+}
+Senate Dem control 53%, House Dem control 86%, Dem governorships (median) 19
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  137 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-10-19
+
+Daily update ok (307s): 1094 polls, 2 data warnings, Senate D 53%, House D 86%
+===== Tue 10/20/2026  7:00:01.91 ===== 
+872 Senate/governor polls (0 non-nominee matchups set aside), 245 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -4.9, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -4.9, from wikipedia
+  NOTE [Rasmussen not in our data] Alaska senate: Peltola 44, Sullivan 42, ended Oct 15, n=775 LV. Run python src/rasmussen_check.py --add
+{
+  "published_at": "2026-10-20T07:04:28",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 8.25
+}
+Senate Dem control 52%, House Dem control 86%, Dem governorships (median) 19
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  137 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-10-20
+
+Daily update ok (273s): 1117 polls, 2 data warnings, Senate D 52%, House D 86%
+===== Wed 10/21/2026  7:00:01.91 ===== 
+877 Senate/governor polls (0 non-nominee matchups set aside), 249 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -4.9, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -4.9, from wikipedia
+{
+  "published_at": "2026-10-21T07:04:28",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 8.25
+}
+Senate Dem control 52%, House Dem control 87%, Dem governorships (median) 19
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  136 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-10-21
+
+Daily update ok (273s): 1126 polls, 2 data warnings, Senate D 52%, House D 87%
+===== Thu 10/22/2026  7:00:01.95 ===== 
+902 Senate/governor polls (0 non-nominee matchups set aside), 264 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -4.9, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -4.9, from wikipedia
+  WARNING [outlier poll] Senate · South Dakota: Lake Research Partners (D) (Aug 30): corrected margin +5.1 vs race average -11.1, from wikipedia
+{
+  "published_at": "2026-10-22T07:04:31",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 9.05
+}
+Senate Dem control 53%, House Dem control 90%, Dem governorships (median) 19
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  136 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-10-22
+
+Daily update ok (278s): 1166 polls, 3 data warnings, Senate D 53%, House D 90%
+===== Fri 10/23/2026  7:00:01.97 ===== 
+917 Senate/governor polls (0 non-nominee matchups set aside), 280 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -4.9, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -4.9, from wikipedia
+  WARNING [outlier poll] Senate · South Dakota: Lake Research Partners (D) (Aug 30): corrected margin +5.1 vs race average -11.6, from wikipedia
+{
+  "published_at": "2026-10-23T07:04:28",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 9.05
+}
+Senate Dem control 53%, House Dem control 92%, Dem governorships (median) 19
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  135 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-10-23
+
+Daily update ok (273s): 1197 polls, 3 data warnings, Senate D 53%, House D 92%
+===== Mon 10/26/2026  7:00:01.50 ===== 
+944 Senate/governor polls (0 non-nominee matchups set aside), 301 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · South Dakota: Lake Research Partners (D) (Aug 30): corrected margin +5.1 vs race average -11.6, from wikipedia
+{
+  "published_at": "2026-10-26T07:04:29",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 9.1
+}
+Senate Dem control 55%, House Dem control 92%, Dem governorships (median) 19
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  135 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-10-26
+
+Daily update ok (273s): 1245 polls, 3 data warnings, Senate D 55%, House D 92%
+===== Tue 10/27/2026  7:00:01.54 ===== 
+961 Senate/governor polls (0 non-nominee matchups set aside), 301 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · South Dakota: Lake Research Partners (D) (Aug 30): corrected margin +5.1 vs race average -11.6, from wikipedia
+  NOTE [Rasmussen not in our data] New Hampshire governor: Warmington 42, Ayotte 52, ended Oct 23, n=970 LV. Run python src/rasmussen_check.py --add
+{
+  "published_at": "2026-10-27T07:04:29",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 9.1
+}
+Senate Dem control 54%, House Dem control 93%, Dem governorships (median) 19
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  135 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-10-27
+
+Daily update ok (276s): 1262 polls, 3 data warnings, Senate D 54%, House D 93%
+===== Wed 10/28/2026  7:00:01.45 ===== 
+986 Senate/governor polls (0 non-nominee matchups set aside), 321 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · South Dakota: Lake Research Partners (D) (Aug 30): corrected margin +5.1 vs race average -11.6, from wikipedia
+{
+  "published_at": "2026-10-28T07:04:42",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 8.9
+}
+Senate Dem control 54%, House Dem control 91%, Dem governorships (median) 19
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  133 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-10-28
+
+Daily update ok (289s): 1307 polls, 3 data warnings, Senate D 54%, House D 91%
+===== Sat 10/31/2026 10:25:30.90 ===== 
+^C===== Sun 11/01/2026  6:00:01.35 ===== 
+1077 Senate/governor polls (0 non-nominee matchups set aside), 321 House district polls, 0 page load failures
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -5.7, from wikipedia
+{
+  "published_at": "2026-11-01T06:04:31",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 8.4
+}
+Senate Dem control 60%, House Dem control 92%, Dem governorships (median) 20
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  132 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-11-01
+
+Daily update ok (278s): 1398 polls, 2 data warnings, Senate D 60%, House D 92%
+===== Mon 11/02/2026  6:00:01.48 ===== 
+1139 Senate/governor polls (0 non-nominee matchups set aside), 321 House district polls, 0 page load failures
+  WARNING [outlier poll] Governor · Rhode Island: Opinion Diagnostics (Sep 25): corrected margin +22.1 vs race average +39.1, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -5.7, from wikipedia
+{
+  "published_at": "2026-11-02T06:07:31",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 8.3
+}
+Senate Dem control 62%, House Dem control 92%, Dem governorships (median) 20
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  132 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-11-02
+
+Daily update ok (481s): 1460 polls, 3 data warnings, Senate D 62%, House D 92%
+===== Tue 11/03/2026  6:00:01.43 ===== 
+1212 Senate/governor polls (0 non-nominee matchups set aside), 325 House district polls, 0 page load failures
+  WARNING [outlier poll] Governor · Rhode Island: Opinion Diagnostics (Sep 25): corrected margin +22.1 vs race average +39.1, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.7, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -5.7, from wikipedia
+  NOTE [Rasmussen not in our data] Maine governor: Pingree 50, Charles 39, ended Nov 02, n=896 LV. Run python src/rasmussen_check.py --add
+  NOTE [Rasmussen not in our data] Ohio governor: Acton 49, Ramaswamy 45, ended Oct 31, n=1119 LV. Run python src/rasmussen_check.py --add
+  NOTE [Rasmussen not in our data] South Carolina governor: Johnson 43, Wilson 51, ended Oct 31, n=1028 LV. Run python src/rasmussen_check.py --add
+{
+  "published_at": "2026-11-03T06:04:36",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 8.3
+}
+Senate Dem control 67%, House Dem control 92%, Dem governorships (median) 20
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  132 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-11-03
+
+Daily update ok (283s): 1537 polls, 3 data warnings, Senate D 67%, House D 92%
+===== Wed 11/04/2026  7:53:09.08 ===== 
+1221 Senate/governor polls (0 non-nominee matchups set aside), 326 House district polls, 0 page load failures
+  WARNING [outlier poll] Governor · Rhode Island: Opinion Diagnostics (Sep 25): corrected margin +22.1 vs race average +39.1, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -8.1, from wikipedia
+  WARNING [outlier poll] Senate · Idaho: Peak Insights (R) (Oct 15): corrected margin -24.8 vs race average -8.1, from wikipedia
+{
+  "published_at": "2026-11-04T08:01:11",
+  "model_version": "2026.10.13",
+  "generic_ballot_dem_margin": 8.35
+}
+Senate Dem control 68%, House Dem control 97%, Dem governorships (median) 20
+Wrote forecast files to C:\Users\keith\Documents\GitHub\Election-Prediction\forecasts\2026
+  130 share cards -> C:\Users\keith\Documents\GitHub\Election-Prediction\src\..\forecasts\2026\cards\2026-11-04
+
+Daily update ok (526s): 1547 polls, 3 data warnings, Senate D 68%, House D 97%

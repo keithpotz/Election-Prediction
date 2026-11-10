@@ -47,13 +47,43 @@ def _download(url, path):
     with open(path, 'wb') as f:
         f.write(r.content)
 
-def load_archive(refresh=False):
-    """Historical polls, cached locally (the archive is frozen, so one download is enough)."""
+HISTORY_2024_CSV = os.path.join(DATA_DIR, 'history_2024.csv')
+
+def load_archive(refresh=False, include_2024=True):
+    """
+    Historical polls with results: FiveThirtyEight's archive (1998-2022, cached locally,
+    frozen) plus 2024 from Wikipedia's race pages (history_2024.py), in the same format.
+    """
     if refresh or not os.path.exists(ARCHIVE_CSV):
         _download(ARCHIVE_URL, ARCHIVE_CSV)
     if refresh or not os.path.exists(ARCHIVE_538_RATINGS_CSV):
         _download(ARCHIVE_538_RATINGS_URL, ARCHIVE_538_RATINGS_CSV)
-    return pd.read_csv(ARCHIVE_CSV, low_memory=False)
+    archive = pd.read_csv(ARCHIVE_CSV, low_memory=False)
+    if include_2024 and os.path.exists(HISTORY_2024_CSV):
+        archive = pd.concat([archive, pd.read_csv(HISTORY_2024_CSV, low_memory=False)], ignore_index=True)
+    return archive
+
+HERDING_CACHE = os.path.join(DATA_DIR, '538_herding_cache.csv')
+
+def add_herding(polls):
+    """
+    Per-poll herding distances (see compute_ratings). They depend only on other polls
+    in the same race, and the archive is frozen, so they're computed once and cached.
+    """
+    out = polls.copy()
+    key = ['poll_id', 'question_id']
+    cache = pd.read_csv(HERDING_CACHE) if os.path.exists(HERDING_CACHE) else pd.DataFrame(columns=key + ['dist', 'dist_floor'])
+    done = set(zip(cache['poll_id'], cache['question_id']))
+    todo_races = out.loc[[(p, q) not in done for p, q in zip(out['poll_id'], out['question_id'])], 'race'].unique()
+    if len(todo_races):                       # only races with polls not yet in the cache
+        sub = out[out['race'].isin(todo_races)].copy()
+        sub['dist'], sub['dist_floor'] = _herding(sub)
+        cache = pd.concat([cache[~cache.set_index(key).index.isin(sub.set_index(key).index)],
+                           sub[key + ['dist', 'dist_floor']]], ignore_index=True)
+        cache.to_csv(HERDING_CACHE, index=False)
+    merged = out.merge(cache, on=key, how='left')
+    merged.index = out.index
+    return merged
 
 def prepare_polls(raw):
     """
@@ -93,8 +123,104 @@ def _relative_to_peers(df):
     out['relative_error'] = out['error'] - out['peer_err']
     return out
 
+# ── FiveThirtyEight-style Predictive Plus-Minus ────────────────────────────────
+# Follows "How Our Pollster Ratings Work" (FiveThirtyEight, March 2023):
+#   simple plus-minus    error vs. the error expected from race type, sample size,
+#                        days to election, and how crowded the field was (regression)
+#   relative plus-minus  error vs. other pollsters in the same race
+#   advanced plus-minus  relative weighted by n (other firms in the race) + simple
+#                        weighted by 3; recent cycles weigh more (0.93 per year)
+#   herding penalty      half the shortfall of a pollster's distance from the prior
+#                        polling average below what sampling error alone would produce
+#   predictive plus-minus = (max(-2, APM + herding) * n_disc + prior * 18) / (18 + n_disc)
+#                        prior = 0.66 - 0.57 * quality + min(18, n_disc) * -0.03,
+#                        quality = 1 for AAPOR Transparency Initiative / Roper members
+# Simplifications: no strength-of-schedule iteration; the field-crowding adjustment
+# enters through the expected-error regression rather than as a separate step.
+RECENCY_DECAY = 0.93
+PRIOR_POLLS = 18
+
+def _expected_error(df):
+    """Regression of absolute error on race type, sampling error, sqrt(days), and the
+    number of other firms polling the race. Returns predicted absolute error per poll."""
+    n = df['samplesize'].fillna(600).clip(lower=100)
+    X = pd.get_dummies(df['type_simple'], prefix='t', drop_first=True, dtype=float)
+    X['sampling'] = 1 / np.sqrt(n)
+    X['days'] = np.sqrt(df['time_to_election'].clip(lower=0))
+    X['crowd'] = np.log1p(df['other_firms'])
+    X.insert(0, 'const', 1.0)
+    coef, *_ = np.linalg.lstsq(X.values, df['abs_error'].values, rcond=None)
+    return X.values @ coef
+
+def _herding(df):
+    """Per poll: distance from the average of earlier (3+ days) nonpartisan polls of the
+    same race by other firms, and the distance sampling error alone would produce."""
+    dist = pd.Series(np.nan, index=df.index)
+    floor = pd.Series(np.nan, index=df.index)
+    df = df.assign(_date=pd.to_datetime(df['polldate']))
+    for _, g in df.groupby('race'):
+        if g['pollster_rating_id'].nunique() < 2:
+            continue
+        g = g.sort_values('_date')
+        for i, r in g.iterrows():
+            prev = g[(g['_date'] <= r['_date'] - pd.Timedelta(days=3)) &
+                     (g['pollster_rating_id'] != r['pollster_rating_id']) & g['partisan'].isna()]
+            if prev.empty:
+                continue
+            prev = prev.groupby('pollster_rating_id').tail(1)          # latest per firm
+            dist[i] = abs(r['poll_margin'] - prev['poll_margin'].mean())
+            n_self = r['samplesize'] if pd.notna(r['samplesize']) else 600
+            sd_poll = 100 / np.sqrt(max(n_self, 100))
+            sd_avg = 100 / np.sqrt(prev['samplesize'].fillna(600).clip(lower=100).sum())
+            floor[i] = np.hypot(sd_poll, sd_avg) * np.sqrt(2 / np.pi)
+    return dist, floor
+
 def compute_ratings(polls):
-    """One row per pollster: shrunk plus_minus and house_effect, plus raw stats."""
+    """One row per pollster: Predictive Plus-Minus (stored as plus_minus, lower is
+    better), shrunk house effect, and the intermediate 538-style components."""
+    df = polls.copy()
+    firms = df.groupby('race')['pollster_rating_id'].nunique()
+    df['other_firms'] = df['race'].map(firms) - 1
+    df['simple_pm'] = df['abs_error'] - _expected_error(df)
+
+    rel = _relative_to_peers(df)
+    df['relative_pm'] = rel['plus_minus'].reindex(df.index)
+    df['relative_error'] = rel['relative_error'].reindex(df.index)
+    n = df['other_firms']
+    df['advanced_pm'] = np.where(df['relative_pm'].notna(),
+                                 (n * df['relative_pm'].fillna(0) + 3 * df['simple_pm']) / (n + 3),
+                                 df['simple_pm'])
+    df['w'] = RECENCY_DECAY ** (df['cycle'].max() - df['cycle'])
+    if 'dist' not in df:      # herding distances only depend on the same race, so callers
+        df['dist'], df['dist_floor'] = _herding(df)   # rating many subsets can precompute them
+
+    names = df.groupby('pollster_rating_id')['pollster'].agg(lambda s: s.value_counts().index[0])
+    aliases = df.groupby('pollster_rating_id')['pollster'].agg(lambda s: '|'.join(sorted(set(s))))
+    rows = {}
+    for pid, g in df.groupby('pollster_rating_id'):
+        w = g['w']
+        n_disc = float(w.sum())
+        apm = float(np.average(g['advanced_pm'], weights=w))
+        h = g.dropna(subset=['dist'])
+        herd = 0.5 * max(0.0, float(h['dist_floor'].mean() - h['dist'].mean())) if len(h) >= 3 else 0.0
+        quality = 1.0 if g['aapor_roper'].fillna(False).astype(bool).any() else 0.0
+        prior = 0.66 - 0.57 * quality - 0.03 * min(PRIOR_POLLS, n_disc)
+        ppm = (max(-2.0, apm + herd) * n_disc + prior * PRIOR_POLLS) / (PRIOR_POLLS + n_disc)
+        hr = g.dropna(subset=['relative_error'])
+        rows[pid] = {
+            'pollster': names[pid], 'aliases': aliases[pid],
+            'n_polls': int(len(g)), 'n_races': int(g['race'].nunique()),
+            'first_cycle': int(g['cycle'].min()), 'last_cycle': int(g['cycle'].max()),
+            'mean_abs_error': float(g['abs_error'].mean()),
+            'simple_plus_minus': float(np.average(g['simple_pm'], weights=w)),
+            'advanced_plus_minus': apm, 'herding_penalty': herd, 'aapor_roper': bool(quality),
+            'plus_minus': ppm,
+            'house_effect': float(hr['relative_error'].sum() / (len(hr) + SHRINKAGE_POLLS)) if len(hr) else 0.0,
+        }
+    return pd.DataFrame.from_dict(rows, orient='index').rename_axis('pollster_rating_id').sort_values('plus_minus')
+
+def compute_ratings_peer_only(polls):
+    """Previous method (kept for comparison): plus-minus vs. same-race peers, shrunk to 0."""
     rel = _relative_to_peers(polls)
     names = polls.groupby('pollster_rating_id')['pollster'].agg(lambda s: s.value_counts().index[0])
     aliases = polls.groupby('pollster_rating_id')['pollster'].agg(lambda s: '|'.join(sorted(set(s))))
@@ -126,14 +252,14 @@ def partisan_sponsor_effects(polls):
         out[key] = float(sub.sum() / (len(sub) + SHRINKAGE_POLLS)) if len(sub) else 0.0
     return out
 
-def grade_ratings(polls, split_cycle=2018):
+def grade_ratings(polls, split_cycle=2018, rate=None):
     """
     Out-of-sample check that the ratings mean something: rate pollsters using cycles up
     to `split_cycle`, then see whether those ratings predict who did well afterwards.
     """
     train = polls[polls['cycle'] <= split_cycle]
     test_rel = _relative_to_peers(polls[polls['cycle'] > split_cycle])
-    train_r = compute_ratings(train)
+    train_r = (rate or compute_ratings)(train)
 
     test_by = test_rel.groupby('pollster_rating_id').agg(
         n=('plus_minus', 'size'), test_pm=('plus_minus', 'mean'), test_he=('relative_error', 'mean'))
@@ -202,8 +328,10 @@ def match_pollster(name, ratings):
 def sponsor_party(name):
     """Sponsor marker Wikipedia puts after a pollster: (D), (R), or (I) for a poll paid
     for by an independent candidate's campaign."""
-    m = re.search(r'\((D|R|I)\)', str(name))
-    return {'D': 'DEMOCRAT', 'R': 'REPUBLICAN', 'I': 'INDEPENDENT'}[m.group(1)] if m else None
+    marks = set(re.findall(r'\((D|R|I)\)', str(name)))
+    if len(marks) != 1:
+        return None      # unmarked, or a bipartisan team like 'Beacon Research (D)/Shaw & Co. (R)'
+    return {'D': 'DEMOCRAT', 'R': 'REPUBLICAN', 'I': 'INDEPENDENT'}[marks.pop()]
 
 
 if __name__ == '__main__':
@@ -215,6 +343,7 @@ if __name__ == '__main__':
     print("Most accurate (min 40 polls):\n", big.head(12)[cols].round(2).to_string(index=False))
     print("\nLeast accurate (min 40 polls):\n", big.tail(8)[cols].round(2).to_string(index=False))
     print("\nPartisan-sponsor house effects:", partisan_sponsor_effects(polls))
-    print("\nOut-of-sample grading:", grade_ratings(polls))
+    print("\nOut-of-sample grading (538-style):", grade_ratings(polls))
+    print("Out-of-sample grading (previous peer-only):", grade_ratings(polls, rate=compute_ratings_peer_only))
     print("\nAgreement with 538's own ratings (corr of plus_minus vs POLLSCORE, 40+ polls):",
           round(big[['plus_minus', 'pollscore_538']].dropna().corr().iloc[0, 1], 2))

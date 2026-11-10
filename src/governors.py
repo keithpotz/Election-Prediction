@@ -105,12 +105,12 @@ def build_model():
     model = LinearRegression().fit(train[FEATURES], train['margin'])
     return model, evaluate(train), M.presidential_lean_by_year()
 
-def fundamentals_2026(generic_ballot_margin, model_bundle=None, race_status=None):
+def fundamentals_2026(generic_ballot_margin, model_bundle=None, race_status=None, archive_races=None):
     """Fundamentals-only margin for each 2026 governor race."""
     from race_status_2026 import load_or_scrape_race_status
     model, err, pres_lean = model_bundle or build_model()
     status = race_status if race_status is not None else load_or_scrape_race_status(office='governor')
-    archive = archive_governor_races()
+    archive = archive_races if archive_races is not None else archive_governor_races()
     rows = []
     for _, s in status.iterrows():
         state = s['state']

@@ -1,0 +1,507 @@
+office,state,district,dem_side_candidate,rep_candidate,dem_side_pct,rep_pct,winner_party,source_url,entered_at
+senate,WEST VIRGINIA,,Rachel Fetty Anderson,Shelley Moore Capito,37.9,58.3,REPUBLICAN,,2026-11-04T16:09:25
+senate,WYOMING,,James W. Byrd,Harriet Hageman,34.8,65.2,REPUBLICAN,,2026-11-04T16:13:19
+senate,OKLAHOMA,,N'Kiyla Jasmine Thomas,Kevin Hern,39.3,57.2,REPUBLICAN,,2026-11-04T15:27:55
+senate,TENNESSEE,,Marquita Bradshaw,Bill Hagerty,42.9,55.1,REPUBLICAN,,2026-11-04T15:48:05
+senate,MONTANA,,Alani Bankhead,Kurt Alme,37.4,48.8,REPUBLICAN,,2026-11-04T14:56:50
+senate,ALABAMA,,Everett Wess,Barry Moore,45.3,54.7,REPUBLICAN,,2026-11-04T07:49:08
+senate,ARKANSAS,,Hallie Shoffner,Tom Cotton,42.4,54.3,REPUBLICAN,,2026-11-04T07:54:14
+senate,KENTUCKY,,Charles Booker,nick Begich III,42.9,55.0,REPUBLICAN,,2026-11-04T12:40:55
+senate,SOUTH DAKOTA,,Brian Bengs,Mike Rounds,39.5,60.5,REPUBLICAN,,2026-11-04T15:46:37
+senate,MISSISSIPPI,,Scott Colom,Cindy Hyde-Smith,,,,,
+senate,IDAHO,,Todd Achilles,Jim Risch,33.6,56.5,REPUBLICAN,,2026-11-04T12:20:14
+senate,FLORIDA,,Angie Nixon,Ashley Moody,48.0,50.8,REPUBLICAN,,2026-11-03T20:51:51
+senate,LOUISIANA,,Jamie Davis,Julia Letlow,49.1,50.9,REPUBLICAN,,2026-11-04T12:42:45
+senate,NEBRASKA,,Dan Osborn,Pete Ricketts,43.6,50.4,REPUBLICAN,,2026-11-04T14:57:39
+senate,SOUTH CAROLINA,,Annie Andrews,Darline Graham,51.1,46.7,DEMOCRAT,,2026-11-04T15:44:02
+senate,IOWA,,Josh Turek,Ashley Hinson,50.5,46.4,DEMOCRAT,,2026-11-04T12:35:27
+senate,ALASKA,,Mary Peltola,Dan S. Sullivan,,,,,
+senate,OHIO,,Sherrod Brown,Jon Husted,50.0,45.2,DEMOCRAT,,2026-11-04T15:22:42
+senate,KANSAS,,Adam Hamilton,Roger Marshall,50.9,46.1,DEMOCRAT,,2026-11-04T12:38:53
+senate,TEXAS,,James Talarico,Ken Paxton,55.1,43.0,DEMOCRAT,,2026-11-04T15:51:20
+senate,MAINE,,Troy Jackson,Susan Collins,53.7,46.3,DEMOCRAT,,2026-11-04T13:00:54
+senate,MICHIGAN,,Abdul El-Sayed,Mike Rogers,52.5,45.5,DEMOCRAT,,2026-11-04T14:42:49
+senate,MINNESOTA,,Peggy Flanagan,Michele Tafoya,53.7,43.6,DEMOCRAT,,2026-11-04T14:48:40
+senate,NEW HAMPSHIRE,,Chris Pappas,John E. Sununu,59.2,39.1,DEMOCRAT,,2026-11-03T20:50:29
+senate,GEORGIA,,Jon Ossoff,Mike Collins,63.6,36.4,DEMOCRAT,,2026-11-03T20:20:39
+senate,NORTH CAROLINA,,Roy Cooper,Michael Whatley,58.7,39.1,DEMOCRAT,,2026-11-04T15:19:53
+senate,ILLINOIS,,Juliana Stratton,Don Tracy,70.6,28.1,DEMOCRAT,,2026-11-03T20:16:14
+senate,NEW MEXICO,,Ben Ray Luján,Larry Marker,63.2,36.8,DEMOCRAT,,2026-11-04T15:10:02
+senate,COLORADO,,John Hickenlooper,Mark Baisley,60.2,35.6,DEMOCRAT,,2026-11-04T07:57:06
+senate,VIRGINIA,,Mark Warner,Bert Mizusawa,56.4,43.3,DEMOCRAT,,2026-11-03T19:53:56
+senate,NEW JERSEY,,Cory Booker,Justin Murphy,78.8,18.4,DEMOCRAT,,2026-11-03T20:14:09
+senate,MASSACHUSETTS,,Ed Markey,John Deaton,63.3,32.3,DEMOCRAT,,2026-11-04T14:39:33
+senate,RHODE ISLAND,,Jack Reed,Raymond McKay,57.7,38.0,DEMOCRAT,,2026-11-03T20:13:31
+senate,OREGON,,Jeff Merkley,David Brock Smith,56.6,40.5,DEMOCRAT,,2026-11-04T15:29:36
+senate,DELAWARE,,Chris Coons,Michael Katz,63.6,36.4,DEMOCRAT,,2026-11-04T12:09:03
+governor,WYOMING,,Kenneth Casner,Eric Barlow,16.8,68.6,REPUBLICAN,,2026-11-04T16:13:40
+governor,IDAHO,,Terri Pickens,Brad Little,32.2,57.2,REPUBLICAN,,2026-11-04T12:20:44
+governor,ARKANSAS,,Fredrick Love,Sarah Huckabee Sanders,38.6,53.9,REPUBLICAN,,2026-11-04T12:22:09
+governor,SOUTH DAKOTA,,Dan Ahlers,Larry Rhoden,36.5,63.5,REPUBLICAN,,2026-11-04T15:46:58
+governor,TENNESSEE,,Jerri Green,Marsha Blackburn,43.0,45.5,REPUBLICAN,,2026-11-04T15:48:29
+governor,ALABAMA,,Doug Jones,Tommy Tuberville,47.9,52.1,REPUBLICAN,,2026-11-04T12:21:09
+governor,SOUTH CAROLINA,,Jermaine Johnson,Alan Wilson,47.1,51.6,REPUBLICAN,,2026-11-04T15:44:25
+governor,OKLAHOMA,,Cyndi Munson,Mike Mazzei,45.9,51.9,REPUBLICAN,,2026-11-04T15:27:30
+governor,NEBRASKA,,Lynne Walz,Jim Pillen,42.2,50.8,REPUBLICAN,,2026-11-04T14:58:05
+governor,NEW HAMPSHIRE,,Cinde Warmington,Kelly Ayotte,47.3,51.2,REPUBLICAN,,2026-11-05T16:22:00
+governor,FLORIDA,,David Jolly,Byron Donalds,48.7,50.0,REPUBLICAN,,2026-11-04T16:15:52
+governor,VERMONT,,Amanda Janoo,Phil Scott,45.6,52.6,REPUBLICAN,,2026-11-04T16:03:15
+governor,TEXAS,,Gina Hinojosa,Greg Abbott,52.8,45.7,DEMOCRAT,,2026-11-04T15:51:38
+governor,NEVADA,,Aaron Ford,Joe Lombardo,51.7,44.2,DEMOCRAT,,2026-11-04T15:04:20
+governor,KANSAS,,Cindy Holscher,Ty Masterson,,,,,
+governor,GEORGIA,,Keisha Lance Bottoms,Rick Jackson,54.3,45.7,DEMOCRAT,,2026-11-04T12:17:55
+governor,OREGON,,Tina Kotek,Christine Drazan,51.7,45.5,DEMOCRAT,,2026-11-04T15:29:54
+governor,OHIO,,Amy Acton,Vivek Ramaswamy,52.3,44.4,DEMOCRAT,,2026-11-04T15:23:02
+governor,WISCONSIN,,David Crowley,Tom Tiffany,54.1,45.9,DEMOCRAT,,2026-11-04T16:10:29
+governor,ALASKA,,Jonathan Kreiss-Tomkins,Bernadette Wilson,,,,,
+governor,NEW MEXICO,,Deb Haaland,Gregg Hull,57.2,42.8,DEMOCRAT,,2026-11-04T15:10:22
+governor,IOWA,,Rob Sand,Zach Lahn,55.5,44.5,DEMOCRAT,,2026-11-04T12:35:48
+governor,MICHIGAN,,Jocelyn Benson,John James,54.5,43.8,DEMOCRAT,,2026-11-04T14:43:10
+governor,ARIZONA,,Katie Hobbs,Andy Biggs,55.7,42.6,DEMOCRAT,,2026-11-04T07:53:43
+governor,MAINE,,Hannah Pingree,Robert B. Charles,55.0,36.9,DEMOCRAT,,2026-11-04T13:02:38
+governor,MINNESOTA,,Amy Klobuchar,Lisa Demuth,55.5,42.6,DEMOCRAT,,2026-11-04T14:49:03
+governor,NEW YORK,,Kathy Hochul,Bruce Blakeman,60.0,39.8,DEMOCRAT,,2026-11-04T15:12:01
+governor,COLORADO,,Phil Weiser,Victor Marx,61.0,33.6,DEMOCRAT,,2026-11-04T16:14:31
+governor,CONNECTICUT,,Ned Lamont,Ryan Fazio,58.8,41.2,DEMOCRAT,,2026-11-04T12:03:44
+governor,ILLINOIS,,JB Pritzker,Darren Bailey,69.7,27.3,DEMOCRAT,,2026-11-03T20:15:41
+governor,CALIFORNIA,,Xavier Becerra,Steve Hilton,64.0,36.0,DEMOCRAT,,2026-11-04T16:17:13
+governor,PENNSYLVANIA,,Josh Shapiro,Stacy Garrity,80.8,18.4,DEMOCRAT,,2026-11-03T20:11:56
+governor,MASSACHUSETTS,,Maura Healey,Mike Minogue,62.0,34.6,DEMOCRAT,,2026-11-04T14:42:13
+governor,HAWAII,,Josh Green,Gary Cordery,74.4,25.6,DEMOCRAT,,2026-11-04T12:17:24
+governor,MARYLAND,,Wes Moore,Dan Cox,62.7,33.3,DEMOCRAT,,2026-11-04T13:03:05
+governor,RHODE ISLAND,,Helena Foulkes,Aaron Guckian,57.6,27.9,DEMOCRAT,,2026-11-04T15:42:44
+house,ALABAMA,1.0,Clyde Jones Jr.,Jerry Carl,40.9,59.1,REPUBLICAN,,2026-11-04T07:49:52
+house,ALABAMA,2.0,Shomari Figures,Rhett Marques,53.8,46.2,DEMOCRAT,,2026-11-04T07:50:23
+house,ALABAMA,3.0,Lee McInnis,Mike Rogers,36.0,64.0,REPUBLICAN,,2026-11-04T07:50:57
+house,ALABAMA,4.0,Amanda Pusczek,Robert Aderholt,25.1,74.9,REPUBLICAN,,2026-11-04T07:51:31
+house,ALABAMA,5.0,Andrew Sneed,Dale Strong,46.8,53.2,REPUBLICAN,,2026-11-04T07:52:00
+house,ALABAMA,6.0,Maurice Mercer,Gary Palmer,42.5,57.5,REPUBLICAN,,2026-11-04T07:52:28
+house,ALABAMA,7.0,Terri Sewell,Ammie Akin,69.4,30.6,DEMOCRAT,,2026-11-04T07:53:04
+house,ALASKA,0.0,Eric Hafner,Nick Begich III,,,,,
+house,ARIZONA,1.0,Amish Shah,Jay Feely,52.5,45.4,DEMOCRAT,,2026-11-05T16:32:37
+house,ARIZONA,2.0,Jonathan Nez,Eli Crane,48.5,49.6,REPUBLICAN,,2026-11-10T09:36:15
+house,ARIZONA,3.0,Yassamin Ansari,,87.4,1.0,DEMOCRAT,,2026-11-04T12:24:04
+house,ARIZONA,4.0,Greg Stanton,Zuhdi Jasser,62.4,35.4,DEMOCRAT,,2026-11-04T12:24:29
+house,ARIZONA,5.0,Elizabeth Lee,Mark Lamb,48.3,51.7,REPUBLICAN,,2026-11-10T09:40:26
+house,ARIZONA,6.0,JoAnna Mendoza,Juan Ciscomani,53.0,44.9,DEMOCRAT,,2026-11-05T16:33:15
+house,ARIZONA,7.0,Adelita Grijalva,Daniel Butierez,71.5,28.5,DEMOCRAT,,2026-11-04T12:24:57
+house,ARIZONA,8.0,Bernadette Greene-Placentia,Abraham Hamadeh,48.8,51.2,REPUBLICAN,,2026-11-10T09:37:07
+house,ARIZONA,9.0,Dani Sterbinsky,Paul Gosar,42.2,57.8,REPUBLICAN,,2026-11-04T12:25:21
+house,ARKANSAS,1.0,Terri Green,Rick Crawford,31.0,65.5,REPUBLICAN,,2026-11-04T07:55:23
+house,ARKANSAS,2.0,Chris Jones,French Hill,49.1,50.9,REPUBLICAN,,2026-11-05T16:40:23
+house,ARKANSAS,3.0,Robb Ryerse,Steve Womack,41.5,54.9,REPUBLICAN,,2026-11-04T07:55:51
+house,ARKANSAS,4.0,James Russell,Bruce Westerman,34.5,65.5,REPUBLICAN,,2026-11-04T07:56:20
+house,CALIFORNIA,1.0,Mike McGuire,James Gallagher,57.0,43.0,DEMOCRAT,,2026-11-04T16:17:43
+house,CALIFORNIA,2.0,Jared Huffman,Robin Littau,67.8,32.2,DEMOCRAT,,2026-11-04T16:17:59
+house,CALIFORNIA,3.0,Ami Bera,Robb Tucker,57.1,42.9,DEMOCRAT,,2026-11-04T16:18:19
+house,CALIFORNIA,4.0,Eric Jones,,,,,,
+house,CALIFORNIA,5.0,Michael Masuda,Tom McClintock,43.8,56.2,REPUBLICAN,,2026-11-04T16:18:41
+house,CALIFORNIA,6.0,Richard Pan,,57.5,42.5,DEMOCRAT,,2026-11-04T16:19:01
+house,CALIFORNIA,7.0,Doris Matsui,,,,,,
+house,CALIFORNIA,8.0,John Garamendi,Rudy Recile,72.3,27.7,DEMOCRAT,,2026-11-04T16:19:19
+house,CALIFORNIA,9.0,Josh Harder,John McBride,65.8,34.2,DEMOCRAT,,2026-11-04T16:19:37
+house,CALIFORNIA,10.0,Mark DeSaulnier,Jeff Frese,69.1,30.9,DEMOCRAT,,2026-11-04T16:20:04
+house,CALIFORNIA,11.0,Connie Chan,,53.4,46.6,DEMOCRAT,,2026-11-10T09:34:52
+house,CALIFORNIA,12.0,Jamie Joyce,,79.8,20.2,DEMOCRAT,,2026-11-04T16:20:23
+house,CALIFORNIA,13.0,Adam Gray,Kevin Lincoln,61.3,38.7,DEMOCRAT,,2026-11-04T16:20:42
+house,CALIFORNIA,14.0,Melissa Hernandez,,57.6,42.4,DEMOCRAT,,2026-11-10T09:33:16
+house,CALIFORNIA,15.0,Kevin Mullin,Charles Hoelter,77.4,22.6,DEMOCRAT,,2026-11-04T16:20:59
+house,CALIFORNIA,16.0,Sam Liccardo,Peter Soulé,75.9,24.1,DEMOCRAT,,2026-11-04T16:21:17
+house,CALIFORNIA,17.0,Ro Khanna,Ritesh Tandon,70.5,29.5,DEMOCRAT,,2026-11-04T16:21:34
+house,CALIFORNIA,18.0,Zoe Lofgren,Shane Lewis,71.7,28.3,DEMOCRAT,,2026-11-04T16:21:51
+house,CALIFORNIA,19.0,Jimmy Panetta,Peter Coe Verbica,72.0,28.0,DEMOCRAT,,2026-11-04T16:22:09
+house,CALIFORNIA,20.0,Sandra Van Scotter,Vince Fong,37.4,62.6,REPUBLICAN,,2026-11-04T16:22:51
+house,CALIFORNIA,21.0,Jim Costa,Kyle Kirkland,62.2,37.8,DEMOCRAT,,2026-11-04T16:23:09
+house,CALIFORNIA,22.0,Randy Villegas,David Valadao,66.4,33.6,DEMOCRAT,,2026-11-04T16:23:28
+house,CALIFORNIA,23.0,Tessa Lynn Hodge,Jay Obernolte,,,,,
+house,CALIFORNIA,24.0,Salud Carbajal,Bob Smith,65.8,34.2,DEMOCRAT,,2026-11-04T18:26:28
+house,CALIFORNIA,25.0,Raul Ruiz,Joe Males,64.4,35.6,DEMOCRAT,,2026-11-04T18:27:32
+house,CALIFORNIA,26.0,Jacqui Irwin,Sam Gallucci,61.8,38.2,DEMOCRAT,,2026-11-05T16:12:09
+house,CALIFORNIA,27.0,George Whitesides,Jason Gibbs,62.4,37.6,DEMOCRAT,,2026-11-05T16:12:44
+house,CALIFORNIA,28.0,Judy Chu,April Verlato,69.4,30.4,DEMOCRAT,,2026-11-05T16:13:17
+house,CALIFORNIA,29.0,Angelica Dueñas,,59.6,,DEMOCRAT,,
+house,CALIFORNIA,30.0,Laura Friedman,Scott Meyers,76.2,23.8,DEMOCRAT,,
+house,CALIFORNIA,31.0,Gil Cisneros,Eric Ching,64.5,35.5,DEMOCRAT,,
+house,CALIFORNIA,32.0,Brad Sherman,Larry Thompson,66.7,33.3,DEMOCRAT,,
+house,CALIFORNIA,33.0,Pete Aguilar,Stephanie Vargas,67.6,32.4,DEMOCRAT,,
+house,CALIFORNIA,34.0,Angela Gonzales-Torres,,59.7,,DEMOCRAT,,
+house,CALIFORNIA,35.0,Norma Torres,Mike Cargile,65.6,34.4,DEMOCRAT,,
+house,CALIFORNIA,36.0,Ted Lieu,Houston Brignano,71.7,28.3,DEMOCRAT,,
+house,CALIFORNIA,37.0,Sydney Kamlager-Dove,,62.0,38.0,DEMOCRAT,,
+house,CALIFORNIA,38.0,Hilda Solis,Pedro Casas,65.9,34.1,DEMOCRAT,,
+house,CALIFORNIA,39.0,Mark Takano,Steve Manos,65.9,34.1,DEMOCRAT,,
+house,CALIFORNIA,40.0,,Ken Calvert,46.4,53.6,REPUBLICAN,,2026-11-10T09:35:37
+house,CALIFORNIA,41.0,Linda Sánchez,Mitch Clemmons,65.9,34.1,DEMOCRAT,,
+house,CALIFORNIA,42.0,Robert Garcia,Brian Burley,60.1,39.9,DEMOCRAT,,
+house,CALIFORNIA,43.0,Maxine Waters,Cristian Morales,81.8,18.2,DEMOCRAT,,
+house,CALIFORNIA,44.0,Nanette Barragán,Genevieve Angel,80.4,19.6,DEMOCRAT,,
+house,CALIFORNIA,45.0,Derek Tran,Chuong Vo,59.2,40.8,DEMOCRAT,,
+house,CALIFORNIA,46.0,Lou Correa,David Pan,68.5,31.5,DEMOCRAT,,
+house,CALIFORNIA,47.0,Dave Min,Jenny Le Roux,56.9,43.1,DEMOCRAT,,
+house,CALIFORNIA,48.0,Marni von Wilpert,Jim Desmond,59.5,40.5,DEMOCRAT,,
+house,CALIFORNIA,49.0,Mike Levin,Armen Kurdian,57.4,42.6,DEMOCRAT,,
+house,CALIFORNIA,50.0,Scott Peters,Steve Cohen,61.0,39.0,DEMOCRAT,,
+house,CALIFORNIA,51.0,Sara Jacobs,Ricardo Cabrera,63.1,36.9,DEMOCRAT,,
+house,CALIFORNIA,52.0,Juan Vargas,Jeff Belle,68.9,31.1,DEMOCRAT,,
+house,COLORADO,1.0,Melat Kiros,Christy Peterson,78.3,13.9,DEMOCRAT,,2026-11-04T11:53:58
+house,COLORADO,2.0,Joe Neguse,Kelley Dennison,74.9,23.5,DEMOCRAT,,2026-11-04T11:54:44
+house,COLORADO,3.0,Dwayne Romero,Jeff Hurd,,,,,
+house,COLORADO,4.0,Eileen Laubacher,Lauren Boebert,48.8,47.9,DEMOCRAT,,2026-11-10T09:29:01
+house,COLORADO,5.0,Jessica Killin,Jeff Crank,50.6,46.0,DEMOCRAT,,2026-11-05T16:31:41
+house,COLORADO,6.0,Jason Crow,Jason Clark,66.0,31.4,DEMOCRAT,,2026-11-04T16:15:09
+house,COLORADO,7.0,Brittany Pettersen,Tim Bennett,60.8,36.4,DEMOCRAT,,2026-11-04T12:00:44
+house,COLORADO,8.0,Manny Rutinel,Gabe Evans,55.5,40.8,DEMOCRAT,,2026-11-04T12:01:57
+house,CONNECTICUT,1.0,Luke Bronin,Amy Chai,65.1,33.2,DEMOCRAT,,2026-11-04T12:05:18
+house,CONNECTICUT,2.0,Joe Courtney,George Austin,62.5,37.5,DEMOCRAT,,2026-11-04T12:06:01
+house,CONNECTICUT,3.0,Rosa DeLauro,Chris Lancia,60.4,36.4,DEMOCRAT,,2026-11-04T12:06:25
+house,CONNECTICUT,4.0,Jim Himes,Michael Goldstein,65.5,32.6,DEMOCRAT,,2026-11-04T12:07:09
+house,CONNECTICUT,5.0,Jahana Hayes,Chris Shea,58.1,41.9,DEMOCRAT,,2026-11-04T12:07:56
+house,DELAWARE,0.0,Sarah McBride,Joseph Arminio,64.3,35.7,DEMOCRAT,,2026-11-04T12:10:23
+house,FLORIDA,1.0,Gay Valimont,Jimmy Patronis,36.0,62.2,REPUBLICAN,,2026-11-03T20:52:35
+house,FLORIDA,2.0,Amanda Green,Austin Rogers,48.0,52.0,REPUBLICAN,,2026-11-03T20:58:06
+house,FLORIDA,3.0,Seth Harp,Kat Cammack,43.7,54.5,REPUBLICAN,,2026-11-03T20:53:13
+house,FLORIDA,4.0,LaShonda Holloway,Aaron Bean,48.0,50.3,REPUBLICAN,,2026-11-03T20:54:03
+house,FLORIDA,5.0,Rachel Grage,John Rutherford,43.6,56.4,REPUBLICAN,,2026-11-03T20:54:33
+house,FLORIDA,6.0,Eric Yonce,Randy Fine,57.4,41.5,DEMOCRAT,,2026-11-03T20:14:45
+house,FLORIDA,7.0,Bale Dalton,Ryan Elijah,,,,,
+house,FLORIDA,8.0,Jennifer Jenkins,Mike Haridopolos,46.7,53.3,REPUBLICAN,,2026-11-03T20:11:15
+house,FLORIDA,9.0,Darren Soto,Dan Green,50.3,49.7,DEMOCRAT,,2026-11-10T09:20:32
+house,FLORIDA,10.0,Maxwell Frost,,100.0,0.0,DEMOCRAT,,2026-11-03T19:58:46
+house,FLORIDA,11.0,James Pericola,Joe Strada,46.1,52.8,REPUBLICAN,,2026-11-03T20:07:25
+house,FLORIDA,12.0,Kimberly Overman,Gus Bilirakis,45.9,52.8,REPUBLICAN,,2026-11-03T20:18:50
+house,FLORIDA,13.0,Leela Gray,Anna Paulina Luna,48.7,49.5,REPUBLICAN,,2026-11-05T16:30:28
+house,FLORIDA,14.0,Kathy Castor,Mike Beltran,51.2,45.9,DEMOCRAT,,2026-11-03T20:27:02
+house,FLORIDA,15.0,Robert People,Laurel Lee,45.7,54.3,REPUBLICAN,,2026-11-03T20:23:43
+house,FLORIDA,16.0,Kelly Kirschner,Sydney Gruters,46.9,51.2,REPUBLICAN,,2026-11-03T20:56:16
+house,FLORIDA,17.0,Matthew Montavon,Greg Steube,40.7,57.9,REPUBLICAN,,2026-11-03T19:56:44
+house,FLORIDA,18.0,Curtis Gibson,Scott Franklin,46.7,50.4,REPUBLICAN,,2026-11-04T12:12:06
+house,FLORIDA,19.0,Victor Arias,Jim Schwartzel,61.2,37.6,DEMOCRAT,,2026-11-03T20:03:39
+house,FLORIDA,20.0,Debbie Wasserman Schultz,Brent Andersen,76.3,19.8,DEMOCRAT,,2026-11-03T20:02:09
+house,FLORIDA,21.0,James Martin,Brian Mast,43.6,55.1,REPUBLICAN,,2026-11-03T20:26:26
+house,FLORIDA,22.0,Pia Dandiya,Casey Askar,51.9,48.1,DEMOCRAT,,2026-11-04T12:12:50
+house,FLORIDA,23.0,Lois Frankel,Deborah Adeimy,65.6,34.4,DEMOCRAT,,2026-11-03T20:06:15
+house,FLORIDA,24.0,Oliver Gilbert,Te Mayonna Brown,81.2,18.8,DEMOCRAT,,2026-11-03T20:02:36
+house,FLORIDA,25.0,Jared Moskowitz,Scott Singer,51.4,46.5,DEMOCRAT,,2026-11-03T20:22:37
+house,FLORIDA,26.0,Nicole Locklin,Mario Díaz-Balart,49.1,49.9,REPUBLICAN,,2026-11-10T09:21:33
+house,FLORIDA,27.0,Eliott Rodriguez,María Elvira Salazar,49.8,50.2,REPUBLICAN,,2026-11-10T09:21:05
+house,FLORIDA,28.0,Phil Ehr,Carlos Giménez,45.5,53.1,REPUBLICAN,,2026-11-03T20:21:23
+house,GEORGIA,1.0,Amanda Hollowell,Jim Kingston,48.6,51.4,REPUBLICAN,,2026-11-04T12:13:55
+house,GEORGIA,2.0,Sanford Bishop,Matt Day,63.2,36.8,DEMOCRAT,,2026-11-03T20:19:22
+house,GEORGIA,3.0,Maura Keller,Brian Jack,41.4,58.6,REPUBLICAN,,2026-11-04T12:14:34
+house,GEORGIA,4.0,Hank Johnson,James Duffie,84.8,15.2,DEMOCRAT,,2026-11-03T20:59:34
+house,GEORGIA,5.0,Nikema Williams,John Oscar Salvesen,93.7,6.3,DEMOCRAT,,2026-11-03T20:04:54
+house,GEORGIA,6.0,Lucy McBath,Kevin Martin,84.2,15.8,DEMOCRAT,,2026-11-03T20:05:26
+house,GEORGIA,7.0,Tony Kozycki,Rich McCormick,43.8,56.2,REPUBLICAN,,2026-11-04T12:15:05
+house,GEORGIA,8.0,Kelly Esti,Austin Scott,40.0,60.0,REPUBLICAN,,2026-11-03T21:00:14
+house,GEORGIA,9.0,Caitlyn Gegen,Andrew Clyde,43.6,56.4,REPUBLICAN,,2026-11-03T20:24:46
+house,GEORGIA,10.0,Pam Delancy,Houston Gaines,46.4,53.6,REPUBLICAN,,2026-11-04T12:15:40
+house,GEORGIA,11.0,Chris Harden,John Cowan,44.6,55.4,REPUBLICAN,,2026-11-04T12:16:08
+house,GEORGIA,12.0,Ceretta Smith,Rick Allen,47.9,52.1,REPUBLICAN,,2026-11-04T12:16:50
+house,GEORGIA,13.0,Jasmine Clark,Jonathan Chavez,81.5,18.5,DEMOCRAT,,2026-11-03T20:04:22
+house,GEORGIA,14.0,Shawn Harris,Clay Fuller,41.6,58.4,REPUBLICAN,,2026-11-03T21:01:05
+house,HAWAII,1.0,Ed Case,Adriel Lam,74.1,21.2,DEMOCRAT,,2026-11-04T12:18:25
+house,HAWAII,2.0,Jill Tokuda,Brenton Awa,68.2,31.8,DEMOCRAT,,2026-11-04T12:18:44
+house,IDAHO,1.0,Kaylee Peterson,Russ Fulcher,28.8,64.3,REPUBLICAN,,2026-11-04T12:19:18
+house,IDAHO,2.0,Ellie Gilbreath,Mike Simpson,40.6,51.5,REPUBLICAN,,2026-11-04T12:19:43
+house,ILLINOIS,1.0,Jonathan Jackson,Christian Maxwell,79.9,20.1,DEMOCRAT,,2026-11-03T21:01:55
+house,ILLINOIS,2.0,Donna Miller,Michael Noack,72.7,27.3,DEMOCRAT,,2026-11-04T07:48:14
+house,ILLINOIS,3.0,Delia Ramirez,Angel Oakley,75.7,24.3,DEMOCRAT,,2026-11-04T12:25:57
+house,ILLINOIS,4.0,Patty Garcia,Lupe Castillo,70.8,16.4,DEMOCRAT,,2026-11-04T12:26:19
+house,ILLINOIS,5.0,Mike Quigley,Tommy Hanson,75.5,24.5,DEMOCRAT,,2026-11-04T12:26:42
+house,ILLINOIS,6.0,Sean Casten,Niki Conforti,62.5,37.5,DEMOCRAT,,2026-11-04T12:27:05
+house,ILLINOIS,7.0,La Shawn Ford,Chad Koppie,89.0,11.0,DEMOCRAT,,2026-11-04T12:27:27
+house,ILLINOIS,8.0,Melissa Bean,Jennifer Davis,64.8,35.2,DEMOCRAT,,2026-11-04T12:27:46
+house,ILLINOIS,9.0,Daniel Biss,John Elleson,75.8,24.2,DEMOCRAT,,2026-11-04T12:28:04
+house,ILLINOIS,10.0,Brad Schneider,Carl Lambrecht,69.6,30.4,DEMOCRAT,,2026-11-04T12:28:30
+house,ILLINOIS,11.0,Bill Foster,Jeff Walter,65.4,34.6,DEMOCRAT,,2026-11-04T12:28:51
+house,ILLINOIS,12.0,Julie Fortier,Mike Bost,30.5,69.5,REPUBLICAN,,2026-11-04T12:29:12
+house,ILLINOIS,13.0,Nikki Budzinski,Jeff Wilson,62.6,37.4,DEMOCRAT,,2026-11-04T12:29:36
+house,ILLINOIS,14.0,Lauren Underwood,James Marter,62.5,37.5,DEMOCRAT,,2026-11-04T12:30:03
+house,ILLINOIS,15.0,Jennifer Todd,Mary Miller,33.6,66.4,REPUBLICAN,,2026-11-04T12:30:25
+house,ILLINOIS,16.0,Paul Nolley,Darin LaHood,41.4,58.6,REPUBLICAN,,2026-11-04T12:30:48
+house,ILLINOIS,17.0,Eric Sorensen,Dillan Vancil,60.0,40.0,DEMOCRAT,,2026-11-04T12:31:09
+house,INDIANA,1.0,Frank Mrvan,Barb Regnitz,63.0,37.0,DEMOCRAT,,2026-11-04T12:32:11
+house,INDIANA,2.0,Jamee Decio,Rudy Yakym,46.1,51.3,REPUBLICAN,,2026-11-04T12:32:28
+house,INDIANA,3.0,Kelly Thompson,Marlin Stutzman,45.1,54.9,REPUBLICAN,,2026-11-04T12:32:52
+house,INDIANA,4.0,Drew Cox,Jim Baird,45.8,54.2,REPUBLICAN,,2026-11-04T12:33:10
+house,INDIANA,5.0,J. D. Ford,Victoria Spartz,51.7,48.3,DEMOCRAT,,2026-11-04T12:33:40
+house,INDIANA,6.0,Cinde Wirth,Jefferson Shreve,44.9,55.1,REPUBLICAN,,2026-11-04T12:34:02
+house,INDIANA,7.0,André Carson,Patrick McAuley,77.1,20.3,DEMOCRAT,,2026-11-04T12:34:25
+house,INDIANA,8.0,Mary Allen,Mark Messmer,44.8,55.2,REPUBLICAN,,2026-11-04T12:34:45
+house,INDIANA,9.0,Brad Meyer,Erin Houchin,43.13,54.2,REPUBLICAN,,2026-11-04T12:35:04
+house,IOWA,1.0,Christina Bohannan,Mariannette Miller-Meeks,52.8,43.6,DEMOCRAT,,2026-11-04T12:37:19
+house,IOWA,2.0,Lindsay James,Joe Mitchell,49.5,45.6,DEMOCRAT,,2026-11-04T12:37:42
+house,IOWA,3.0,Sarah Trone Garriott,Zach Nunn,53.7,46.3,DEMOCRAT,,2026-11-04T12:38:02
+house,IOWA,4.0,David Dawson,Chris McGowan,40.9,59.1,REPUBLICAN,,2026-11-04T12:38:21
+house,KANSAS,1.0,Lauren Reinhold,Tracey Mann,37.7,59.6,REPUBLICAN,,2026-11-04T12:39:20
+house,KANSAS,2.0,Don Coover,Derek Schmidt,44.9,51.4,REPUBLICAN,,2026-11-04T12:39:43
+house,KANSAS,3.0,Sharice Davids,Eric Jenkins,59.6,38.4,DEMOCRAT,,2026-11-04T12:40:00
+house,KANSAS,4.0,Katy Tyndell,Ron Estes,44.0,53.6,REPUBLICAN,,2026-11-04T12:40:28
+house,KENTUCKY,1.0,Drew Williams,James Comer,38.0,62.0,REPUBLICAN,,2026-11-03T20:20:03
+house,KENTUCKY,2.0,Megan Wingfield,Brett Guthrie,35.1,62.8,REPUBLICAN,,2026-11-04T12:41:18
+house,KENTUCKY,3.0,Morgan McGarvey,Maria Rodriquez,76.0,24.0,DEMOCRAT,,2026-11-03T20:00:49
+house,KENTUCKY,4.0,Melissa Strange,Ed Gallrein,40.9,54.2,REPUBLICAN,,2026-11-04T12:41:39
+house,KENTUCKY,5.0,Ned Pillersdorf,Hal Rogers,27.7,69.1,REPUBLICAN,,2026-11-03T19:59:31
+house,KENTUCKY,6.0,Zach Dembo,Ralph Alvarado,52.7,43.3,DEMOCRAT,,2026-11-04T12:42:12
+house,LOUISIANA,1.0,Lauren Jewett,Steve Scalise,33.9,60.7,REPUBLICAN,,
+house,LOUISIANA,2.0,Troy Carter,Peter Williams,79.9,15.1,DEMOCRAT,,2026-11-04T12:44:12
+house,LOUISIANA,3.0,John Day,Clay Higgins,20.9,55.0,REPUBLICAN,,
+house,LOUISIANA,4.0,Conrad Cable,Mike Johnson,23.0,58.5,REPUBLICAN,,
+house,LOUISIANA,5.0,Pat Moore,Gabe Firment,17.9,17.2,RUNOFF,,
+house,LOUISIANA,6.0,Chauna Banks,Blake Miguez,,,,,
+house,MAINE,1.0,Chellie Pingree,Ronald Russell,66.2,33.8,DEMOCRAT,,
+house,MAINE,2.0,Matthew Dunlap,Paul LePage,,,,,
+house,MARYLAND,1.0,Dan Schwartz,Andy Harris,44.2,55.8,REPUBLICAN,,2026-11-04T13:04:12
+house,MARYLAND,2.0,Johnny Olszewski,Dave Wallace,61.6,38.4,DEMOCRAT,,2026-11-04T13:04:34
+house,MARYLAND,3.0,Sarah Elfreth,Berney Flowers,65.4,34.6,DEMOCRAT,,2026-11-04T13:04:52
+house,MARYLAND,4.0,Glenn Ivey,George McDermott,89.1,6.4,DEMOCRAT,,2026-11-04T13:05:24
+house,MARYLAND,5.0,Adrian Boafo,Chris Chaffee,68.9,31.1,DEMOCRAT,,
+house,MARYLAND,6.0,April McClain Delaney,Robin Ficker,56.4,40.9,DEMOCRAT,,
+house,MARYLAND,7.0,Kweisi Mfume,Scott Collier,83.4,16.4,DEMOCRAT,,
+house,MARYLAND,8.0,Jamie Raskin,Cheryl Riley,82.7,15.6,DEMOCRAT,,
+house,MASSACHUSETTS,1.0,Richard Neal,,65.1,34.9,DEMOCRAT,,2026-11-04T14:40:00
+house,MASSACHUSETTS,2.0,Jim McGovern,,100.0,0.0,DEMOCRAT,,2026-11-03T20:18:06
+house,MASSACHUSETTS,3.0,Lori Trahan,Gary Grossi,66.2,31.2,DEMOCRAT,,2026-11-04T14:40:24
+house,MASSACHUSETTS,4.0,Jake Auchincloss,Thomas Stalcup,64.3,35.7,DEMOCRAT,,2026-11-04T14:40:43
+house,MASSACHUSETTS,5.0,Katherine Clark,,100.0,0.0,DEMOCRAT,,2026-11-03T20:17:11
+house,MASSACHUSETTS,6.0,Dan Koh,Micah Jones,63.4,36.6,DEMOCRAT,,2026-11-04T14:41:06
+house,MASSACHUSETTS,7.0,Ayanna Pressley,,100.0,0.0,DEMOCRAT,,2026-11-03T20:17:28
+house,MASSACHUSETTS,8.0,Stephen Lynch,Robert Burke,69.4,26.9,DEMOCRAT,,2026-11-04T14:41:29
+house,MASSACHUSETTS,9.0,Bill Keating,Tyler MacAllister,61.1,38.9,DEMOCRAT,,2026-11-04T14:41:47
+house,MICHIGAN,1.0,Callie Barr,Jack Bergman,44.2,53.8,REPUBLICAN,,2026-11-04T14:43:31
+house,MICHIGAN,2.0,Ben Ambrose,John Moolenaar,37.0,61.5,REPUBLICAN,,2026-11-04T14:43:55
+house,MICHIGAN,3.0,Hillary Scholten,Terri DeBoer,57.1,41.4,DEMOCRAT,,2026-11-04T14:44:13
+house,MICHIGAN,4.0,Sean McCann,Bill Huizenga,50.1,48.3,DEMOCRAT,,2026-11-04T14:44:33
+house,MICHIGAN,5.0,Christian Vukasovich,Tim Walberg,38.6,59.1,REPUBLICAN,,2026-11-04T14:45:10
+house,MICHIGAN,6.0,Debbie Dingell,Heather Smiley,67.4,30.4,DEMOCRAT,,2026-11-04T14:45:28
+house,MICHIGAN,7.0,William Lawrence,Tom Barrett,51.0,47.7,DEMOCRAT,,2026-11-04T14:45:54
+house,MICHIGAN,8.0,Kristen McDonald Rivet,Thomas Smith,55.5,41.9,DEMOCRAT,,2026-11-04T14:46:12
+house,MICHIGAN,9.0,Ray Pooley,Lisa McClain,34.7,62.6,REPUBLICAN,,2026-11-04T14:46:35
+house,MICHIGAN,10.0,Christina Hines,Mike Bouchard Jr.,52.4,45.3,DEMOCRAT,,2026-11-04T14:47:18
+house,MICHIGAN,11.0,Jeremy Moss,Ethan Baker,60.9,36.8,DEMOCRAT,,2026-11-04T14:47:36
+house,MICHIGAN,12.0,Rashida Tlaib,James Hooper,76.0,21.2,DEMOCRAT,,2026-11-04T14:47:55
+house,MICHIGAN,13.0,Donavan McKinney,T. P. Nykoriak,76.5,19.9,DEMOCRAT,,2026-11-04T14:48:17
+house,MINNESOTA,1.0,Jake Johnson,Brad Finstad,,,,,
+house,MINNESOTA,2.0,Matt Little,Eric Pratt,57.1,42.8,DEMOCRAT,,2026-11-04T14:49:25
+house,MINNESOTA,3.0,Kelly Morrison,Tyler Bass,64.0,35.8,DEMOCRAT,,2026-11-04T14:49:41
+house,MINNESOTA,4.0,Betty McCollum,Paul Wikstrom,73.1,26.8,DEMOCRAT,,2026-11-04T14:50:00
+house,MINNESOTA,5.0,Ilhan Omar,John Nagel,76.5,16.2,DEMOCRAT,,2026-11-04T14:50:17
+house,MINNESOTA,6.0,Doug Chapin,Tom Emmer,44.2,55.7,REPUBLICAN,,2026-11-04T14:50:44
+house,MINNESOTA,7.0,Erik Osberg,Michelle Fischbach,35.0,64.9,REPUBLICAN,,2026-11-04T14:51:01
+house,MINNESOTA,8.0,Trina Swanson,Pete Stauber,46.8,53.1,REPUBLICAN,,2026-11-04T14:51:21
+house,MISSISSIPPI,1.0,Cliff Johnson,Trent Kelly,39.9,58.7,REPUBLICAN,,2026-11-04T14:51:56
+house,MISSISSIPPI,2.0,Bennie Thompson,Ron Eller,67.6,30.0,DEMOCRAT,,2026-11-04T14:52:15
+house,MISSISSIPPI,3.0,Michael Chiaradio,Michael Guest,41.0,57.8,REPUBLICAN,,2026-11-04T14:52:39
+house,MISSISSIPPI,4.0,Jeffrey Hulum III,Mike Ezell,35.8,61.1,REPUBLICAN,,2026-11-04T14:53:03
+house,MISSOURI,1.0,Wesley Bell,Paul Berry,81.5,13.9,DEMOCRAT,,2026-11-04T14:53:30
+house,MISSOURI,2.0,Fred Wellman,Ann Wagner,51.1,46.2,DEMOCRAT,,2026-11-04T14:54:15
+house,MISSOURI,3.0,Bethany Mann,Bob Onder,44.4,52.9,REPUBLICAN,,2026-11-04T14:54:33
+house,MISSOURI,4.0,Jordan Herrera,Mark Alford,35.9,61.2,REPUBLICAN,,2026-11-04T14:54:55
+house,MISSOURI,5.0,Emanuel Cleaver,Rick Brattin,69.5,28.1,DEMOCRAT,,2026-11-04T14:55:14
+house,MISSOURI,6.0,Josh Smead,Chris Stigall,39.0,58.7,REPUBLICAN,,2026-11-04T14:55:32
+house,MISSOURI,7.0,Missi Hesketh,Eric Burlison,35.4,62.2,REPUBLICAN,,2026-11-04T14:55:53
+house,MISSOURI,8.0,Chris Reichard,Jason Smith,29.2,67.7,REPUBLICAN,,2026-11-04T14:56:14
+house,MONTANA,1.0,Sam Forstag,Aaron Flint,50.3,46.8,DEMOCRAT,,2026-11-05T16:28:05
+house,MONTANA,2.0,Brian Miller,Troy Downing,32.2,58.2,REPUBLICAN,,2026-11-04T14:57:14
+house,NEBRASKA,1.0,Chris Backemeyer,Mike Flood,46.2,50.3,REPUBLICAN,,2026-11-05T16:38:59
+house,NEBRASKA,2.0,Denise Powell,Brinker Harding,56.4,41.0,DEMOCRAT,,2026-11-04T14:58:41
+house,NEBRASKA,3.0,Becky Stille,Adrian Smith,20.0,71.0,REPUBLICAN,,2026-11-04T14:59:01
+house,NEVADA,1.0,Dina Titus,Carrie Buck,59.0,38.0,DEMOCRAT,,2026-11-04T15:04:47
+house,NEVADA,2.0,Teresa Benitez-Thompson,David Flippo,50.0,44.6,DEMOCRAT,,2026-11-05T16:34:03
+house,NEVADA,3.0,Susie Lee,Martin O'Donnell,59.1,38.6,DEMOCRAT,,2026-11-04T15:05:03
+house,NEVADA,4.0,Steven Horsford,Cody Whipple,60.5,37.7,DEMOCRAT,,2026-11-04T15:05:21
+house,NEW HAMPSHIRE,1.0,Stefany Shaheen,Anthony DiLorenzo,57.2,42.8,DEMOCRAT,,2026-11-04T15:06:14
+house,NEW HAMPSHIRE,2.0,Maggie Goodlander,Lily Tang Williams,59.0,38.7,DEMOCRAT,,2026-11-04T15:06:33
+house,NEW JERSEY,1.0,Donald Norcross,Damon Galdo,78.0,22.0,DEMOCRAT,,2026-11-03T20:27:32
+house,NEW JERSEY,2.0,Zack Mullock,Jeff Van Drew,50.8,48.2,DEMOCRAT,,2026-11-05T16:39:46
+house,NEW JERSEY,3.0,Herb Conaway,Michael McGuire,62.4,35.7,DEMOCRAT,,2026-11-04T15:07:09
+house,NEW JERSEY,4.0,Rachel Peace,Chris Smith,40.9,59.1,REPUBLICAN,,2026-11-04T15:07:31
+house,NEW JERSEY,5.0,Josh Gottheimer,Sean Kirrane,62.4,34.7,DEMOCRAT,,2026-11-04T15:07:55
+house,NEW JERSEY,6.0,Frank Pallone,Hillary Herzig,69.1,30.9,DEMOCRAT,,2026-11-04T15:08:13
+house,NEW JERSEY,7.0,Rebecca Bennett,Thomas Kean Jr.,57.1,41.4,DEMOCRAT,,2026-11-04T15:08:30
+house,NEW JERSEY,8.0,Rob Menendez,,89.4,4.4,DEMOCRAT,,2026-11-03T20:25:17
+house,NEW JERSEY,9.0,Nellie Pou,Rosie Pino,66.7,31.8,DEMOCRAT,,2026-11-04T15:08:53
+house,NEW JERSEY,10.0,LaMonica McIver,Carmen Bucco,84.4,15.6,DEMOCRAT,,2026-11-04T15:09:12
+house,NEW JERSEY,11.0,Analilia Mejia,Joe Hathaway,68.7,30.6,DEMOCRAT,,2026-11-03T20:27:58
+house,NEW JERSEY,12.0,Adam Hamawy,Gregg Mele,70.2,28.3,DEMOCRAT,,2026-11-04T15:09:33
+house,NEW MEXICO,1.0,Melanie Stansbury,Didi Okpareke,63.5,36.5,DEMOCRAT,,2026-11-04T15:10:44
+house,NEW MEXICO,2.0,Gabe Vasquez,Greg Cunningham,58.7,41.3,DEMOCRAT,,2026-11-04T15:11:02
+house,NEW MEXICO,3.0,Teresa Leger Fernández,Martin Zamora,61.5,38.5,DEMOCRAT,,2026-11-04T15:11:21
+house,NEW YORK,1.0,Chris Gallant,Nick LaLota,48.9,51.1,REPUBLICAN,,2026-11-05T16:26:35
+house,NEW YORK,2.0,Patrick Halpin,Andrew Garbarino,48.4,51.6,REPUBLICAN,,2026-11-05T16:27:10
+house,NEW YORK,3.0,Tom Suozzi,Mike LiPetri,54.8,45.0,DEMOCRAT,,2026-11-04T15:12:24
+house,NEW YORK,4.0,Laura Gillen,Jeanine Driscoll,56.1,43.5,DEMOCRAT,,2026-11-04T15:12:40
+house,NEW YORK,5.0,Gregory Meeks,George Marsh,80.5,19.3,DEMOCRAT,,2026-11-04T15:12:58
+house,NEW YORK,6.0,Grace Meng,Joseph Chou,68.6,30.6,DEMOCRAT,,2026-11-04T15:13:15
+house,NEW YORK,7.0,Claire Valdez,Melvin Rivera,83.3,15.0,DEMOCRAT,,2026-11-04T15:13:32
+house,NEW YORK,8.0,Hakeem Jeffries,Lewis Mizrahi,78.9,19.7,DEMOCRAT,,2026-11-04T15:13:49
+house,NEW YORK,9.0,Yvette Clarke,Joel Azumah,82.1,17.0,DEMOCRAT,,2026-11-04T15:14:06
+house,NEW YORK,10.0,Brad Lander,Jennifer Moore,83.2,15.9,DEMOCRAT,,2026-11-04T15:14:34
+house,NEW YORK,11.0,Michael DeCillis,Nicole Malliotakis,43.8,56.1,REPUBLICAN,,2026-11-04T15:14:53
+house,NEW YORK,12.0,Micah Lasher,Caroline Shinkle,77.2,20.0,DEMOCRAT,,2026-11-04T15:15:18
+house,NEW YORK,13.0,Darializa Avila Chevalier,Jomo Williams,87.5,11.4,DEMOCRAT,,2026-11-04T15:15:38
+house,NEW YORK,14.0,Alexandria Ocasio-Cortez,Diamant Hysenaj,78.2,21.5,DEMOCRAT,,2026-11-04T15:15:57
+house,NEW YORK,15.0,Ritchie Torres,Stylo Sapaskis,76.8,10.6,DEMOCRAT,,2026-11-04T15:16:18
+house,NEW YORK,16.0,George Latimer,Joseph Cinquemani,81.7,18.0,DEMOCRAT,,2026-11-04T15:16:38
+house,NEW YORK,17.0,Cait Conley,Mike Lawler,53.1,46.8,DEMOCRAT,,2026-11-10T09:26:28
+house,NEW YORK,18.0,Pat Ryan,Jacqueline Auringer,62.9,37.1,DEMOCRAT,,2026-11-04T15:16:57
+house,NEW YORK,19.0,Josh Riley,Peter Oberacker,57.2,42.7,DEMOCRAT,,2026-11-04T15:17:17
+house,NEW YORK,20.0,Paul Tonko,Ralph Ambrosio,63.5,36.4,DEMOCRAT,,2026-11-04T15:17:35
+house,NEW YORK,21.0,Blake Gendebien,Anthony Constantino,49.0,50.8,REPUBLICAN,,2026-11-10T09:27:18
+house,NEW YORK,22.0,John Mannion,Kailee Buller,58.3,41.6,DEMOCRAT,,2026-11-04T15:18:07
+house,NEW YORK,23.0,Aaron Gies,Nick Langworthy,39.7,60.3,REPUBLICAN,,2026-11-04T15:18:26
+house,NEW YORK,24.0,Alissa Ellman,Claudia Tenney,39.5,60.4,REPUBLICAN,,2026-11-04T15:18:47
+house,NEW YORK,25.0,Joseph Morelle,Virginia McIntyre,62.9,36.9,DEMOCRAT,,2026-11-04T15:19:11
+house,NEW YORK,26.0,Tim Kennedy,Dennis Hannon,65.4,34.4,DEMOCRAT,,2026-11-04T15:19:30
+house,NORTH CAROLINA,1.0,Don Davis,Laurie Buckhout,50.1,46.8,DEMOCRAT,,2026-11-05T16:23:16
+house,NORTH CAROLINA,2.0,Deborah Ross,Eugene Douglass,75.1,23.5,DEMOCRAT,,2026-11-04T15:20:19
+house,NORTH CAROLINA,3.0,Raymond Smith Jr.,Greg Murphy,,,,,
+house,NORTH CAROLINA,4.0,Valerie Foushee,Max Ganorkar,79.1,18.9,DEMOCRAT,,2026-11-04T15:20:52
+house,NORTH CAROLINA,5.0,Chuck Hubbard,Virginia Foxx,,,,,
+house,NORTH CAROLINA,6.0,Cyril Jefferson,Addison McDowell,51.1,48.9,DEMOCRAT,,2026-11-05T16:24:10
+house,NORTH CAROLINA,7.0,Kimberly Hardy,David Rouzer,,,,,
+house,NORTH CAROLINA,8.0,Colby Watson,Mark Harris,48.6,50.4,REPUBLICAN,,2026-11-10T09:44:18
+house,NORTH CAROLINA,9.0,Richard Ojeda,Richard Hudson,51.1,48.9,DEMOCRAT,,2026-11-05T16:24:41
+house,NORTH CAROLINA,10.0,Ashley Bell,Pat Harrigan,,,,,
+house,NORTH CAROLINA,11.0,Jamie Ager,Jennifer Balkcom,57.1,41.3,DEMOCRAT,,2026-11-04T15:21:14
+house,NORTH CAROLINA,12.0,Alma Adams,Jack Codiga,81.2,18.8,DEMOCRAT,,2026-11-04T15:21:39
+house,NORTH CAROLINA,13.0,Paul Barringer,Brad Knott,50.5,48.1,DEMOCRAT,,2026-11-05T16:25:10
+house,NORTH CAROLINA,14.0,Lakesha Womack,Tim Moore,51.1,48.9,DEMOCRAT,,2026-11-05T16:25:46
+house,NORTH DAKOTA,0.0,Trygve Hammer,Julie Fedorchak,36.7,57.4,REPUBLICAN,,2026-11-04T15:22:11
+house,OHIO,1.0,Greg Landsman,Eric Conroy,54.4,42.9,DEMOCRAT,,2026-11-04T15:23:23
+house,OHIO,2.0,Jennifer Mazzuckelli,David Taylor,35.8,64.2,REPUBLICAN,,2026-11-04T15:23:41
+house,OHIO,3.0,Joyce Beatty,Cleophus Dulaney,82.5,17.5,DEMOCRAT,,2026-11-03T19:57:21
+house,OHIO,4.0,Joshua Kolasinski,Jim Jordan,31.3,64.5,REPUBLICAN,,2026-11-04T15:24:07
+house,OHIO,5.0,Brian Shaver,Bob Latta,42.6,54.3,REPUBLICAN,,2026-11-04T15:24:27
+house,OHIO,6.0,Elizabeth Kirtley,Michael Rulli,39.6,60.4,REPUBLICAN,,2026-11-04T15:24:47
+house,OHIO,7.0,Brian Poindexter,Max Miller,54.9,45.1,DEMOCRAT,,2026-11-04T15:25:12
+house,OHIO,8.0,Vanessa Enoch,Warren Davidson,47.9,52.1,REPUBLICAN,,2026-11-04T15:25:29
+house,OHIO,9.0,Marcy Kaptur,Derek Merrin,52.7,47.3,DEMOCRAT,,2026-11-04T15:25:51
+house,OHIO,10.0,Kristina Knickerbocker,Mike Turner,49.3,47.7,DEMOCRAT,,2026-11-05T16:29:42
+house,OHIO,11.0,Shontel Brown,Mike Kirchner,87.0,13.0,DEMOCRAT,,2026-11-03T19:55:26
+house,OHIO,12.0,Jerrad Christian,Troy Balderson,40.6,59.4,REPUBLICAN,,2026-11-04T15:26:22
+house,OHIO,13.0,Emilia Sykes,Carey Coleman,70.3,28.5,DEMOCRAT,,2026-11-03T19:56:04
+house,OHIO,14.0,Maria Jukic,David Joyce,45.0,55.0,REPUBLICAN,,2026-11-04T15:26:43
+house,OHIO,15.0,Don Leonard,Mike Carey,51.9,45.3,DEMOCRAT,,2026-11-04T15:27:01
+house,OKLAHOMA,1.0,John Croisant,Mark Tedford,47.7,52.3,REPUBLICAN,,2026-11-04T15:28:15
+house,OKLAHOMA,2.0,Brandon Wade,Josh Brecheen,29.0,68.0,REPUBLICAN,,2026-11-04T15:28:33
+house,OKLAHOMA,3.0,Suzie Byrd,Frank Lucas,36.0,64.0,REPUBLICAN,,2026-11-04T15:28:50
+house,OKLAHOMA,4.0,Mitchell Jacob,Tom Cole,39.5,57.6,REPUBLICAN,,2026-11-04T15:29:08
+house,OKLAHOMA,5.0,Jena Nelson,Stephanie Bice,48.2,49.5,REPUBLICAN,,2026-11-05T16:45:29
+house,OREGON,1.0,Suzanne Bonamici,Barbara Kahl,69.6,30.3,DEMOCRAT,,2026-11-04T15:30:16
+house,OREGON,2.0,Chris Beck,Cliff Bentz,38.3,61.5,REPUBLICAN,,2026-11-04T15:30:34
+house,OREGON,3.0,Maxine Dexter,Loran Ayles,76.1,23.7,DEMOCRAT,,2026-11-04T15:30:52
+house,OREGON,4.0,Val Hoyle,Monique DeSpain,54.0,42.9,DEMOCRAT,,2026-11-04T15:31:12
+house,OREGON,5.0,Janelle Bynum,Patti Adair,54.1,43.8,DEMOCRAT,,2026-11-04T15:31:30
+house,OREGON,6.0,Andrea Salinas,David Russ,57.9,42.0,DEMOCRAT,,2026-11-04T15:31:50
+house,PENNSYLVANIA,1.0,Bob Harvie,Brian Fitzpatrick,52.7,47.3,DEMOCRAT,,2026-11-04T15:36:49
+house,PENNSYLVANIA,2.0,Brendan Boyle,Jessica Arriaga,80.8,19.2,DEMOCRAT,,2026-11-04T15:37:13
+house,PENNSYLVANIA,3.0,Chris Rabb,,93.6,6.4,DEMOCRAT,,2026-11-04T15:37:31
+house,PENNSYLVANIA,4.0,Madeleine Dean,Aurora Stuski,67.1,32.9,DEMOCRAT,,2026-11-04T15:37:52
+house,PENNSYLVANIA,5.0,Mary Gay Scanlon,Nicholas Manganaro,72.1,27.9,DEMOCRAT,,2026-11-04T15:38:13
+house,PENNSYLVANIA,6.0,Chrissy Houlahan,Marty Young,64.3,35.7,DEMOCRAT,,2026-11-04T15:38:30
+house,PENNSYLVANIA,7.0,Bob Brooks,Ryan Mackenzie,56.1,43.9,DEMOCRAT,,2026-11-04T15:38:48
+house,PENNSYLVANIA,8.0,Paige Cognetti,Rob Bresnahan,54.4,45.6,DEMOCRAT,,2026-11-04T15:39:06
+house,PENNSYLVANIA,9.0,Rachel Wallace,Dan Meuser,38.3,61.7,REPUBLICAN,,2026-11-04T15:39:26
+house,PENNSYLVANIA,10.0,Janelle Stelson,Scott Perry,55.0,45.0,DEMOCRAT,,2026-11-04T15:39:43
+house,PENNSYLVANIA,11.0,Nancy Mannion,Lloyd Smucker,55.6,44.4,DEMOCRAT,,2026-11-04T15:40:00
+house,PENNSYLVANIA,12.0,Summer Lee,James Hayes,65.4,34.6,DEMOCRAT,,2026-11-04T15:40:19
+house,PENNSYLVANIA,13.0,Beth Farnham,John Joyce,32.4,67.6,REPUBLICAN,,2026-11-04T15:40:36
+house,PENNSYLVANIA,14.0,Alan Bradstock,Guy Reschenthaler,42.4,57.6,REPUBLICAN,,2026-11-04T15:40:55
+house,PENNSYLVANIA,15.0,Ray Bilger,Glenn Thompson,36.1,63.9,REPUBLICAN,,2026-11-04T15:41:13
+house,PENNSYLVANIA,16.0,Justin Wagner,Mike Kelly,46.1,53.9,REPUBLICAN,,2026-11-04T15:41:32
+house,PENNSYLVANIA,17.0,Chris Deluzio,Tony Guy,62.8,37.2,DEMOCRAT,,2026-11-04T15:41:51
+house,RHODE ISLAND,1.0,Gabe Amo,Kellie Keenan,68.4,27.6,DEMOCRAT,,2026-11-04T15:43:23
+house,RHODE ISLAND,2.0,Seth Magaziner,Vic Mellor,61.8,37.9,DEMOCRAT,,2026-11-04T15:43:41
+house,SOUTH CAROLINA,1.0,Nancy Lacore,Jenny Costa Honeycutt,49.7,48.6,DEMOCRAT,,2026-11-10T09:57:34
+house,SOUTH CAROLINA,2.0,Zyon Khalifa,Joe Wilson,,,,,
+house,SOUTH CAROLINA,3.0,Eunice Lehmacher,Sheri Biggs,34.4,63.7,REPUBLICAN,,2026-11-04T15:44:58
+house,SOUTH CAROLINA,4.0,Courtney McClain,William Timmons,45.6,51.7,REPUBLICAN,,2026-11-04T15:45:15
+house,SOUTH CAROLINA,5.0,Mallory Dittmer,Wes Climer,47.1,52.8,REPUBLICAN,,2026-11-04T15:45:36
+house,SOUTH CAROLINA,6.0,Jim Clyburn,John Peterson,69.3,30.5,DEMOCRAT,,2026-11-04T15:45:56
+house,SOUTH CAROLINA,7.0,John Vincent,Russell Fry,43.2,56.7,REPUBLICAN,,2026-11-04T15:46:14
+house,SOUTH DAKOTA,0.0,Nikki Gronli,Marty Jackley,36.0,64.0,REPUBLICAN,,2026-11-04T15:47:19
+house,TENNESSEE,1.0,Kristi Burke,Diana Harshbarger,29.5,67.4,REPUBLICAN,,2026-11-04T15:48:58
+house,TENNESSEE,2.0,Michaela Barnett,Tim Burchett,41.2,57.7,REPUBLICAN,,2026-11-04T15:49:23
+house,TENNESSEE,3.0,Anna Golladay,Chuck Fleischmann,40.2,57.6,REPUBLICAN,,2026-11-04T15:49:43
+house,TENNESSEE,4.0,Victoria Broderick,Scott DesJarlais,,,,,
+house,TENNESSEE,5.0,Chaz Molder,Charlie Hatcher,46.7,51.7,REPUBLICAN,,2026-11-04T15:50:00
+house,TENNESSEE,6.0,Mike Croley,Johnny Garrett,47.5,50.8,REPUBLICAN,,2026-11-04T15:50:20
+house,TENNESSEE,7.0,Darden Copeland,Matt Van Epps,48.1,50.3,REPUBLICAN,,2026-11-10T09:47:06
+house,TENNESSEE,8.0,Heidi Kuhn,David Kustoff,46.4,51.6,REPUBLICAN,,2026-11-04T15:50:57
+house,TENNESSEE,9.0,Justin Pearson,Brent Taylor,48.5,49.6,REPUBLICAN,,2026-11-05T16:41:01
+house,TEXAS,1.0,Yolanda Prince,Nathaniel Moran,31.0,59.0,REPUBLICAN,,2026-11-04T15:52:05
+house,TEXAS,2.0,Shaun Finnie,Steve Toth,49.0,51.0,REPUBLICAN,,2026-11-05T16:35:17
+house,TEXAS,3.0,Evan Hunt,Keith Self,47.3,52.7,REPUBLICAN,,2026-11-04T15:52:23
+house,TEXAS,4.0,Jason Pearce,Pat Fallon,43.9,56.1,REPUBLICAN,,2026-11-04T15:52:42
+house,TEXAS,5.0,Chelsey Hockett,Lance Gooden,48.5,51.5,REPUBLICAN,,2026-11-05T16:35:40
+house,TEXAS,6.0,Danny Minton,Jake Ellzey,47.8,52.2,REPUBLICAN,,2026-11-04T15:52:59
+house,TEXAS,7.0,Lizzie Fletcher,Alexander Hale,70.8,27.5,DEMOCRAT,,2026-11-04T15:53:19
+house,TEXAS,8.0,Laura Jones,Jessica Hart Steinmann,46.8,53.2,REPUBLICAN,,2026-11-04T15:53:36
+house,TEXAS,9.0,Leticia Gutierrez,Alex Mealer,57.6,42.4,DEMOCRAT,,2026-11-04T15:53:55
+house,TEXAS,10.0,Caitlin Rourk,Chris Gober,46.2,53.8,REPUBLICAN,,2026-11-04T15:54:14
+house,TEXAS,11.0,Claire Reynolds,August Pfluger,40.5,59.5,REPUBLICAN,,2026-11-04T15:54:51
+house,TEXAS,12.0,Angela Rodriguez Prilliman,Craig Goldman,46.9,53.1,REPUBLICAN,,2026-11-04T15:55:12
+house,TEXAS,13.0,Mark Nair,Ronny Jackson,34.7,65.3,REPUBLICAN,,2026-11-04T15:55:32
+house,TEXAS,14.0,Thurman Bartie,Randy Weber,46.0,54.0,REPUBLICAN,,2026-11-04T15:55:48
+house,TEXAS,15.0,Bobby Pulido,Monica De La Cruz,62.3,37.7,DEMOCRAT,,2026-11-04T15:56:09
+house,TEXAS,16.0,Veronica Escobar,Adam Bauman,70.8,29.2,DEMOCRAT,,2026-11-04T15:56:27
+house,TEXAS,17.0,Casey Shepard,Pete Sessions,46.4,53.6,REPUBLICAN,,2026-11-04T15:56:44
+house,TEXAS,18.0,Christian Menefee,Ronald Whitfield,86.0,14.0,DEMOCRAT,,2026-11-04T15:57:01
+house,TEXAS,19.0,Kyle Rable,Tom Sell,30.5,69.5,REPUBLICAN,,2026-11-04T15:57:25
+house,TEXAS,20.0,Joaquin Castro,Edgardo Rafael Baez,77.6,22.4,DEMOCRAT,,2026-11-04T15:57:43
+house,TEXAS,21.0,Kristin Hook,Mark Teixeira,45.5,54.5,REPUBLICAN,,2026-11-04T15:58:05
+house,TEXAS,22.0,Marquette Greene-Scott,Trever Nehls,48.2,51.8,REPUBLICAN,,2026-11-05T16:36:06
+house,TEXAS,23.0,Katy Padilla Stout,Brandon Herrera,52.1,44.0,DEMOCRAT,,2026-11-04T15:58:26
+house,TEXAS,24.0,Kevin Burge,Beth Van Duyne,46.6,53.4,REPUBLICAN,,2026-11-04T15:58:44
+house,TEXAS,25.0,Dione Sims,Roger Williams,46.3,53.7,REPUBLICAN,,2026-11-04T15:59:00
+house,TEXAS,26.0,Steven Shook,Brandon Gill,44.2,54.5,REPUBLICAN,,2026-11-04T15:59:19
+house,TEXAS,27.0,Tanya Lloyd,Michael Cloud,48.8,51.2,REPUBLICAN,,2026-11-05T16:36:31
+house,TEXAS,28.0,Henry Cuellar,Tano Tijerina,65.8,29.6,DEMOCRAT,,2026-11-04T15:59:37
+house,TEXAS,29.0,Sylvia Garcia,Martha Fierro,79.9,20.1,DEMOCRAT,,2026-11-04T15:59:58
+house,TEXAS,30.0,Frederick Haynes III,Everett Jackson,83.8,16.2,DEMOCRAT,,2026-11-03T20:25:57
+house,TEXAS,31.0,Justin Early,John Carter,44.8,53.8,REPUBLICAN,,2026-11-04T16:00:27
+house,TEXAS,32.0,Dan Barrios,Jace Yarbrough,48.5,51.5,REPUBLICAN,,2026-11-05T16:34:49
+house,TEXAS,33.0,Colin Allred,Patrick Gillespie,80.6,19.4,DEMOCRAT,,2026-11-03T20:24:15
+house,TEXAS,34.0,Vicente Gonzalez,Eric Flores,55.6,39.8,DEMOCRAT,,2026-11-04T16:00:56
+house,TEXAS,35.0,Johnny Garcia,Carlos De La Cruz,55.4,44.6,DEMOCRAT,,2026-11-04T16:01:11
+house,TEXAS,36.0,Rhonda Hart,Brian Babin,46.4,53.6,REPUBLICAN,,2026-11-04T16:01:29
+house,TEXAS,37.0,Greg Casar,Lauren Peña,83.8,16.2,DEMOCRAT,,2026-11-04T16:01:51
+house,TEXAS,38.0,Melissa McDonough,Jon Bonck,47.3,51.5,REPUBLICAN,,2026-11-05T16:37:05
+house,UTAH,1.0,Ben McAdams,Riley Owen,71.9,24.9,DEMOCRAT,,2026-11-04T16:02:29
+house,UTAH,2.0,Peter Crosby,Blake Moore,42.4,50.2,REPUBLICAN,,2026-11-05T16:41:49
+house,UTAH,3.0,Kent Udell,Celeste Maloy,35.4,57.9,REPUBLICAN,,2026-11-04T16:02:49
+house,UTAH,4.0,Jonny Larsen,Mike Kennedy,38.9,53.6,REPUBLICAN,,2026-11-10T09:25:28
+house,VERMONT,0.0,Becca Balint,Gerald Malloy,63.2,32.6,DEMOCRAT,,2026-11-03T19:57:51
+house,VIRGINIA,1.0,Shannon Taylor,Rob Wittman,51.1,48.7,DEMOCRAT,,2026-11-05T16:28:40
+house,VIRGINIA,2.0,Elaine Luria,Jen Kiggans,53.1,44.6,DEMOCRAT,,2026-11-04T16:04:11
+house,VIRGINIA,3.0,Bobby Scott,Edwin Rivera,73.0,23.2,DEMOCRAT,,2026-11-03T20:23:03
+house,VIRGINIA,4.0,Jennifer McClellan,Robert Murray,72.2,26.3,DEMOCRAT,,2026-11-04T16:04:38
+house,VIRGINIA,5.0,Tom Perriello,John McGuire,48.0,50.2,REPUBLICAN,,2026-11-05T16:29:07
+house,VIRGINIA,6.0,Beth Macy,Ben Cline,44.3,55.5,REPUBLICAN,,2026-11-04T16:05:07
+house,VIRGINIA,7.0,Eugene Vindman,Doug Ollivant,59.7,37.8,DEMOCRAT,,2026-11-04T16:05:25
+house,VIRGINIA,8.0,Don Beyer,Tony Sabio,77.8,18.8,DEMOCRAT,,2026-11-03T20:06:56
+house,VIRGINIA,9.0,Joy Powers,Morgan Griffith,33.8,66.0,REPUBLICAN,,2026-11-04T16:05:53
+house,VIRGINIA,10.0,Suhas Subramanyam,Dave Beckwith,63.4,34.5,DEMOCRAT,,2026-11-03T20:10:24
+house,VIRGINIA,11.0,James Walkinshaw,Arthur Purves,73.7,24.7,DEMOCRAT,,2026-11-04T16:06:15
+house,WASHINGTON,1.0,Suzan DelBene,Mary Silva,67.9,31.8,DEMOCRAT,,2026-11-04T16:06:32
+house,WASHINGTON,2.0,Rick Larsen,Edwin Feller,67.9,31.7,DEMOCRAT,,2026-11-04T16:06:52
+house,WASHINGTON,3.0,Marie Gluesenkamp Perez,John Braun,55.0,44.2,DEMOCRAT,,2026-11-04T16:07:19
+house,WASHINGTON,4.0,John Duresky,Amanda McKinney,45.9,53.9,REPUBLICAN,,2026-11-10T09:24:31
+house,WASHINGTON,5.0,Carmela Conroy,Michael Baumgartner,47.9,51.7,REPUBLICAN,,2026-11-10T09:50:57
+house,WASHINGTON,6.0,Emily Randall,Teresa Fox,64.7,35.2,DEMOCRAT,,2026-11-04T16:07:38
+house,WASHINGTON,7.0,Pramila Jayapal,Nirav Sheth,87.5,12.1,DEMOCRAT,,2026-11-04T16:07:57
+house,WASHINGTON,8.0,Kim Schrier,Spencer Meline,57.5,42.3,DEMOCRAT,,2026-11-04T16:08:21
+house,WASHINGTON,9.0,Adam Smith,Doug Basler,75.1,24.2,DEMOCRAT,,2026-11-04T16:08:43
+house,WASHINGTON,10.0,Marilyn Strickland,Chris Chung,64.4,35.1,DEMOCRAT,,2026-11-04T16:09:03
+house,WEST VIRGINIA,1.0,Vince George,Carol Miller,39.6,57.1,REPUBLICAN,,2026-11-04T16:09:45
+house,WEST VIRGINIA,2.0,Ace Parsi,Riley Moore,40.6,59.4,REPUBLICAN,,2026-11-04T16:10:01
+house,WISCONSIN,1.0,Mitchell Berman,Bryan Steil,52.0,48.0,DEMOCRAT,,2026-11-04T16:10:49
+house,WISCONSIN,2.0,Mark Pocan,,100.0,0.0,DEMOCRAT,,2026-11-04T16:12:57
+house,WISCONSIN,3.0,Rebecca Cooke,Derrick Van Orden,52.4,45.8,DEMOCRAT,,2026-11-04T16:11:06
+house,WISCONSIN,4.0,Gwen Moore,Tim Rogers,80.0,17.5,DEMOCRAT,,2026-11-04T16:11:25
+house,WISCONSIN,5.0,Andrew Beck,Scott Fitzgerald,41.0,59.0,REPUBLICAN,,2026-11-04T16:11:43
+house,WISCONSIN,6.0,Brad Smith,Glenn Grothman,43.3,52.8,REPUBLICAN,,2026-11-04T16:12:00
+house,WISCONSIN,7.0,Fred Clark,Michael Alfonso,43.9,56.1,REPUBLICAN,,2026-11-04T16:12:22
+house,WISCONSIN,8.0,Rick Crosson,Tony Wied,46.1,53.9,REPUBLICAN,,2026-11-04T16:12:40
+house,WYOMING,0.0,Lisa Kinney,Chuck Gray,33.7,54.5,REPUBLICAN,,2026-11-04T16:13:58

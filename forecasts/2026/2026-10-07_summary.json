@@ -1,0 +1,105 @@
+{
+  "published_at": "2026-10-07T14:09:04",
+  "model_version": "2026.10.07c",
+  "days_to_election": 27,
+  "generic_ballot_dem_margin": 8.45,
+  "generic_ballot_source": "Average of FiftyPlusOne, NBC News (market-tied aggregators excluded)",
+  "poll_data_sources": "Polls: Wikipedia race and state House pages, compiled from pollsters' own releases. No prediction-market-affiliated data sources are used.",
+  "data_warnings": [
+    "[outlier poll] Senate \u00b7 Idaho: Peak Insights (R) (Aug 13): corrected margin -31.6 vs race average -5.4, from wikipedia",
+    "[outlier poll] Senate \u00b7 Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.4, from wikipedia",
+    "[outlier poll] Senate \u00b7 Idaho: Peak Insights (R) (Sep 30): corrected margin -22.6 vs race average -5.4, from wikipedia"
+  ],
+  "generic_ballot_bias_removed": 3.12,
+  "national_environment_used": 5.33,
+  "senate": {
+    "dem_control_prob": 0.528,
+    "rep_control_prob": 0.429,
+    "dem_seats_median": 51,
+    "dem_seats_90pct": [
+      45,
+      56
+    ],
+    "independent_seats_expected": 0.59,
+    "holdovers": {
+      "DEMOCRAT": 34,
+      "REPUBLICAN": 31
+    }
+  },
+  "house": {
+    "dem_control_prob": 0.786,
+    "dem_seats_median": 229,
+    "dem_seats_90pct": [
+      207,
+      260
+    ],
+    "calibration": {
+      "district_sd": 5.674489592527395,
+      "in_year_sd": 4.64109870457192,
+      "out_of_year": {
+        "n_districts": 205,
+        "sd": 5.674489592527395,
+        "bias": 0.2694293168614737,
+        "winner_accuracy": 0.9463414634146341
+      },
+      "n_districts": 238,
+      "coefficients": {
+        "pvi": 1.95,
+        "incumbency": 3.72
+      },
+      "intercept": -0.77
+    }
+  },
+  "governor": {
+    "dem_governorships_median": 19,
+    "dem_governorships_90pct": [
+      12,
+      26
+    ],
+    "races": 36
+  },
+  "environment_check": {
+    "environment_used": 5.33,
+    "generic_ballot_poll": 8.45,
+    "implied_by_race_polls": 8.29,
+    "by_office": {
+      "Senate": {
+        "implied": 8.35,
+        "races": 14
+      },
+      "Governor": {
+        "implied": 13.29,
+        "races": 19
+      },
+      "House districts": {
+        "implied": 8.17,
+        "races": 25
+      }
+    },
+    "gap": -0.16,
+    "flag": false
+  },
+  "backtests": {
+    "senate_fundamentals": {
+      "rmse": 13.640786745141954,
+      "winner_accuracy": 0.8817733990147784,
+      "national_sd": 4.558808492639212,
+      "state_sd": 12.932759544271724,
+      "n_races": 406,
+      "n_years": 13
+    },
+    "governor_fundamentals": {
+      "rmse": 14.418280752337088,
+      "winner_accuracy": 0.7906976744186046,
+      "national_sd": 5.714221279821685,
+      "state_sd": 13.841569640857308,
+      "n_races": 258,
+      "n_years": 13
+    },
+    "poll_error_model": {
+      "floor": 15.342740809617574,
+      "thin": 37.83754736654356,
+      "drift": 0.19134977553914467
+    }
+  }
+}

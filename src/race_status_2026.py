@@ -97,6 +97,11 @@ def _parse_last_election_party(text):
     # DFL = Minnesota's Democratic-Farmer-Labor party
     return {'DFL': 'DEMOCRAT', 'D': 'DEMOCRAT', 'R': 'REPUBLICAN', 'I': 'OTHER'}[m.group(1)]
 
+def _forecaster(col):
+    """'Ratings_Cook Sep 23, 2026[28]' -> 'Cook'."""
+    name = re.sub(r'\[[^\]]*\]', '', col.replace('Ratings_', '')).strip()
+    return re.split(r'\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)', name)[0].strip()
+
 def _find_predictions_table(tables):
     for t in tables:
         cols = [' '.join(str(x) for x in c) if isinstance(c, tuple) else str(c) for c in t.columns]
@@ -128,13 +133,28 @@ def scrape_race_status(office='senate', source=None):
     incumbent_col = next(c for c in table.columns if incumbent_header in c)
     pvi_col       = next((c for c in table.columns if 'PVI' in c), None)
     last_elec_col = next((c for c in table.columns if 'Last election' in c), None)
-    rating_cols   = [c for c in table.columns if c.startswith('Ratings_')]
+    from independence import is_market_tied
+    # Forecasters tied to prediction markets (DDHQ, RCP, Silver Bulletin) are left out of
+    # the consensus, consistent with the forecast's independence policy.
+    rating_cols   = [c for c in table.columns if c.startswith('Ratings_') and not is_market_tied(c)]
 
-    rows = []
+    rows, detail, overall = [], [], []
+    all_rating_cols = [c for c in table.columns if c.startswith('Ratings_')]
     for _, r in table.iterrows():
         state = str(r[state_col]).strip()
-        if state.lower().startswith('overall') or not state:
+        if state.lower().startswith('overall'):
+            # Each forecaster's projected chamber total, e.g. 'D/I - 46 R - 47 7 tossups'
+            for c in all_rating_cols:
+                m = re.search(r'D(?:/I)?\s*-\s*(\d+)\s*R\s*-\s*(\d+)\s*(\d+)?\s*toss', str(r[c]))
+                if m:
+                    overall.append({'forecaster': _forecaster(c), 'dem': int(m.group(1)), 'rep': int(m.group(2)),
+                                    'tossups': int(m.group(3) or 0), 'market_tied': is_market_tied(c)})
             continue
+        if not state:
+            continue
+        for c in all_rating_cols:
+            detail.append({'state': re.sub(r'\s*\(special\)', '', state).upper(), 'forecaster': _forecaster(c),
+                           'rating': r[c], 'value': _rating_to_number(r[c]), 'market_tied': is_market_tied(c)})
         name, open_seat = _parse_incumbent_status(r[incumbent_col])
         last_elec = str(r[last_elec_col]) if last_elec_col else ''
         ratings = [_rating_to_number(r[c]) for c in rating_cols]
@@ -151,6 +171,8 @@ def scrape_race_status(office='senate', source=None):
             'consensus_rating': consensus,
         })
     df = pd.DataFrame(rows)
+    pd.DataFrame(detail).to_csv(os.path.join(DATA_DIR, f'{office}_forecaster_ratings_2026.csv'), index=False)
+    pd.DataFrame(overall).to_csv(os.path.join(DATA_DIR, f'{office}_forecaster_totals_2026.csv'), index=False)
 
     # Canary: if Wikipedia's table structure silently changed (column renamed, rating
     # phrasing changed), _rating_to_number/_parse_incumbent_status degrade to NaN/False

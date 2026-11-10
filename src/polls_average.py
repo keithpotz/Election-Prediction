@@ -50,7 +50,7 @@ def annotate_polls(polls, ratings=None, sponsor_effects=None):
             m = match_pollster(name, ratings)
             cache[name] = (m['pollster'], float(m['house_effect']), float(m['plus_minus'])) if m is not None else (None, 0.0, None)
         matched, house, pm = cache[name]
-        sponsor = sponsor_party(name)
+        sponsor = p['sponsor'] if isinstance(p.get('sponsor'), str) else sponsor_party(name)
         if sponsor == 'INDEPENDENT':
             # An independent candidate's own poll leans toward them. They sit on the
             # Dem side of the margin when no Democrat is running (Osborn, Achilles).
@@ -65,24 +65,44 @@ def annotate_polls(polls, ratings=None, sponsor_effects=None):
             correction, qw = 0.0, UNRATED_WEIGHT
         rows.append({'matched_pollster': matched, 'sponsor': sponsor,
                      'house_correction': correction, 'quality_weight': qw})
-    out = pd.concat([polls.reset_index(drop=True), pd.DataFrame(rows)], axis=1)
+    added = pd.DataFrame(rows)
+    out = pd.concat([polls.reset_index(drop=True).drop(columns=list(added.columns), errors='ignore'), added], axis=1)
     out['house_correction'] *= CORRECTION_STRENGTH
     out['adjusted_margin'] = out['margin'] - out['house_correction']
     return out
 
-def race_average(race_polls, as_of):
-    """Weighted average of one race's annotated polls as of a date. None if no usable polls."""
-    as_of = pd.Timestamp(as_of)
-    p = race_polls.dropna(subset=['end_date'])
-    p = p[(p['end_date'] <= as_of) & (p['end_date'] >= as_of - pd.Timedelta(days=MAX_POLL_AGE_DAYS))]
-    if p.empty:
-        return None
+def _weights(p, as_of):
+    """Each usable poll's weight before quality (recency, sample size, and the share of a
+    pollster's polls) and with quality."""
     age = (as_of - p['end_date']).dt.days.clip(lower=0)
     recency = 0.5 ** (age / RECENCY_HALF_LIFE_DAYS)
     size = np.sqrt(p['sample_size'].fillna(600).clip(100, 3000) / 600)
     per_pollster = p.groupby('pollster')['pollster'].transform('size')
     base = recency * size / np.sqrt(per_pollster)
-    w = base * p['quality_weight']
+    return base, base * p['quality_weight']
+
+def _usable(race_polls, as_of):
+    p = race_polls.dropna(subset=['end_date'])
+    return p[(p['end_date'] <= as_of) & (p['end_date'] >= as_of - pd.Timedelta(days=MAX_POLL_AGE_DAYS))]
+
+def poll_shares(race_polls, as_of):
+    """Each poll's share of its race's average as of a date (0 when too old to count)."""
+    as_of = pd.Timestamp(as_of)
+    p = _usable(race_polls, as_of)
+    out = pd.Series(0.0, index=race_polls.index)
+    if len(p):
+        w = _weights(p, as_of)[1]
+        if w.sum() > 0:
+            out.loc[p.index] = w / w.sum()
+    return out
+
+def race_average(race_polls, as_of):
+    """Weighted average of one race's annotated polls as of a date. None if no usable polls."""
+    as_of = pd.Timestamp(as_of)
+    p = _usable(race_polls, as_of)
+    if p.empty:
+        return None
+    base, w = _weights(p, as_of)
     if w.sum() <= 0:
         return None
     # Effective number of polls: how many equally-weighted polls this average is worth,
@@ -127,6 +147,8 @@ def backtest_poll_averages(types=('Sen-G', 'Gov-G'), min_cycle=2000, days_before
     every race in a cycle (correlated, e.g. 2016/2020 polling misses) and the per-race miss.
     """
     polls = prepare_polls(load_archive())
+    from pollster_ratings import add_herding
+    polls = add_herding(polls)          # race-local, so computed once rather than per left-out cycle
     effects = partisan_sponsor_effects(polls)
     target = polls[polls['type_simple'].isin(types) & (polls['cycle'] >= min_cycle)]
 

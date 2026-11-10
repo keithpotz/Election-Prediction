@@ -9,17 +9,18 @@ import matplotlib.ticker as mticker
 import plotly.graph_objects as go
 from datetime import datetime, date
 from electoral_votes import calculate_ec_result, calculate_predicted_ec
-from data_sources import fetch_all, fetch_approval_rating, fetch_generic_ballot, GENERIC_BALLOT_CSV_LIVE
-from midterms import (
-    predict_house_2026, predict_senate_2026, HOUSE_SEATS_TOTAL, HOUSE_MAJORITY, SENATE_DEM_CONTROL_SEATS,
-)
+from data_sources import fetch_all, fetch_approval_rating, fetch_generic_ballot
+from forecast_2026 import load_inputs, build_forecast
+from publish_forecast import MODEL_VERSION
+import dashboard_2026 as dash
+from dashboard_2026 import STATE_ABBREV
 from fundamentals import fundamentals_adjustment
 from config import FRED_API_KEY
 
-st.set_page_config(page_title="Election Prediction", layout="wide", page_icon="🗳️")
+from brand import MODEL_NAME, PUBLICATION, TAGLINE
+st.set_page_config(page_title=MODEL_NAME, layout="wide", page_icon="🗳️")
 BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
 HISTORY_PATH = os.path.join(BASE_DIR, "data/prediction_history.csv")
-APPROVAL_CSV = os.path.join(BASE_DIR, "data/polling_data/Silver Bulletin Trump approval polls - Sheet1.csv")
 
 PARTY_COLORS = {"DEMOCRAT": "#1f77b4", "REPUBLICAN": "#d62728", "OTHER": "#7f7f7f"}
 MAX_TOTAL_ADJUSTMENT = 20.0  # combined cap on fundamentals_adjustment() + the approval adjustment
@@ -27,19 +28,6 @@ MAX_TOTAL_ADJUSTMENT = 20.0  # combined cap on fundamentals_adjustment() + the a
 def _or_default(value, default):
     """Like `value or default`, but a real fetched 0/0.0 counts as present, not missing."""
     return value if value is not None else default
-STATE_ABBREV = {
-    'ALABAMA':'AL','ALASKA':'AK','ARIZONA':'AZ','ARKANSAS':'AR','CALIFORNIA':'CA',
-    'COLORADO':'CO','CONNECTICUT':'CT','DELAWARE':'DE','DISTRICT OF COLUMBIA':'DC',
-    'FLORIDA':'FL','GEORGIA':'GA','HAWAII':'HI','IDAHO':'ID','ILLINOIS':'IL',
-    'INDIANA':'IN','IOWA':'IA','KANSAS':'KS','KENTUCKY':'KY','LOUISIANA':'LA',
-    'MAINE':'ME','MARYLAND':'MD','MASSACHUSETTS':'MA','MICHIGAN':'MI','MINNESOTA':'MN',
-    'MISSISSIPPI':'MS','MISSOURI':'MO','MONTANA':'MT','NEBRASKA':'NE','NEVADA':'NV',
-    'NEW HAMPSHIRE':'NH','NEW JERSEY':'NJ','NEW MEXICO':'NM','NEW YORK':'NY',
-    'NORTH CAROLINA':'NC','NORTH DAKOTA':'ND','OHIO':'OH','OKLAHOMA':'OK',
-    'OREGON':'OR','PENNSYLVANIA':'PA','RHODE ISLAND':'RI','SOUTH CAROLINA':'SC',
-    'SOUTH DAKOTA':'SD','TENNESSEE':'TN','TEXAS':'TX','UTAH':'UT','VERMONT':'VT',
-    'VIRGINIA':'VA','WASHINGTON':'WA','WEST VIRGINIA':'WV','WISCONSIN':'WI','WYOMING':'WY',
-}
 
 # ── Loaders ───────────────────────────────────────────────────────────────────
 @st.cache_data
@@ -50,28 +38,59 @@ def load_historical():
 def load_featured():
     return pd.read_csv(os.path.join(BASE_DIR, "data/polling_data/featured_data.csv"))
 
-@st.cache_resource
-def load_model():
-    model_mid = joblib.load(os.path.join(BASE_DIR, "models/xgb_model_mid.pkl"))
-    model_lo  = joblib.load(os.path.join(BASE_DIR, "models/xgb_model_lo.pkl"))
-    model_hi  = joblib.load(os.path.join(BASE_DIR, "models/xgb_model_hi.pkl"))
-    features  = joblib.load(os.path.join(BASE_DIR, "models/training_features.pkl"))
-    return (model_mid, model_lo, model_hi), features
+# ── 2026 forecast loaders ─────────────────────────────────────────────────────
+# Models, scraped race data, and poll averages are built once (a few seconds);
+# rerunning the forecast for a different generic-ballot value then takes ~0.3s.
+@st.cache_resource(show_spinner="Loading 2026 forecast models and polls...")
+def forecast_inputs():
+    return load_inputs()
 
-@st.cache_resource
-def load_house_swing_model():
-    from midterms import build_house_swing_model
-    return build_house_swing_model()
+# Each cached forecast keeps its simulations (~15 MB) for election-night mode
+@st.cache_resource(max_entries=16, show_spinner="Simulating every race...")
+def run_forecast(generic_ballot_poll, extra_poll_miss=0.0):
+    return build_forecast(generic_ballot_poll, inputs=forecast_inputs(), extra_poll_miss=extra_poll_miss)
 
-@st.cache_resource
-def load_senate_race_model():
-    from midterms import build_senate_race_model
-    return build_senate_race_model()
+POLL_MISS_SWEEP = list(range(-5, 6))
 
-@st.cache_data(ttl=3600)  # the scraper itself re-fetches once its CSV cache is >24h old
-def load_senate_race_status():
-    from midterms import load_race_status
-    return load_race_status()
+@st.cache_data(max_entries=8, show_spinner="Running the forecast under 11 polling misses (about 15 seconds)...")
+def poll_miss_sweep(generic_ballot_poll):
+    rows = []
+    for m in POLL_MISS_SWEEP:
+        f = build_forecast(generic_ballot_poll, inputs=forecast_inputs(), extra_poll_miss=float(m),
+                           n_sims=4000, keep_sims=False)
+        s = f['summary']
+        rows.append({'miss': m, 'senate_dem': s['senate']['dem_control_prob'],
+                     'senate_rep': s['senate']['rep_control_prob'], 'house_dem': s['house']['dem_control_prob'],
+                     'senate_seats': s['senate']['dem_seats_median'], 'house_seats': s['house']['dem_seats_median']})
+    return pd.DataFrame(rows)
+
+@st.cache_data(ttl=600)
+def load_race_history():
+    import trends as T
+    return T.race_history()
+
+@st.cache_data(ttl=600)
+def load_topline_log():
+    path = os.path.join(BASE_DIR, '..', 'forecasts', '2026', 'topline_log.csv')
+    return pd.read_csv(path) if os.path.exists(path) else None
+
+def refresh_2026_data():
+    """Re-scrape polls, race status, and House districts, then drop cached forecasts."""
+    from polls_2026 import refresh_polls
+    from race_status_2026 import load_or_scrape_race_status
+    from house_districts import load_house_districts
+    from national_polls import refresh as refresh_national
+    refresh_national()
+    for office in ('senate', 'governor'):
+        load_or_scrape_race_status(refresh=True, office=office)
+    load_house_districts(refresh=True)
+    refresh_polls()
+    from poll_checks import run_checks
+    run_checks()
+    forecast_inputs.clear()
+    run_forecast.clear()
+    load_trends_national.clear()
+    load_close_race_averages.clear()
 
 @st.cache_data(ttl=86400)
 def load_counties_geojson():
@@ -84,28 +103,70 @@ def load_counties_geojson():
     except Exception:
         return None
 
-@st.cache_data
+@st.cache_data(ttl=3600)
 def load_approval_trend():
+    """Individual approval polls from Wikipedia (columns renamed for the 2028 tab's chart)."""
     try:
-        df = pd.read_csv(APPROVAL_CSV)
-        df = df[df['subgroup'] == 'All polls'].copy()
-        df['enddate']          = pd.to_datetime(df['enddate'], errors='coerce')
-        df['adjusted_approve'] = pd.to_numeric(df['adjusted_approve'], errors='coerce')
-        df['adjusted_disapprove'] = pd.to_numeric(df['adjusted_disapprove'], errors='coerce')
-        df = df.dropna(subset=['enddate','adjusted_approve'])
+        from national_polls import load, load_approval_polls
+        load()
+        df = load_approval_polls().rename(columns={
+            'end_date': 'enddate', 'approve': 'adjusted_approve', 'disapprove': 'adjusted_disapprove'})
         return df.sort_values('enddate')
     except Exception:
         return pd.DataFrame()
 
-@st.cache_data(ttl=3600)
-def load_generic_ballot_trend():
+@st.cache_data(ttl=3600, show_spinner="Building approval trend...")
+def load_trends_national():
+    """Approval polls and daily average, generic-ballot history, FRED economy series,
+    midterm history fits, 2024 House baseline, House seats vs votes, weekly poll counts."""
+    import trends as T
+    from national_polls import load, load_approval_polls, load_generic_ballot_log
+    from polls_2026 import load_polls
     try:
-        df = pd.read_csv(GENERIC_BALLOT_CSV_LIVE)
-        df = df[df['subgroup'] == 'All polls'].copy()
-        df['enddate']      = pd.to_datetime(df['enddate'], errors='coerce')
-        df['adjusted_net'] = pd.to_numeric(df['adjusted_net'], errors='coerce')
-        df = df.dropna(subset=['enddate','adjusted_net'])
-        return df.sort_values('enddate')
+        load()
+        approval = load_approval_polls()
+    except Exception:
+        approval = pd.DataFrame()
+    try:
+        weekly = T.polls_per_week(load_polls(include_house=True))
+    except Exception:
+        weekly = pd.DataFrame()
+    return {
+        'approval_polls': approval,
+        'approval_series': T.approval_series(approval) if len(approval) else pd.DataFrame(),
+        'approval_trend': T.approval_trend_line(approval) if len(approval) else pd.DataFrame(),
+        'generic_ballot': T.generic_ballot_history(load_generic_ballot_log(), load_topline_log()),
+        'economy': T.economy(FRED_API_KEY) if FRED_API_KEY else {},
+        'history': T.MIDTERM_HISTORY,
+        'fits': {c: T.approval_seat_fit(chamber=c) for c in ('house', 'senate')},
+        'rep_house_2024': T.rep_house_seats_2024(),
+        'seats_votes': T.house_seats_votes(),
+        'weekly_polls': weekly,
+    }
+
+@st.cache_data(ttl=3600, show_spinner="Rebuilding race averages over time...")
+def load_close_race_averages(_annotated, _forecast, key):
+    """Slow (a few seconds): every close race's polling average for each day since July.
+    `key` (the forecast's as-of date and generic ballot) decides when to recompute."""
+    import trends as T
+    return T.close_race_averages(_annotated, _forecast)
+
+def load_trends(forecast, annotated):
+    import trends as T
+    d = dict(load_trends_national())
+    offices = ('senate', 'governor')
+    d['polls_vs_fund'] = {o: T.polls_vs_fundamentals(forecast, o) for o in offices}
+    d['vs_experts'] = {o: T.ours_vs_experts(forecast, o) for o in offices}
+    d['partisan_split'] = {o: T.partisan_poll_split(annotated, forecast, o) for o in offices}
+    d['movers'] = T.movers(T.race_history())
+    d['close_races'] = load_close_race_averages(annotated, forecast, (forecast['as_of'], forecast['generic_ballot_poll']))
+    return d
+
+@st.cache_data(ttl=3600)
+def load_generic_ballot_aggregators():
+    try:
+        from national_polls import load
+        return pd.DataFrame(load()['generic_ballot']['aggregators'])
     except Exception:
         return pd.DataFrame()
 
@@ -135,64 +196,29 @@ def save_prediction(year, incumbent, gdp_growth, unemployment, approval, dem_ev,
         record.to_csv(HISTORY_PATH, index=False)
 
 # ── Prediction engine ─────────────────────────────────────────────────────────
-def predict_with_ci(year, scenario, approval, featured_df, models, feature_cols,
+# 2028 presidential projection = the last election's county results + one national swing.
+# A leave-one-election-out test (2004-2024) found the county XGBoost model no better than
+# this once it's told the national swing, and worse in 2020 and 2024 (modeling.py,
+# evaluate_honest; CHANGELOG 2026.10.08). Uncertainty, in pts of state margin, is the
+# historical state-level error of uniform swing (5.2) plus an unknown national swing.
+STATE_SWING_SD    = 5.2
+NATIONAL_SWING_SD = 4.0
+
+def predict_with_ci(year, scenario, approval, featured_df, models=None, feature_cols=None,
                     polling_overrides=None):
     """
     scenario: dict with gdp_growth, unemployment, inflation, consumer_confidence,
     incumbent_party, incumbent_on_ballot, consecutive_terms, prior_midterm_house_margin.
+    The national swing (fundamentals + approval) moves the incumbent party's margin from
+    the last election; zero swing means a repeat of it. models/feature_cols are unused.
     """
-    model_mid, model_lo, model_hi = models
     incumbent_party = scenario['incumbent_party']
+    base_year = int(featured_df['year'].max())
+    last = featured_df[(featured_df['year'] == base_year) &
+                       featured_df['party'].isin(['DEMOCRAT', 'REPUBLICAN'])]
+    meta = last[['state', 'state_po', 'county_fips', 'county_name', 'party', 'totalvotes', 'pct']].copy()
+    meta['county_fips'] = meta['county_fips'].astype(int).astype(str).str.zfill(5)
 
-    county_profiles = featured_df.groupby(
-        ['state','state_po','county_fips','county_name']
-    ).agg(
-        county_lean    = ('county_lean',   'first'),
-        state_lean     = ('state_lean',    'first'),
-        avg_totalvotes = ('totalvotes',    'mean'),
-        turnout_delta  = ('turnout_delta', 'mean'),
-    ).reset_index()
-
-    # gdp_growth/unemployment/inflation/consumer_confidence/incumbent_on_ballot/
-    # consecutive_terms/prior_midterm_house_margin are NOT built per-row here: they're
-    # identical for every row in a given call, aren't in feature_cols (see
-    # modeling.NATIONAL_CONDITION_COLS), and would just be dropped by the reindex()
-    # below. fundamentals_adjustment() reads them straight from `scenario` instead.
-    rows = []
-    for _, c in county_profiles.iterrows():
-        for party in ['DEMOCRAT','REPUBLICAN']:
-            rows.append({
-                'year':                year,
-                'totalvotes':          c['avg_totalvotes'],
-                'is_incumbent':        1 if party == incumbent_party else 0,
-                'state_lean':          c['state_lean'],
-                'county_lean':         c['county_lean'],
-                'turnout_delta':       c['turnout_delta'],
-                'state':               c['state'],
-                'party':               party,
-                '__state_po':   c['state_po'],
-                '__fips':       str(int(c['county_fips'])).zfill(5),
-                '__county':     c['county_name'],
-                '__avg_votes':  c['avg_totalvotes'],
-            })
-
-    pred_df   = pd.DataFrame(rows)
-    meta      = pred_df[['state','__state_po','__fips','__county','party','__avg_votes']].copy()
-    encode_df = pred_df.drop(columns=['__state_po','__fips','__county','__avg_votes'])
-    encode_df = pd.get_dummies(encode_df, columns=['state','party'], drop_first=True)
-    encode_df.columns = encode_df.columns.str.replace('__','_')
-    encode_df = encode_df.reindex(columns=feature_cols, fill_value=0)
-
-    meta['predicted_pct'] = model_mid.predict(encode_df).clip(0,100)
-    meta['predicted_lo']  = model_lo.predict(encode_df).clip(0,100)
-    meta['predicted_hi']  = model_hi.predict(encode_df).clip(0,100)
-    # independently-trained quantile models can cross; enforce lo <= mid <= hi
-    meta['predicted_lo']  = np.minimum(meta['predicted_lo'], meta['predicted_pct'])
-    meta['predicted_hi']  = np.maximum(meta['predicted_hi'], meta['predicted_pct'])
-
-    # National conditions (economy, incumbency context, midterm environment) can't be
-    # learned reliably by the per-county tree model — see fundamentals.py — so they're
-    # applied here as a national swing on the incumbent party, same mechanism as approval.
     fund_adj = fundamentals_adjustment(
         scenario['gdp_growth'], scenario['unemployment'], scenario['inflation'],
         scenario['consumer_confidence'], scenario['incumbent_on_ballot'],
@@ -200,32 +226,23 @@ def predict_with_ci(year, scenario, approval, featured_df, models, feature_cols,
         incumbent_party,
     )
     approval_adj = (approval - 50) * 0.15 if approval != 50 else 0.0
-    # fund_adj is already capped at fundamentals.MAX_ADJUSTMENT on its own; this second
-    # clip bounds the COMBINED national swing (fundamentals + approval) as one quantity,
-    # so a future change to either piece's coefficient can't silently blow past what's
-    # plausible for "how much can national conditions move a county's vote share."
+    # Bound the combined national swing (fundamentals + approval) as one quantity.
     total_adj = max(-MAX_TOTAL_ADJUSTMENT, min(MAX_TOTAL_ADJUSTMENT, fund_adj + approval_adj))
-    if total_adj != 0:
-        mask = meta['party'] == incumbent_party
-        for col in ['predicted_pct','predicted_lo','predicted_hi']:
-            meta.loc[mask,col] = (meta.loc[mask,col] + total_adj).clip(0,100)
+    # total_adj is a swing in margin: half moves to the incumbent, half from the challenger
+    sign = np.where(meta['party'] == incumbent_party, 1.0, -1.0)
+    meta['predicted_pct'] = (meta['pct'] + sign * total_adj / 2).clip(0, 100)
 
-    county_results = meta.rename(columns={
-        '__state_po':'state_po','__fips':'county_fips',
-        '__county':'county_name','__avg_votes':'avg_votes',
-    })[['state','state_po','county_fips','county_name','party','avg_votes','predicted_pct']].copy()
+    county_results = meta.rename(columns={'totalvotes': 'avg_votes'})[
+        ['state', 'state_po', 'county_fips', 'county_name', 'party', 'avg_votes', 'predicted_pct']].copy()
 
-    def state_agg(x):
-        w     = x['__avg_votes']
-        w_sum = w.sum() or 1
-        return pd.Series({
-            'predicted_pct': (x['predicted_pct'] * w).sum() / w_sum,
-            'ci_lower':      (x['predicted_lo']   * w).sum() / w_sum,
-            'ci_upper':      (x['predicted_hi']   * w).sum() / w_sum,
-        })
-
-    state_results = meta.groupby(['state','__state_po','party']).apply(state_agg).reset_index()
-    state_results.columns = ['state','state_po','party','predicted_pct','ci_lower','ci_upper']
+    w = meta['totalvotes']
+    state_results = (meta.assign(wp=meta['predicted_pct'] * w)
+                         .groupby(['state', 'state_po', 'party'])[['wp', 'totalvotes']].sum())
+    state_results['predicted_pct'] = state_results['wp'] / state_results['totalvotes']
+    state_results = state_results[['predicted_pct']].reset_index()
+    half_width = 1.96 * float(np.hypot(STATE_SWING_SD, NATIONAL_SWING_SD)) / 2   # 95%, in vote share
+    state_results['ci_lower'] = (state_results['predicted_pct'] - half_width).clip(0, 100)
+    state_results['ci_upper'] = (state_results['predicted_pct'] + half_width).clip(0, 100)
     state_results = state_results.round(2)
 
     if polling_overrides:
@@ -262,7 +279,7 @@ def build_historical_map(year_df):
     return fig
 
 def _build_binary_state_choropleth(df, color_col, hover_col, height=380):
-    """Shared D-vs-R state choropleth builder used by build_prediction_map/build_senate_map."""
+    """Shared D-vs-R state choropleth builder used by build_prediction_map."""
     fig = go.Figure(go.Choropleth(
         locations=df['state_po'], z=df[color_col],
         locationmode='USA-states',
@@ -293,21 +310,6 @@ def build_prediction_map(states_dict):
     )
     return _build_binary_state_choropleth(df, 'color_val', 'hover')
 
-def build_senate_map(seat_df):
-    """Choropleth of the 2026 Class II Senate races, colored by predicted winner. Non-contested states are left blank."""
-    df = seat_df.copy()
-    df['state_po']  = df['state'].map(STATE_ABBREV)
-    df              = df.dropna(subset=['state_po'])
-    df['color_val'] = df['predicted_winner'].map({'DEMOCRAT':0,'REPUBLICAN':1})
-    df['hover']     = df.apply(
-        lambda r: f"<b>{r['state_po']}</b>{' (special)' if r['special'] else ''}<br>"
-                  f"Projected: {r['predicted_winner']}<br>"
-                  f"Margin: {r['predicted_margin']:+.1f}<br>Dem win prob: {r['dem_win_prob']:.0%}<br>"
-                  f"Incumbent: {r['incumbent_party']}{' (open seat)' if r['open_seat'] else ''}",
-        axis=1
-    )
-    return _build_binary_state_choropleth(df, 'color_val', 'hover')
-
 def build_county_map(county_results, selected_state, geojson):
     df    = county_results[county_results['state']==selected_state].copy()
     pivot = df.pivot_table(
@@ -324,7 +326,11 @@ def build_county_map(county_results, selected_state, geojson):
         axis=1
     )
     fig = go.Figure(go.Choropleth(
-        geojson=geojson, locations=pivot['county_fips'], z=pivot['color_val'],
+        # Only ship this state's county shapes: the full US file is ~3 MB and was
+        # re-sent to the browser on every rerun, freezing the page.
+        geojson={'type': 'FeatureCollection',
+                 'features': [f for f in geojson['features'] if f['id'] in set(pivot['county_fips'])]},
+        locations=pivot['county_fips'], z=pivot['color_val'],
         colorscale=[[0,'#1f77b4'],[1,'#d62728']],
         zmin=0, zmax=1, showscale=False,
         hovertext=pivot['hover'], hoverinfo='text',
@@ -340,9 +346,9 @@ def build_county_map(county_results, selected_state, geojson):
 # ── Load data ─────────────────────────────────────────────────────────────────
 historical   = load_historical()
 featured     = load_featured()
-models, feature_cols = load_model()
+models, feature_cols = None, None   # the 2028 projection is uniform swing (see predict_with_ci)
 approval_trend = load_approval_trend()
-generic_ballot_trend = load_generic_ballot_trend()
+generic_ballot_aggs = load_generic_ballot_aggregators()
 
 # ── Session state for live data ───────────────────────────────────────────────
 if 'live_data' not in st.session_state:
@@ -367,7 +373,8 @@ if 'live_data' not in st.session_state:
 live = st.session_state.live_data
 
 # ── Sidebar — global data refresh ────────────────────────────────────────────
-st.sidebar.title("🗳️ Election Prediction")
+st.sidebar.title(f"🗳️ {MODEL_NAME}")
+st.sidebar.caption(f"{TAGLINE} · from {PUBLICATION}")
 st.sidebar.divider()
 st.sidebar.subheader("Live Data")
 if FRED_API_KEY:
@@ -396,17 +403,140 @@ if live['generic_ballot'] is not None:
     st.sidebar.caption(f"Generic Ballot (D−R): **{live['generic_ballot']:+.1f}**")
     st.sidebar.caption(f"Source: {live['generic_ballot_source']}")
 
+# ── Sidebar: 2026 forecast input ─────────────────────────────────────────────
+st.sidebar.divider()
+st.sidebar.subheader("2026 Forecast")
+generic_ballot_poll = st.sidebar.slider(
+    "Generic ballot polling average (D−R)", -15.0, 20.0,
+    float(round(_or_default(live['generic_ballot'], 0.0), 1)), 0.1,
+    help="Defaults to the average of generic-ballot aggregators with no prediction-market ties (currently "
+         "FiftyPlusOne and NBC News). Move it to see how every race shifts with the national "
+         "environment. The model removes the generic ballot's historical ~3-pt Democratic lean before using it.")
+poll_miss = st.sidebar.select_slider(
+    "What if the polls are off? (polling miss)", options=[float(x) / 2 for x in range(-12, 13)], value=0.0,
+    format_func=lambda m: "None: the forecast" if m == 0 else (f"R+{m:g}" if m > 0 else f"D+{-m:g}"),
+    help="Shifts every poll (the generic ballot and each race's polls) by this many points, beyond the corrections "
+         "the forecast already makes. R+3 means the polls overstate Democrats by 3 (about the 2024 Senate miss); "
+         "R+6 is roughly 2020. D+ means they understate Democrats. The published forecast is 0. See the What if? tab.")
+if st.sidebar.button("🔄 Refresh polls & race data",
+                     help="Re-scrapes all 71 Senate/governor poll pages, race ratings, and House districts "
+                          "from Wikipedia. Takes 1–2 minutes."):
+    with st.spinner("Re-scraping polls and race data (1–2 minutes)..."):
+        refresh_2026_data()
+    st.rerun()
+try:
+    from polls_2026 import load_polls
+    _p = load_polls()
+    st.sidebar.caption(f"Polls: {len(_p)} · scraped {pd.Timestamp(_p['scraped_at'].iloc[0]):%b %d %H:%M} · "
+                       f"latest poll {_p['end_date'].max():%b %d}")
+except Exception:
+    st.sidebar.caption("No 2026 poll file yet. Click Refresh.")
+try:
+    from poll_checks import load_checks
+    _c = load_checks()
+    if _c is not None and (_c['severity'] == 'warning').any():
+        st.sidebar.warning(f"{int((_c['severity'] == 'warning').sum())} poll data warnings. See Track Record → Data quality.")
+except Exception:
+    pass
+
 # ── Tabs ──────────────────────────────────────────────────────────────────────
-tab_home, tab_historical, tab_prediction, tab_history, tab_midterms = st.tabs([
-    "🏠 Home", "📊 Historical Results", "🔮 Make a Prediction", "📈 Prediction History",
-    "🗳️ 2026 Midterms"
+forecast = run_forecast(generic_ballot_poll, poll_miss)
+base_forecast = run_forecast(generic_ballot_poll, 0.0) if poll_miss else forecast
+if poll_miss:
+    st.warning(f"Scenario view: polls miss by {'R' if poll_miss > 0 else 'D'}+{abs(poll_miss):g} beyond the usual "
+               "corrections. This is a what-if, not the forecast. Set the sidebar slider back to 0 for the forecast.")
+inputs = forecast_inputs()
+
+(tab_overview, tab_senate, tab_house, tab_governors, tab_polls, tab_whatif, tab_night, tab_results, tab_compare,
+ tab_trends, tab_posts, tab_track, tab_home, tab_historical, tab_prediction, tab_history) = st.tabs([
+    "📊 2026 Overview", "🏛️ Senate", "🏘️ House", "🏢 Governors", "📋 Polls", "🎚️ What if?", "🗳️ Election Night",
+    "🏁 Results",
+    "🔎 Comparisons", "📈 Trends", "📣 Post Builder", "📏 Track Record",
+    "🗓️ 2028 Outlook", "📜 Historical Results", "🔮 2028 Prediction", "📈 Prediction History",
 ])
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 2026 MIDTERMS
+# ══════════════════════════════════════════════════════════════════════════════
+with tab_overview:
+    dash.render_overview(forecast, MODEL_VERSION, load_topline_log())
+    st.divider()
+    st.subheader("Generic ballot: where the national input comes from")
+    if not generic_ballot_aggs.empty:
+        g = generic_ballot_aggs.sort_values('margin')
+        fig = go.Figure(go.Bar(
+            x=g['margin'], y=g['aggregator'], orientation='h',
+            marker_color=[dash.NEUTRAL if t else dash.DEM for t in g['market_tied']],
+            text=[f"D{m:+.1f}" + ("  (excluded: prediction-market ties)" if t else "") for m, t in zip(g['margin'], g['market_tied'])],
+            textposition='outside', cliponaxis=False,
+            hovertemplate="%{y}: D%{x:+.1f}<extra></extra>"))
+        fig.add_vline(x=generic_ballot_poll, line_dash='dash', line_color=dash.INK_2,
+                      annotation_text=f"Forecast input D{generic_ballot_poll:+.1f}", annotation_font_color=dash.INK_2)
+        fig.update_xaxes(title="Dem − Rep (pts)", range=[0, max(g['margin'].max() * 1.6, generic_ballot_poll + 3)])
+        st.plotly_chart(dash._layout(fig, height=260), width='stretch', key='gb_aggs')
+        st.caption("Generic-ballot averages listed on Wikipedia. Blue bars are used; gray bars belong to organizations "
+                   "with business ties to prediction markets (Decision Desk HQ, RealClearPolitics, Silver Bulletin) "
+                   "and are excluded.")
+    else:
+        st.info("Generic ballot aggregators unavailable.")
+
+with tab_senate:
+    _s = forecast['summary']['senate']
+    dash.render_statewide(
+        forecast, inputs['annotated_polls'], 'senate', 'Senate',
+        f"35 races: 33 regular seats plus the Florida and Ohio specials. Seats not up this year: "
+        f"{_s['holdovers']['DEMOCRAT']} D, {_s['holdovers']['REPUBLICAN']} R. Democrats need 51 for control "
+        f"({_s['dem_control_prob']:.0%} chance); Republicans need 50 with VP Vance ({_s['rep_control_prob']:.0%}). "
+        "In Nebraska the main challenger is independent Dan Osborn, who isn't counted toward either caucus.",
+        MODEL_VERSION, load_race_history())
+
+with tab_house:
+    dash.render_house(forecast, MODEL_VERSION)
+
+with tab_governors:
+    _g = forecast['summary']['governor']
+    dash.render_statewide(
+        forecast, inputs['annotated_polls'], 'governor', 'Governor',
+        f"36 governor races. Democrats are projected to win a median of {_g['dem_governorships_median']} "
+        f"(90% range {_g['dem_governorships_90pct'][0]}–{_g['dem_governorships_90pct'][1]}). Governor fundamentals are "
+        "weaker than the Senate's (governors often run far from their state's lean), so polls carry most of the weight.",
+        MODEL_VERSION, load_race_history())
+
+with tab_polls:
+    import dashboard_polls
+    dashboard_polls.render_polls(forecast, inputs['annotated_polls'], inputs.get('house_annotated_polls'))
+
+with tab_whatif:
+    dash.render_scenarios(base_forecast, forecast, poll_miss_sweep(generic_ballot_poll), poll_miss)
+
+with tab_night:
+    import dashboard_night
+    if poll_miss:
+        st.info("Election-night mode uses the forecast, not a what-if. Set the polling-miss slider back to 0.")
+    else:
+        dashboard_night.render_election_night(forecast, MODEL_VERSION)
+
+with tab_results:
+    import dashboard_results
+    dashboard_results.render_results(MODEL_VERSION)
+
+with tab_compare:
+    dash.render_comparisons(forecast, inputs)
+
+with tab_trends:
+    dash.render_trends(forecast, load_trends(forecast, inputs['annotated_polls']))
+
+with tab_posts:
+    dash.render_posts(forecast, inputs['annotated_polls'], MODEL_VERSION, inputs.get('house_annotated_polls'))
+
+with tab_track:
+    dash.render_track_record(MODEL_VERSION)
 
 # ══════════════════════════════════════════════════════════════════════════════
 # TAB 1 — HOME
 # ══════════════════════════════════════════════════════════════════════════════
 with tab_home:
-    st.title("🗳️ Election Prediction Dashboard")
+    st.title("2028 Presidential Outlook")
     st.caption("Real-time economic conditions, presidential approval, and model-based forecasts")
     st.divider()
 
@@ -417,7 +547,7 @@ with tab_home:
     # Current approval — explicit None-check: a live-fetched value could legitimately
     # be 0 (or any falsy-looking number), which `or` would wrongly treat as "missing"
     current_approval = _or_default(live['approval'], 50)
-    approval_source  = live['approval_source'] or "Silver Bulletin"
+    approval_source  = live['approval_source'] or "Wikipedia approval polls"
 
     # Latest FRED values
     current_gdp   = live['gdp_growth']
@@ -444,26 +574,20 @@ with tab_home:
     # ── Approval trend chart ──────────────────────────────────────────────────
     with col_left:
         st.subheader("Presidential Approval Trend")
-        if not approval_trend.empty:
-            # Last 180 days
-            cutoff = approval_trend['enddate'].max() - pd.Timedelta(days=180)
-            trend  = approval_trend[approval_trend['enddate'] >= cutoff]
-            fig, ax = plt.subplots(figsize=(7,4))
-            ax.plot(trend['enddate'], trend['adjusted_approve'],
-                    color='#2ecc71', linewidth=2, label='Approve')
-            if 'adjusted_disapprove' in trend.columns:
-                ax.plot(trend['enddate'], trend['adjusted_disapprove'],
-                        color='#e74c3c', linewidth=2, label='Disapprove')
-            ax.axhline(50, color='gray', linestyle='--', linewidth=0.8)
-            ax.set_ylabel("Approval (%)")
-            ax.set_ylim(20, 70)
-            ax.legend()
-            ax.set_title("Last 180 Days · Silver Bulletin (adjusted)")
-            plt.xticks(rotation=30, ha='right')
-            st.pyplot(fig); plt.close()
-            st.caption(f"Source: {approval_source}")
+        _nat = load_trends_national()
+        if len(_nat['approval_polls']) and len(_nat['approval_series']):
+            _span = st.segmented_control("Show", ['6 months', '1 year', 'Full term'], default='1 year',
+                                         key='outlook_approval_span') or '1 year'
+            _days = {'6 months': 182, '1 year': 365}.get(_span)
+            _start = _nat['approval_polls']['end_date'].max() - pd.Timedelta(days=_days) if _days else None
+            _cur = _nat['approval_series'].dropna(subset=['approve']).iloc[-1]
+            st.plotly_chart(dash.approval_chart(_nat['approval_polls'], _nat['approval_trend'], _start, height=340,
+                                                latest={'approve': _cur['approve'], 'disapprove': _cur['disapprove']}),
+                            width='stretch', key='outlook_approval')
+            st.caption(f"Dots are single polls; lines are a smoothed trend. Line-end numbers are our 30-day average. "
+                       f"Source: {approval_source}. More in the 📈 Trends tab.")
         else:
-            st.info("No approval data loaded. Drop the Silver Bulletin CSV in src/data/polling_data/")
+            st.info("No approval polls loaded. Click Refresh polls & race data in the sidebar.")
 
     # ── Economic indicators ───────────────────────────────────────────────────
     with col_right:
@@ -501,7 +625,8 @@ with tab_home:
 
     # ── Quick EC snapshot ─────────────────────────────────────────────────────
     st.subheader("Current Model Snapshot — 2028 Projection")
-    st.caption("Based on current economic conditions and approval rating assuming Republican incumbent")
+    st.caption("The 2024 result in every county, shifted by one national swing from current economic "
+               "conditions and approval (Republican incumbent party, open seat).")
     if st.button("Run Quick Projection"):
         with st.spinner("Running projection..."):
             snap_scenario = {
@@ -511,8 +636,8 @@ with tab_home:
                 'consumer_confidence': _or_default(live['consumer_confidence'], 70.0),
                 'incumbent_party':     'REPUBLICAN',
                 'incumbent_on_ballot': False,  # Trump is term-limited entering 2028
-                'consecutive_terms':   2,      # 2nd straight GOP term if they hold in 2028
-                'prior_midterm_house_margin': live['generic_ballot'] or 0.0,
+                'consecutive_terms':   1,      # GOP has held the White House one term (since 2025)
+                'prior_midterm_house_margin': _or_default(live['generic_ballot'], 0.0),
             }
             sr, _ = predict_with_ci(
                 2028, snap_scenario, current_approval,
@@ -621,14 +746,15 @@ with tab_prediction:
     j1,j2,j3,j4 = st.columns(4)
     inflation           = j1.slider("CPI Inflation (YoY %)",         -2.0, 12.0,  float(_or_default(live['inflation'], 3.0)), 0.1)
     consumer_confidence = j2.slider("Consumer Confidence (UMCSENT)", 40.0, 110.0, float(_or_default(live['consumer_confidence'], 70.0)), 0.5)
-    incumbent_on_ballot = j3.checkbox("Incumbent president on the ballot?", value=True)
+    incumbent_on_ballot = j3.checkbox("Incumbent president on the ballot?", value=(pred_year != 2028),
+                                      help="Trump is term-limited, so no incumbent runs in 2028.")
     consecutive_terms   = j4.number_input("Consecutive terms incumbent party has held the WH",
                                            min_value=1, max_value=5, value=1, step=1)
 
     k1, _, _, _ = st.columns(4)
     prior_midterm_house_margin = k1.slider(
         "Prior Midterm House Margin (D−R pts)", -20.0, 20.0,
-        float(live['generic_ballot'] or 0.0), 0.5,
+        float(_or_default(live['generic_ballot'], 0.0)), 0.5,
         help="National House popular-vote margin from the midterm two years before this election. "
              "Defaults to the live generic congressional ballot as a nowcast for the upcoming midterm."
     )
@@ -803,16 +929,9 @@ with tab_history:
 
         if len(history) > 1:
             st.subheader("Electoral Vote Trend")
-            fig, ax = plt.subplots(figsize=(10,4))
-            x = range(len(history))
-            ax.plot(x, history['dem_ev'], color="#1f77b4", marker='o', label="Democrat EV")
-            ax.plot(x, history['rep_ev'], color="#d62728", marker='o', label="Republican EV")
-            ax.axhline(270, color='black', linestyle='--', linewidth=1, label="270 to win")
-            ax.set_xticks(list(x))
-            ax.set_xticklabels(history['saved_at'], rotation=30, ha='right', fontsize=7)
-            ax.set_ylabel("Electoral Votes")
-            ax.legend()
-            st.pyplot(fig); plt.close()
+            st.plotly_chart(dash.ev_history_chart(history), width='stretch', key='ev_history')
+            st.caption("Each bar is one saved 2028 prediction (electoral votes out of 538), newest on top. Hover for the "
+                       "inputs behind it.")
 
         st.divider()
         st.subheader("All Saved Predictions")
@@ -824,122 +943,3 @@ with tab_history:
         if st.button("🗑️ Clear History", type="secondary"):
             os.remove(HISTORY_PATH)
             st.rerun()
-
-# ══════════════════════════════════════════════════════════════════════════════
-# TAB 5 — 2026 MIDTERMS
-# ══════════════════════════════════════════════════════════════════════════════
-with tab_midterms:
-    st.title("2026 Midterm Projections")
-    st.caption(
-        "House: national generic-ballot swing model. Senate: all 35 races on the ballot (33 Class II "
-        "seats plus the Florida and Ohio specials), simulated together with a shared national error "
-        "to get chamber-control odds. Structural models only, with no per-race polling averages yet."
-    )
-    st.divider()
-
-    default_margin = _or_default(live['generic_ballot'], 0.0)
-    generic_margin = st.slider(
-        "National Generic Congressional Ballot (D−R pts)", -20.0, 20.0,
-        float(default_margin), 0.5,
-        help="Defaults to the live Silver Bulletin generic ballot average."
-    )
-    st.caption(f"Source: {live['generic_ballot_source'] or 'Manual'}")
-
-    st.divider()
-    st.subheader("Generic Ballot Trend")
-    if not generic_ballot_trend.empty:
-        cutoff = generic_ballot_trend['enddate'].max() - pd.Timedelta(days=180)
-        trend  = generic_ballot_trend[generic_ballot_trend['enddate'] >= cutoff]
-        fig, ax = plt.subplots(figsize=(10,3))
-        ax.plot(trend['enddate'], trend['adjusted_net'], color='#9467bd', linewidth=2)
-        ax.axhline(0, color='gray', linestyle='--', linewidth=0.8)
-        ax.set_ylabel("Dem − Rep (pts)")
-        ax.set_title("Last 180 Days · Silver Bulletin (adjusted)")
-        plt.xticks(rotation=30, ha='right')
-        st.pyplot(fig); plt.close()
-    else:
-        st.info("Generic ballot trend unavailable — could not reach the live poll database.")
-
-    st.divider()
-
-    with st.spinner("Running midterm projections..."):
-        house = predict_house_2026(generic_margin, model_and_std=load_house_swing_model())
-        senate = predict_senate_2026(
-            generic_margin,
-            model_bundle=load_senate_race_model(),
-            race_status_df=load_senate_race_status(),
-        )
-
-    col_house, col_senate = st.columns(2)
-
-    with col_house:
-        st.subheader("U.S. House")
-        h1, h2, h3 = st.columns(3)
-        h1.metric("Democrat Seats",   house['dem_seats'], delta=f"{house['dem_seats']-HOUSE_MAJORITY:+d} vs 218")
-        h2.metric("Republican Seats", house['rep_seats'], delta=f"{house['rep_seats']-HOUSE_MAJORITY:+d} vs 218")
-        h3.metric("Dem Control Probability", f"{house['dem_control_prob']:.0%}")
-        st.caption(f"90% simulated range: {house['dem_seat_lo']}–{house['dem_seat_hi']} Democrat seats")
-
-        fig, ax = plt.subplots(figsize=(6,1.2))
-        ax.barh([""], [house['dem_seats']], color="#1f77b4", label=f"Democrat ({house['dem_seats']})")
-        ax.barh([""], [house['rep_seats']], left=[house['dem_seats']], color="#d62728",
-                label=f"Republican ({house['rep_seats']})")
-        ax.axvline(HOUSE_MAJORITY, color="black", linestyle="--", linewidth=1.5, label="218 to win")
-        ax.set_xlim(0, HOUSE_SEATS_TOTAL); ax.set_xlabel("Seats")
-        ax.legend(loc="upper right", fontsize=7)
-        st.pyplot(fig); plt.close()
-
-    with col_senate:
-        st.subheader("U.S. Senate")
-        s1, s2, s3 = st.columns(3)
-        s1.metric("Dem Seats (median)", senate['dem_seats_median'],
-                  delta=f"{senate['dem_seats_median']-SENATE_DEM_CONTROL_SEATS:+d} vs {SENATE_DEM_CONTROL_SEATS}")
-        s2.metric("Rep Seats (median)", 100 - senate['dem_seats_median'])
-        s3.metric("Dem Control Probability", f"{senate['dem_control_prob']:.0%}")
-        st.caption(
-            f"90% simulated range: {senate['dem_seats_lo']}–{senate['dem_seats_hi']} Democratic seats. "
-            f"Not up this year: {senate['holdovers']['DEMOCRAT']} D / {senate['holdovers']['REPUBLICAN']} R. "
-            f"Democrats need {SENATE_DEM_CONTROL_SEATS} (VP Vance breaks ties)."
-        )
-
-        dist = senate['dem_seats_dist']
-        fig, ax = plt.subplots(figsize=(6,2.2))
-        ax.bar(dist.index, dist.values * 100,
-               color=["#1f77b4" if k >= SENATE_DEM_CONTROL_SEATS else "#d62728" for k in dist.index])
-        ax.axvline(SENATE_DEM_CONTROL_SEATS - 0.5, color="black", linestyle="--", linewidth=1)
-        ax.set_xlabel("Democratic seats after the election"); ax.set_ylabel("% of simulations")
-        st.pyplot(fig); plt.close()
-
-        if senate['flipped_states']:
-            st.caption(f"Projected flips: {', '.join(senate['flipped_states'])}")
-        if senate['skipped_states']:
-            st.caption(f"Skipped (insufficient source data): {', '.join(senate['skipped_states'])}")
-        for w in senate['warnings']:
-            st.warning(w)
-
-    st.divider()
-    st.subheader("Senate Race Map")
-    st.plotly_chart(build_senate_map(senate['seats']), width='stretch')
-
-    st.divider()
-    st.subheader("Senate Race Detail")
-    err = senate['error_stats']
-    st.caption(
-        "Model = state partisan lean + incumbency + national environment + the incumbent's past "
-        f"over/under-performance. Backtest (each cycle 2000–2024 predicted without seeing it): "
-        f"{err['winner_accuracy']:.0%} of {err['n_races']} races called correctly, typical miss "
-        f"±{err['state_sd']:.0f} pts per race plus ±{err['national_sd']:.1f} pts shared nationally. "
-        "No race-level polling yet. Consensus = average of ~10 professional forecasters, scraped "
-        "from Wikipedia, shown side by side and not blended. Where they disagree, the forecasters "
-        "are usually seeing polls or candidate news this model can't."
-    )
-    seat_display = senate['seats'].copy().sort_values('predicted_margin')
-    seat_display['dem_win_prob'] = (seat_display['dem_win_prob']*100).round(1)
-    seat_display = seat_display[[
-        'state','special','incumbent_party','open_seat','lean','predicted_margin',
-        'predicted_winner','dem_win_prob','consensus_rating',
-    ]]
-    seat_display.columns = ['State','Special','Incumbent Party','Open Seat','Partisan Lean (D−R)',
-                             'Model Margin (D−R)','Model Winner','Model Dem Win Prob (%)',
-                             'Consensus Rating (D−R)']
-    st.dataframe(seat_display, width='stretch', height=400)

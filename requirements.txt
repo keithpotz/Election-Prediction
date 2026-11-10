@@ -12,6 +12,7 @@ fastapi
 uvicorn
 streamlit
 plotly
+kaleido
 xgboost
 lxml
 scipy

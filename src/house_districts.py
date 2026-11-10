@@ -39,7 +39,20 @@ MAX_CACHE_AGE_HOURS = 24
 REDISTRICTED_FOR_2026 = {'ALABAMA', 'CALIFORNIA', 'FLORIDA', 'LOUISIANA', 'NORTH CAROLINA',
                          'OHIO', 'TENNESSEE', 'TEXAS', 'UTAH'}
 RUNNING = ('renominated', 'advanced to general', 'running', 're-elected')
-FEATURES = ['pvi', 'incumbency']
+FEATURES = ['pvi', 'incumbency', 'inc_strength']
+STRENGTH_CLIP = 60      # uncontested races (+/-100) shouldn't dominate
+
+def _margin(votes):
+    d, r = votes.get('DEMOCRAT', 0), votes.get('REPUBLICAN', 0)
+    return (d - r) / (d + r) * 100 if d + r > 0 else np.nan
+
+def inc_strength(prev_margin, pvi, incumbency):
+    """How far a running incumbent beat (or trailed) their district's lean last time:
+    previous margin minus 2 x Cook PVI (PVI is on a half-margin scale). Zero for open seats
+    or when the previous race was on different lines."""
+    if incumbency == 0 or prev_margin is None or pd.isna(prev_margin) or pd.isna(pvi):
+        return 0.0
+    return float(np.clip(prev_margin, -STRENGTH_CLIP, STRENGTH_CLIP) - 2 * pvi)
 
 def _party(text):
     t = str(text)
@@ -129,7 +142,7 @@ def calibration_data(districts=None):
     districts = districts if districts is not None else load_house_districts()
     cal = _district_results(load_house_races(), 2024, REDISTRICTED_FOR_2026)
     cal = cal.merge(districts[['state', 'district', 'pvi']], on=['state', 'district'])
-    return cal.dropna(subset=['pvi'])
+    return _add_strength(cal.dropna(subset=['pvi']), LINES_CHANGED_2022_TO_2024)
 
 LINES_CHANGED_2022_TO_2024 = {'ALABAMA', 'GEORGIA', 'LOUISIANA', 'NEW YORK', 'NORTH CAROLINA'}
 
@@ -145,13 +158,21 @@ def _district_results(house, year, exclude_states):
             continue
         prev = house[(house['year'] == year - 2) & (house['state'] == state) & (house['district'] == dist)]
         incumbency = 0
+        prev_margin = _margin(prev.groupby('party')['candidatevotes'].sum()) if len(prev) else np.nan
         if len(prev):
             w = prev.loc[prev['candidatevotes'].idxmax()]
             if _last_name(w['candidate']) in {_last_name(c) for c in g['candidate']} and w['party'] in ('DEMOCRAT', 'REPUBLICAN'):
                 incumbency = 1 if w['party'] == 'DEMOCRAT' else -1
         rows.append({'state': state, 'district': int(dist), 'margin': (d - r) / (d + r) * 100,
-                     'incumbency': incumbency})
+                     'incumbency': incumbency, 'prev_margin': prev_margin})
     return pd.DataFrame(rows)
+
+def _add_strength(df, lines_changed):
+    """inc_strength per row; zero where the previous race was on different lines."""
+    df = df.copy()
+    df['inc_strength'] = [0.0 if st in lines_changed else inc_strength(pm, pv, inc)
+                          for st, pm, pv, inc in zip(df['state'], df['prev_margin'], df['pvi'], df['incumbency'])]
+    return df
 
 def out_of_year_check(model, districts):
     """
@@ -162,6 +183,9 @@ def out_of_year_check(model, districts):
     env = national_house_margin_by_year()
     t = _district_results(load_house_races(), 2022, LINES_CHANGED_2022_TO_2024 | REDISTRICTED_FOR_2026)
     t = t.merge(districts[['state', 'district', 'pvi']], on=['state', 'district']).dropna(subset=['pvi'])
+    # 2020 -> 2022 crossed the post-census redistricting nearly everywhere, so the previous
+    # race isn't the same district: incumbent strength is set to zero for this check.
+    t['inc_strength'] = 0.0
     pred = model.predict(t[FEATURES]) + (env[2022] - env[2024])
     err = t['margin'] - pred
     return {'n_districts': int(len(t)), 'sd': float(err.std(ddof=1)), 'bias': float(err.mean()),
@@ -188,16 +212,29 @@ def calibrate(cal=None, districts=None):
 
 
 # ── 2026 forecast ─────────────────────────────────────────────────────────────
+def add_2026_strength(districts, house=None):
+    """Incumbent strength from each district's 2024 result, for states whose lines
+    didn't change for 2026."""
+    house = house if house is not None else load_house_races()
+    h24 = house[house['year'] == 2024]
+    prev = {(st, int(d)): _margin(g.groupby('party')['candidatevotes'].sum()) for (st, d), g in h24.groupby(['state', 'district'])}
+    out = districts.copy()
+    out['prev_margin'] = [prev.get((st, int(d))) for st, d in zip(out['state'], out['district'])]
+    return _add_strength(out, REDISTRICTED_FOR_2026)
+
+
 def forecast_house(generic_ballot_margin, districts=None, model_bundle=None, n_sims=N_SIMS, seed=42,
-                   shared_sd=GENERIC_BALLOT_ERROR_SD):
+                   shared_sd=GENERIC_BALLOT_ERROR_SD, env_2024=None):
     districts = (districts if districts is not None else load_house_districts()).copy()
     model, stats = model_bundle or calibrate(calibration_data(districts), districts)
-    env_2024 = float(national_house_margin_by_year()[2024])
+    env_2024 = env_2024 if env_2024 is not None else float(national_house_margin_by_year()[2024])
 
     inc = np.where(districts['incumbent_running'].astype(bool) & ~districts['already_decided'].astype(bool),
                    np.where(districts['incumbent_party'] == 'DEMOCRAT', 1, -1), 0)
     districts['incumbency'] = inc
     districts['pvi'] = districts['pvi'].fillna(0.0)
+    if 'inc_strength' not in districts:
+        districts = add_2026_strength(districts)
     districts['predicted_margin'] = model.predict(districts[FEATURES]) + (generic_ballot_margin - env_2024)
 
     # Races with only one major party on the ballot, or already settled, aren't simulated.

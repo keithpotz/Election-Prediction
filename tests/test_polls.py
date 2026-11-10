@@ -5,7 +5,7 @@ import pytest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from polls_2026 import _end_date, _sample, _pct, _cand_name, _pick_sides, _party_columns, _sanitize
+from polls_2026 import _end_date, _sample, _pct, _cand_name, _pick_sides, _party_columns, _sanitize, _split_field
 from pollster_ratings import match_pollster, sponsor_party, _tokens
 import polls_average as PA
 
@@ -41,6 +41,17 @@ def test_pick_sides():
     # Minnesota's DFL counts as Democratic
     cols = _party_columns(['Peggy Flanagan (DFL)', 'Michele Tafoya (R)'])
     assert _pick_sides(cols)[2] == 'DEMOCRAT'
+
+def test_split_field_counts_other_major_party_candidate():
+    # Idaho Senate: hypothetical three-way with the withdrawn Democrat isn't Achilles vs Risch
+    t = pd.DataFrame({'Poll source': ['Peak Insights (R)', 'Change Research (I)'],
+                      'Jim Risch (R)': ['55%', '43%'], 'David Roth (D)': ['15%', '13%'],
+                      'Todd Achilles (I)': ['7%', '19%']})
+    assert _split_field(t, 'Todd Achilles (I)', 'Jim Risch (R)')
+    # A minor-party candidate doesn't disqualify a head-to-head
+    t = pd.DataFrame({'Poll source': ['X'], 'Jim Risch (R)': ['45%'], 'Todd Achilles (I)': ['35%'],
+                      'Jane Doe (L)': ['12%']})
+    assert not _split_field(t, 'Todd Achilles (I)', 'Jim Risch (R)')
 
 def test_sanitize_malformed_colspan():
     assert _sanitize('<td colspan="2"" x>') == '<td colspan="2" x>'
@@ -89,3 +100,41 @@ def test_one_pollster_cannot_flood_average():
 def test_poll_error_shrinks_with_more_polls():
     m = {'floor': 10.0, 'thin': 60.0}
     assert PA.poll_error_sd(1, m) > PA.poll_error_sd(4, m) > PA.poll_error_sd(16, m) > 10 ** 0.5
+
+
+# ── FiveThirtyEight-style Predictive Plus-Minus ──────────────────────────────
+from pollster_ratings import compute_ratings
+
+def _archive_polls():
+    rows = []
+    for race_i in range(6):
+        for pid, err, aapor in ((1, 1.0, True), (2, 6.0, False), (3, 3.0, True)):
+            rows.append({'race': f'r{race_i}', 'cycle': 2022, 'type_simple': 'Sen-G', 'pollster_rating_id': pid,
+                         'pollster': f'P{pid}', 'samplesize': 800, 'time_to_election': 10,
+                         'polldate': f'2022-10-{10 + pid:02d}', 'partisan': None, 'aapor_roper': aapor,
+                         'poll_margin': 2.0 + err, 'actual_margin': 2.0, 'error': err, 'abs_error': abs(err)})
+    return pd.DataFrame(rows)
+
+def test_ppm_ranks_more_accurate_pollsters_better():
+    r = compute_ratings(_archive_polls())
+    assert r.loc[1, 'plus_minus'] < r.loc[3, 'plus_minus'] < r.loc[2, 'plus_minus']
+    assert r.index.name == 'pollster_rating_id'
+
+def test_ppm_transparency_prior_matters_with_few_polls():
+    polls = _archive_polls()
+    polls.loc[polls['pollster_rating_id'] == 2, 'abs_error'] = 3.0       # make 2 and 3 equally accurate
+    polls.loc[polls['pollster_rating_id'] == 2, 'error'] = 3.0
+    r = compute_ratings(polls)
+    assert r.loc[3, 'plus_minus'] < r.loc[2, 'plus_minus']               # AAPOR/Roper member rated better
+    assert r.loc[3, 'aapor_roper'] and not r.loc[2, 'aapor_roper']
+
+
+# ── Regional correlation ─────────────────────────────────────────────────────
+def test_regions_cover_every_state():
+    from states import STATE_ABBREV, STATE_REGION
+    assert set(STATE_ABBREV) == set(STATE_REGION)
+
+def test_regional_sd_zero_without_backtest(tmp_path, monkeypatch):
+    import calibration as C
+    monkeypatch.setattr(C, 'OUT_DIR', str(tmp_path))
+    assert C.regional_error_sd(28) == 0.0

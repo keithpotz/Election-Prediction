@@ -62,6 +62,7 @@ def _districts(n_d, n_r):
     df['already_decided'] = False
     df['has_dem'] = True
     df['has_rep'] = True
+    df['inc_strength'] = 0.0                            # no prior-result strength
     return df
 
 def test_house_forecast_uncontested_and_swing(monkeypatch):
@@ -73,3 +74,41 @@ def test_house_forecast_uncontested_and_swing(monkeypatch):
     assert out['dem_seats_median'] == 3
     wave = H.forecast_house(40.0, d, (_FlatModel(), {'district_sd': 1.0}), n_sims=2000)
     assert wave['dem_seats_median'] == 4                # the uncontested seat can't flip
+
+
+# ── Grading, nominee tiebreak, environment check ─────────────────────────────
+def test_expert_prob_scale():
+    from grade_2026 import expert_prob
+    assert expert_prob(0) == 0.5
+    assert expert_prob(30) == pytest.approx(0.97) and expert_prob(-30) == pytest.approx(0.03)
+    assert 0.6 < expert_prob(5) < 0.7
+
+def test_calibration_counts_republican_favorites():
+    from grade_2026 import calibration
+    df = pd.DataFrame({'model_p': [0.1, 0.1, 0.9, 0.9], 'won': [False, True, True, True]})
+    t = calibration(df).set_index('bucket')
+    assert t.loc['90-95%', 'races'] == 4 and t.loc['90-95%', 'actual'] == pytest.approx(0.75)
+
+def test_primary_votes_break_same_party_ties():
+    from polls_2026 import resolve_nominees
+    cands = [('Jonathan Kreiss-Tomkins', 'DEMOCRAT'), ('Dave Bronson', 'REPUBLICAN'), ('Bernadette Wilson', 'REPUBLICAN')]
+    votes = {'Bernadette Wilson Mike Shower': 16468, 'Dave Bronson Josh Church': 13364}
+    assert resolve_nominees(cands, [], votes=votes) == ('Jonathan Kreiss-Tomkins', 'Bernadette Wilson', 'DEMOCRAT')
+
+def test_environment_check_compares_to_raw_generic():
+    from forecast_2026 import environment_check
+    sen = pd.DataFrame({'effective_polls': [4.0], 'dem_side_party': ['DEMOCRAT'], 'poll_avg': [5.0], 'fund_pred': [2.0]})
+    gov = sen.iloc[:0]
+    house = pd.DataFrame({'effective_polls': [2.0], 'poll_avg': [3.0], 'model_margin': [0.0]})
+    env = environment_check(sen, gov, house, env_used=5.0, s_env_coef=1.0, g_env_coef=1.0, generic_poll=8.0)
+    assert env['implied_by_race_polls'] == pytest.approx(8.0)       # both races imply +3 over the 5.0 used
+    assert env['gap'] == pytest.approx(0.0) and not env['flag']
+
+
+def test_house_incumbent_strength():
+    # an incumbent who ran 10 pts ahead of a D+5 district (margin 20 vs expected ~10)
+    assert H.inc_strength(20.0, 5.0, 1) == pytest.approx(10.0)
+    # blowouts are clipped so uncontested 100-pt margins don't dominate
+    assert H.inc_strength(100.0, 0.0, 1) == pytest.approx(H.STRENGTH_CLIP)
+    # an open seat carries no incumbent strength
+    assert H.inc_strength(20.0, 5.0, 0) == 0.0

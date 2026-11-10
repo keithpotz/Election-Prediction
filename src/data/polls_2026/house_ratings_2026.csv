@@ -1,0 +1,1722 @@
+state,district,source,ranking,value,market_tied
+ALABAMA,1,Decision Desk HQ,Safe R,-30.0,True
+ALABAMA,1,The Cook Political Report,Solid R,-30.0,False
+ALABAMA,1,Inside Elections,Solid R,-30.0,False
+ALABAMA,1,Sabato's Crystal Ball,Safe R,-30.0,False
+ALABAMA,1,The Economist,Safe R,-30.0,False
+ALABAMA,1,Silver Bulletin,Solid R,-30.0,True
+ALABAMA,2,Decision Desk HQ,Lean R (flip),-7.0,True
+ALABAMA,2,The Cook Political Report,Lean R (flip),-7.0,False
+ALABAMA,2,Inside Elections,Tilt R (flip),-3.0,False
+ALABAMA,2,Sabato's Crystal Ball,Lean D,7.0,False
+ALABAMA,2,The Economist,Likely R (flip),-15.0,False
+ALABAMA,2,Silver Bulletin,Likely R (flip),-15.0,True
+ALABAMA,3,Decision Desk HQ,Safe R,-30.0,True
+ALABAMA,3,The Cook Political Report,Solid R,-30.0,False
+ALABAMA,3,Inside Elections,Solid R,-30.0,False
+ALABAMA,3,Sabato's Crystal Ball,Safe R,-30.0,False
+ALABAMA,3,The Economist,Safe R,-30.0,False
+ALABAMA,3,Silver Bulletin,Solid R,-30.0,True
+ALABAMA,4,Decision Desk HQ,Safe R,-30.0,True
+ALABAMA,4,The Cook Political Report,Solid R,-30.0,False
+ALABAMA,4,Inside Elections,Solid R,-30.0,False
+ALABAMA,4,Sabato's Crystal Ball,Safe R,-30.0,False
+ALABAMA,4,The Economist,Safe R,-30.0,False
+ALABAMA,4,Silver Bulletin,Solid R,-30.0,True
+ALABAMA,5,Decision Desk HQ,Safe R,-30.0,True
+ALABAMA,5,The Cook Political Report,Solid R,-30.0,False
+ALABAMA,5,Inside Elections,Solid R,-30.0,False
+ALABAMA,5,Sabato's Crystal Ball,Safe R,-30.0,False
+ALABAMA,5,The Economist,Safe R,-30.0,False
+ALABAMA,5,Silver Bulletin,Solid R,-30.0,True
+ALABAMA,6,Decision Desk HQ,Safe R,-30.0,True
+ALABAMA,6,The Cook Political Report,Solid R,-30.0,False
+ALABAMA,6,Inside Elections,Solid R,-30.0,False
+ALABAMA,6,Sabato's Crystal Ball,Safe R,-30.0,False
+ALABAMA,6,The Economist,Safe R,-30.0,False
+ALABAMA,6,Silver Bulletin,Solid R,-30.0,True
+ALABAMA,7,Decision Desk HQ,Safe D,30.0,True
+ALABAMA,7,The Cook Political Report,Solid D,30.0,False
+ALABAMA,7,Inside Elections,Solid D,30.0,False
+ALABAMA,7,Sabato's Crystal Ball,Safe D,30.0,False
+ALABAMA,7,The Economist,Safe D,30.0,False
+ALABAMA,7,Silver Bulletin,Solid D,30.0,True
+ARIZONA,1,Decision Desk HQ,Likely D (flip),15.0,True
+ARIZONA,1,The Cook Political Report,Lean D (flip),7.0,False
+ARIZONA,1,Inside Elections,Tilt D (flip),3.0,False
+ARIZONA,1,Sabato's Crystal Ball,Lean D (flip),7.0,False
+ARIZONA,1,The Economist,Likely D (flip),15.0,False
+ARIZONA,1,Silver Bulletin,Likely D (flip),15.0,True
+ARIZONA,2,Decision Desk HQ,Lean R,-7.0,True
+ARIZONA,2,The Cook Political Report,Lean R,-7.0,False
+ARIZONA,2,Inside Elections,Lean R,-7.0,False
+ARIZONA,2,Sabato's Crystal Ball,Lean R,-7.0,False
+ARIZONA,2,The Economist,Tossup,0.0,False
+ARIZONA,2,Silver Bulletin,Likely R,-15.0,True
+ARIZONA,3,Decision Desk HQ,Safe D,30.0,True
+ARIZONA,3,The Cook Political Report,Solid D,30.0,False
+ARIZONA,3,Inside Elections,Solid D,30.0,False
+ARIZONA,3,Sabato's Crystal Ball,Safe D,30.0,False
+ARIZONA,3,The Economist,Safe D,30.0,False
+ARIZONA,4,Decision Desk HQ,Safe D,30.0,True
+ARIZONA,4,The Cook Political Report,Solid D,30.0,False
+ARIZONA,4,Inside Elections,Solid D,30.0,False
+ARIZONA,4,Sabato's Crystal Ball,Safe D,30.0,False
+ARIZONA,4,The Economist,Safe D,30.0,False
+ARIZONA,4,Silver Bulletin,Solid D,30.0,True
+ARIZONA,5,Decision Desk HQ,Likely R,-15.0,True
+ARIZONA,5,The Cook Political Report,Solid R,-30.0,False
+ARIZONA,5,Inside Elections,Solid R,-30.0,False
+ARIZONA,5,Sabato's Crystal Ball,Safe R,-30.0,False
+ARIZONA,5,The Economist,Lean R,-7.0,False
+ARIZONA,5,Silver Bulletin,Solid R,-30.0,True
+ARIZONA,6,Decision Desk HQ,Likely D (flip),15.0,True
+ARIZONA,6,The Cook Political Report,Lean D (flip),7.0,False
+ARIZONA,6,Inside Elections,Tilt D (flip),3.0,False
+ARIZONA,6,Sabato's Crystal Ball,Lean D (flip),7.0,False
+ARIZONA,6,The Economist,Likely D (flip),15.0,False
+ARIZONA,6,Silver Bulletin,Likely D (flip),15.0,True
+ARIZONA,7,Decision Desk HQ,Safe D,30.0,True
+ARIZONA,7,The Cook Political Report,Solid D,30.0,False
+ARIZONA,7,Inside Elections,Solid D,30.0,False
+ARIZONA,7,Sabato's Crystal Ball,Safe D,30.0,False
+ARIZONA,7,The Economist,Safe D,30.0,False
+ARIZONA,7,Silver Bulletin,Solid D,30.0,True
+ARIZONA,8,Decision Desk HQ,Likely R,-15.0,True
+ARIZONA,8,The Cook Political Report,Solid R,-30.0,False
+ARIZONA,8,Inside Elections,Solid R,-30.0,False
+ARIZONA,8,Sabato's Crystal Ball,Safe R,-30.0,False
+ARIZONA,8,The Economist,Likely R,-15.0,False
+ARIZONA,8,Silver Bulletin,Likely R,-15.0,True
+ARIZONA,9,Decision Desk HQ,Safe R,-30.0,True
+ARIZONA,9,The Cook Political Report,Solid R,-30.0,False
+ARIZONA,9,Inside Elections,Solid R,-30.0,False
+ARIZONA,9,Sabato's Crystal Ball,Safe R,-30.0,False
+ARIZONA,9,The Economist,Safe R,-30.0,False
+ARIZONA,9,Silver Bulletin,Solid R,-30.0,True
+ARKANSAS,1,Decision Desk HQ,Safe R,-30.0,True
+ARKANSAS,1,The Cook Political Report,Solid R,-30.0,False
+ARKANSAS,1,Inside Elections,Solid R,-30.0,False
+ARKANSAS,1,Sabato's Crystal Ball,Safe R,-30.0,False
+ARKANSAS,1,The Economist,Safe R,-30.0,False
+ARKANSAS,1,Silver Bulletin,Solid R,-30.0,True
+ARKANSAS,2,Decision Desk HQ,Likely R,-15.0,True
+ARKANSAS,2,The Cook Political Report,Likely R,-15.0,False
+ARKANSAS,2,Inside Elections,Likely R,-15.0,False
+ARKANSAS,2,Sabato's Crystal Ball,Likely R,-15.0,False
+ARKANSAS,2,The Economist,Likely R,-15.0,False
+ARKANSAS,2,Silver Bulletin,Likely R,-15.0,True
+ARKANSAS,3,Decision Desk HQ,Safe R,-30.0,True
+ARKANSAS,3,The Cook Political Report,Solid R,-30.0,False
+ARKANSAS,3,Inside Elections,Solid R,-30.0,False
+ARKANSAS,3,Sabato's Crystal Ball,Safe R,-30.0,False
+ARKANSAS,3,The Economist,Safe R,-30.0,False
+ARKANSAS,3,Silver Bulletin,Solid R,-30.0,True
+ARKANSAS,4,Decision Desk HQ,Safe R,-30.0,True
+ARKANSAS,4,The Cook Political Report,Solid R,-30.0,False
+ARKANSAS,4,Inside Elections,Solid R,-30.0,False
+ARKANSAS,4,Sabato's Crystal Ball,Safe R,-30.0,False
+ARKANSAS,4,The Economist,Safe R,-30.0,False
+ARKANSAS,4,Silver Bulletin,Solid R,-30.0,True
+COLORADO,1,Decision Desk HQ,Safe D,30.0,True
+COLORADO,1,The Cook Political Report,Solid D,30.0,False
+COLORADO,1,Inside Elections,Solid D,30.0,False
+COLORADO,1,Sabato's Crystal Ball,Safe D,30.0,False
+COLORADO,1,The Economist,Safe D,30.0,False
+COLORADO,2,Decision Desk HQ,Safe D,30.0,True
+COLORADO,2,The Cook Political Report,Solid D,30.0,False
+COLORADO,2,Inside Elections,Solid D,30.0,False
+COLORADO,2,Sabato's Crystal Ball,Safe D,30.0,False
+COLORADO,2,The Economist,Safe D,30.0,False
+COLORADO,3,Decision Desk HQ,Tossup,0.0,True
+COLORADO,3,The Cook Political Report,Likely R,-15.0,False
+COLORADO,3,Inside Elections,Likely R,-15.0,False
+COLORADO,3,Sabato's Crystal Ball,Lean R,-7.0,False
+COLORADO,3,The Economist,Lean R,-7.0,False
+COLORADO,4,The Cook Political Report,Lean R,-7.0,False
+COLORADO,4,Decision Desk HQ,Likely R,-15.0,True
+COLORADO,4,The Economist,Likely R,-15.0,False
+COLORADO,4,Inside Elections,Likely R,-15.0,False
+COLORADO,4,Sabato's Crystal Ball,Lean R,-7.0,False
+COLORADO,5,Decision Desk HQ,Likely R,-15.0,True
+COLORADO,5,The Cook Political Report,Tossup,0.0,False
+COLORADO,5,Inside Elections,Tossup,0.0,False
+COLORADO,5,Sabato's Crystal Ball,Lean D (flip),7.0,False
+COLORADO,5,The Economist,Likely R,-15.0,False
+COLORADO,6,Decision Desk HQ,Safe D,30.0,True
+COLORADO,6,The Cook Political Report,Solid D,30.0,False
+COLORADO,6,Inside Elections,Solid D,30.0,False
+COLORADO,6,Sabato's Crystal Ball,Safe D,30.0,False
+COLORADO,6,The Economist,Safe D,30.0,False
+COLORADO,7,Decision Desk HQ,Safe D,30.0,True
+COLORADO,7,The Cook Political Report,Solid D,30.0,False
+COLORADO,7,Inside Elections,Solid D,30.0,False
+COLORADO,7,Sabato's Crystal Ball,Safe D,30.0,False
+COLORADO,7,The Economist,Safe D,30.0,False
+COLORADO,8,Decision Desk HQ,Likely D (flip),15.0,True
+COLORADO,8,The Cook Political Report,Lean D (flip),7.0,False
+COLORADO,8,Inside Elections,Tilt D (flip),3.0,False
+COLORADO,8,Sabato's Crystal Ball,Lean D (flip),7.0,False
+COLORADO,8,The Economist,Tossup,0.0,False
+CONNECTICUT,1,Decision Desk HQ,Safe D,30.0,True
+CONNECTICUT,1,The Cook Political Report,Solid D,30.0,False
+CONNECTICUT,1,Inside Elections,Solid D,30.0,False
+CONNECTICUT,1,Sabato's Crystal Ball,Safe D,30.0,False
+CONNECTICUT,1,The Economist,Safe D,30.0,False
+CONNECTICUT,2,Decision Desk HQ,Safe D,30.0,True
+CONNECTICUT,2,The Cook Political Report,Solid D,30.0,False
+CONNECTICUT,2,Inside Elections,Solid D,30.0,False
+CONNECTICUT,2,Sabato's Crystal Ball,Safe D,30.0,False
+CONNECTICUT,2,The Economist,Safe D,30.0,False
+CONNECTICUT,3,Decision Desk HQ,Safe D,30.0,True
+CONNECTICUT,3,The Cook Political Report,Solid D,30.0,False
+CONNECTICUT,3,Inside Elections,Solid D,30.0,False
+CONNECTICUT,3,Sabato's Crystal Ball,Safe D,30.0,False
+CONNECTICUT,3,The Economist,Safe D,30.0,False
+CONNECTICUT,4,Decision Desk HQ,Safe D,30.0,True
+CONNECTICUT,4,The Cook Political Report,Solid D,30.0,False
+CONNECTICUT,4,Inside Elections,Solid D,30.0,False
+CONNECTICUT,4,Sabato's Crystal Ball,Safe D,30.0,False
+CONNECTICUT,4,The Economist,Safe D,30.0,False
+CONNECTICUT,5,Decision Desk HQ,Safe D,30.0,True
+CONNECTICUT,5,The Cook Political Report,Solid D,30.0,False
+CONNECTICUT,5,Inside Elections,Solid D,30.0,False
+CONNECTICUT,5,Sabato's Crystal Ball,Safe D,30.0,False
+CONNECTICUT,5,The Economist,Safe D,30.0,False
+FLORIDA,1,Decision Desk HQ,Safe R,-30.0,True
+FLORIDA,1,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,1,Inside Elections,Solid R,-30.0,False
+FLORIDA,1,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,1,The Economist,Safe R,-30.0,False
+FLORIDA,2,Decision Desk HQ,Likely R,-15.0,True
+FLORIDA,2,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,2,Inside Elections,Solid R,-30.0,False
+FLORIDA,2,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,2,The Economist,Likely R,-15.0,False
+FLORIDA,3,Decision Desk HQ,Likely R,-15.0,True
+FLORIDA,3,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,3,Inside Elections,Solid R,-30.0,False
+FLORIDA,3,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,3,The Economist,Safe R,-30.0,False
+FLORIDA,4,Decision Desk HQ,Lean R,-7.0,True
+FLORIDA,4,The Cook Political Report,Likely R,-15.0,False
+FLORIDA,4,Inside Elections,Solid R,-30.0,False
+FLORIDA,4,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,4,The Economist,Likely R,-15.0,False
+FLORIDA,5,Decision Desk HQ,Likely R,-15.0,True
+FLORIDA,5,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,5,Inside Elections,Solid R,-30.0,False
+FLORIDA,5,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,6,Decision Desk HQ,Safe R,-30.0,True
+FLORIDA,6,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,6,Inside Elections,Solid R,-30.0,False
+FLORIDA,6,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,6,The Economist,Safe R,-30.0,False
+FLORIDA,7,Decision Desk HQ,Lean R,-7.0,True
+FLORIDA,7,The Cook Political Report,Lean R,-7.0,False
+FLORIDA,7,Inside Elections,Likely R,-15.0,False
+FLORIDA,7,Sabato's Crystal Ball,Lean R,-7.0,False
+FLORIDA,7,The Economist,Tossup,0.0,False
+FLORIDA,8,Decision Desk HQ,Likely R,-15.0,True
+FLORIDA,8,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,8,Inside Elections,Solid R,-30.0,False
+FLORIDA,8,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,8,The Economist,Likely R,-15.0,False
+FLORIDA,9,Decision Desk HQ,Tossup,0.0,True
+FLORIDA,9,The Cook Political Report,Lean R (flip),-7.0,False
+FLORIDA,9,Inside Elections,Likely R (flip),-15.0,False
+FLORIDA,9,Sabato's Crystal Ball,Lean R (flip),-7.0,False
+FLORIDA,9,The Economist,Lean R (flip),-7.0,False
+FLORIDA,10,Decision Desk HQ,Safe D,30.0,True
+FLORIDA,10,The Cook Political Report,Solid D,30.0,False
+FLORIDA,10,Inside Elections,Solid D,30.0,False
+FLORIDA,10,Sabato's Crystal Ball,Safe D,30.0,False
+FLORIDA,10,The Economist,Safe D,30.0,False
+FLORIDA,11,Decision Desk HQ,Likely R,-15.0,True
+FLORIDA,11,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,11,Inside Elections,Solid R,-30.0,False
+FLORIDA,11,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,11,The Economist,Lean R,-7.0,False
+FLORIDA,12,Decision Desk HQ,Likely R,-15.0,True
+FLORIDA,12,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,12,Inside Elections,Solid R,-30.0,False
+FLORIDA,12,Sabato's Crystal Ball,Likely R,-15.0,False
+FLORIDA,12,The Economist,Likely R,-15.0,False
+FLORIDA,13,Decision Desk HQ,Lean R,-7.0,True
+FLORIDA,13,The Cook Political Report,Lean R,-7.0,False
+FLORIDA,13,Inside Elections,Lean R,-7.0,False
+FLORIDA,13,Sabato's Crystal Ball,Lean R,-7.0,False
+FLORIDA,13,The Economist,Lean R,-7.0,False
+FLORIDA,14,Decision Desk HQ,Lean D,7.0,True
+FLORIDA,14,The Cook Political Report,Tossup,0.0,False
+FLORIDA,14,Inside Elections,Tilt D,3.0,False
+FLORIDA,14,Sabato's Crystal Ball,Lean D,7.0,False
+FLORIDA,14,The Economist,Lean D,7.0,False
+FLORIDA,15,Decision Desk HQ,Likely R,-15.0,True
+FLORIDA,15,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,15,Inside Elections,Solid R,-30.0,False
+FLORIDA,15,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,15,The Economist,Safe R,-30.0,False
+FLORIDA,16,Decision Desk HQ,Lean R,-7.0,True
+FLORIDA,16,The Cook Political Report,Likely R,-15.0,False
+FLORIDA,16,Inside Elections,Likely R,-15.0,False
+FLORIDA,16,Sabato's Crystal Ball,Likely R,-15.0,False
+FLORIDA,16,The Economist,Lean R,-7.0,False
+FLORIDA,17,Decision Desk HQ,Likely R,-15.0,True
+FLORIDA,17,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,17,Inside Elections,Solid R,-30.0,False
+FLORIDA,17,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,17,The Economist,Safe R,-30.0,False
+FLORIDA,18,Decision Desk HQ,Likely R,-15.0,True
+FLORIDA,18,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,18,Inside Elections,Solid R,-30.0,False
+FLORIDA,18,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,18,The Economist,Likely R,-15.0,False
+FLORIDA,19,Decision Desk HQ,Safe R,-30.0,True
+FLORIDA,19,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,19,Inside Elections,Solid R,-30.0,False
+FLORIDA,19,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,19,The Economist,Safe R,-30.0,False
+FLORIDA,20,Decision Desk HQ,Safe D,30.0,True
+FLORIDA,20,The Cook Political Report,Solid D,30.0,False
+FLORIDA,20,Inside Elections,Solid D,30.0,False
+FLORIDA,20,Sabato's Crystal Ball,Safe D,30.0,False
+FLORIDA,20,The Economist,Safe D,30.0,False
+FLORIDA,21,Decision Desk HQ,Likely R,-15.0,True
+FLORIDA,21,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,21,Inside Elections,Solid R,-30.0,False
+FLORIDA,21,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,21,The Economist,Likely R,-15.0,False
+FLORIDA,22,Decision Desk HQ,Tossup,0.0,True
+FLORIDA,22,The Cook Political Report,Tossup,0.0,False
+FLORIDA,22,Inside Elections,Tossup,0.0,False
+FLORIDA,22,Sabato's Crystal Ball,Lean D,7.0,False
+FLORIDA,22,The Economist,Tossup,0.0,False
+FLORIDA,23,Decision Desk HQ,Safe D,30.0,True
+FLORIDA,23,The Cook Political Report,Solid D,30.0,False
+FLORIDA,23,Inside Elections,Solid D,30.0,False
+FLORIDA,23,Sabato's Crystal Ball,Safe D,30.0,False
+FLORIDA,23,The Economist,Safe D,30.0,False
+FLORIDA,24,Decision Desk HQ,Safe D,30.0,True
+FLORIDA,24,The Cook Political Report,Solid D,30.0,False
+FLORIDA,24,Inside Elections,Solid D,30.0,False
+FLORIDA,24,Sabato's Crystal Ball,Safe D,30.0,False
+FLORIDA,24,The Economist,Safe D,30.0,False
+FLORIDA,25,Decision Desk HQ,Lean D,7.0,True
+FLORIDA,25,The Cook Political Report,Lean D,7.0,False
+FLORIDA,25,Inside Elections,Tilt D,3.0,False
+FLORIDA,25,Sabato's Crystal Ball,Lean D,7.0,False
+FLORIDA,25,The Economist,Lean D,7.0,False
+FLORIDA,26,Decision Desk HQ,Likely R,-15.0,True
+FLORIDA,26,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,26,Inside Elections,Solid R,-30.0,False
+FLORIDA,26,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,26,The Economist,Likely R,-15.0,False
+FLORIDA,27,Decision Desk HQ,Lean R,-7.0,True
+FLORIDA,27,The Cook Political Report,Lean R,-7.0,False
+FLORIDA,27,Inside Elections,Lean R,-7.0,False
+FLORIDA,27,Sabato's Crystal Ball,Lean R,-7.0,False
+FLORIDA,27,The Economist,Safe R,-30.0,False
+FLORIDA,28,Decision Desk HQ,Safe R,-30.0,True
+FLORIDA,28,The Cook Political Report,Solid R,-30.0,False
+FLORIDA,28,Inside Elections,Solid R,-30.0,False
+FLORIDA,28,Sabato's Crystal Ball,Safe R,-30.0,False
+FLORIDA,28,The Economist,Safe R,-30.0,False
+GEORGIA,1,Decision Desk HQ,Likely R,-15.0,True
+GEORGIA,1,The Cook Political Report,Solid R,-30.0,False
+GEORGIA,1,Inside Elections,Solid R,-30.0,False
+GEORGIA,1,Sabato's Crystal Ball,Safe R,-30.0,False
+GEORGIA,2,Decision Desk HQ,Safe D,30.0,True
+GEORGIA,2,The Cook Political Report,Solid D,30.0,False
+GEORGIA,2,Inside Elections,Solid D,30.0,False
+GEORGIA,2,Sabato's Crystal Ball,Safe D,30.0,False
+GEORGIA,3,Decision Desk HQ,Safe R,-30.0,True
+GEORGIA,3,The Cook Political Report,Solid R,-30.0,False
+GEORGIA,3,Inside Elections,Solid R,-30.0,False
+GEORGIA,3,Sabato's Crystal Ball,Safe R,-30.0,False
+GEORGIA,4,Decision Desk HQ,Safe D,30.0,True
+GEORGIA,4,The Cook Political Report,Solid D,30.0,False
+GEORGIA,4,Inside Elections,Solid D,30.0,False
+GEORGIA,4,Sabato's Crystal Ball,Safe D,30.0,False
+GEORGIA,5,Decision Desk HQ,Safe D,30.0,True
+GEORGIA,5,The Cook Political Report,Solid D,30.0,False
+GEORGIA,5,Inside Elections,Solid D,30.0,False
+GEORGIA,5,Sabato's Crystal Ball,Safe D,30.0,False
+GEORGIA,6,Decision Desk HQ,Safe D,30.0,True
+GEORGIA,6,The Cook Political Report,Solid D,30.0,False
+GEORGIA,6,Inside Elections,Solid D,30.0,False
+GEORGIA,6,Sabato's Crystal Ball,Safe D,30.0,False
+GEORGIA,7,Decision Desk HQ,Likely R,-15.0,True
+GEORGIA,7,The Cook Political Report,Solid R,-30.0,False
+GEORGIA,7,Inside Elections,Solid R,-30.0,False
+GEORGIA,7,Sabato's Crystal Ball,Safe R,-30.0,False
+GEORGIA,8,Decision Desk HQ,Safe R,-30.0,True
+GEORGIA,8,The Cook Political Report,Solid R,-30.0,False
+GEORGIA,8,Inside Elections,Solid R,-30.0,False
+GEORGIA,8,Sabato's Crystal Ball,Safe R,-30.0,False
+GEORGIA,9,Decision Desk HQ,Safe R,-30.0,True
+GEORGIA,9,The Cook Political Report,Solid R,-30.0,False
+GEORGIA,9,Inside Elections,Solid R,-30.0,False
+GEORGIA,9,Sabato's Crystal Ball,Safe R,-30.0,False
+GEORGIA,10,Decision Desk HQ,Likely R,-15.0,True
+GEORGIA,10,The Cook Political Report,Solid R,-30.0,False
+GEORGIA,10,Inside Elections,Solid R,-30.0,False
+GEORGIA,10,Sabato's Crystal Ball,Safe R,-30.0,False
+GEORGIA,11,Decision Desk HQ,Safe R,-30.0,True
+GEORGIA,11,The Cook Political Report,Solid R,-30.0,False
+GEORGIA,11,Inside Elections,Solid R,-30.0,False
+GEORGIA,11,Sabato's Crystal Ball,Safe R,-30.0,False
+GEORGIA,12,Decision Desk HQ,Likely R,-15.0,True
+GEORGIA,12,The Cook Political Report,Solid R,-30.0,False
+GEORGIA,12,Inside Elections,Solid R,-30.0,False
+GEORGIA,12,Sabato's Crystal Ball,Safe R,-30.0,False
+GEORGIA,13,Decision Desk HQ,Safe D,30.0,True
+GEORGIA,13,The Cook Political Report,Solid D,30.0,False
+GEORGIA,13,Inside Elections,Solid D,30.0,False
+GEORGIA,13,Sabato's Crystal Ball,Safe D,30.0,False
+GEORGIA,14,Decision Desk HQ,Safe R,-30.0,True
+GEORGIA,14,The Cook Political Report,Solid R,-30.0,False
+GEORGIA,14,Inside Elections,Solid R,-30.0,False
+GEORGIA,14,Sabato's Crystal Ball,Safe R,-30.0,False
+HAWAII,1,Decision Desk HQ,Safe D,30.0,True
+HAWAII,1,The Cook Political Report,Solid D,30.0,False
+HAWAII,1,Inside Elections,Solid D,30.0,False
+HAWAII,1,Sabato's Crystal Ball,Safe D,30.0,False
+HAWAII,1,Silver Bulletin,Solid D,30.0,True
+HAWAII,2,Decision Desk HQ,Safe D,30.0,True
+HAWAII,2,The Cook Political Report,Solid D,30.0,False
+HAWAII,2,Inside Elections,Solid D,30.0,False
+HAWAII,2,Sabato's Crystal Ball,Safe D,30.0,False
+HAWAII,2,Silver Bulletin,Solid D,30.0,True
+IDAHO,1,Decision Desk HQ,Safe R,-30.0,True
+IDAHO,1,The Cook Political Report,Solid R,-30.0,False
+IDAHO,1,Inside Elections,Solid R,-30.0,False
+IDAHO,1,Sabato's Crystal Ball,Safe R,-30.0,False
+IDAHO,2,Decision Desk HQ,Safe R,-30.0,True
+IDAHO,2,The Cook Political Report,Solid R,-30.0,False
+IDAHO,2,Inside Elections,Solid R,-30.0,False
+IDAHO,2,Sabato's Crystal Ball,Safe R,-30.0,False
+ILLINOIS,1,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,1,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,1,Inside Elections,Solid D,30.0,False
+ILLINOIS,1,Sabato's Crystal Ball,Safe D,30.0,False
+ILLINOIS,2,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,2,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,2,Inside Elections,Solid D,30.0,False
+ILLINOIS,2,Sabato's Crystal Ball,Safe D,30.0,False
+ILLINOIS,3,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,3,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,3,Inside Elections,Solid D,30.0,False
+ILLINOIS,3,Sabato's Crystal Ball,Safe D,30.0,False
+ILLINOIS,4,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,4,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,4,Inside Elections,Solid D,30.0,False
+ILLINOIS,4,Sabato's Crystal Ball,Safe D,30.0,False
+ILLINOIS,5,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,5,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,5,Inside Elections,Solid D,30.0,False
+ILLINOIS,5,Sabato's Crystal Ball,Safe D,30.0,False
+ILLINOIS,6,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,6,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,6,Inside Elections,Solid D,30.0,False
+ILLINOIS,6,Sabato's Crystal Ball,Safe D,30.0,False
+ILLINOIS,7,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,7,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,7,Inside Elections,Solid D,30.0,False
+ILLINOIS,7,Sabato's Crystal Ball,Safe D,30.0,False
+ILLINOIS,8,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,8,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,8,Inside Elections,Solid D,30.0,False
+ILLINOIS,8,Sabato's Crystal Ball,Safe D,30.0,False
+ILLINOIS,9,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,9,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,9,Inside Elections,Solid D,30.0,False
+ILLINOIS,9,Sabato's Crystal Ball,Safe D,30.0,False
+ILLINOIS,10,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,10,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,10,Inside Elections,Solid D,30.0,False
+ILLINOIS,10,Sabato's Crystal Ball,Safe D,30.0,False
+ILLINOIS,11,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,11,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,11,Inside Elections,Solid D,30.0,False
+ILLINOIS,11,Sabato's Crystal Ball,Safe D,30.0,False
+ILLINOIS,12,Decision Desk HQ,Safe R,-30.0,True
+ILLINOIS,12,The Cook Political Report,Solid R,-30.0,False
+ILLINOIS,12,Inside Elections,Solid R,-30.0,False
+ILLINOIS,12,Sabato's Crystal Ball,Safe R,-30.0,False
+ILLINOIS,13,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,13,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,13,Inside Elections,Solid D,30.0,False
+ILLINOIS,13,Sabato's Crystal Ball,Safe D,30.0,False
+ILLINOIS,14,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,14,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,14,Inside Elections,Solid D,30.0,False
+ILLINOIS,14,Sabato's Crystal Ball,Safe D,30.0,False
+ILLINOIS,15,Decision Desk HQ,Safe R,-30.0,True
+ILLINOIS,15,The Cook Political Report,Solid R,-30.0,False
+ILLINOIS,15,Inside Elections,Solid R,-30.0,False
+ILLINOIS,15,Sabato's Crystal Ball,Safe R,-30.0,False
+ILLINOIS,16,Decision Desk HQ,Safe R,-30.0,True
+ILLINOIS,16,The Cook Political Report,Solid R,-30.0,False
+ILLINOIS,16,Inside Elections,Solid R,-30.0,False
+ILLINOIS,16,Sabato's Crystal Ball,Safe R,-30.0,False
+ILLINOIS,17,Decision Desk HQ,Safe D,30.0,True
+ILLINOIS,17,The Cook Political Report,Solid D,30.0,False
+ILLINOIS,17,Inside Elections,Solid D,30.0,False
+ILLINOIS,17,Sabato's Crystal Ball,Safe D,30.0,False
+INDIANA,1,Decision Desk HQ,Safe D,30.0,True
+INDIANA,1,The Cook Political Report,Likely D,15.0,False
+INDIANA,1,Inside Elections,Likely D,15.0,False
+INDIANA,1,Sabato's Crystal Ball,Likely D,15.0,False
+INDIANA,1,Silver Bulletin,Solid D,30.0,True
+INDIANA,2,Decision Desk HQ,Safe R,-30.0,True
+INDIANA,2,The Cook Political Report,Safe R,-30.0,False
+INDIANA,2,Inside Elections,Safe R,-30.0,False
+INDIANA,2,Sabato's Crystal Ball,Safe R,-30.0,False
+INDIANA,2,Silver Bulletin,Solid R,-30.0,True
+INDIANA,3,Decision Desk HQ,Safe R,-30.0,True
+INDIANA,3,The Cook Political Report,Safe R,-30.0,False
+INDIANA,3,Inside Elections,Safe R,-30.0,False
+INDIANA,3,Sabato's Crystal Ball,Safe R,-30.0,False
+INDIANA,3,Silver Bulletin,Solid R,-30.0,True
+INDIANA,4,Decision Desk HQ,Safe R,-30.0,True
+INDIANA,4,The Cook Political Report,Safe R,-30.0,False
+INDIANA,4,Inside Elections,Safe R,-30.0,False
+INDIANA,4,Sabato's Crystal Ball,Safe R,-30.0,False
+INDIANA,4,Silver Bulletin,Solid R,-30.0,True
+INDIANA,5,Decision Desk HQ,Likely R,-15.0,True
+INDIANA,5,The Cook Political Report,Lean R,-7.0,False
+INDIANA,5,Inside Elections,Likely R,-15.0,False
+INDIANA,5,Sabato's Crystal Ball,Likely R,-15.0,False
+INDIANA,5,Silver Bulletin,Likely R,-15.0,True
+INDIANA,6,Decision Desk HQ,Safe R,-30.0,True
+INDIANA,6,The Cook Political Report,Safe R,-30.0,False
+INDIANA,6,Inside Elections,Safe R,-30.0,False
+INDIANA,6,Sabato's Crystal Ball,Safe R,-30.0,False
+INDIANA,6,Silver Bulletin,Solid R,-30.0,True
+INDIANA,7,Decision Desk HQ,Safe D,30.0,True
+INDIANA,7,The Cook Political Report,Safe D,30.0,False
+INDIANA,7,Inside Elections,Safe D,30.0,False
+INDIANA,7,Sabato's Crystal Ball,Safe D,30.0,False
+INDIANA,7,Silver Bulletin,Solid D,30.0,True
+INDIANA,8,Decision Desk HQ,Safe R,-30.0,True
+INDIANA,8,The Cook Political Report,Safe R,-30.0,False
+INDIANA,8,Inside Elections,Safe R,-30.0,False
+INDIANA,8,Sabato's Crystal Ball,Safe R,-30.0,False
+INDIANA,8,Silver Bulletin,Solid R,-30.0,True
+INDIANA,9,Decision Desk HQ,Safe R,-30.0,True
+INDIANA,9,The Cook Political Report,Safe R,-30.0,False
+INDIANA,9,Inside Elections,Safe R,-30.0,False
+INDIANA,9,Sabato's Crystal Ball,Safe R,-30.0,False
+INDIANA,9,Silver Bulletin,Solid R,-30.0,True
+IOWA,1,The Cook Political Report,Lean D (flip),7.0,False
+IOWA,1,Decision Desk HQ,Likely D (flip),15.0,True
+IOWA,1,Inside Elections,Tilt D (flip),3.0,False
+IOWA,1,Sabato's Crystal Ball,Lean D (flip),7.0,False
+IOWA,1,Silver Bulletin,Lean D (flip),7.0,True
+IOWA,2,The Cook Political Report,Tossup,0.0,False
+IOWA,2,Decision Desk HQ,Tossup,0.0,True
+IOWA,2,Inside Elections,Tossup,0.0,False
+IOWA,2,Sabato's Crystal Ball,Lean D (flip),7.0,False
+IOWA,2,Silver Bulletin,Tossup,0.0,True
+IOWA,3,The Cook Political Report,Lean D (flip),7.0,False
+IOWA,3,Decision Desk HQ,Lean D (flip),7.0,True
+IOWA,3,Inside Elections,Tilt D (flip),3.0,False
+IOWA,3,Sabato's Crystal Ball,Lean D (flip),7.0,False
+IOWA,3,Silver Bulletin,Likely D (flip),15.0,True
+IOWA,4,The Cook Political Report,Solid R,-30.0,False
+IOWA,4,Decision Desk HQ,Safe R,-30.0,True
+IOWA,4,Inside Elections,Solid R,-30.0,False
+IOWA,4,Sabato's Crystal Ball,Safe R,-30.0,False
+IOWA,4,Silver Bulletin,Solid R,-30.0,True
+KANSAS,1,Decision Desk HQ,Safe R,-30.0,True
+KANSAS,1,The Cook Political Report,Solid R,-30.0,False
+KANSAS,1,Inside Elections,Solid R,-30.0,False
+KANSAS,1,Sabato's Crystal Ball,Safe R,-30.0,False
+KANSAS,2,Decision Desk HQ,Likely R,-15.0,True
+KANSAS,2,The Cook Political Report,Likely R,-15.0,False
+KANSAS,2,Inside Elections,Likely R,-15.0,False
+KANSAS,2,Sabato's Crystal Ball,Likely R,-15.0,False
+KANSAS,3,Decision Desk HQ,Safe D,30.0,True
+KANSAS,3,The Cook Political Report,Solid D,30.0,False
+KANSAS,3,Inside Elections,Solid D,30.0,False
+KANSAS,3,Sabato's Crystal Ball,Safe D,30.0,False
+KANSAS,4,Decision Desk HQ,Safe R,-30.0,True
+KANSAS,4,The Cook Political Report,Solid R,-30.0,False
+KANSAS,4,Inside Elections,Solid R,-30.0,False
+KANSAS,4,Sabato's Crystal Ball,Safe R,-30.0,False
+KENTUCKY,1,Decision Desk HQ,Safe R,-30.0,True
+KENTUCKY,1,The Cook Political Report,Solid R,-30.0,False
+KENTUCKY,1,Inside Elections,Solid R,-30.0,False
+KENTUCKY,1,Sabato's Crystal Ball,Safe R,-30.0,False
+KENTUCKY,2,Decision Desk HQ,Safe R,-30.0,True
+KENTUCKY,2,The Cook Political Report,Solid R,-30.0,False
+KENTUCKY,2,Inside Elections,Solid R,-30.0,False
+KENTUCKY,2,Sabato's Crystal Ball,Safe R,-30.0,False
+KENTUCKY,3,Decision Desk HQ,Safe D,30.0,True
+KENTUCKY,3,The Cook Political Report,Solid D,30.0,False
+KENTUCKY,3,Inside Elections,Solid D,30.0,False
+KENTUCKY,3,Sabato's Crystal Ball,Safe D,30.0,False
+KENTUCKY,4,Decision Desk HQ,Safe R,-30.0,True
+KENTUCKY,4,The Cook Political Report,Solid R,-30.0,False
+KENTUCKY,4,Inside Elections,Solid R,-30.0,False
+KENTUCKY,4,Sabato's Crystal Ball,Safe R,-30.0,False
+KENTUCKY,5,Decision Desk HQ,Safe R,-30.0,True
+KENTUCKY,5,The Cook Political Report,Solid R,-30.0,False
+KENTUCKY,5,Inside Elections,Solid R,-30.0,False
+KENTUCKY,5,Sabato's Crystal Ball,Safe R,-30.0,False
+KENTUCKY,6,Decision Desk HQ,Tossup,0.0,True
+KENTUCKY,6,The Cook Political Report,Tossup,0.0,False
+KENTUCKY,6,Inside Elections,Tossup,0.0,False
+KENTUCKY,6,Sabato's Crystal Ball,Lean R,-7.0,False
+LOUISIANA,1,Decision Desk HQ,Safe R,-30.0,True
+LOUISIANA,1,The Cook Political Report,Solid R,-30.0,False
+LOUISIANA,1,Inside Elections,Solid R,-30.0,False
+LOUISIANA,1,Sabato's Crystal Ball,Safe R,-30.0,False
+LOUISIANA,2,Decision Desk HQ,Safe D,30.0,True
+LOUISIANA,2,The Cook Political Report,Solid D,30.0,False
+LOUISIANA,2,Inside Elections,Solid D,30.0,False
+LOUISIANA,2,Sabato's Crystal Ball,Safe D,30.0,False
+LOUISIANA,3,Decision Desk HQ,Safe R,-30.0,True
+LOUISIANA,3,The Cook Political Report,Solid R,-30.0,False
+LOUISIANA,3,Inside Elections,Solid R,-30.0,False
+LOUISIANA,3,Sabato's Crystal Ball,Safe R,-30.0,False
+LOUISIANA,4,Decision Desk HQ,Safe R,-30.0,True
+LOUISIANA,4,The Cook Political Report,Solid R,-30.0,False
+LOUISIANA,4,Inside Elections,Solid R,-30.0,False
+LOUISIANA,4,Sabato's Crystal Ball,Safe R,-30.0,False
+LOUISIANA,5,Decision Desk HQ,Safe R,-30.0,True
+LOUISIANA,5,The Cook Political Report,Solid R,-30.0,False
+LOUISIANA,5,Inside Elections,Solid R,-30.0,False
+LOUISIANA,5,Sabato's Crystal Ball,Safe R,-30.0,False
+LOUISIANA,6,Decision Desk HQ,Safe R (flip),-30.0,True
+LOUISIANA,6,The Cook Political Report,Solid R (flip),-30.0,False
+LOUISIANA,6,Inside Elections,Solid R (flip),-30.0,False
+LOUISIANA,6,Sabato's Crystal Ball,Safe R (flip),-30.0,False
+MAINE,1,Decision Desk HQ,Safe D,30.0,True
+MAINE,1,The Cook Political Report,Solid D,30.0,False
+MAINE,1,Inside Elections,Solid D,30.0,False
+MAINE,1,Sabato's Crystal Ball,Safe D,30.0,False
+MAINE,1,Silver Bulletin,Solid D,30.0,True
+MAINE,2,Decision Desk HQ,Tossup,0.0,True
+MAINE,2,The Cook Political Report,Lean R (flip),-7.0,False
+MAINE,2,Inside Elections,Lean R (flip),-7.0,False
+MAINE,2,Sabato's Crystal Ball,Lean R (flip),-7.0,False
+MAINE,2,Silver Bulletin,Tossup,0.0,True
+MARYLAND,1,Decision Desk HQ,Likely R,-15.0,True
+MARYLAND,1,The Cook Political Report,Solid R,-30.0,False
+MARYLAND,1,Inside Elections,Solid R,-30.0,False
+MARYLAND,1,Sabato's Crystal Ball,Likely R,-15.0,False
+MARYLAND,2,Decision Desk HQ,Safe D,30.0,True
+MARYLAND,2,The Cook Political Report,Solid D,30.0,False
+MARYLAND,2,Inside Elections,Solid D,30.0,False
+MARYLAND,2,Sabato's Crystal Ball,Safe D,30.0,False
+MARYLAND,3,Decision Desk HQ,Safe D,30.0,True
+MARYLAND,3,The Cook Political Report,Solid D,30.0,False
+MARYLAND,3,Inside Elections,Solid D,30.0,False
+MARYLAND,3,Sabato's Crystal Ball,Safe D,30.0,False
+MARYLAND,4,Decision Desk HQ,Safe D,30.0,True
+MARYLAND,4,The Cook Political Report,Solid D,30.0,False
+MARYLAND,4,Inside Elections,Solid D,30.0,False
+MARYLAND,4,Sabato's Crystal Ball,Safe D,30.0,False
+MARYLAND,5,Decision Desk HQ,Safe D,30.0,True
+MARYLAND,5,The Cook Political Report,Solid D,30.0,False
+MARYLAND,5,Inside Elections,Solid D,30.0,False
+MARYLAND,5,Sabato's Crystal Ball,Safe D,30.0,False
+MARYLAND,6,Decision Desk HQ,Safe D,30.0,True
+MARYLAND,6,The Cook Political Report,Solid D,30.0,False
+MARYLAND,6,Inside Elections,Solid D,30.0,False
+MARYLAND,6,Sabato's Crystal Ball,Safe D,30.0,False
+MARYLAND,7,Decision Desk HQ,Safe D,30.0,True
+MARYLAND,7,The Cook Political Report,Solid D,30.0,False
+MARYLAND,7,Inside Elections,Solid D,30.0,False
+MARYLAND,7,Sabato's Crystal Ball,Safe D,30.0,False
+MARYLAND,8,Decision Desk HQ,Safe D,30.0,True
+MARYLAND,8,The Cook Political Report,Solid D,30.0,False
+MARYLAND,8,Inside Elections,Solid D,30.0,False
+MARYLAND,8,Sabato's Crystal Ball,Safe D,30.0,False
+MASSACHUSETTS,1,Decision Desk HQ,Safe D,30.0,True
+MASSACHUSETTS,1,The Cook Political Report,Solid D,30.0,False
+MASSACHUSETTS,1,Inside Elections,Solid D,30.0,False
+MASSACHUSETTS,1,Sabato's Crystal Ball,Safe D,30.0,False
+MASSACHUSETTS,1,Silver Bulletin,Solid D,30.0,True
+MASSACHUSETTS,2,Decision Desk HQ,Safe D,30.0,True
+MASSACHUSETTS,2,The Cook Political Report,Solid D,30.0,False
+MASSACHUSETTS,2,Inside Elections,Solid D,30.0,False
+MASSACHUSETTS,2,Sabato's Crystal Ball,Safe D,30.0,False
+MASSACHUSETTS,2,Silver Bulletin,Solid D,30.0,True
+MASSACHUSETTS,3,Decision Desk HQ,Safe D,30.0,True
+MASSACHUSETTS,3,The Cook Political Report,Solid D,30.0,False
+MASSACHUSETTS,3,Inside Elections,Solid D,30.0,False
+MASSACHUSETTS,3,Sabato's Crystal Ball,Safe D,30.0,False
+MASSACHUSETTS,3,Silver Bulletin,Solid D,30.0,True
+MASSACHUSETTS,4,Decision Desk HQ,Safe D,30.0,True
+MASSACHUSETTS,4,The Cook Political Report,Solid D,30.0,False
+MASSACHUSETTS,4,Inside Elections,Solid D,30.0,False
+MASSACHUSETTS,4,Sabato's Crystal Ball,Safe D,30.0,False
+MASSACHUSETTS,4,Silver Bulletin,Solid D,30.0,True
+MASSACHUSETTS,5,Decision Desk HQ,Safe D,30.0,True
+MASSACHUSETTS,5,The Cook Political Report,Solid D,30.0,False
+MASSACHUSETTS,5,Inside Elections,Solid D,30.0,False
+MASSACHUSETTS,5,Sabato's Crystal Ball,Safe D,30.0,False
+MASSACHUSETTS,5,Silver Bulletin,Solid D,30.0,True
+MASSACHUSETTS,6,Decision Desk HQ,Safe D,30.0,True
+MASSACHUSETTS,6,The Cook Political Report,Solid D,30.0,False
+MASSACHUSETTS,6,Inside Elections,Solid D,30.0,False
+MASSACHUSETTS,6,Sabato's Crystal Ball,Safe D,30.0,False
+MASSACHUSETTS,6,Silver Bulletin,Solid D,30.0,True
+MASSACHUSETTS,7,Decision Desk HQ,Safe D,30.0,True
+MASSACHUSETTS,7,The Cook Political Report,Solid D,30.0,False
+MASSACHUSETTS,7,Inside Elections,Solid D,30.0,False
+MASSACHUSETTS,7,Sabato's Crystal Ball,Safe D,30.0,False
+MASSACHUSETTS,7,Silver Bulletin,Solid D,30.0,True
+MASSACHUSETTS,8,Decision Desk HQ,Safe D,30.0,True
+MASSACHUSETTS,8,The Cook Political Report,Solid D,30.0,False
+MASSACHUSETTS,8,Inside Elections,Solid D,30.0,False
+MASSACHUSETTS,8,Sabato's Crystal Ball,Safe D,30.0,False
+MASSACHUSETTS,8,Silver Bulletin,Solid D,30.0,True
+MASSACHUSETTS,9,Decision Desk HQ,Safe D,30.0,True
+MASSACHUSETTS,9,The Cook Political Report,Solid D,30.0,False
+MASSACHUSETTS,9,Inside Elections,Solid D,30.0,False
+MASSACHUSETTS,9,Sabato's Crystal Ball,Safe D,30.0,False
+MASSACHUSETTS,9,Silver Bulletin,Solid D,30.0,True
+MICHIGAN,1,Decision Desk HQ,Likely R,-15.0,True
+MICHIGAN,1,The Cook Political Report,Solid R,-30.0,False
+MICHIGAN,1,Inside Elections,Solid R,-30.0,False
+MICHIGAN,1,Sabato's Crystal Ball,Likely R,-15.0,False
+MICHIGAN,1,The Economist,Likely R,-15.0,False
+MICHIGAN,2,Decision Desk HQ,Safe R,-30.0,True
+MICHIGAN,2,The Cook Political Report,Solid R,-30.0,False
+MICHIGAN,2,Inside Elections,Solid R,-30.0,False
+MICHIGAN,2,Sabato's Crystal Ball,Safe R,-30.0,False
+MICHIGAN,2,The Economist,Safe R,-30.0,False
+MICHIGAN,3,Decision Desk HQ,Safe D,30.0,True
+MICHIGAN,3,The Cook Political Report,Solid D,30.0,False
+MICHIGAN,3,Inside Elections,Likely D,15.0,False
+MICHIGAN,3,Sabato's Crystal Ball,Safe D,30.0,False
+MICHIGAN,3,The Economist,Safe D,30.0,False
+MICHIGAN,3,Silver Bulletin,Solid D,30.0,True
+MICHIGAN,4,Decision Desk HQ,Tossup,0.0,True
+MICHIGAN,4,The Cook Political Report,Tossup,0.0,False
+MICHIGAN,4,Inside Elections,Tossup,0.0,False
+MICHIGAN,4,Sabato's Crystal Ball,Lean D (flip),7.0,False
+MICHIGAN,4,The Economist,Lean R,-7.0,False
+MICHIGAN,4,Silver Bulletin,Tossup,0.0,True
+MICHIGAN,5,Decision Desk HQ,Safe R,-30.0,True
+MICHIGAN,5,The Cook Political Report,Solid R,-30.0,False
+MICHIGAN,5,Inside Elections,Solid R,-30.0,False
+MICHIGAN,5,Sabato's Crystal Ball,Safe R,-30.0,False
+MICHIGAN,5,The Economist,Safe R,-30.0,False
+MICHIGAN,6,Decision Desk HQ,Safe D,30.0,True
+MICHIGAN,6,The Cook Political Report,Solid D,30.0,False
+MICHIGAN,6,Inside Elections,Solid D,30.0,False
+MICHIGAN,6,Sabato's Crystal Ball,Safe D,30.0,False
+MICHIGAN,6,The Economist,Safe D,30.0,False
+MICHIGAN,7,Decision Desk HQ,Likely D (flip),15.0,True
+MICHIGAN,7,The Cook Political Report,Tossup,0.0,False
+MICHIGAN,7,Inside Elections,Tossup,0.0,False
+MICHIGAN,7,Sabato's Crystal Ball,Lean D (flip),7.0,False
+MICHIGAN,7,The Economist,Lean D (flip),7.0,False
+MICHIGAN,8,Decision Desk HQ,Safe D,30.0,True
+MICHIGAN,8,The Cook Political Report,Likely D,15.0,False
+MICHIGAN,8,Inside Elections,Solid D,30.0,False
+MICHIGAN,8,Sabato's Crystal Ball,Likely D,15.0,False
+MICHIGAN,8,The Economist,Safe D,30.0,False
+MICHIGAN,9,Decision Desk HQ,Safe R,-30.0,True
+MICHIGAN,9,The Cook Political Report,Solid R,-30.0,False
+MICHIGAN,9,Inside Elections,Solid R,-30.0,False
+MICHIGAN,9,Sabato's Crystal Ball,Safe R,-30.0,False
+MICHIGAN,9,The Economist,Safe R,-30.0,False
+MICHIGAN,10,Decision Desk HQ,Lean D (flip),7.0,True
+MICHIGAN,10,The Cook Political Report,Tossup,0.0,False
+MICHIGAN,10,Inside Elections,Tilt R,-3.0,False
+MICHIGAN,10,Sabato's Crystal Ball,Lean D (flip),7.0,False
+MICHIGAN,10,The Economist,Likely D (flip),15.0,False
+MICHIGAN,10,Silver Bulletin,Lean D (flip),7.0,True
+MICHIGAN,11,Decision Desk HQ,Safe D,30.0,True
+MICHIGAN,11,The Cook Political Report,Solid D,30.0,False
+MICHIGAN,11,Inside Elections,Solid D,30.0,False
+MICHIGAN,11,Sabato's Crystal Ball,Safe D,30.0,False
+MICHIGAN,11,The Economist,Safe D,30.0,False
+MICHIGAN,12,Decision Desk HQ,Safe D,30.0,True
+MICHIGAN,12,The Cook Political Report,Solid D,30.0,False
+MICHIGAN,12,Inside Elections,Solid D,30.0,False
+MICHIGAN,12,Sabato's Crystal Ball,Safe D,30.0,False
+MICHIGAN,12,The Economist,Safe D,30.0,False
+MICHIGAN,13,Decision Desk HQ,Safe D,30.0,True
+MICHIGAN,13,The Cook Political Report,Solid D,30.0,False
+MICHIGAN,13,Inside Elections,Solid D,30.0,False
+MICHIGAN,13,Sabato's Crystal Ball,Safe D,30.0,False
+MICHIGAN,13,The Economist,Safe D,30.0,False
+MINNESOTA,1,The Cook Political Report,Lean R,-7.0,False
+MINNESOTA,1,Decision Desk HQ,Lean R,-7.0,True
+MINNESOTA,1,Inside Elections,Lean R,-7.0,False
+MINNESOTA,1,Sabato's Crystal Ball,Lean R,-7.0,False
+MINNESOTA,2,Decision Desk HQ,Safe D,30.0,True
+MINNESOTA,2,The Cook Political Report,Likely D,15.0,False
+MINNESOTA,2,Inside Elections,Likely D,15.0,False
+MINNESOTA,2,Sabato's Crystal Ball,Likely D,15.0,False
+MINNESOTA,3,Decision Desk HQ,Safe D,30.0,True
+MINNESOTA,3,The Cook Political Report,Solid D,30.0,False
+MINNESOTA,3,Inside Elections,Solid D,30.0,False
+MINNESOTA,3,Sabato's Crystal Ball,Safe D,30.0,False
+MINNESOTA,4,Decision Desk HQ,Safe D,30.0,True
+MINNESOTA,4,The Cook Political Report,Safe D,30.0,False
+MINNESOTA,4,Inside Elections,Safe D,30.0,False
+MINNESOTA,4,Sabato's Crystal Ball,Safe D,30.0,False
+MINNESOTA,5,Decision Desk HQ,Safe D,30.0,True
+MINNESOTA,5,The Cook Political Report,Safe D,30.0,False
+MINNESOTA,5,Inside Elections,Safe D,30.0,False
+MINNESOTA,5,Sabato's Crystal Ball,Safe D,30.0,False
+MINNESOTA,6,Decision Desk HQ,Safe R,-30.0,True
+MINNESOTA,6,The Cook Political Report,Safe R,-30.0,False
+MINNESOTA,6,Inside Elections,Safe R,-30.0,False
+MINNESOTA,6,Sabato's Crystal Ball,Safe R,-30.0,False
+MINNESOTA,7,Decision Desk HQ,Safe R,-30.0,True
+MINNESOTA,7,The Cook Political Report,Safe R,-30.0,False
+MINNESOTA,7,Inside Elections,Safe R,-30.0,False
+MINNESOTA,7,Sabato's Crystal Ball,Safe R,-30.0,False
+MINNESOTA,8,Decision Desk HQ,Likely R,-15.0,True
+MINNESOTA,8,The Cook Political Report,Safe R,-30.0,False
+MINNESOTA,8,Inside Elections,Safe R,-30.0,False
+MINNESOTA,8,Sabato's Crystal Ball,Safe R,-30.0,False
+MISSISSIPPI,1,Decision Desk HQ,Safe R,-30.0,True
+MISSISSIPPI,1,The Cook Political Report,Solid R,-30.0,False
+MISSISSIPPI,1,Inside Elections,Solid R,-30.0,False
+MISSISSIPPI,1,Sabato's Crystal Ball,Safe R,-30.0,False
+MISSISSIPPI,2,Decision Desk HQ,Safe D,30.0,True
+MISSISSIPPI,2,The Cook Political Report,Solid D,30.0,False
+MISSISSIPPI,2,Inside Elections,Solid D,30.0,False
+MISSISSIPPI,2,Sabato's Crystal Ball,Safe D,30.0,False
+MISSISSIPPI,3,Decision Desk HQ,Safe R,-30.0,True
+MISSISSIPPI,3,The Cook Political Report,Solid R,-30.0,False
+MISSISSIPPI,3,Inside Elections,Solid R,-30.0,False
+MISSISSIPPI,3,Sabato's Crystal Ball,Safe R,-30.0,False
+MISSISSIPPI,4,Decision Desk HQ,Safe R,-30.0,True
+MISSISSIPPI,4,The Cook Political Report,Solid R,-30.0,False
+MISSISSIPPI,4,Inside Elections,Solid R,-30.0,False
+MISSISSIPPI,4,Sabato's Crystal Ball,Safe R,-30.0,False
+MISSOURI,1,Decision Desk HQ,Safe D,30.0,True
+MISSOURI,1,The Cook Political Report,Solid D,30.0,False
+MISSOURI,1,Inside Elections,Solid D,30.0,False
+MISSOURI,1,Sabato's Crystal Ball,Safe D,30.0,False
+MISSOURI,2,Decision Desk HQ,Lean R,-7.0,True
+MISSOURI,2,The Cook Political Report,Likely R,-15.0,False
+MISSOURI,2,Inside Elections,Solid R,-30.0,False
+MISSOURI,2,Sabato's Crystal Ball,Lean R,-7.0,False
+MISSOURI,3,Decision Desk HQ,Safe R,-30.0,True
+MISSOURI,3,The Cook Political Report,Solid R,-30.0,False
+MISSOURI,3,Inside Elections,Solid R,-30.0,False
+MISSOURI,3,Sabato's Crystal Ball,Safe R,-30.0,False
+MISSOURI,4,Decision Desk HQ,Safe R,-30.0,True
+MISSOURI,4,The Cook Political Report,Solid R,-30.0,False
+MISSOURI,4,Inside Elections,Solid R,-30.0,False
+MISSOURI,4,Sabato's Crystal Ball,Safe R,-30.0,False
+MISSOURI,5,Decision Desk HQ,Safe D,30.0,True
+MISSOURI,5,The Cook Political Report,Solid D,30.0,False
+MISSOURI,5,Inside Elections,Solid D,30.0,False
+MISSOURI,5,Sabato's Crystal Ball,Safe D,30.0,False
+MISSOURI,5,nan,,,False
+MISSOURI,6,Decision Desk HQ,Safe R,-30.0,True
+MISSOURI,6,The Cook Political Report,Solid R,-30.0,False
+MISSOURI,6,Inside Elections,Solid R,-30.0,False
+MISSOURI,6,Sabato's Crystal Ball,Safe R,-30.0,False
+MISSOURI,7,Decision Desk HQ,Safe R,-30.0,True
+MISSOURI,7,The Cook Political Report,Solid R,-30.0,False
+MISSOURI,7,Inside Elections,Solid R,-30.0,False
+MISSOURI,7,Sabato's Crystal Ball,Safe R,-30.0,False
+MISSOURI,8,Decision Desk HQ,Safe R,-30.0,True
+MISSOURI,8,The Cook Political Report,Solid R,-30.0,False
+MISSOURI,8,Inside Elections,Solid R,-30.0,False
+MISSOURI,8,Sabato's Crystal Ball,Safe R,-30.0,False
+MONTANA,1,Decision Desk HQ,Tossup,0.0,True
+MONTANA,1,The Cook Political Report,Tossup,0.0,False
+MONTANA,1,Inside Elections,Tossup,0.0,False
+MONTANA,1,Sabato's Crystal Ball,Lean D (flip),7.0,False
+MONTANA,2,Decision Desk HQ,Safe R,-30.0,True
+MONTANA,2,The Cook Political Report,Solid R,-30.0,False
+MONTANA,2,Inside Elections,Solid R,-30.0,False
+MONTANA,2,Sabato's Crystal Ball,Safe R,-30.0,False
+NEBRASKA,1,Decision Desk HQ,Likely R,-15.0,True
+NEBRASKA,1,The Cook Political Report,Likely R,-15.0,False
+NEBRASKA,1,Inside Elections,Likely R,-15.0,False
+NEBRASKA,1,Sabato's Crystal Ball,Likely R,-15.0,False
+NEBRASKA,2,Decision Desk HQ,Safe D (flip),30.0,True
+NEBRASKA,2,The Cook Political Report,Likely D (flip),15.0,False
+NEBRASKA,2,Inside Elections,Lean D (flip),7.0,False
+NEBRASKA,2,Sabato's Crystal Ball,Likely D (flip),15.0,False
+NEBRASKA,3,Decision Desk HQ,Safe R,-30.0,True
+NEBRASKA,3,The Cook Political Report,Safe R,-30.0,False
+NEBRASKA,3,Inside Elections,Safe R,-30.0,False
+NEBRASKA,3,Sabato's Crystal Ball,Safe R,-30.0,False
+NEVADA,1,Decision Desk HQ,Likely D,15.0,True
+NEVADA,1,The Cook Political Report,Likely D,15.0,False
+NEVADA,1,Inside Elections,Lean D,7.0,False
+NEVADA,1,Sabato's Crystal Ball,Likely D,15.0,False
+NEVADA,1,Silver Bulletin,Likely D,15.0,True
+NEVADA,2,Decision Desk HQ,Lean R,-7.0,True
+NEVADA,2,The Cook Political Report,Lean R,-7.0,False
+NEVADA,2,Inside Elections,Tilt R,-3.0,False
+NEVADA,2,Sabato's Crystal Ball,Lean R,-7.0,False
+NEVADA,2,Silver Bulletin,Likely R,-15.0,True
+NEVADA,3,Decision Desk HQ,Likely D,15.0,True
+NEVADA,3,The Cook Political Report,Likely D,15.0,False
+NEVADA,3,Inside Elections,Lean D,7.0,False
+NEVADA,3,Sabato's Crystal Ball,Likely D,15.0,False
+NEVADA,3,Silver Bulletin,Solid D,30.0,True
+NEVADA,4,Decision Desk HQ,Likely D,15.0,True
+NEVADA,4,The Cook Political Report,Likely D,15.0,False
+NEVADA,4,Inside Elections,Likely D,15.0,False
+NEVADA,4,Sabato's Crystal Ball,Likely D,15.0,False
+NEVADA,4,Silver Bulletin,Solid D,30.0,True
+NEW HAMPSHIRE,1,Decision Desk HQ,Likely D,15.0,True
+NEW HAMPSHIRE,1,The Cook Political Report,Likely D,15.0,False
+NEW HAMPSHIRE,1,Inside Elections,Lean D,7.0,False
+NEW HAMPSHIRE,1,Sabato's Crystal Ball,Likely D,15.0,False
+NEW HAMPSHIRE,2,Decision Desk HQ,Likely D,15.0,True
+NEW HAMPSHIRE,2,The Cook Political Report,Solid D,30.0,False
+NEW HAMPSHIRE,2,Inside Elections,Solid D,30.0,False
+NEW HAMPSHIRE,2,Sabato's Crystal Ball,Likely D,15.0,False
+NEW JERSEY,1,Decision Desk HQ,Safe D,30.0,True
+NEW JERSEY,1,The Cook Political Report,Solid D,30.0,False
+NEW JERSEY,1,Inside Elections,Solid D,30.0,False
+NEW JERSEY,1,Sabato's Crystal Ball,Safe D,30.0,False
+NEW JERSEY,1,Silver Bulletin,Solid D,30.0,True
+NEW JERSEY,2,Decision Desk HQ,Lean R,-7.0,True
+NEW JERSEY,2,The Cook Political Report,Likely R,-15.0,False
+NEW JERSEY,2,Inside Elections,Likely R,-15.0,False
+NEW JERSEY,2,Sabato's Crystal Ball,Lean R,-7.0,False
+NEW JERSEY,2,Silver Bulletin,Likely R,-15.0,True
+NEW JERSEY,3,Decision Desk HQ,Safe D,30.0,True
+NEW JERSEY,3,The Cook Political Report,Solid D,30.0,False
+NEW JERSEY,3,Inside Elections,Solid D,30.0,False
+NEW JERSEY,3,Sabato's Crystal Ball,Safe D,30.0,False
+NEW JERSEY,3,Silver Bulletin,Solid D,30.0,True
+NEW JERSEY,4,Decision Desk HQ,Safe R,-30.0,True
+NEW JERSEY,4,The Cook Political Report,Solid R,-30.0,False
+NEW JERSEY,4,Inside Elections,Solid R,-30.0,False
+NEW JERSEY,4,Sabato's Crystal Ball,Safe R,-30.0,False
+NEW JERSEY,4,Silver Bulletin,Solid R,-30.0,True
+NEW JERSEY,5,Decision Desk HQ,Safe D,30.0,True
+NEW JERSEY,5,The Cook Political Report,Solid D,30.0,False
+NEW JERSEY,5,Inside Elections,Solid D,30.0,False
+NEW JERSEY,5,Sabato's Crystal Ball,Safe D,30.0,False
+NEW JERSEY,5,Silver Bulletin,Solid D,30.0,True
+NEW JERSEY,6,Decision Desk HQ,Safe D,30.0,True
+NEW JERSEY,6,The Cook Political Report,Solid D,30.0,False
+NEW JERSEY,6,Inside Elections,Solid D,30.0,False
+NEW JERSEY,6,Sabato's Crystal Ball,Safe D,30.0,False
+NEW JERSEY,6,Silver Bulletin,Solid D,30.0,True
+NEW JERSEY,7,The Cook Political Report,Lean D (flip),7.0,False
+NEW JERSEY,7,Decision Desk HQ,Likely D (flip),15.0,True
+NEW JERSEY,7,Inside Elections,Tilt D (flip),3.0,False
+NEW JERSEY,7,Sabato's Crystal Ball,Lean D (flip),7.0,False
+NEW JERSEY,7,Silver Bulletin,Likely D (flip),15.0,True
+NEW JERSEY,8,Decision Desk HQ,Safe D,30.0,True
+NEW JERSEY,8,The Cook Political Report,Solid D,30.0,False
+NEW JERSEY,8,Inside Elections,Solid D,30.0,False
+NEW JERSEY,8,Sabato's Crystal Ball,Safe D,30.0,False
+NEW JERSEY,8,Silver Bulletin,Solid D,30.0,True
+NEW JERSEY,9,Decision Desk HQ,Safe D,30.0,True
+NEW JERSEY,9,The Cook Political Report,Likely D,15.0,False
+NEW JERSEY,9,Inside Elections,Solid D,30.0,False
+NEW JERSEY,9,Sabato's Crystal Ball,Likely D,15.0,False
+NEW JERSEY,9,Silver Bulletin,Solid D,30.0,True
+NEW JERSEY,10,Decision Desk HQ,Safe D,30.0,True
+NEW JERSEY,10,The Cook Political Report,Solid D,30.0,False
+NEW JERSEY,10,Inside Elections,Solid D,30.0,False
+NEW JERSEY,10,Sabato's Crystal Ball,Safe D,30.0,False
+NEW JERSEY,10,Silver Bulletin,Solid D,30.0,True
+NEW JERSEY,11,Decision Desk HQ,Safe D,30.0,True
+NEW JERSEY,11,The Cook Political Report,Solid D,30.0,False
+NEW JERSEY,11,Inside Elections,Solid D,30.0,False
+NEW JERSEY,11,Sabato's Crystal Ball,Safe D,30.0,False
+NEW JERSEY,11,Silver Bulletin,Solid D,30.0,True
+NEW JERSEY,12,Decision Desk HQ,Safe D,30.0,True
+NEW JERSEY,12,The Cook Political Report,Solid D,30.0,False
+NEW JERSEY,12,Inside Elections,Solid D,30.0,False
+NEW JERSEY,12,Sabato's Crystal Ball,Safe D,30.0,False
+NEW JERSEY,12,Silver Bulletin,Solid D,30.0,True
+NEW MEXICO,1,Decision Desk HQ,Safe D,30.0,True
+NEW MEXICO,1,The Cook Political Report,Solid D,30.0,False
+NEW MEXICO,1,Inside Elections,Solid D,30.0,False
+NEW MEXICO,1,Sabato's Crystal Ball,Safe D,30.0,False
+NEW MEXICO,2,Decision Desk HQ,Likely D,15.0,True
+NEW MEXICO,2,The Cook Political Report,Lean D,7.0,False
+NEW MEXICO,2,Inside Elections,Tilt D,3.0,False
+NEW MEXICO,2,Sabato's Crystal Ball,Lean D,7.0,False
+NEW MEXICO,3,Decision Desk HQ,Safe D,30.0,True
+NEW MEXICO,3,The Cook Political Report,Solid D,30.0,False
+NEW MEXICO,3,Inside Elections,Solid D,30.0,False
+NEW MEXICO,3,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,1,Decision Desk HQ,Lean R,-7.0,True
+NEW YORK,1,The Cook Political Report,Solid R,-30.0,False
+NEW YORK,1,Inside Elections,Solid R,-30.0,False
+NEW YORK,1,Sabato's Crystal Ball,Likely R,-15.0,False
+NEW YORK,2,Decision Desk HQ,Likely R,-15.0,True
+NEW YORK,2,The Cook Political Report,Solid R,-30.0,False
+NEW YORK,2,Inside Elections,Solid R,-30.0,False
+NEW YORK,2,Sabato's Crystal Ball,Safe R,-30.0,False
+NEW YORK,3,Decision Desk HQ,Likely D,15.0,True
+NEW YORK,3,The Cook Political Report,Likely D,15.0,False
+NEW YORK,3,Inside Elections,Lean D,7.0,False
+NEW YORK,3,Sabato's Crystal Ball,Lean D,7.0,False
+NEW YORK,4,Decision Desk HQ,Likely D,15.0,True
+NEW YORK,4,The Cook Political Report,Likely D,15.0,False
+NEW YORK,4,Inside Elections,Tilt D,3.0,False
+NEW YORK,4,Sabato's Crystal Ball,Likely D,15.0,False
+NEW YORK,5,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,5,The Cook Political Report,Solid D,30.0,False
+NEW YORK,5,Inside Elections,Solid D,30.0,False
+NEW YORK,5,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,6,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,6,The Cook Political Report,Solid D,30.0,False
+NEW YORK,6,Inside Elections,Solid D,30.0,False
+NEW YORK,6,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,7,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,7,The Cook Political Report,Solid D,30.0,False
+NEW YORK,7,Inside Elections,Solid D,30.0,False
+NEW YORK,7,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,8,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,8,The Cook Political Report,Solid D,30.0,False
+NEW YORK,8,Inside Elections,Solid D,30.0,False
+NEW YORK,8,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,9,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,9,The Cook Political Report,Solid D,30.0,False
+NEW YORK,9,Inside Elections,Solid D,30.0,False
+NEW YORK,9,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,10,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,10,The Cook Political Report,Solid D,30.0,False
+NEW YORK,10,Inside Elections,Solid D,30.0,False
+NEW YORK,10,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,11,Decision Desk HQ,Safe R,-30.0,True
+NEW YORK,11,The Cook Political Report,Solid R,-30.0,False
+NEW YORK,11,Inside Elections,Solid R,-30.0,False
+NEW YORK,11,Sabato's Crystal Ball,Safe R,-30.0,False
+NEW YORK,12,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,12,The Cook Political Report,Solid D,30.0,False
+NEW YORK,12,Inside Elections,Solid D,30.0,False
+NEW YORK,12,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,13,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,13,The Cook Political Report,Solid D,30.0,False
+NEW YORK,13,Inside Elections,Solid D,30.0,False
+NEW YORK,13,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,14,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,14,The Cook Political Report,Solid D,30.0,False
+NEW YORK,14,Inside Elections,Solid D,30.0,False
+NEW YORK,14,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,15,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,15,The Cook Political Report,Solid D,30.0,False
+NEW YORK,15,Inside Elections,Solid D,30.0,False
+NEW YORK,15,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,16,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,16,The Cook Political Report,Solid D,30.0,False
+NEW YORK,16,Inside Elections,Solid D,30.0,False
+NEW YORK,16,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,17,Decision Desk HQ,Tossup,0.0,True
+NEW YORK,17,The Cook Political Report,Tossup,0.0,False
+NEW YORK,17,Inside Elections,Tossup,0.0,False
+NEW YORK,17,Sabato's Crystal Ball,Lean R,-7.0,False
+NEW YORK,18,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,18,The Cook Political Report,Solid D,30.0,False
+NEW YORK,18,Inside Elections,Solid D,30.0,False
+NEW YORK,18,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,19,Decision Desk HQ,Likely D,15.0,True
+NEW YORK,19,The Cook Political Report,Likely D,15.0,False
+NEW YORK,19,Inside Elections,Solid D,30.0,False
+NEW YORK,19,Sabato's Crystal Ball,Likely D,15.0,False
+NEW YORK,20,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,20,The Cook Political Report,Solid D,30.0,False
+NEW YORK,20,Inside Elections,Solid D,30.0,False
+NEW YORK,20,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,21,Decision Desk HQ,Likely R,-15.0,True
+NEW YORK,21,The Cook Political Report,Lean R,-7.0,False
+NEW YORK,21,Inside Elections,Lean R,-7.0,False
+NEW YORK,21,Sabato's Crystal Ball,Lean R,-7.0,False
+NEW YORK,22,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,22,The Cook Political Report,Solid D,30.0,False
+NEW YORK,22,Inside Elections,Solid D,30.0,False
+NEW YORK,22,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,23,Decision Desk HQ,Likely R,-15.0,True
+NEW YORK,23,The Cook Political Report,Solid R,-30.0,False
+NEW YORK,23,Inside Elections,Solid R,-30.0,False
+NEW YORK,23,Sabato's Crystal Ball,Safe R,-30.0,False
+NEW YORK,24,Decision Desk HQ,Safe R,-30.0,True
+NEW YORK,24,The Cook Political Report,Solid R,-30.0,False
+NEW YORK,24,Inside Elections,Solid R,-30.0,False
+NEW YORK,24,Sabato's Crystal Ball,Safe R,-30.0,False
+NEW YORK,25,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,25,The Cook Political Report,Solid D,30.0,False
+NEW YORK,25,Inside Elections,Solid D,30.0,False
+NEW YORK,25,Sabato's Crystal Ball,Safe D,30.0,False
+NEW YORK,26,Decision Desk HQ,Safe D,30.0,True
+NEW YORK,26,The Cook Political Report,Solid D,30.0,False
+NEW YORK,26,Inside Elections,Solid D,30.0,False
+NEW YORK,26,Sabato's Crystal Ball,Safe D,30.0,False
+NORTH CAROLINA,1,Decision Desk HQ,Lean D,7.0,True
+NORTH CAROLINA,1,The Cook Political Report,Tossup,0.0,False
+NORTH CAROLINA,1,Inside Elections,Tilt D,3.0,False
+NORTH CAROLINA,1,Sabato's Crystal Ball,Lean D,7.0,False
+NORTH CAROLINA,2,Decision Desk HQ,Safe D,30.0,True
+NORTH CAROLINA,2,The Cook Political Report,Solid D,30.0,False
+NORTH CAROLINA,2,Inside Elections,Solid D,30.0,False
+NORTH CAROLINA,2,Sabato's Crystal Ball,Safe D,30.0,False
+NORTH CAROLINA,3,Decision Desk HQ,Lean R,-7.0,True
+NORTH CAROLINA,3,The Cook Political Report,Likely R,-15.0,False
+NORTH CAROLINA,3,Inside Elections,Likely R,-15.0,False
+NORTH CAROLINA,3,Sabato's Crystal Ball,Likely R,-15.0,False
+NORTH CAROLINA,4,Decision Desk HQ,Safe D,30.0,True
+NORTH CAROLINA,4,The Cook Political Report,Solid D,30.0,False
+NORTH CAROLINA,4,Inside Elections,Solid D,30.0,False
+NORTH CAROLINA,4,Sabato's Crystal Ball,Safe D,30.0,False
+NORTH CAROLINA,5,Decision Desk HQ,Likely R,-15.0,True
+NORTH CAROLINA,5,The Cook Political Report,Likely R,-15.0,False
+NORTH CAROLINA,5,Inside Elections,Solid R,-30.0,False
+NORTH CAROLINA,5,Sabato's Crystal Ball,Safe R,-30.0,False
+NORTH CAROLINA,6,Decision Desk HQ,Likely R,-15.0,True
+NORTH CAROLINA,6,The Cook Political Report,Solid R,-30.0,False
+NORTH CAROLINA,6,Inside Elections,Solid R,-30.0,False
+NORTH CAROLINA,6,Sabato's Crystal Ball,Safe R,-30.0,False
+NORTH CAROLINA,7,Decision Desk HQ,Likely R,-15.0,True
+NORTH CAROLINA,7,The Cook Political Report,Likely R,-15.0,False
+NORTH CAROLINA,7,Inside Elections,Solid R,-30.0,False
+NORTH CAROLINA,7,Sabato's Crystal Ball,Safe R,-30.0,False
+NORTH CAROLINA,8,Decision Desk HQ,Likely R,-15.0,True
+NORTH CAROLINA,8,The Cook Political Report,Solid R,-30.0,False
+NORTH CAROLINA,8,Inside Elections,Solid R,-30.0,False
+NORTH CAROLINA,8,Sabato's Crystal Ball,Safe R,-30.0,False
+NORTH CAROLINA,9,Decision Desk HQ,Likely R,-15.0,True
+NORTH CAROLINA,9,The Cook Political Report,Likely R,-15.0,False
+NORTH CAROLINA,9,Inside Elections,Likely R,-15.0,False
+NORTH CAROLINA,9,Sabato's Crystal Ball,Likely R,-15.0,False
+NORTH CAROLINA,10,Decision Desk HQ,Likely R,-15.0,True
+NORTH CAROLINA,10,The Cook Political Report,Solid R,-30.0,False
+NORTH CAROLINA,10,Inside Elections,Solid R,-30.0,False
+NORTH CAROLINA,10,Sabato's Crystal Ball,Safe R,-30.0,False
+NORTH CAROLINA,11,Decision Desk HQ,Tossup,0.0,True
+NORTH CAROLINA,11,The Cook Political Report,Lean D (flip),7.0,False
+NORTH CAROLINA,11,Inside Elections,Tilt D (flip),3.0,False
+NORTH CAROLINA,11,Sabato's Crystal Ball,Lean D (flip),7.0,False
+NORTH CAROLINA,12,Decision Desk HQ,Safe D,30.0,True
+NORTH CAROLINA,12,The Cook Political Report,Solid D,30.0,False
+NORTH CAROLINA,12,Inside Elections,Solid D,30.0,False
+NORTH CAROLINA,12,Sabato's Crystal Ball,Safe D,30.0,False
+NORTH CAROLINA,13,Decision Desk HQ,Likely R,-15.0,True
+NORTH CAROLINA,13,The Cook Political Report,Likely R,-15.0,False
+NORTH CAROLINA,13,Inside Elections,Likely R,-15.0,False
+NORTH CAROLINA,13,Sabato's Crystal Ball,Likely R,-15.0,False
+NORTH CAROLINA,14,Decision Desk HQ,Likely R,-15.0,True
+NORTH CAROLINA,14,The Cook Political Report,Likely R,-15.0,False
+NORTH CAROLINA,14,Inside Elections,Solid R,-30.0,False
+NORTH CAROLINA,14,Sabato's Crystal Ball,Safe R,-30.0,False
+OHIO,1,Decision Desk HQ,Likely D,15.0,True
+OHIO,1,The Cook Political Report,Likely D,15.0,False
+OHIO,1,Inside Elections,Lean D,7.0,False
+OHIO,1,Sabato's Crystal Ball,Likely D,15.0,False
+OHIO,2,Decision Desk HQ,Safe R,-30.0,True
+OHIO,2,The Cook Political Report,Solid R,-30.0,False
+OHIO,2,Inside Elections,Solid R,-30.0,False
+OHIO,2,Sabato's Crystal Ball,Safe R,-30.0,False
+OHIO,3,Decision Desk HQ,Safe D,30.0,True
+OHIO,3,The Cook Political Report,Solid D,30.0,False
+OHIO,3,Inside Elections,Solid D,30.0,False
+OHIO,3,Sabato's Crystal Ball,Safe D,30.0,False
+OHIO,4,Decision Desk HQ,Safe R,-30.0,True
+OHIO,4,The Cook Political Report,Solid R,-30.0,False
+OHIO,4,Inside Elections,Solid R,-30.0,False
+OHIO,4,Sabato's Crystal Ball,Safe R,-30.0,False
+OHIO,5,Decision Desk HQ,Safe R,-30.0,True
+OHIO,5,The Cook Political Report,Solid R,-30.0,False
+OHIO,5,Inside Elections,Solid R,-30.0,False
+OHIO,5,Sabato's Crystal Ball,Safe R,-30.0,False
+OHIO,6,Decision Desk HQ,Safe R,-30.0,True
+OHIO,6,The Cook Political Report,Solid R,-30.0,False
+OHIO,6,Inside Elections,Solid R,-30.0,False
+OHIO,6,Sabato's Crystal Ball,Safe R,-30.0,False
+OHIO,7,The Cook Political Report,Tossup,0.0,False
+OHIO,7,Decision Desk HQ,Tossup,0.0,True
+OHIO,7,Inside Elections,Tilt D (flip),3.0,False
+OHIO,7,Sabato's Crystal Ball,Lean D (flip),7.0,False
+OHIO,8,Decision Desk HQ,Likely R,-15.0,True
+OHIO,8,The Cook Political Report,Solid R,-30.0,False
+OHIO,8,Inside Elections,Solid R,-30.0,False
+OHIO,8,Sabato's Crystal Ball,Safe R,-30.0,False
+OHIO,9,Decision Desk HQ,Likely D,15.0,True
+OHIO,9,The Cook Political Report,Lean D,7.0,False
+OHIO,9,Inside Elections,Tilt D,3.0,False
+OHIO,9,Sabato's Crystal Ball,Lean D,7.0,False
+OHIO,10,Decision Desk HQ,Likely R,-15.0,True
+OHIO,10,The Cook Political Report,Lean R,-7.0,False
+OHIO,10,Inside Elections,Lean R,-7.0,False
+OHIO,10,Sabato's Crystal Ball,Lean R,-7.0,False
+OHIO,11,Decision Desk HQ,Safe D,30.0,True
+OHIO,11,The Cook Political Report,Solid D,30.0,False
+OHIO,11,Inside Elections,Solid D,30.0,False
+OHIO,11,Sabato's Crystal Ball,Safe D,30.0,False
+OHIO,12,Decision Desk HQ,Safe R,-30.0,True
+OHIO,12,The Cook Political Report,Solid R,-30.0,False
+OHIO,12,Inside Elections,Solid R,-30.0,False
+OHIO,12,Sabato's Crystal Ball,Safe R,-30.0,False
+OHIO,13,Decision Desk HQ,Likely D,15.0,True
+OHIO,13,The Cook Political Report,Likely D,15.0,False
+OHIO,13,Inside Elections,Solid D,30.0,False
+OHIO,13,Sabato's Crystal Ball,Likely D,15.0,False
+OHIO,14,Decision Desk HQ,Safe R,-30.0,True
+OHIO,14,The Cook Political Report,Solid R,-30.0,False
+OHIO,14,Inside Elections,Solid R,-30.0,False
+OHIO,14,Sabato's Crystal Ball,Safe R,-30.0,False
+OHIO,15,Decision Desk HQ,Likely R,-15.0,True
+OHIO,15,The Cook Political Report,Lean R,-7.0,False
+OHIO,15,Inside Elections,Lean R,-7.0,False
+OHIO,15,Sabato's Crystal Ball,Lean R,-7.0,False
+OHIO,15,The Economist,Lean R,-7.0,False
+OKLAHOMA,1,Decision Desk HQ,Likely R,-15.0,True
+OKLAHOMA,1,The Cook Political Report,Solid R,-30.0,False
+OKLAHOMA,1,Inside Elections,Solid R,-30.0,False
+OKLAHOMA,1,Sabato's Crystal Ball,Safe R,-30.0,False
+OKLAHOMA,2,Decision Desk HQ,Safe R,-30.0,True
+OKLAHOMA,2,The Cook Political Report,Solid R,-30.0,False
+OKLAHOMA,2,Inside Elections,Solid R,-30.0,False
+OKLAHOMA,2,Sabato's Crystal Ball,Safe R,-30.0,False
+OKLAHOMA,3,Decision Desk HQ,Safe R,-30.0,True
+OKLAHOMA,3,The Cook Political Report,Solid R,-30.0,False
+OKLAHOMA,3,Inside Elections,Solid R,-30.0,False
+OKLAHOMA,3,Sabato's Crystal Ball,Safe R,-30.0,False
+OKLAHOMA,4,Decision Desk HQ,Safe R,-30.0,True
+OKLAHOMA,4,The Cook Political Report,Solid R,-30.0,False
+OKLAHOMA,4,Inside Elections,Solid R,-30.0,False
+OKLAHOMA,4,Sabato's Crystal Ball,Safe R,-30.0,False
+OKLAHOMA,5,Decision Desk HQ,Likely R,-15.0,True
+OKLAHOMA,5,The Cook Political Report,Solid R,-30.0,False
+OKLAHOMA,5,Inside Elections,Likely R,-15.0,False
+OKLAHOMA,5,Sabato's Crystal Ball,Safe R,-30.0,False
+OREGON,1,Decision Desk HQ,Safe D,30.0,True
+OREGON,1,The Cook Political Report,Solid D,30.0,False
+OREGON,1,Inside Elections,Solid D,30.0,False
+OREGON,1,Sabato's Crystal Ball,Safe D,30.0,False
+OREGON,2,Decision Desk HQ,Safe R,-30.0,True
+OREGON,2,The Cook Political Report,Solid R,-30.0,False
+OREGON,2,Inside Elections,Solid R,-30.0,False
+OREGON,2,Sabato's Crystal Ball,Safe R,-30.0,False
+OREGON,3,Decision Desk HQ,Safe D,30.0,True
+OREGON,3,The Cook Political Report,Solid D,30.0,False
+OREGON,3,Inside Elections,Solid D,30.0,False
+OREGON,3,Sabato's Crystal Ball,Safe D,30.0,False
+OREGON,4,Decision Desk HQ,Safe D,30.0,True
+OREGON,4,The Cook Political Report,Solid D,30.0,False
+OREGON,4,Inside Elections,Solid D,30.0,False
+OREGON,4,Sabato's Crystal Ball,Safe D,30.0,False
+OREGON,5,Decision Desk HQ,Safe D,30.0,True
+OREGON,5,The Cook Political Report,Solid D,30.0,False
+OREGON,5,Inside Elections,Solid D,30.0,False
+OREGON,5,Sabato's Crystal Ball,Safe D,30.0,False
+OREGON,6,Decision Desk HQ,Safe D,30.0,True
+OREGON,6,The Cook Political Report,Solid D,30.0,False
+OREGON,6,Inside Elections,Solid D,30.0,False
+OREGON,6,Sabato's Crystal Ball,Safe D,30.0,False
+PENNSYLVANIA,1,Decision Desk HQ,Tossup,0.0,True
+PENNSYLVANIA,1,The Cook Political Report,Tossup,0.0,False
+PENNSYLVANIA,1,Inside Elections,Tossup,0.0,False
+PENNSYLVANIA,1,Sabato's Crystal Ball,Lean D (flip),7.0,False
+PENNSYLVANIA,1,Silver Bulletin,Tossup,0.0,True
+PENNSYLVANIA,2,Decision Desk HQ,Safe D,30.0,True
+PENNSYLVANIA,2,The Cook Political Report,Solid D,30.0,False
+PENNSYLVANIA,2,Inside Elections,Solid D,30.0,False
+PENNSYLVANIA,2,Sabato's Crystal Ball,Safe D,30.0,False
+PENNSYLVANIA,2,Silver Bulletin,Solid D,30.0,True
+PENNSYLVANIA,3,Decision Desk HQ,Safe D,30.0,True
+PENNSYLVANIA,3,The Cook Political Report,Solid D,30.0,False
+PENNSYLVANIA,3,Inside Elections,Solid D,30.0,False
+PENNSYLVANIA,3,Sabato's Crystal Ball,Safe D,30.0,False
+PENNSYLVANIA,3,Silver Bulletin,Solid D,30.0,True
+PENNSYLVANIA,4,Decision Desk HQ,Safe D,30.0,True
+PENNSYLVANIA,4,The Cook Political Report,Solid D,30.0,False
+PENNSYLVANIA,4,Inside Elections,Solid D,30.0,False
+PENNSYLVANIA,4,Sabato's Crystal Ball,Safe D,30.0,False
+PENNSYLVANIA,4,Silver Bulletin,Solid D,30.0,True
+PENNSYLVANIA,5,Decision Desk HQ,Safe D,30.0,True
+PENNSYLVANIA,5,The Cook Political Report,Solid D,30.0,False
+PENNSYLVANIA,5,Inside Elections,Solid D,30.0,False
+PENNSYLVANIA,5,Sabato's Crystal Ball,Safe D,30.0,False
+PENNSYLVANIA,5,Silver Bulletin,Solid D,30.0,True
+PENNSYLVANIA,6,Decision Desk HQ,Safe D,30.0,True
+PENNSYLVANIA,6,The Cook Political Report,Solid D,30.0,False
+PENNSYLVANIA,6,Inside Elections,Solid D,30.0,False
+PENNSYLVANIA,6,Sabato's Crystal Ball,Safe D,30.0,False
+PENNSYLVANIA,6,Silver Bulletin,Solid D,30.0,True
+PENNSYLVANIA,7,Decision Desk HQ,Likely D (flip),15.0,True
+PENNSYLVANIA,7,The Cook Political Report,Lean D (flip),7.0,False
+PENNSYLVANIA,7,Inside Elections,Tilt D (flip),3.0,False
+PENNSYLVANIA,7,Sabato's Crystal Ball,Lean D (flip),7.0,False
+PENNSYLVANIA,7,Silver Bulletin,Lean D (flip),7.0,True
+PENNSYLVANIA,8,Decision Desk HQ,Lean D (flip),7.0,True
+PENNSYLVANIA,8,The Cook Political Report,Lean D (flip),7.0,False
+PENNSYLVANIA,8,Inside Elections,Tilt D (flip),3.0,False
+PENNSYLVANIA,8,Sabato's Crystal Ball,Lean D (flip),7.0,False
+PENNSYLVANIA,8,Silver Bulletin,Lean D (flip),7.0,True
+PENNSYLVANIA,9,Decision Desk HQ,Safe R,-30.0,True
+PENNSYLVANIA,9,The Cook Political Report,Solid R,-30.0,False
+PENNSYLVANIA,9,Inside Elections,Solid R,-30.0,False
+PENNSYLVANIA,9,Sabato's Crystal Ball,Safe R,-30.0,False
+PENNSYLVANIA,9,Silver Bulletin,Solid R,-30.0,True
+PENNSYLVANIA,10,Decision Desk HQ,Lean D (flip),7.0,True
+PENNSYLVANIA,10,The Cook Political Report,Lean D (flip),7.0,False
+PENNSYLVANIA,10,Inside Elections,Tilt D (flip),3.0,False
+PENNSYLVANIA,10,Sabato's Crystal Ball,Lean D (flip),7.0,False
+PENNSYLVANIA,10,Silver Bulletin,Likely D (flip),15.0,True
+PENNSYLVANIA,11,Decision Desk HQ,Likely R,-15.0,True
+PENNSYLVANIA,11,The Cook Political Report,Solid R,-30.0,False
+PENNSYLVANIA,11,Inside Elections,Solid R,-30.0,False
+PENNSYLVANIA,11,Sabato's Crystal Ball,Safe R,-30.0,False
+PENNSYLVANIA,11,Silver Bulletin,Solid R,-30.0,True
+PENNSYLVANIA,12,Decision Desk HQ,Safe D,30.0,True
+PENNSYLVANIA,12,The Cook Political Report,Solid D,30.0,False
+PENNSYLVANIA,12,Inside Elections,Solid D,30.0,False
+PENNSYLVANIA,12,Sabato's Crystal Ball,Safe D,30.0,False
+PENNSYLVANIA,12,Silver Bulletin,Solid D,30.0,True
+PENNSYLVANIA,13,Decision Desk HQ,Safe R,-30.0,True
+PENNSYLVANIA,13,The Cook Political Report,Solid R,-30.0,False
+PENNSYLVANIA,13,Inside Elections,Solid R,-30.0,False
+PENNSYLVANIA,13,Sabato's Crystal Ball,Safe R,-30.0,False
+PENNSYLVANIA,13,Silver Bulletin,Solid R,-30.0,True
+PENNSYLVANIA,14,Decision Desk HQ,Safe R,-30.0,True
+PENNSYLVANIA,14,The Cook Political Report,Solid R,-30.0,False
+PENNSYLVANIA,14,Inside Elections,Solid R,-30.0,False
+PENNSYLVANIA,14,Sabato's Crystal Ball,Safe R,-30.0,False
+PENNSYLVANIA,15,Decision Desk HQ,Safe R,-30.0,True
+PENNSYLVANIA,15,The Cook Political Report,Solid R,-30.0,False
+PENNSYLVANIA,15,Inside Elections,Solid R,-30.0,False
+PENNSYLVANIA,15,Sabato's Crystal Ball,Safe R,-30.0,False
+PENNSYLVANIA,15,Silver Bulletin,Solid R,-30.0,True
+PENNSYLVANIA,16,Decision Desk HQ,Likely R,-15.0,True
+PENNSYLVANIA,16,The Cook Political Report,Solid R,-30.0,False
+PENNSYLVANIA,16,Inside Elections,Solid R,-30.0,False
+PENNSYLVANIA,16,Sabato's Crystal Ball,Safe R,-30.0,False
+PENNSYLVANIA,16,Silver Bulletin,Solid R,-30.0,True
+PENNSYLVANIA,17,Decision Desk HQ,Safe D,30.0,True
+PENNSYLVANIA,17,The Cook Political Report,Solid D,30.0,False
+PENNSYLVANIA,17,Inside Elections,Solid D,30.0,False
+PENNSYLVANIA,17,Sabato's Crystal Ball,Safe D,30.0,False
+PENNSYLVANIA,17,Silver Bulletin,Solid D,30.0,True
+RHODE ISLAND,1,The Cook Political Report,Solid D,30.0,False
+RHODE ISLAND,1,Decision Desk HQ,Safe D,30.0,True
+RHODE ISLAND,1,Inside Elections,Solid D,30.0,False
+RHODE ISLAND,1,Sabato's Crystal Ball,Safe D,30.0,False
+RHODE ISLAND,1,Silver Bulletin,Solid D,30.0,True
+RHODE ISLAND,2,The Cook Political Report,Solid D,30.0,False
+RHODE ISLAND,2,Decision Desk HQ,Safe D,30.0,True
+RHODE ISLAND,2,Inside Elections,Solid D,30.0,False
+RHODE ISLAND,2,Sabato's Crystal Ball,Safe D,30.0,False
+RHODE ISLAND,2,Silver Bulletin,Solid D,30.0,True
+SOUTH CAROLINA,1,Decision Desk HQ,Lean R,-7.0,True
+SOUTH CAROLINA,1,The Cook Political Report,Tossup,0.0,False
+SOUTH CAROLINA,1,Inside Elections,Tilt R,-3.0,False
+SOUTH CAROLINA,1,Sabato's Crystal Ball,Lean R,-7.0,False
+SOUTH CAROLINA,2,Decision Desk HQ,Likely R,-15.0,True
+SOUTH CAROLINA,2,The Cook Political Report,Solid R,-30.0,False
+SOUTH CAROLINA,2,Inside Elections,Solid R,-30.0,False
+SOUTH CAROLINA,2,Sabato's Crystal Ball,Safe R,-30.0,False
+SOUTH CAROLINA,3,Decision Desk HQ,Safe R,-30.0,True
+SOUTH CAROLINA,3,The Cook Political Report,Solid R,-30.0,False
+SOUTH CAROLINA,3,Inside Elections,Solid R,-30.0,False
+SOUTH CAROLINA,3,Sabato's Crystal Ball,Safe R,-30.0,False
+SOUTH CAROLINA,4,Decision Desk HQ,Safe R,-30.0,True
+SOUTH CAROLINA,4,The Cook Political Report,Solid R,-30.0,False
+SOUTH CAROLINA,4,Inside Elections,Solid R,-30.0,False
+SOUTH CAROLINA,4,Sabato's Crystal Ball,Safe R,-30.0,False
+SOUTH CAROLINA,5,Decision Desk HQ,Safe R,-30.0,True
+SOUTH CAROLINA,5,The Cook Political Report,Solid R,-30.0,False
+SOUTH CAROLINA,5,Inside Elections,Solid R,-30.0,False
+SOUTH CAROLINA,5,Sabato's Crystal Ball,Safe R,-30.0,False
+SOUTH CAROLINA,6,Decision Desk HQ,Safe D,30.0,True
+SOUTH CAROLINA,6,The Cook Political Report,Solid D,30.0,False
+SOUTH CAROLINA,6,Inside Elections,Solid D,30.0,False
+SOUTH CAROLINA,6,Sabato's Crystal Ball,Safe D,30.0,False
+SOUTH CAROLINA,7,Decision Desk HQ,Safe R,-30.0,True
+SOUTH CAROLINA,7,The Cook Political Report,Solid R,-30.0,False
+SOUTH CAROLINA,7,Inside Elections,Solid R,-30.0,False
+SOUTH CAROLINA,7,Sabato's Crystal Ball,Safe R,-30.0,False
+TENNESSEE,1,Decision Desk HQ,Safe R,-30.0,True
+TENNESSEE,1,The Cook Political Report,Solid R,-30.0,False
+TENNESSEE,1,Inside Elections,Solid R,-30.0,False
+TENNESSEE,1,Sabato's Crystal Ball,Safe R,-30.0,False
+TENNESSEE,2,Decision Desk HQ,Safe R,-30.0,True
+TENNESSEE,2,The Cook Political Report,Solid R,-30.0,False
+TENNESSEE,2,Inside Elections,Solid R,-30.0,False
+TENNESSEE,2,Sabato's Crystal Ball,Safe R,-30.0,False
+TENNESSEE,3,Decision Desk HQ,Safe R,-30.0,True
+TENNESSEE,3,The Cook Political Report,Solid R,-30.0,False
+TENNESSEE,3,Inside Elections,Solid R,-30.0,False
+TENNESSEE,3,Sabato's Crystal Ball,Safe R,-30.0,False
+TENNESSEE,4,Decision Desk HQ,Safe R,-30.0,True
+TENNESSEE,4,The Cook Political Report,Solid R,-30.0,False
+TENNESSEE,4,Inside Elections,Solid R,-30.0,False
+TENNESSEE,4,Sabato's Crystal Ball,Safe R,-30.0,False
+TENNESSEE,5,Decision Desk HQ,Safe R,-30.0,True
+TENNESSEE,5,The Cook Political Report,Solid R,-30.0,False
+TENNESSEE,5,Inside Elections,Solid R,-30.0,False
+TENNESSEE,5,Sabato's Crystal Ball,Likely R,-15.0,False
+TENNESSEE,6,Decision Desk HQ,Safe R,-30.0,True
+TENNESSEE,6,The Cook Political Report,Solid R,-30.0,False
+TENNESSEE,6,Inside Elections,Solid R,-30.0,False
+TENNESSEE,6,Sabato's Crystal Ball,Safe R,-30.0,False
+TENNESSEE,7,Decision Desk HQ,Likely R,-15.0,True
+TENNESSEE,7,The Cook Political Report,Solid R,-30.0,False
+TENNESSEE,7,Inside Elections,Solid R,-30.0,False
+TENNESSEE,7,Sabato's Crystal Ball,Safe R,-30.0,False
+TENNESSEE,8,Decision Desk HQ,Safe R,-30.0,True
+TENNESSEE,8,The Cook Political Report,Solid R,-30.0,False
+TENNESSEE,8,Inside Elections,Solid R,-30.0,False
+TENNESSEE,8,Sabato's Crystal Ball,Safe R,-30.0,False
+TENNESSEE,9,Decision Desk HQ,Likely R (flip),-15.0,True
+TENNESSEE,9,The Cook Political Report,Likely R (flip),-15.0,False
+TENNESSEE,9,Inside Elections,Likely R (flip),-15.0,False
+TENNESSEE,9,Sabato's Crystal Ball,Likely R (flip),-15.0,False
+TEXAS,1,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,1,The Cook Political Report,Solid R,-30.0,False
+TEXAS,1,Inside Elections,Solid R,-30.0,False
+TEXAS,1,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,1,Silver Bulletin,Solid R,-30.0,True
+TEXAS,2,Decision Desk HQ,Likely R,-15.0,True
+TEXAS,2,The Cook Political Report,Solid R,-30.0,False
+TEXAS,2,Inside Elections,Solid R,-30.0,False
+TEXAS,2,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,2,Silver Bulletin,Solid R,-30.0,True
+TEXAS,3,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,3,The Cook Political Report,Solid R,-30.0,False
+TEXAS,3,Inside Elections,Solid R,-30.0,False
+TEXAS,3,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,3,Silver Bulletin,Solid R,-30.0,True
+TEXAS,4,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,4,The Cook Political Report,Solid R,-30.0,False
+TEXAS,4,Inside Elections,Solid R,-30.0,False
+TEXAS,4,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,4,Silver Bulletin,Solid R,-30.0,True
+TEXAS,5,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,5,The Cook Political Report,Solid R,-30.0,False
+TEXAS,5,Inside Elections,Solid R,-30.0,False
+TEXAS,5,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,5,Silver Bulletin,Solid R,-30.0,True
+TEXAS,6,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,6,The Cook Political Report,Solid R,-30.0,False
+TEXAS,6,Inside Elections,Solid R,-30.0,False
+TEXAS,6,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,6,Silver Bulletin,Solid R,-30.0,True
+TEXAS,7,Decision Desk HQ,Safe D,30.0,True
+TEXAS,7,The Cook Political Report,Solid D,30.0,False
+TEXAS,7,Inside Elections,Solid D,30.0,False
+TEXAS,7,Sabato's Crystal Ball,Safe D,30.0,False
+TEXAS,7,Silver Bulletin,Solid D,30.0,True
+TEXAS,8,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,8,The Cook Political Report,Solid R,-30.0,False
+TEXAS,8,Inside Elections,Solid R,-30.0,False
+TEXAS,8,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,8,Silver Bulletin,Solid R,-30.0,True
+TEXAS,9,Decision Desk HQ,Likely R (flip),-15.0,True
+TEXAS,9,The Cook Political Report,Likely R (flip),-15.0,False
+TEXAS,9,Inside Elections,Lean R (flip),-7.0,False
+TEXAS,9,Sabato's Crystal Ball,Likely R (flip),-15.0,False
+TEXAS,9,Silver Bulletin,Likely R (flip),-15.0,True
+TEXAS,10,Decision Desk HQ,Likely R,-15.0,True
+TEXAS,10,The Cook Political Report,Solid R,-30.0,False
+TEXAS,10,Inside Elections,Solid R,-30.0,False
+TEXAS,10,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,10,Silver Bulletin,Solid R,-30.0,True
+TEXAS,11,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,11,The Cook Political Report,Solid R,-30.0,False
+TEXAS,11,Inside Elections,Solid R,-30.0,False
+TEXAS,11,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,11,Silver Bulletin,Solid R,-30.0,True
+TEXAS,12,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,12,The Cook Political Report,Solid R,-30.0,False
+TEXAS,12,Inside Elections,Solid R,-30.0,False
+TEXAS,12,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,12,Silver Bulletin,Solid R,-30.0,True
+TEXAS,13,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,13,The Cook Political Report,Solid R,-30.0,False
+TEXAS,13,Inside Elections,Solid R,-30.0,False
+TEXAS,13,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,13,Silver Bulletin,Solid R,-30.0,True
+TEXAS,14,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,14,The Cook Political Report,Solid R,-30.0,False
+TEXAS,14,Inside Elections,Solid R,-30.0,False
+TEXAS,14,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,14,Silver Bulletin,Solid R,-30.0,True
+TEXAS,15,Decision Desk HQ,Tossup,0.0,True
+TEXAS,15,The Cook Political Report,Tossup,0.0,False
+TEXAS,15,Inside Elections,Tilt D (flip),3.0,False
+TEXAS,15,Sabato's Crystal Ball,Lean D (flip),7.0,False
+TEXAS,15,Silver Bulletin,Lean D (flip),7.0,True
+TEXAS,16,Decision Desk HQ,Safe D,30.0,True
+TEXAS,16,The Cook Political Report,Solid D,30.0,False
+TEXAS,16,Inside Elections,Solid D,30.0,False
+TEXAS,16,Sabato's Crystal Ball,Safe D,30.0,False
+TEXAS,16,Silver Bulletin,Solid D,30.0,True
+TEXAS,17,Decision Desk HQ,Likely R,-15.0,True
+TEXAS,17,The Cook Political Report,Solid R,-30.0,False
+TEXAS,17,Inside Elections,Solid R,-30.0,False
+TEXAS,17,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,17,Silver Bulletin,Solid R,-30.0,True
+TEXAS,18,Decision Desk HQ,Safe D,30.0,True
+TEXAS,18,The Cook Political Report,Solid D,30.0,False
+TEXAS,18,Inside Elections,Solid D,30.0,False
+TEXAS,18,Sabato's Crystal Ball,Safe D,30.0,False
+TEXAS,18,Silver Bulletin,Solid D,30.0,True
+TEXAS,19,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,19,The Cook Political Report,Solid R,-30.0,False
+TEXAS,19,Inside Elections,Solid R,-30.0,False
+TEXAS,19,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,19,Silver Bulletin,Solid R,-30.0,True
+TEXAS,20,Decision Desk HQ,Safe D,30.0,True
+TEXAS,20,The Cook Political Report,Solid D,30.0,False
+TEXAS,20,Inside Elections,Solid D,30.0,False
+TEXAS,20,Sabato's Crystal Ball,Safe D,30.0,False
+TEXAS,20,Silver Bulletin,Solid D,30.0,True
+TEXAS,21,Decision Desk HQ,Likely R,-15.0,True
+TEXAS,21,The Cook Political Report,Solid R,-30.0,False
+TEXAS,21,Inside Elections,Solid R,-30.0,False
+TEXAS,21,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,21,Silver Bulletin,Solid R,-30.0,True
+TEXAS,22,Decision Desk HQ,Likely R,-15.0,True
+TEXAS,22,The Cook Political Report,Solid R,-30.0,False
+TEXAS,22,Inside Elections,Solid R,-30.0,False
+TEXAS,22,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,22,Silver Bulletin,Solid R,-30.0,True
+TEXAS,23,Decision Desk HQ,Lean R,-7.0,True
+TEXAS,23,The Cook Political Report,Lean R,-7.0,False
+TEXAS,23,Inside Elections,Likely R,-15.0,False
+TEXAS,23,Sabato's Crystal Ball,Lean R,-7.0,False
+TEXAS,23,Silver Bulletin,Tossup,0.0,True
+TEXAS,24,Decision Desk HQ,Likely R,-15.0,True
+TEXAS,24,The Cook Political Report,Solid R,-30.0,False
+TEXAS,24,Inside Elections,Solid R,-30.0,False
+TEXAS,24,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,24,Silver Bulletin,Likely R,-15.0,True
+TEXAS,25,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,25,The Cook Political Report,Solid R,-30.0,False
+TEXAS,25,Inside Elections,Solid R,-30.0,False
+TEXAS,25,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,25,Silver Bulletin,Solid R,-30.0,True
+TEXAS,26,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,26,The Cook Political Report,Solid R,-30.0,False
+TEXAS,26,Inside Elections,Solid R,-30.0,False
+TEXAS,26,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,26,Silver Bulletin,Solid R,-30.0,True
+TEXAS,27,Decision Desk HQ,Likely R,-15.0,True
+TEXAS,27,The Cook Political Report,Solid R,-30.0,False
+TEXAS,27,Inside Elections,Solid R,-30.0,False
+TEXAS,27,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,27,Silver Bulletin,Solid R,-30.0,True
+TEXAS,28,Decision Desk HQ,Likely D,15.0,True
+TEXAS,28,The Cook Political Report,Likely D,15.0,False
+TEXAS,28,Inside Elections,Lean D,7.0,False
+TEXAS,28,Sabato's Crystal Ball,Lean D,7.0,False
+TEXAS,28,Silver Bulletin,Likely D,15.0,True
+TEXAS,29,Decision Desk HQ,Safe D,30.0,True
+TEXAS,29,The Cook Political Report,Solid D,30.0,False
+TEXAS,29,Inside Elections,Solid D,30.0,False
+TEXAS,29,Sabato's Crystal Ball,Safe D,30.0,False
+TEXAS,29,Silver Bulletin,Solid D,30.0,True
+TEXAS,30,Decision Desk HQ,Safe D,30.0,True
+TEXAS,30,The Cook Political Report,Solid D,30.0,False
+TEXAS,30,Inside Elections,Solid D,30.0,False
+TEXAS,30,Sabato's Crystal Ball,Safe D,30.0,False
+TEXAS,30,Silver Bulletin,Solid D,30.0,True
+TEXAS,31,Decision Desk HQ,Likely R,-15.0,True
+TEXAS,31,The Cook Political Report,Solid R,-30.0,False
+TEXAS,31,Inside Elections,Solid R,-30.0,False
+TEXAS,31,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,31,Silver Bulletin,Solid R,-30.0,True
+TEXAS,32,Decision Desk HQ,Likely R (flip),-15.0,True
+TEXAS,32,The Cook Political Report,Solid R (flip),-30.0,False
+TEXAS,32,Inside Elections,Solid R (flip),-30.0,False
+TEXAS,32,Sabato's Crystal Ball,Safe R (flip),-30.0,False
+TEXAS,32,Silver Bulletin,Likely R (flip),-15.0,True
+TEXAS,33,Decision Desk HQ,Safe D,30.0,True
+TEXAS,33,The Cook Political Report,Solid D,30.0,False
+TEXAS,33,Inside Elections,Solid D,30.0,False
+TEXAS,33,Sabato's Crystal Ball,Safe D,30.0,False
+TEXAS,33,Silver Bulletin,Solid D,30.0,True
+TEXAS,34,Decision Desk HQ,Likely D,15.0,True
+TEXAS,34,The Cook Political Report,Lean D,7.0,False
+TEXAS,34,Inside Elections,Tossup,0.0,False
+TEXAS,34,Sabato's Crystal Ball,Lean D,7.0,False
+TEXAS,34,Silver Bulletin,Likely D,15.0,True
+TEXAS,35,Decision Desk HQ,Tossup,0.0,True
+TEXAS,35,The Cook Political Report,Tossup,0.0,False
+TEXAS,35,Inside Elections,Tossup,0.0,False
+TEXAS,35,Sabato's Crystal Ball,Lean D,7.0,False
+TEXAS,35,Silver Bulletin,Tossup,0.0,True
+TEXAS,36,Decision Desk HQ,Safe R,-30.0,True
+TEXAS,36,The Cook Political Report,Solid R,-30.0,False
+TEXAS,36,Inside Elections,Solid R,-30.0,False
+TEXAS,36,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,36,Silver Bulletin,Solid R,-30.0,True
+TEXAS,37,Decision Desk HQ,Safe D,30.0,True
+TEXAS,37,The Cook Political Report,Solid D,30.0,False
+TEXAS,37,Inside Elections,Solid D,30.0,False
+TEXAS,37,Sabato's Crystal Ball,Safe D,30.0,False
+TEXAS,37,Silver Bulletin,Solid D,30.0,True
+TEXAS,38,Decision Desk HQ,Likely R,-15.0,True
+TEXAS,38,The Cook Political Report,Solid R,-30.0,False
+TEXAS,38,Inside Elections,Solid R,-30.0,False
+TEXAS,38,Sabato's Crystal Ball,Safe R,-30.0,False
+TEXAS,38,Silver Bulletin,Solid R,-30.0,True
+UTAH,1,Decision Desk HQ,Safe D (flip),30.0,True
+UTAH,1,The Cook Political Report,Solid D (flip),30.0,False
+UTAH,1,Inside Elections,Solid D (flip),30.0,False
+UTAH,1,Sabato's Crystal Ball,Safe D (flip),30.0,False
+UTAH,1,Silver Bulletin,Solid D (flip),30.0,True
+UTAH,2,Decision Desk HQ,Safe R,-30.0,True
+UTAH,2,The Cook Political Report,Solid R,-30.0,False
+UTAH,2,Inside Elections,Solid R,-30.0,False
+UTAH,2,Sabato's Crystal Ball,Safe R,-30.0,False
+UTAH,2,Silver Bulletin,Solid R,-30.0,True
+UTAH,3,Decision Desk HQ,Safe R,-30.0,True
+UTAH,3,The Cook Political Report,Solid R,-30.0,False
+UTAH,3,Inside Elections,Solid R,-30.0,False
+UTAH,3,Sabato's Crystal Ball,Safe R,-30.0,False
+UTAH,3,Silver Bulletin,Solid R,-30.0,True
+UTAH,4,Decision Desk HQ,Safe R,-30.0,True
+UTAH,4,The Cook Political Report,Solid R,-30.0,False
+UTAH,4,Inside Elections,Solid R,-30.0,False
+UTAH,4,Sabato's Crystal Ball,Safe R,-30.0,False
+UTAH,4,Silver Bulletin,Solid R,-30.0,True
+VIRGINIA,1,Decision Desk HQ,Lean R,-7.0,True
+VIRGINIA,1,The Cook Political Report,Tossup,0.0,False
+VIRGINIA,1,Inside Elections,Tilt R,-3.0,False
+VIRGINIA,1,Sabato's Crystal Ball,Lean D (flip),7.0,False
+VIRGINIA,2,Decision Desk HQ,Likely D (flip),15.0,True
+VIRGINIA,2,The Cook Political Report,Lean D (flip),7.0,False
+VIRGINIA,2,Inside Elections,Tilt D (flip),3.0,False
+VIRGINIA,2,Sabato's Crystal Ball,Lean D (flip),7.0,False
+VIRGINIA,3,Decision Desk HQ,Safe D,30.0,True
+VIRGINIA,3,The Cook Political Report,Solid D,30.0,False
+VIRGINIA,3,Inside Elections,Solid D,30.0,False
+VIRGINIA,3,Sabato's Crystal Ball,Safe D,30.0,False
+VIRGINIA,4,Decision Desk HQ,Safe D,30.0,True
+VIRGINIA,4,The Cook Political Report,Solid D,30.0,False
+VIRGINIA,4,Inside Elections,Solid D,30.0,False
+VIRGINIA,4,Sabato's Crystal Ball,Safe D,30.0,False
+VIRGINIA,5,Decision Desk HQ,Lean R,-7.0,True
+VIRGINIA,5,The Cook Political Report,Lean R,-7.0,False
+VIRGINIA,5,Inside Elections,Lean R,-7.0,False
+VIRGINIA,5,Sabato's Crystal Ball,Lean D (flip),7.0,False
+VIRGINIA,6,Decision Desk HQ,Safe R,-30.0,True
+VIRGINIA,6,The Cook Political Report,Solid R,-30.0,False
+VIRGINIA,6,Inside Elections,Solid R,-30.0,False
+VIRGINIA,6,Sabato's Crystal Ball,Safe R,-30.0,False
+VIRGINIA,7,Decision Desk HQ,Likely D,15.0,True
+VIRGINIA,7,The Cook Political Report,Likely D,15.0,False
+VIRGINIA,7,Inside Elections,Solid D,30.0,False
+VIRGINIA,7,Sabato's Crystal Ball,Safe D,30.0,False
+VIRGINIA,8,Decision Desk HQ,Safe D,30.0,True
+VIRGINIA,8,The Cook Political Report,Solid D,30.0,False
+VIRGINIA,8,Inside Elections,Solid D,30.0,False
+VIRGINIA,8,Sabato's Crystal Ball,Safe D,30.0,False
+VIRGINIA,9,Decision Desk HQ,Safe R,-30.0,True
+VIRGINIA,9,The Cook Political Report,Solid R,-30.0,False
+VIRGINIA,9,Inside Elections,Solid R,-30.0,False
+VIRGINIA,9,Sabato's Crystal Ball,Safe R,-30.0,False
+VIRGINIA,10,Decision Desk HQ,Safe D,30.0,True
+VIRGINIA,10,The Cook Political Report,Solid D,30.0,False
+VIRGINIA,10,Inside Elections,Solid D,30.0,False
+VIRGINIA,10,Sabato's Crystal Ball,Safe D,30.0,False
+VIRGINIA,11,Decision Desk HQ,Safe D,30.0,True
+VIRGINIA,11,The Cook Political Report,Solid D,30.0,False
+VIRGINIA,11,Inside Elections,Solid D,30.0,False
+VIRGINIA,11,Sabato's Crystal Ball,Safe D,30.0,False
+WASHINGTON,1,Decision Desk HQ,Safe D,30.0,True
+WASHINGTON,1,The Cook Political Report,Solid D,30.0,False
+WASHINGTON,1,Inside Elections,Solid D,30.0,False
+WASHINGTON,1,Sabato's Crystal Ball,Safe D,30.0,False
+WASHINGTON,1,Split Ticket,Safe D,30.0,False
+WASHINGTON,2,Decision Desk HQ,Safe D,30.0,True
+WASHINGTON,2,The Cook Political Report,Solid D,30.0,False
+WASHINGTON,2,Inside Elections,Solid D,30.0,False
+WASHINGTON,2,Sabato's Crystal Ball,Safe D,30.0,False
+WASHINGTON,2,Split Ticket,Safe D,30.0,False
+WASHINGTON,3,Decision Desk HQ,Likely D,15.0,True
+WASHINGTON,3,The Cook Political Report,Lean D,7.0,False
+WASHINGTON,3,Inside Elections,Tossup,0.0,False
+WASHINGTON,3,Sabato's Crystal Ball,Lean D,7.0,False
+WASHINGTON,3,Split Ticket,Likely D,15.0,False
+WASHINGTON,4,Decision Desk HQ,Likely R,-15.0,True
+WASHINGTON,4,The Cook Political Report,Solid R,-30.0,False
+WASHINGTON,4,Inside Elections,Solid R,-30.0,False
+WASHINGTON,4,Sabato's Crystal Ball,Safe R,-30.0,False
+WASHINGTON,4,Split Ticket,Safe R,-30.0,False
+WASHINGTON,5,Decision Desk HQ,Likely R,-15.0,True
+WASHINGTON,5,The Cook Political Report,Likely R,-15.0,False
+WASHINGTON,5,Inside Elections,Likely R,-15.0,False
+WASHINGTON,5,Sabato's Crystal Ball,Likely R,-15.0,False
+WASHINGTON,5,RealClearPolitics,Likely R,-15.0,True
+WASHINGTON,5,The Economist,Safe R,-30.0,False
+WASHINGTON,5,Split Ticket,Safe R,-30.0,False
+WASHINGTON,5,Fox News,Safe R,-30.0,False
+WASHINGTON,5,nan,,,False
+WASHINGTON,6,Decision Desk HQ,Safe D,30.0,True
+WASHINGTON,6,The Cook Political Report,Solid D,30.0,False
+WASHINGTON,6,Inside Elections,Solid D,30.0,False
+WASHINGTON,6,Sabato's Crystal Ball,Safe D,30.0,False
+WASHINGTON,6,Split Ticket,Safe D,30.0,False
+WASHINGTON,7,Decision Desk HQ,Safe D,30.0,True
+WASHINGTON,7,The Cook Political Report,Solid D,30.0,False
+WASHINGTON,7,Inside Elections,Solid D,30.0,False
+WASHINGTON,7,Sabato's Crystal Ball,Safe D,30.0,False
+WASHINGTON,7,Split Ticket,Safe D,30.0,False
+WASHINGTON,8,Decision Desk HQ,Safe D,30.0,True
+WASHINGTON,8,The Cook Political Report,Solid D,30.0,False
+WASHINGTON,8,Inside Elections,Solid D,30.0,False
+WASHINGTON,8,Sabato's Crystal Ball,Safe D,30.0,False
+WASHINGTON,8,Split Ticket,Safe D,30.0,False
+WASHINGTON,9,Decision Desk HQ,Safe D,30.0,True
+WASHINGTON,9,The Cook Political Report,Solid D,30.0,False
+WASHINGTON,9,Inside Elections,Solid D,30.0,False
+WASHINGTON,9,Sabato's Crystal Ball,Safe D,30.0,False
+WASHINGTON,9,Split Ticket,Safe D,30.0,False
+WASHINGTON,10,Decision Desk HQ,Safe D,30.0,True
+WASHINGTON,10,The Cook Political Report,Solid D,30.0,False
+WASHINGTON,10,Inside Elections,Solid D,30.0,False
+WASHINGTON,10,Sabato's Crystal Ball,Safe D,30.0,False
+WASHINGTON,10,Split Ticket,Safe D,30.0,False
+WEST VIRGINIA,1,Decision Desk HQ,Safe R,-30.0,True
+WEST VIRGINIA,1,The Cook Political Report,Solid R,-30.0,False
+WEST VIRGINIA,1,Inside Elections,Solid R,-30.0,False
+WEST VIRGINIA,1,Sabato's Crystal Ball,Safe R,-30.0,False
+WEST VIRGINIA,2,Decision Desk HQ,Safe R,-30.0,True
+WEST VIRGINIA,2,The Cook Political Report,Solid R,-30.0,False
+WEST VIRGINIA,2,Inside Elections,Solid R,-30.0,False
+WEST VIRGINIA,2,Sabato's Crystal Ball,Safe R,-30.0,False
+WISCONSIN,1,Decision Desk HQ,Lean R,-7.0,True
+WISCONSIN,1,The Cook Political Report,Lean R,-7.0,False
+WISCONSIN,1,Inside Elections,Lean R,-7.0,False
+WISCONSIN,1,Sabato's Crystal Ball,Lean R,-7.0,False
+WISCONSIN,2,Decision Desk HQ,Safe D,30.0,True
+WISCONSIN,2,The Cook Political Report,Solid D,30.0,False
+WISCONSIN,2,Inside Elections,Solid D,30.0,False
+WISCONSIN,2,Sabato's Crystal Ball,Safe D,30.0,False
+WISCONSIN,3,Decision Desk HQ,Likely D (flip),15.0,True
+WISCONSIN,3,The Cook Political Report,Lean D (flip),7.0,False
+WISCONSIN,3,Inside Elections,Tilt D (flip),3.0,False
+WISCONSIN,3,Sabato's Crystal Ball,Lean D (flip),7.0,False
+WISCONSIN,4,Decision Desk HQ,Safe D,30.0,True
+WISCONSIN,4,The Cook Political Report,Solid D,30.0,False
+WISCONSIN,4,Inside Elections,Solid D,30.0,False
+WISCONSIN,4,Sabato's Crystal Ball,Safe D,30.0,False
+WISCONSIN,5,Decision Desk HQ,Safe R,-30.0,True
+WISCONSIN,5,The Cook Political Report,Solid R,-30.0,False
+WISCONSIN,5,Inside Elections,Solid R,-30.0,False
+WISCONSIN,5,Sabato's Crystal Ball,Safe R,-30.0,False
+WISCONSIN,6,Decision Desk HQ,Likely R,-15.0,True
+WISCONSIN,6,The Cook Political Report,Solid R,-30.0,False
+WISCONSIN,6,Inside Elections,Solid R,-30.0,False
+WISCONSIN,6,Sabato's Crystal Ball,Safe R,-30.0,False
+WISCONSIN,7,Decision Desk HQ,Likely R,-15.0,True
+WISCONSIN,7,The Cook Political Report,Solid R,-30.0,False
+WISCONSIN,7,Inside Elections,Solid R,-30.0,False
+WISCONSIN,7,Sabato's Crystal Ball,Safe R,-30.0,False
+WISCONSIN,8,Decision Desk HQ,Likely R,-15.0,True
+WISCONSIN,8,The Cook Political Report,Solid R,-30.0,False
+WISCONSIN,8,Inside Elections,Solid R,-30.0,False
+WISCONSIN,8,Sabato's Crystal Ball,Safe R,-30.0,False

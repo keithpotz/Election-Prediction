@@ -1,0 +1,57 @@
+{
+  "fetched_at": "2026-11-10T09:17:54",
+  "generic_ballot": {
+    "margin": 8.35,
+    "aggregators": [
+      {
+        "aggregator": "Decision Desk HQ",
+        "dem": 51.4,
+        "rep": 42.8,
+        "margin": 8.6,
+        "market_tied": true
+      },
+      {
+        "aggregator": "FiftyPlusOne",
+        "dem": 52.8,
+        "rep": 44.1,
+        "margin": 8.7,
+        "market_tied": false
+      },
+      {
+        "aggregator": "NBC News",
+        "dem": 52.0,
+        "rep": 44.0,
+        "margin": 8.0,
+        "market_tied": false
+      },
+      {
+        "aggregator": "RealClearPolitics",
+        "dem": 52.1,
+        "rep": 43.3,
+        "margin": 8.8,
+        "market_tied": true
+      },
+      {
+        "aggregator": "Silver Bulletin",
+        "dem": 51.8,
+        "rep": 43.0,
+        "margin": 8.8,
+        "market_tied": true
+      }
+    ],
+    "used": [
+      "FiftyPlusOne",
+      "NBC News"
+    ],
+    "excluded": [
+      "Decision Desk HQ",
+      "RealClearPolitics",
+      "Silver Bulletin"
+    ]
+  },
+  "approval": {
+    "approve": 37.4,
+    "n_polls": 33,
+    "latest_poll": "2026-11-09"
+  }
+}

@@ -18,10 +18,11 @@ import pandas as pd
 
 from data_sources import fetch_generic_ballot
 from forecast_2026 import build_forecast
+from polls_2026 import POLL_SOURCE_NOTE
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(BASE_DIR, '..', 'forecasts', '2026')
-MODEL_VERSION = '2026.10.06b'  # bump with every methodology change, and log it in forecasts/CHANGELOG.md
+MODEL_VERSION = '2026.10.13'  # bump with every methodology change, and log it in forecasts/CHANGELOG.md
 
 def _jsonable(x):
     if isinstance(x, dict):
@@ -31,6 +32,18 @@ def _jsonable(x):
     if hasattr(x, 'item'):
         return x.item()
     return x
+
+def _data_warnings():
+    """Open data-quality warnings at publish time, recorded with the snapshot."""
+    try:
+        from poll_checks import load_checks
+        c = load_checks()
+        if c is None:
+            return None
+        w = c[c['severity'] == 'warning']
+        return [f"[{r['check']}] {r['race']}: {r['detail']}" for _, r in w.iterrows()]
+    except Exception:
+        return None
 
 def publish(generic_ballot=None):
     source = 'manual'
@@ -50,6 +63,10 @@ def publish(generic_ballot=None):
         'days_to_election': f['days_to_election'],
         'generic_ballot_dem_margin': float(generic_ballot),
         'generic_ballot_source': source,
+        'poll_data_sources': POLL_SOURCE_NOTE,
+        'data_warnings': _data_warnings(),
+        'generic_ballot_bias_removed': f['generic_ballot_bias_removed'],
+        'national_environment_used': f['national_environment'],
         **_jsonable(f['summary']),
     }
     with open(os.path.join(OUT_DIR, f'{stamp}_summary.json'), 'w') as fh:
@@ -59,7 +76,7 @@ def publish(generic_ballot=None):
     f['governor'].to_csv(os.path.join(OUT_DIR, f'{stamp}_governor_races.csv'), index=False)
     house_cols = ['state', 'district', 'pvi', 'incumbent', 'incumbent_party', 'incumbent_running',
                   'dem_candidate', 'rep_candidate', 'uncontested', 'predicted_margin',
-                  'dem_win_prob', 'predicted_winner']
+                  'dem_win_prob', 'predicted_winner', 'consensus_rating', 'n_polls', 'poll_avg']
     f['house'][house_cols].to_csv(os.path.join(OUT_DIR, f'{stamp}_house_districts.csv'), index=False)
 
     # One line per publish: the topline history, for charting the forecast over time.

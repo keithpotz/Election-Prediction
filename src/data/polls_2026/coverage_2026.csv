@@ -1,72 +1,72 @@
 office,state,special,n_polls,dem_candidate,rep_candidate,nominees_from_aggregate_table,latest_poll,error,url
-senate,ALABAMA,False,2,Everett Wess,Barry Moore,True,2026-09-25,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alabama
-senate,ALASKA,False,22,Mary Peltola,Dan S. Sullivan,True,2026-10-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska
-senate,ARKANSAS,False,4,Hallie Shoffner,Tom Cotton,True,2026-08-18,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Arkansas
-senate,COLORADO,False,0,,,False,,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Colorado
-senate,DELAWARE,False,0,,,False,,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Delaware
-senate,FLORIDA,True,10,Angie Nixon,Ashley Moody,True,2026-09-27,,https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Florida
-senate,GEORGIA,False,18,Jon Ossoff,Mike Collins,True,2026-10-03,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia
-senate,IDAHO,False,9,Todd Achilles,Jim Risch,True,2026-09-30,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Idaho
-senate,ILLINOIS,False,0,,,False,,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Illinois
-senate,IOWA,False,25,Josh Turek,Ashley Hinson,True,2026-10-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa
-senate,KANSAS,False,10,Adam Hamilton,Roger Marshall,True,2026-10-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas
+senate,ALABAMA,False,5,Everett Wess,Barry Moore,True,2026-10-24,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alabama
+senate,ALASKA,False,31,Mary Peltola,Dan S. Sullivan,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska
+senate,ARKANSAS,False,7,Hallie Shoffner,Tom Cotton,True,2026-10-28,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Arkansas
+senate,COLORADO,False,4,John Hickenlooper,Mark Baisley,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Colorado
+senate,DELAWARE,False,0,,,True,,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Delaware
+senate,FLORIDA,True,33,Angie Nixon,Ashley Moody,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Florida
+senate,GEORGIA,False,24,Jon Ossoff,Mike Collins,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Georgia
+senate,IDAHO,False,9,Todd Achilles,Jim Risch,True,2026-10-22,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Idaho
+senate,ILLINOIS,False,4,Juliana Stratton,Don Tracy,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Illinois
+senate,IOWA,False,41,Josh Turek,Ashley Hinson,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Iowa
+senate,KANSAS,False,21,Adam Hamilton,Roger Marshall,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kansas
 senate,KENTUCKY,False,2,Charles Booker,Andy Barr,True,2026-08-27,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Kentucky
-senate,LOUISIANA,False,2,Jamie Davis,Julia Letlow,True,2026-09-19,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Louisiana
-senate,MAINE,False,22,Troy Jackson,Susan Collins,True,2026-10-04,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine
-senate,MASSACHUSETTS,False,11,Ed Markey,John Deaton,True,2026-09-22,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Massachusetts
-senate,MICHIGAN,False,42,Abdul El-Sayed,Mike Rogers,True,2026-10-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan
-senate,MINNESOTA,False,11,Peggy Flanagan,Michele Tafoya,True,2026-09-30,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota
-senate,MISSISSIPPI,False,3,Scott Colom,Cindy Hyde-Smith,False,2026-08-15,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Mississippi
-senate,MONTANA,False,12,Alani Bankhead,Kurt Alme,True,2026-09-15,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana
-senate,NEBRASKA,False,12,Dan Osborn,Pete Ricketts,True,2026-09-30,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Nebraska
-senate,NEW HAMPSHIRE,False,25,Chris Pappas,John E. Sununu,False,2026-09-29,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire
-senate,NEW JERSEY,False,0,,,False,,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Jersey
-senate,NEW MEXICO,False,2,Ben Ray Luján,Larry Marker,False,2026-09-30,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Mexico
-senate,NORTH CAROLINA,False,39,Roy Cooper,Michael Whatley,True,2026-09-29,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina
-senate,OHIO,True,29,Sherrod Brown,Jon Husted,True,2026-10-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio
-senate,OKLAHOMA,False,1,N'Kiyla Jasmine Thomas,Kevin Hern,False,2026-08-06,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Oklahoma
-senate,OREGON,False,0,,,False,,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Oregon
-senate,RHODE ISLAND,False,4,Jack Reed,Raymond McKay,False,2026-09-21,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Rhode_Island
-senate,SOUTH CAROLINA,False,6,Annie Andrews,Darline Graham,True,2026-09-29,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina
-senate,SOUTH DAKOTA,False,9,Brian Bengs,Mike Rounds,True,2026-09-27,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Dakota
-senate,TENNESSEE,False,1,Marquita Bradshaw,Bill Hagerty,False,2026-08-26,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Tennessee
-senate,TEXAS,False,45,James Talarico,Ken Paxton,True,2026-09-30,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas
-senate,VIRGINIA,False,2,Mark Warner,Bert Mizusawa,False,2026-06-16,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Virginia
-senate,WEST VIRGINIA,False,0,,,False,,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_West_Virginia
-senate,WYOMING,False,0,,,False,,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Wyoming
-governor,ALABAMA,False,3,Doug Jones,Tommy Tuberville,False,2026-09-25,,https://en.wikipedia.org/wiki/2026_Alabama_gubernatorial_election
-governor,ALASKA,False,1,Mary Peltola,Nick Begich,False,2025-03-07,,https://en.wikipedia.org/wiki/2026_Alaska_gubernatorial_election
-governor,ARIZONA,False,21,Katie Hobbs,Andy Biggs,True,2026-09-04,,https://en.wikipedia.org/wiki/2026_Arizona_gubernatorial_election
-governor,ARKANSAS,False,1,Fredrick Love,Sarah Huckabee Sanders,False,2026-08-12,,https://en.wikipedia.org/wiki/2026_Arkansas_gubernatorial_election
-governor,CALIFORNIA,False,73,Xavier Becerra,Steve Hilton,True,2026-10-02,,https://en.wikipedia.org/wiki/2026_California_gubernatorial_election
-governor,COLORADO,False,0,,,False,,,https://en.wikipedia.org/wiki/2026_Colorado_gubernatorial_election
-governor,CONNECTICUT,False,7,Ned Lamont,Ryan Fazio,True,2026-09-21,,https://en.wikipedia.org/wiki/2026_Connecticut_gubernatorial_election
-governor,FLORIDA,False,21,David Jolly,Byron Donalds,True,2026-09-27,,https://en.wikipedia.org/wiki/2026_Florida_gubernatorial_election
-governor,GEORGIA,False,13,Keisha Lance Bottoms,Rick Jackson,True,2026-10-03,,https://en.wikipedia.org/wiki/2026_Georgia_gubernatorial_election
-governor,HAWAII,False,0,,,False,,,https://en.wikipedia.org/wiki/2026_Hawaii_gubernatorial_election
-governor,IDAHO,False,2,Terri Pickens,Brad Little,False,2026-09-16,,https://en.wikipedia.org/wiki/2026_Idaho_gubernatorial_election
-governor,ILLINOIS,False,1,JB Pritzker,Darren Bailey,False,2025-11-24,,https://en.wikipedia.org/wiki/2026_Illinois_gubernatorial_election
-governor,IOWA,False,13,Rob Sand,Zach Lahn,True,2026-10-01,,https://en.wikipedia.org/wiki/2026_Iowa_gubernatorial_election
-governor,KANSAS,False,6,Cindy Holscher,Ty Masterson,True,2026-09-30,,https://en.wikipedia.org/wiki/2026_Kansas_gubernatorial_election
-governor,MAINE,False,13,Hannah Pingree,Bobby Charles,True,2026-10-04,,https://en.wikipedia.org/wiki/2026_Maine_gubernatorial_election
-governor,MARYLAND,False,2,Wes Moore,Dan Cox,False,2026-09-27,,https://en.wikipedia.org/wiki/2026_Maryland_gubernatorial_election
-governor,MASSACHUSETTS,False,10,Maura Healey,Mike Minogue,True,2026-09-22,,https://en.wikipedia.org/wiki/2026_Massachusetts_gubernatorial_election
-governor,MICHIGAN,False,35,Jocelyn Benson,John James,True,2026-09-28,,https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election
-governor,MINNESOTA,False,7,Amy Klobuchar,Lisa Demuth,True,2026-09-15,,https://en.wikipedia.org/wiki/2026_Minnesota_gubernatorial_election
-governor,NEBRASKA,False,9,Lynne Walz,Jim Pillen,True,2026-09-30,,https://en.wikipedia.org/wiki/2026_Nebraska_gubernatorial_election
-governor,NEVADA,False,13,Aaron Ford,Joe Lombardo,True,2026-09-26,,https://en.wikipedia.org/wiki/2026_Nevada_gubernatorial_election
-governor,NEW HAMPSHIRE,False,10,Cinde Warmington,Kelly Ayotte,True,2026-09-29,,https://en.wikipedia.org/wiki/2026_New_Hampshire_gubernatorial_election
-governor,NEW MEXICO,False,4,Deb Haaland,Gregg Hull,True,2026-09-30,,https://en.wikipedia.org/wiki/2026_New_Mexico_gubernatorial_election
-governor,NEW YORK,False,23,Kathy Hochul,Bruce Blakeman,False,2026-09-20,,https://en.wikipedia.org/wiki/2026_New_York_gubernatorial_election
-governor,OHIO,False,24,Amy Acton,Vivek Ramaswamy,True,2026-10-01,,https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election
-governor,OKLAHOMA,False,0,,,False,,,https://en.wikipedia.org/wiki/2026_Oklahoma_gubernatorial_election
-governor,OREGON,False,5,Tina Kotek,Christine Drazan,True,2026-09-27,,https://en.wikipedia.org/wiki/2026_Oregon_gubernatorial_election
-governor,PENNSYLVANIA,False,16,Josh Shapiro,Stacy Garrity,True,2026-09-22,,https://en.wikipedia.org/wiki/2026_Pennsylvania_gubernatorial_election
-governor,RHODE ISLAND,False,6,Helena Foulkes,Aaron Guckian,False,2026-09-25,,https://en.wikipedia.org/wiki/2026_Rhode_Island_gubernatorial_election
-governor,SOUTH CAROLINA,False,3,Jermaine Johnson,Alan Wilson,False,2026-10-03,,https://en.wikipedia.org/wiki/2026_South_Carolina_gubernatorial_election
-governor,SOUTH DAKOTA,False,0,,,False,,,https://en.wikipedia.org/wiki/2026_South_Dakota_gubernatorial_election
-governor,TENNESSEE,False,4,Jerri Green,Marsha Blackburn,False,2026-09-12,,https://en.wikipedia.org/wiki/2026_Tennessee_gubernatorial_election
-governor,TEXAS,False,39,Gina Hinojosa,Greg Abbott,True,2026-10-01,,https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election
-governor,VERMONT,False,4,Amanda Janoo,Phil Scott,False,2026-09-21,,https://en.wikipedia.org/wiki/2026_Vermont_gubernatorial_election
-governor,WISCONSIN,False,7,David Crowley,Tom Tiffany,True,2026-09-23,,https://en.wikipedia.org/wiki/2026_Wisconsin_gubernatorial_election
-governor,WYOMING,False,0,,,False,,,https://en.wikipedia.org/wiki/2026_Wyoming_gubernatorial_election
+senate,LOUISIANA,False,4,Jamie Davis,Julia Letlow,True,2026-10-31,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Louisiana
+senate,MAINE,False,37,Troy Jackson,Susan Collins,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Maine
+senate,MASSACHUSETTS,False,15,Ed Markey,John Deaton,True,2026-10-31,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Massachusetts
+senate,MICHIGAN,False,69,Abdul El-Sayed,Mike Rogers,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan
+senate,MINNESOTA,False,25,Peggy Flanagan,Michele Tafoya,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Minnesota
+senate,MISSISSIPPI,False,4,Scott Colom,Cindy Hyde-Smith,True,2026-10-22,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Mississippi
+senate,MONTANA,False,11,Alani Bankhead,Kurt Alme,True,2026-10-18,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Montana
+senate,NEBRASKA,False,22,Dan Osborn,Pete Ricketts,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Nebraska
+senate,NEW HAMPSHIRE,False,34,Chris Pappas,John E. Sununu,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Hampshire
+senate,NEW JERSEY,False,0,,,True,,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Jersey
+senate,NEW MEXICO,False,4,Ben Ray Luján,Larry Marker,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_New_Mexico
+senate,NORTH CAROLINA,False,52,Roy Cooper,Michael Whatley,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_North_Carolina
+senate,OHIO,True,54,Sherrod Brown,Jon Husted,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_special_election_in_Ohio
+senate,OKLAHOMA,False,1,N'Kiyla Jasmine Thomas,Kevin Hern,True,2026-08-06,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Oklahoma
+senate,OREGON,False,0,,,True,,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Oregon
+senate,RHODE ISLAND,False,7,Jack Reed,Raymond McKay,True,2026-10-31,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Rhode_Island
+senate,SOUTH CAROLINA,False,18,Annie Andrews,Darline Graham,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Carolina
+senate,SOUTH DAKOTA,False,15,Brian Bengs,Mike Rounds,True,2026-10-26,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_South_Dakota
+senate,TENNESSEE,False,2,Marquita Bradshaw,Bill Hagerty,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Tennessee
+senate,TEXAS,False,80,James Talarico,Ken Paxton,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Texas
+senate,VIRGINIA,False,2,Mark Warner,Bert Mizusawa,True,2026-06-16,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Virginia
+senate,WEST VIRGINIA,False,0,,,True,,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_West_Virginia
+senate,WYOMING,False,0,,,True,,,https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Wyoming
+governor,ALABAMA,False,6,Doug Jones,Tommy Tuberville,True,2026-10-24,,https://en.wikipedia.org/wiki/2026_Alabama_gubernatorial_election
+governor,ALASKA,False,6,Jonathan Kreiss-Tomkins,Bernadette Wilson,True,2026-10-25,,https://en.wikipedia.org/wiki/2026_Alaska_gubernatorial_election
+governor,ARIZONA,False,31,Katie Hobbs,Andy Biggs,True,2026-10-29,,https://en.wikipedia.org/wiki/2026_Arizona_gubernatorial_election
+governor,ARKANSAS,False,2,Fredrick Love,Sarah Huckabee Sanders,True,2026-10-13,,https://en.wikipedia.org/wiki/2026_Arkansas_gubernatorial_election
+governor,CALIFORNIA,False,20,Xavier Becerra,Steve Hilton,True,2026-10-31,,https://en.wikipedia.org/wiki/2026_California_gubernatorial_election
+governor,COLORADO,False,4,Phil Weiser,Victor Marx,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_Colorado_gubernatorial_election
+governor,CONNECTICUT,False,12,Ned Lamont,Ryan Fazio,True,2026-10-31,,https://en.wikipedia.org/wiki/2026_Connecticut_gubernatorial_election
+governor,FLORIDA,False,46,David Jolly,Byron Donalds,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_Florida_gubernatorial_election
+governor,GEORGIA,False,20,Keisha Lance Bottoms,Rick Jackson,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_Georgia_gubernatorial_election
+governor,HAWAII,False,0,,,True,,,https://en.wikipedia.org/wiki/2026_Hawaii_gubernatorial_election
+governor,IDAHO,False,3,Terri Pickens,Brad Little,True,2026-10-22,,https://en.wikipedia.org/wiki/2026_Idaho_gubernatorial_election
+governor,ILLINOIS,False,5,JB Pritzker,Darren Bailey,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_Illinois_gubernatorial_election
+governor,IOWA,False,26,Rob Sand,Zach Lahn,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_Iowa_gubernatorial_election
+governor,KANSAS,False,14,Cindy Holscher,Ty Masterson,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_Kansas_gubernatorial_election
+governor,MAINE,False,26,Hannah Pingree,Bobby Charles,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_Maine_gubernatorial_election
+governor,MARYLAND,False,2,Wes Moore,Dan Cox,True,2026-09-27,,https://en.wikipedia.org/wiki/2026_Maryland_gubernatorial_election
+governor,MASSACHUSETTS,False,14,Maura Healey,Mike Minogue,True,2026-10-31,,https://en.wikipedia.org/wiki/2026_Massachusetts_gubernatorial_election
+governor,MICHIGAN,False,51,Jocelyn Benson,John James,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election
+governor,MINNESOTA,False,16,Amy Klobuchar,Lisa Demuth,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_Minnesota_gubernatorial_election
+governor,NEBRASKA,False,17,Lynne Walz,Jim Pillen,True,2026-10-29,,https://en.wikipedia.org/wiki/2026_Nebraska_gubernatorial_election
+governor,NEVADA,False,17,Aaron Ford,Joe Lombardo,True,2026-10-28,,https://en.wikipedia.org/wiki/2026_Nevada_gubernatorial_election
+governor,NEW HAMPSHIRE,False,18,Cinde Warmington,Kelly Ayotte,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_New_Hampshire_gubernatorial_election
+governor,NEW MEXICO,False,6,Deb Haaland,Gregg Hull,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_New_Mexico_gubernatorial_election
+governor,NEW YORK,False,33,Kathy Hochul,Bruce Blakeman,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_New_York_gubernatorial_election
+governor,OHIO,False,45,Amy Acton,Vivek Ramaswamy,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_Ohio_gubernatorial_election
+governor,OKLAHOMA,False,3,Cyndi Munson,Mike Mazzei,True,2026-10-13,,https://en.wikipedia.org/wiki/2026_Oklahoma_gubernatorial_election
+governor,OREGON,False,7,Tina Kotek,Christine Drazan,True,2026-10-04,,https://en.wikipedia.org/wiki/2026_Oregon_gubernatorial_election
+governor,PENNSYLVANIA,False,23,Josh Shapiro,Stacy Garrity,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_Pennsylvania_gubernatorial_election
+governor,RHODE ISLAND,False,6,Helena Foulkes,Aaron Guckian,True,2026-10-31,,https://en.wikipedia.org/wiki/2026_Rhode_Island_gubernatorial_election
+governor,SOUTH CAROLINA,False,10,Jermaine Johnson,Alan Wilson,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_South_Carolina_gubernatorial_election
+governor,SOUTH DAKOTA,False,2,Dan Ahlers,Larry Rhoden,True,2026-10-14,,https://en.wikipedia.org/wiki/2026_South_Dakota_gubernatorial_election
+governor,TENNESSEE,False,7,Jerri Green,Marsha Blackburn,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_Tennessee_gubernatorial_election
+governor,TEXAS,False,67,Gina Hinojosa,Greg Abbott,True,2026-11-02,,https://en.wikipedia.org/wiki/2026_Texas_gubernatorial_election
+governor,VERMONT,False,7,Amanda Janoo,Phil Scott,True,2026-10-31,,https://en.wikipedia.org/wiki/2026_Vermont_gubernatorial_election
+governor,WISCONSIN,False,12,David Crowley,Tom Tiffany,True,2026-11-01,,https://en.wikipedia.org/wiki/2026_Wisconsin_gubernatorial_election
+governor,WYOMING,False,0,,,True,,,https://en.wikipedia.org/wiki/2026_Wyoming_gubernatorial_election

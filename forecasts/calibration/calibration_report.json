@@ -1,0 +1,466 @@
+{
+  "generic_ballot_bias": [
+    {
+      "days_before": 0,
+      "cycles": 14,
+      "mean_dem_overstatement": 2.441,
+      "cycles_overstating_dem": 11,
+      "sd": 2.261
+    },
+    {
+      "days_before": 14,
+      "cycles": 14,
+      "mean_dem_overstatement": 2.556,
+      "cycles_overstating_dem": 11,
+      "sd": 2.671
+    },
+    {
+      "days_before": 28,
+      "cycles": 14,
+      "mean_dem_overstatement": 3.159,
+      "cycles_overstating_dem": 12,
+      "sd": 2.604
+    },
+    {
+      "days_before": 42,
+      "cycles": 14,
+      "mean_dem_overstatement": 3.059,
+      "cycles_overstating_dem": 12,
+      "sd": 2.315
+    }
+  ],
+  "state_poll_bias": [
+    {
+      "days_before": 0,
+      "cycles": 24,
+      "weighted_dem_overstatement": 2.613688728907339,
+      "applied_correction": 1.3068443644536696,
+      "latest_cycle_miss": 4.175778455209928
+    },
+    {
+      "days_before": 14,
+      "cycles": 24,
+      "weighted_dem_overstatement": 3.3032323987318475,
+      "applied_correction": 1.6516161993659237,
+      "latest_cycle_miss": 4.697491557856407
+    },
+    {
+      "days_before": 28,
+      "cycles": 24,
+      "weighted_dem_overstatement": 3.5066198749262374,
+      "applied_correction": 1.7533099374631187,
+      "latest_cycle_miss": 4.354739803534601
+    },
+    {
+      "days_before": 42,
+      "cycles": 24,
+      "weighted_dem_overstatement": 3.466463985393423,
+      "applied_correction": 1.7332319926967115,
+      "latest_cycle_miss": 4.005038953507503
+    }
+  ],
+  "scores": {
+    "gb_raw_0d": [
+      {
+        "method": "Full model (polls + fundamentals)",
+        "races": 589,
+        "rmse": 5.8677,
+        "winner_accuracy": 0.9151,
+        "brier": 0.0565,
+        "log_loss": 0.1782
+      },
+      {
+        "method": "Polls only (weighted, corrected)",
+        "races": 589,
+        "rmse": 5.9538,
+        "winner_accuracy": 0.9151,
+        "brier": 0.0567,
+        "log_loss": 0.1808
+      },
+      {
+        "method": "Simple poll average (last 30 days)",
+        "races": 589,
+        "rmse": 6.0912,
+        "winner_accuracy": 0.9134,
+        "brier": 0.0841,
+        "log_loss": 0.2898
+      },
+      {
+        "method": "Fundamentals only",
+        "races": 589,
+        "rmse": 13.2846,
+        "winner_accuracy": 0.8353,
+        "brier": 0.1177,
+        "log_loss": 0.3752
+      },
+      {
+        "method": "Last election result",
+        "races": 589,
+        "rmse": 19.117,
+        "winner_accuracy": 0.7946,
+        "brier": 0.1722,
+        "log_loss": 0.5466
+      }
+    ],
+    "gb_raw_28d": [
+      {
+        "method": "Full model (polls + fundamentals)",
+        "races": 553,
+        "rmse": 6.8136,
+        "winner_accuracy": 0.8969,
+        "brier": 0.0677,
+        "log_loss": 0.2168
+      },
+      {
+        "method": "Polls only (weighted, corrected)",
+        "races": 553,
+        "rmse": 7.0924,
+        "winner_accuracy": 0.9024,
+        "brier": 0.07,
+        "log_loss": 0.225
+      },
+      {
+        "method": "Simple poll average (last 30 days)",
+        "races": 553,
+        "rmse": 7.2042,
+        "winner_accuracy": 0.906,
+        "brier": 0.0895,
+        "log_loss": 0.3039
+      },
+      {
+        "method": "Fundamentals only",
+        "races": 553,
+        "rmse": 12.725,
+        "winner_accuracy": 0.8336,
+        "brier": 0.123,
+        "log_loss": 0.3909
+      },
+      {
+        "method": "Last election result",
+        "races": 553,
+        "rmse": 19.4656,
+        "winner_accuracy": 0.783,
+        "brier": 0.1816,
+        "log_loss": 0.5771
+      }
+    ],
+    "gb_bias_corrected_0d": [
+      {
+        "method": "Full model (polls + fundamentals)",
+        "races": 589,
+        "rmse": 5.6975,
+        "winner_accuracy": 0.9083,
+        "brier": 0.0562,
+        "log_loss": 0.177
+      },
+      {
+        "method": "Polls only (weighted, corrected)",
+        "races": 589,
+        "rmse": 5.8215,
+        "winner_accuracy": 0.9066,
+        "brier": 0.0562,
+        "log_loss": 0.1794
+      },
+      {
+        "method": "Simple poll average (last 30 days)",
+        "races": 589,
+        "rmse": 6.0912,
+        "winner_accuracy": 0.9134,
+        "brier": 0.0841,
+        "log_loss": 0.2898
+      },
+      {
+        "method": "Fundamentals only",
+        "races": 589,
+        "rmse": 13.0976,
+        "winner_accuracy": 0.837,
+        "brier": 0.1177,
+        "log_loss": 0.3744
+      },
+      {
+        "method": "Last election result",
+        "races": 589,
+        "rmse": 19.117,
+        "winner_accuracy": 0.7946,
+        "brier": 0.1722,
+        "log_loss": 0.5466
+      }
+    ],
+    "gb_bias_corrected_28d": [
+      {
+        "method": "Full model (polls + fundamentals)",
+        "races": 553,
+        "rmse": 6.5813,
+        "winner_accuracy": 0.8915,
+        "brier": 0.0673,
+        "log_loss": 0.2144
+      },
+      {
+        "method": "Polls only (weighted, corrected)",
+        "races": 553,
+        "rmse": 6.9119,
+        "winner_accuracy": 0.8987,
+        "brier": 0.0691,
+        "log_loss": 0.2221
+      },
+      {
+        "method": "Simple poll average (last 30 days)",
+        "races": 553,
+        "rmse": 7.2042,
+        "winner_accuracy": 0.906,
+        "brier": 0.0895,
+        "log_loss": 0.3039
+      },
+      {
+        "method": "Fundamentals only",
+        "races": 553,
+        "rmse": 12.4428,
+        "winner_accuracy": 0.8174,
+        "brier": 0.123,
+        "log_loss": 0.3899
+      },
+      {
+        "method": "Last election result",
+        "races": 553,
+        "rmse": 19.4656,
+        "winner_accuracy": 0.783,
+        "brier": 0.1816,
+        "log_loss": 0.5771
+      }
+    ]
+  },
+  "calibration": {
+    "gb_raw_0d": [
+      {
+        "bucket": "50-60%",
+        "races": 40,
+        "predicted": 0.551,
+        "actual": 0.575,
+        "expected_low": 0.422,
+        "expected_high": 0.681
+      },
+      {
+        "bucket": "60-70%",
+        "races": 44,
+        "predicted": 0.651,
+        "actual": 0.568,
+        "expected_low": 0.533,
+        "expected_high": 0.769
+      },
+      {
+        "bucket": "70-80%",
+        "races": 40,
+        "predicted": 0.753,
+        "actual": 0.8,
+        "expected_low": 0.641,
+        "expected_high": 0.865
+      },
+      {
+        "bucket": "80-90%",
+        "races": 45,
+        "predicted": 0.846,
+        "actual": 0.933,
+        "expected_low": 0.758,
+        "expected_high": 0.935
+      },
+      {
+        "bucket": "90-95%",
+        "races": 50,
+        "predicted": 0.928,
+        "actual": 0.96,
+        "expected_low": 0.867,
+        "expected_high": 0.988
+      },
+      {
+        "bucket": "95-99%",
+        "races": 81,
+        "predicted": 0.974,
+        "actual": 0.988,
+        "expected_low": 0.945,
+        "expected_high": 1.0
+      },
+      {
+        "bucket": "99%+",
+        "races": 328,
+        "predicted": 0.999,
+        "actual": 1.0,
+        "expected_low": 0.996,
+        "expected_high": 1.0
+      }
+    ],
+    "gb_raw_28d": [
+      {
+        "bucket": "50-60%",
+        "races": 47,
+        "predicted": 0.547,
+        "actual": 0.532,
+        "expected_low": 0.428,
+        "expected_high": 0.667
+      },
+      {
+        "bucket": "60-70%",
+        "races": 42,
+        "predicted": 0.657,
+        "actual": 0.595,
+        "expected_low": 0.537,
+        "expected_high": 0.778
+      },
+      {
+        "bucket": "70-80%",
+        "races": 48,
+        "predicted": 0.758,
+        "actual": 0.792,
+        "expected_low": 0.657,
+        "expected_high": 0.86
+      },
+      {
+        "bucket": "80-90%",
+        "races": 67,
+        "predicted": 0.849,
+        "actual": 0.91,
+        "expected_low": 0.777,
+        "expected_high": 0.921
+      },
+      {
+        "bucket": "90-95%",
+        "races": 46,
+        "predicted": 0.926,
+        "actual": 0.957,
+        "expected_low": 0.863,
+        "expected_high": 0.99
+      },
+      {
+        "bucket": "95-99%",
+        "races": 95,
+        "predicted": 0.974,
+        "actual": 0.989,
+        "expected_low": 0.948,
+        "expected_high": 1.0
+      },
+      {
+        "bucket": "99%+",
+        "races": 225,
+        "predicted": 0.998,
+        "actual": 1.0,
+        "expected_low": 0.993,
+        "expected_high": 1.0
+      }
+    ],
+    "gb_bias_corrected_0d": [
+      {
+        "bucket": "50-60%",
+        "races": 43,
+        "predicted": 0.557,
+        "actual": 0.442,
+        "expected_low": 0.433,
+        "expected_high": 0.682
+      },
+      {
+        "bucket": "60-70%",
+        "races": 47,
+        "predicted": 0.653,
+        "actual": 0.638,
+        "expected_low": 0.538,
+        "expected_high": 0.767
+      },
+      {
+        "bucket": "70-80%",
+        "races": 35,
+        "predicted": 0.748,
+        "actual": 0.771,
+        "expected_low": 0.628,
+        "expected_high": 0.869
+      },
+      {
+        "bucket": "80-90%",
+        "races": 50,
+        "predicted": 0.861,
+        "actual": 0.94,
+        "expected_low": 0.78,
+        "expected_high": 0.941
+      },
+      {
+        "bucket": "90-95%",
+        "races": 46,
+        "predicted": 0.925,
+        "actual": 0.957,
+        "expected_low": 0.861,
+        "expected_high": 0.989
+      },
+      {
+        "bucket": "95-99%",
+        "races": 82,
+        "predicted": 0.975,
+        "actual": 1.0,
+        "expected_low": 0.946,
+        "expected_high": 1.0
+      },
+      {
+        "bucket": "99%+",
+        "races": 325,
+        "predicted": 0.999,
+        "actual": 1.0,
+        "expected_low": 0.996,
+        "expected_high": 1.0
+      }
+    ],
+    "gb_bias_corrected_28d": [
+      {
+        "bucket": "50-60%",
+        "races": 42,
+        "predicted": 0.545,
+        "actual": 0.452,
+        "expected_low": 0.419,
+        "expected_high": 0.672
+      },
+      {
+        "bucket": "60-70%",
+        "races": 43,
+        "predicted": 0.652,
+        "actual": 0.581,
+        "expected_low": 0.532,
+        "expected_high": 0.771
+      },
+      {
+        "bucket": "70-80%",
+        "races": 56,
+        "predicted": 0.753,
+        "actual": 0.804,
+        "expected_low": 0.658,
+        "expected_high": 0.847
+      },
+      {
+        "bucket": "80-90%",
+        "races": 70,
+        "predicted": 0.857,
+        "actual": 0.9,
+        "expected_low": 0.788,
+        "expected_high": 0.925
+      },
+      {
+        "bucket": "90-95%",
+        "races": 43,
+        "predicted": 0.928,
+        "actual": 0.977,
+        "expected_low": 0.863,
+        "expected_high": 0.993
+      },
+      {
+        "bucket": "95-99%",
+        "races": 100,
+        "predicted": 0.976,
+        "actual": 0.99,
+        "expected_low": 0.95,
+        "expected_high": 1.0
+      },
+      {
+        "bucket": "99%+",
+        "races": 216,
+        "predicted": 0.998,
+        "actual": 1.0,
+        "expected_low": 0.994,
+        "expected_high": 1.0
+      }
+    ]
+  }
+}

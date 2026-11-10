@@ -1,0 +1,699 @@
+{
+  "published_at": "2026-10-14T18:33:05",
+  "model_version": "2026.10.13",
+  "days_to_election": 20,
+  "generic_ballot_dem_margin": 8.35,
+  "generic_ballot_source": "Average of FiftyPlusOne, NBC News (market-tied aggregators excluded)",
+  "poll_data_sources": "Polls: Wikipedia race and state House pages, compiled from pollsters' own releases. No prediction-market-affiliated data sources are used.",
+  "data_warnings": [
+    "[outlier poll] Senate \u00b7 Idaho: Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -5.7, from wikipedia",
+    "[outlier poll] Senate \u00b7 Idaho: Peak Insights (R) (Sep 30): corrected margin -22.8 vs race average -5.7, from wikipedia"
+  ],
+  "generic_ballot_bias_removed": 2.81,
+  "national_environment_used": 5.54,
+  "senate": {
+    "dem_control_prob": 0.529,
+    "rep_control_prob": 0.427,
+    "dem_seats_median": 51,
+    "dem_seats_90pct": [
+      45,
+      56
+    ],
+    "rep_seats_median": 49,
+    "rep_seats_90pct": [
+      43,
+      55
+    ],
+    "independent_seats_expected": 0.57,
+    "holdovers": {
+      "DEMOCRAT": 34,
+      "REPUBLICAN": 31
+    },
+    "paths": {
+      "DEMOCRAT": {
+        "control": 0.5292,
+        "races": [
+          {
+            "race": "GA",
+            "held": true,
+            "p": 0.93,
+            "p_when_control": 0.989
+          },
+          {
+            "race": "NJ",
+            "held": true,
+            "p": 0.964,
+            "p_when_control": 0.989
+          },
+          {
+            "race": "NC",
+            "held": false,
+            "p": 0.92,
+            "p_when_control": 0.989
+          },
+          {
+            "race": "CO",
+            "held": true,
+            "p": 0.96,
+            "p_when_control": 0.987
+          },
+          {
+            "race": "IL",
+            "held": true,
+            "p": 0.925,
+            "p_when_control": 0.983
+          },
+          {
+            "race": "NH",
+            "held": true,
+            "p": 0.846,
+            "p_when_control": 0.967
+          },
+          {
+            "race": "MN",
+            "held": true,
+            "p": 0.739,
+            "p_when_control": 0.92
+          },
+          {
+            "race": "MI",
+            "held": true,
+            "p": 0.675,
+            "p_when_control": 0.89
+          },
+          {
+            "race": "OH",
+            "held": false,
+            "p": 0.597,
+            "p_when_control": 0.825
+          },
+          {
+            "race": "TX",
+            "held": false,
+            "p": 0.557,
+            "p_when_control": 0.791
+          },
+          {
+            "race": "ME",
+            "held": false,
+            "p": 0.537,
+            "p_when_control": 0.77
+          },
+          {
+            "race": "AK",
+            "held": false,
+            "p": 0.475,
+            "p_when_control": 0.698
+          },
+          {
+            "race": "IA",
+            "held": false,
+            "p": 0.45,
+            "p_when_control": 0.681
+          },
+          {
+            "race": "KS",
+            "held": false,
+            "p": 0.399,
+            "p_when_control": 0.611
+          },
+          {
+            "race": "NE (I)",
+            "held": false,
+            "p": 0.319,
+            "p_when_control": 0.452
+          },
+          {
+            "race": "SC",
+            "held": false,
+            "p": 0.268,
+            "p_when_control": 0.429
+          },
+          {
+            "race": "LA",
+            "held": false,
+            "p": 0.151,
+            "p_when_control": 0.243
+          },
+          {
+            "race": "SD (I)",
+            "held": false,
+            "p": 0.143,
+            "p_when_control": 0.213
+          },
+          {
+            "race": "FL",
+            "held": false,
+            "p": 0.103,
+            "p_when_control": 0.182
+          },
+          {
+            "race": "ID (I)",
+            "held": false,
+            "p": 0.11,
+            "p_when_control": 0.168
+          },
+          {
+            "race": "MS",
+            "held": false,
+            "p": 0.093,
+            "p_when_control": 0.154
+          },
+          {
+            "race": "KY",
+            "held": false,
+            "p": 0.045,
+            "p_when_control": 0.078
+          }
+        ],
+        "combos": [
+          {
+            "wins": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "MI",
+              "MN",
+              "NE (I)",
+              "SC",
+              "TX",
+              "OH"
+            ],
+            "loses": [],
+            "gains": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "NE (I)",
+              "SC",
+              "TX",
+              "OH"
+            ],
+            "losses": [],
+            "share_of_wins": 0.068
+          },
+          {
+            "wins": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "MI",
+              "MN",
+              "NE (I)",
+              "TX",
+              "OH"
+            ],
+            "loses": [
+              "SC"
+            ],
+            "gains": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "NE (I)",
+              "TX",
+              "OH"
+            ],
+            "losses": [],
+            "share_of_wins": 0.0409
+          },
+          {
+            "wins": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "MI",
+              "MN",
+              "SC",
+              "TX",
+              "OH"
+            ],
+            "loses": [
+              "NE (I)"
+            ],
+            "gains": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "SC",
+              "TX",
+              "OH"
+            ],
+            "losses": [],
+            "share_of_wins": 0.0337
+          },
+          {
+            "wins": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "MI",
+              "MN",
+              "TX",
+              "OH"
+            ],
+            "loses": [
+              "NE (I)",
+              "SC"
+            ],
+            "gains": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "TX",
+              "OH"
+            ],
+            "losses": [],
+            "share_of_wins": 0.0277
+          },
+          {
+            "wins": [
+              "AK",
+              "IA",
+              "ME",
+              "MI",
+              "MN",
+              "TX",
+              "OH"
+            ],
+            "loses": [
+              "KS",
+              "NE (I)",
+              "SC"
+            ],
+            "gains": [
+              "AK",
+              "IA",
+              "ME",
+              "TX",
+              "OH"
+            ],
+            "losses": [],
+            "share_of_wins": 0.0178
+          },
+          {
+            "wins": [
+              "AK",
+              "IA",
+              "ME",
+              "MI",
+              "MN",
+              "NE (I)",
+              "TX",
+              "OH"
+            ],
+            "loses": [
+              "KS",
+              "SC"
+            ],
+            "gains": [
+              "AK",
+              "IA",
+              "ME",
+              "NE (I)",
+              "TX",
+              "OH"
+            ],
+            "losses": [],
+            "share_of_wins": 0.0166
+          }
+        ],
+        "tossups": [
+          "AK",
+          "IA",
+          "KS",
+          "ME",
+          "MI",
+          "MN",
+          "NE (I)",
+          "SC",
+          "TX",
+          "OH"
+        ]
+      },
+      "REPUBLICAN": {
+        "control": 0.4274,
+        "races": [
+          {
+            "race": "KY",
+            "held": true,
+            "p": 0.955,
+            "p_when_control": 0.992
+          },
+          {
+            "race": "FL",
+            "held": true,
+            "p": 0.897,
+            "p_when_control": 0.988
+          },
+          {
+            "race": "MS",
+            "held": true,
+            "p": 0.907,
+            "p_when_control": 0.978
+          },
+          {
+            "race": "ID (I)",
+            "held": true,
+            "p": 0.89,
+            "p_when_control": 0.976
+          },
+          {
+            "race": "SD (I)",
+            "held": true,
+            "p": 0.857,
+            "p_when_control": 0.958
+          },
+          {
+            "race": "LA",
+            "held": true,
+            "p": 0.849,
+            "p_when_control": 0.955
+          },
+          {
+            "race": "SC",
+            "held": true,
+            "p": 0.732,
+            "p_when_control": 0.919
+          },
+          {
+            "race": "NE (I)",
+            "held": true,
+            "p": 0.681,
+            "p_when_control": 0.883
+          },
+          {
+            "race": "KS",
+            "held": true,
+            "p": 0.601,
+            "p_when_control": 0.854
+          },
+          {
+            "race": "IA",
+            "held": true,
+            "p": 0.55,
+            "p_when_control": 0.828
+          },
+          {
+            "race": "AK",
+            "held": true,
+            "p": 0.525,
+            "p_when_control": 0.788
+          },
+          {
+            "race": "ME",
+            "held": true,
+            "p": 0.463,
+            "p_when_control": 0.743
+          },
+          {
+            "race": "TX",
+            "held": true,
+            "p": 0.443,
+            "p_when_control": 0.726
+          },
+          {
+            "race": "OH",
+            "held": true,
+            "p": 0.403,
+            "p_when_control": 0.682
+          },
+          {
+            "race": "MI",
+            "held": false,
+            "p": 0.325,
+            "p_when_control": 0.588
+          },
+          {
+            "race": "MN",
+            "held": false,
+            "p": 0.261,
+            "p_when_control": 0.488
+          },
+          {
+            "race": "NH",
+            "held": false,
+            "p": 0.154,
+            "p_when_control": 0.307
+          },
+          {
+            "race": "NC",
+            "held": true,
+            "p": 0.08,
+            "p_when_control": 0.169
+          },
+          {
+            "race": "IL",
+            "held": false,
+            "p": 0.075,
+            "p_when_control": 0.147
+          },
+          {
+            "race": "GA",
+            "held": false,
+            "p": 0.07,
+            "p_when_control": 0.146
+          },
+          {
+            "race": "CO",
+            "held": false,
+            "p": 0.04,
+            "p_when_control": 0.075
+          },
+          {
+            "race": "NJ",
+            "held": false,
+            "p": 0.036,
+            "p_when_control": 0.067
+          }
+        ],
+        "combos": [
+          {
+            "wins": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "MI",
+              "MN",
+              "NE (I)",
+              "SC",
+              "TX",
+              "OH"
+            ],
+            "loses": [],
+            "gains": [
+              "MI",
+              "MN"
+            ],
+            "losses": [],
+            "share_of_wins": 0.0983
+          },
+          {
+            "wins": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "MI",
+              "NE (I)",
+              "SC",
+              "TX",
+              "OH"
+            ],
+            "loses": [
+              "MN"
+            ],
+            "gains": [
+              "MI"
+            ],
+            "losses": [],
+            "share_of_wins": 0.0493
+          },
+          {
+            "wins": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "NE (I)",
+              "SC",
+              "TX",
+              "OH"
+            ],
+            "loses": [
+              "MI",
+              "MN"
+            ],
+            "gains": [],
+            "losses": [],
+            "share_of_wins": 0.0288
+          },
+          {
+            "wins": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "MN",
+              "NE (I)",
+              "SC",
+              "TX",
+              "OH"
+            ],
+            "loses": [
+              "MI"
+            ],
+            "gains": [
+              "MN"
+            ],
+            "losses": [],
+            "share_of_wins": 0.0283
+          },
+          {
+            "wins": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "MI",
+              "MN",
+              "NE (I)",
+              "SC",
+              "TX"
+            ],
+            "loses": [
+              "OH"
+            ],
+            "gains": [
+              "MI",
+              "MN"
+            ],
+            "losses": [
+              "OH"
+            ],
+            "share_of_wins": 0.0199
+          },
+          {
+            "wins": [
+              "AK",
+              "IA",
+              "KS",
+              "ME",
+              "NE (I)",
+              "SC",
+              "TX"
+            ],
+            "loses": [
+              "MI",
+              "MN",
+              "OH"
+            ],
+            "gains": [],
+            "losses": [
+              "OH"
+            ],
+            "share_of_wins": 0.0175
+          }
+        ],
+        "tossups": [
+          "AK",
+          "IA",
+          "KS",
+          "ME",
+          "MI",
+          "MN",
+          "NE (I)",
+          "SC",
+          "TX",
+          "OH"
+        ]
+      }
+    }
+  },
+  "house": {
+    "dem_control_prob": 0.831,
+    "dem_seats_median": 231,
+    "dem_seats_90pct": [
+      210,
+      262
+    ],
+    "calibration": {
+      "district_sd": 5.682917063726081,
+      "in_year_sd": 4.4279339727728555,
+      "out_of_year": {
+        "n_districts": 205,
+        "sd": 5.682917063726081,
+        "bias": 0.06511743564778773,
+        "winner_accuracy": 0.9463414634146341
+      },
+      "n_districts": 238,
+      "coefficients": {
+        "pvi": 1.97,
+        "incumbency": 2.77,
+        "inc_strength": 0.23
+      },
+      "intercept": -0.49
+    }
+  },
+  "governor": {
+    "dem_governorships_median": 19,
+    "dem_governorships_90pct": [
+      12,
+      26
+    ],
+    "races": 36
+  },
+  "environment_check": {
+    "environment_used": 5.54,
+    "generic_ballot_poll": 8.35,
+    "implied_by_race_polls": 8.88,
+    "by_office": {
+      "Senate": {
+        "implied": 8.93,
+        "races": 14
+      },
+      "Governor": {
+        "implied": 14.03,
+        "races": 20
+      },
+      "House districts": {
+        "implied": 8.76,
+        "races": 31
+      }
+    },
+    "gap": 0.53,
+    "flag": false
+  },
+  "backtests": {
+    "senate_fundamentals": {
+      "rmse": 13.640786745141954,
+      "winner_accuracy": 0.8817733990147784,
+      "national_sd": 4.558808492639212,
+      "state_sd": 12.932759544271724,
+      "n_races": 406,
+      "n_years": 13
+    },
+    "governor_fundamentals": {
+      "rmse": 14.418280752337088,
+      "winner_accuracy": 0.7906976744186046,
+      "national_sd": 5.714221279821685,
+      "state_sd": 13.841569640857308,
+      "n_races": 258,
+      "n_years": 13
+    },
+    "poll_error_model": {
+      "floor": 15.342740809617574,
+      "thin": 37.83754736654356,
+      "drift": 0.19134977553914467
+    }
+  }
+}

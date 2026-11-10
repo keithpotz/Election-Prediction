@@ -1,0 +1,230 @@
+pollster,end_date,sample_size,population,approve,disapprove,source
+YouGov/The Economist,2025-01-08,1520.0,RV,51.0,39.0,wikipedia
+CNN/SSRS,2025-01-12,1205.0,A,55.0,44.0,wikipedia
+Beacon Research/Fox News,2025-01-13,922.0,RV,52.0,46.0,wikipedia
+Navigator Research,2025-01-13,1000.0,RV,50.0,44.0,wikipedia
+YouGov/The Economist,2025-01-14,1425.0,RV,47.0,36.0,wikipedia
+HarrisX/Harvard,2025-01-16,2650.0,RV,53.0,39.0,wikipedia
+Insider Advantage,2025-01-20,800.0,RV,56.0,39.0,wikipedia
+Reuters/Ipsos,2025-01-21,1077.0,A,47.0,41.0,wikipedia
+SoCal Strategies/OnPoint Politics,2025-01-21,742.0,A,49.0,36.0,wikipedia
+Big Data Poll/Public Polling Project,2025-01-22,2979.0,RV,56.0,37.0,wikipedia
+RMG Research/Napolitan Institute,2025-01-23,3000.0,RV,57.0,39.0,wikipedia
+Atlas Intel,2025-01-23,1882.0,A,50.0,50.0,wikipedia
+Quantus Insights/TrendingPolitics (R),2025-01-23,1000.0,RV,54.0,40.0,wikipedia
+Echelon Insights,2025-01-24,1024.0,LV,51.0,43.0,wikipedia
+Research Co.,2025-01-24,1001.0,A,50.0,46.0,wikipedia
+Reuters/Ipsos,2025-01-26,1034.0,A,45.0,46.0,wikipedia
+Morning Consult,2025-01-26,2302.0,RV,52.0,44.0,wikipedia
+Gallup,2025-01-27,1001.0,A,47.0,48.0,wikipedia
+McLaughlin & Associates,2025-01-27,1000.0,LV,52.0,43.0,wikipedia
+Quinnipac University,2025-01-27,1019.0,RV,46.0,43.0,wikipedia
+co/efficient (R),2025-01-28,1570.0,LV,52.0,47.0,wikipedia
+The Economist/YouGov,2025-01-28,1376.0,RV,50.0,46.0,wikipedia
+Emerson College,2025-01-28,1000.0,RV,49.0,41.0,wikipedia
+538 aggregate,2025-01-31,,,49.0,44.0,wikipedia
+ActiVote,2025-01-31,1182.0,A,52.0,46.0,wikipedia
+Napolitan/RMG Research,2025-01-31,4000.0,RV,53.0,43.0,wikipedia
+AARP/Fabrizio/Impact,2025-02-01,3000.0,RV,48.0,47.0,wikipedia
+Pew Research,2025-02-02,4999.0,A,47.0,51.0,wikipedia
+Quantus Insights/TrendingPolitics (R),2025-02-03,1000.0,RV,52.0,45.0,wikipedia
+Navigator Research,2025-02-03,1000.0,RV,49.0,47.0,wikipedia
+Morning Consult,2025-02-03,2303.0,RV,49.0,47.0,wikipedia
+The Economist/YouGov,2025-02-04,1423.0,RV,48.0,47.0,wikipedia
+Marquette University,2025-02-05,1063.0,A,48.0,52.0,wikipedia
+Cygnal,2025-02-05,1500.0,LV,50.0,48.0,wikipedia
+Napolitan/RMG Research,2025-02-06,3000.0,RV,51.0,45.0,wikipedia
+Clarity Campaign Labs,2025-02-06,1102.0,RV,48.0,43.0,wikipedia
+YouGov/CBS,2025-02-07,2175.0,A,53.0,47.0,wikipedia
+Trafalgar/Insider Advantage,2025-02-09,1321.0,RV,54.0,45.0,wikipedia
+Morning Consult,2025-02-09,2230.0,RV,50.0,48.0,wikipedia
+The Economist/YouGov,2025-02-11,1430.0,RV,47.0,49.0,wikipedia
+Echelon Insights,2025-02-13,1010.0,LV,52.0,46.0,wikipedia
+Napolitan/RMG Research,2025-02-14,3000.0,RV,55.0,43.0,wikipedia
+Morning Consult,2025-02-16,2217.0,RV,50.0,47.0,wikipedia
+Gallup,2025-02-16,1004.0,A,45.0,51.0,wikipedia
+SurveyUSA,2025-02-16,2000.0,A,51.0,45.0,wikipedia
+Emerson College,2025-02-17,1000.0,RV,48.0,42.0,wikipedia
+Coefficient (R),2025-02-17,2063.0,LV,48.0,48.0,wikipedia
+CNN/SSRS,2025-02-17,1206.0,A,47.0,52.0,wikipedia
+Quinnipiac University,2025-02-17,1039.0,RV,45.0,48.0,wikipedia
+Washington Post/Ipsos,2025-02-18,1206.0,A,48.0,51.0,wikipedia
+Reuters/Ipsos,2025-02-18,4145.0,A,44.0,51.0,wikipedia
+The Economist/YouGov,2025-02-18,1451.0,RV,50.0,47.0,wikipedia
+HarrisX/Harvard,2025-02-20,2443.0,RV,52.0,43.0,wikipedia
+Napolitan/RMG Research,2025-02-21,3000.0,RV,53.0,44.0,wikipedia
+Morning Consult,2025-02-24,2225.0,RV,50.0,47.0,wikipedia
+The Economist/YouGov,2025-02-25,1444.0,RV,48.0,47.0,wikipedia
+J.L. Partners,2025-02-25,1001.0,RV,45.0,39.0,wikipedia
+Quantus Insights/TrendingPolitics (R),2025-02-26,1000.0,RV,51.0,45.0,wikipedia
+Atlas Intel,2025-02-27,2849.0,A,50.0,50.0,wikipedia
+YouGov/CBS News,2025-02-28,2311.0,A,51.0,49.0,wikipedia
+Napolitan/RMG Research,2025-02-28,3000.0,RV,53.0,45.0,wikipedia
+Tipp Insights,2025-02-28,1434.0,A,47.0,43.0,wikipedia
+CNN/SSRS,2025-02-28,2212.0,A,48.0,52.0,wikipedia
+Emerson College,2025-03-02,2229.0,RV,49.0,48.0,wikipedia
+Civiqs/Daily Kos (D),2025-03-03,1031.0,RV,48.0,52.0,wikipedia
+Emerson College,2025-03-03,1000.0,RV,48.0,43.0,wikipedia
+Reuters/Ipsos,2025-03-04,1174.0,A,43.0,50.0,wikipedia
+InsiderAdvantage/Trafalgar,2025-03-05,800.0,RV,50.0,45.0,wikipedia
+CNN/SSRS,2025-03-09,1206.0,A,45.0,54.0,wikipedia
+Emerson College,2025-03-10,1000.0,RV,47.0,45.0,wikipedia
+Quinnipiac,2025-03-10,1198.0,RV,42.0,53.0,wikipedia
+The Economist/YouGov,2025-03-11,1699.0,A,47.0,47.0,wikipedia
+Hart Research/Public Opinion Strategies,2025-03-11,1000.0,RV,47.0,51.0,wikipedia
+Atlas Intel,2025-03-12,2550.0,A,47.0,52.0,wikipedia
+Blueprint Research,2025-03-14,1400.0,RV,45.0,51.0,wikipedia
+Gallup,2025-03-16,1002.0,A,43.0,53.0,wikipedia
+North Star Opinion Research/Dynata,2025-03-17,1000.0,RV,46.0,51.0,wikipedia
+Global Strategy Group/GBAO/Navigator,2025-03-17,1000.0,RV,47.0,49.0,wikipedia
+Fox News,2025-03-17,994.0,RV,49.0,51.0,wikipedia
+The Economist/YouGov,2025-03-18,1458.0,RV,47.0,50.0,wikipedia
+GBAO/Third Way,2025-03-23,2000.0,A,48.0,50.0,wikipedia
+Yahoo News/YouGov,2025-03-24,1677.0,A,44.0,50.0,wikipedia
+The Economist/YouGov,2025-03-25,1440.0,RV,48.0,50.0,wikipedia
+Harvard Caps/HarrisX,2025-03-27,2746.0,RV,49.0,46.0,wikipedia
+Marquette University Law School,2025-03-27,1021.0,A,46.0,54.0,wikipedia
+Napolitan News Service,2025-03-27,3000.0,RV,52.0,45.0,wikipedia
+CBS/YouGov,2025-03-28,2609.0,A,50.0,50.0,wikipedia
+Overton Insights,2025-03-28,1200.0,RV,46.0,51.0,wikipedia
+J.L. Partners/Daily Mail,2025-04-03,1019.0,RV,47.0,42.0,wikipedia
+Cygnal,2025-04-03,1500.0,LV,47.0,51.0,wikipedia
+Global Strategy Group/GBAO,2025-04-07,1000.0,RV,44.0,53.0,wikipedia
+Quinnipiac University,2025-04-07,1407.0,RV,41.0,53.0,wikipedia
+HarrisX,2025-04-07,1883.0,RV,47.0,49.0,wikipedia
+YouGov/The Economist,2025-04-08,1563.0,RV,45.0,52.0,wikipedia
+YouGov,2025-04-10,1151.0,A,41.0,54.0,wikipedia
+Napolitan News Service/RMG Research,2025-04-10,3000.0,RV,49.0,48.0,wikipedia
+CBS News/YouGov,2025-04-11,2410.0,A,47.0,53.0,wikipedia
+Gallup,2025-04-14,,,44.0,53.0,ucsb
+Atlas Intel,2025-04-14,2347.0,A,46.0,52.0,wikipedia
+The Economist/YouGov,2025-04-15,1512.0,A,42.0,52.0,wikipedia
+NPI/Franklin News,2025-04-18,2527.0,RV,44.0,53.0,wikipedia
+American Research Group,2025-04-20,1100.0,A,43.0,53.0,wikipedia
+Beacon/Shaw & Co./FOX News,2025-04-21,1104.0,RV,44.0,55.0,wikipedia
+Ipsos/Reuters,2025-04-21,913.0,RV,42.0,53.0,wikipedia
+Associated Press/NORC,2025-04-21,1260.0,A,39.0,59.0,wikipedia
+John Zogby Strategies,2025-04-23,1000.0,RV,48.0,50.0,wikipedia
+CNN/SSRS,2025-04-24,1678.0,RV,41.0,59.0,wikipedia
+Napolitan News Service,2025-04-24,3000.0,RV,49.0,48.0,wikipedia
+New York Times/Siena College,2025-04-24,913.0,RV,42.0,54.0,wikipedia
+CBS/YouGov,2025-04-25,2365.0,A,45.0,55.0,wikipedia
+NewsNation/Decision Desk HQ,2025-04-27,1448.0,RV,43.0,56.0,wikipedia
+Emerson College,2025-04-28,1000.0,RV,45.0,45.0,wikipedia
+Navigator Research/Global Strategy Group,2025-04-28,1000.0,RV,44.0,54.0,wikipedia
+Yahoo! News/YouGov,2025-04-28,1597.0,A,42.0,53.0,wikipedia
+The Economist/YouGov,2025-04-28,1626.0,RV,43.0,54.0,wikipedia
+Civiqs,2025-04-30,22508.0,RV,43.0,53.0,wikipedia
+InsiderAdvantage/Trafalgar,2025-05-01,1200.0,RV,46.0,44.0,wikipedia
+I&I/TIPP Insights,2025-05-02,1400.0,A,42.0,47.0,wikipedia
+The Economist/YouGov,2025-05-05,1850.0,A,42.0,52.0,wikipedia
+The Economist/YouGov,2025-05-05,1693.0,RV,44.0,52.0,wikipedia
+YouGov,2025-05-08,1143.0,A,42.0,50.0,wikipedia
+The Economist/YouGov,2025-05-12,1786.0,A,43.0,52.0,wikipedia
+YouGov,2025-05-16,1118.0,A,44.0,48.0,wikipedia
+Gallup,2025-05-18,,,43.0,53.0,ucsb
+The Economist/YouGov,2025-05-19,1710.0,A,43.0,51.0,wikipedia
+The Economist/YouGov,2025-06-02,1436.0,RV,46.0,51.0,wikipedia
+The Economist/YouGov,2025-06-09,1397.0,RV,45.0,53.0,wikipedia
+The Economist/YouGov,2025-06-16,1351.0,RV,44.0,53.0,wikipedia
+Gallup,2025-06-19,,,40.0,57.0,ucsb
+The Economist/YouGov,2025-06-23,1455.0,RV,43.0,54.0,wikipedia
+The Economist/YouGov,2025-06-30,1491.0,RV,45.0,53.0,wikipedia
+The Economist/YouGov,2025-07-07,1389.0,RV,43.0,54.0,wikipedia
+Gallup,2025-07-21,,,37.0,58.0,ucsb
+Gallup,2025-08-20,,,40.0,56.0,ucsb
+Gallup,2025-09-16,,,40.0,56.0,ucsb
+Gallup,2025-10-16,,,41.0,54.0,ucsb
+Gallup,2025-11-25,,,36.0,60.0,ucsb
+Gallup,2025-12-15,,,36.0,59.0,ucsb
+AP-NORC,2026-01-11,,,40.0,59.0,ucsb
+CNN/SSRS,2026-01-12,,,39.0,61.0,ucsb
+Marist,2026-01-13,,,38.0,56.0,ucsb
+Marist,2026-01-30,,,39.0,56.0,ucsb
+AP-NORC,2026-02-08,,,36.0,62.0,ucsb
+Ipsos,2026-02-16,,,38.0,60.0,ucsb
+CNN/SSRS,2026-02-20,,,36.0,63.0,ucsb
+The Economist/YouGov,2026-02-23,1402.0,RV,39.0,57.0,wikipedia
+Marist,2026-03-04,,,38.0,57.0,ucsb
+Verasight,2026-03-18,,,37.0,60.0,ucsb
+AP-NORC,2026-03-23,,,38.0,60.0,ucsb
+CNN/SSRS,2026-03-30,,,35.0,67.0,ucsb
+AP-NORC,2026-04-20,,,33.0,67.0,ucsb
+Pew Research Center,2026-04-26,,,34.0,64.0,ucsb
+Ipsos,2026-04-27,,,34.0,64.0,ucsb
+Washington Post/Ipsos,2026-04-28,,,37.0,62.0,ucsb
+Marist,2026-04-30,,,37.0,59.0,ucsb
+The Economist/YouGov,2026-05-04,1409.0,RV,36.0,58.0,wikipedia
+CNN/SSRS,2026-05-04,,,35.0,65.0,ucsb
+Ipsos,2026-05-17,,,35.0,63.0,ucsb
+Nan,2026-05-18,,,37.0,62.0,ucsb
+CNN/SSRS,2026-05-31,,,34.0,55.0,ucsb
+The Economist/YouGov,2026-06-01,1453.0,RV,35.0,61.0,wikipedia
+Reuters/Ipsos,2026-06-08,,,35.0,63.0,ucsb
+Marist,2026-06-11,,,36.0,59.0,ucsb
+Verasight,2026-06-22,,,37.0,60.0,ucsb
+Focaldata,2026-06-30,,,34.0,57.0,ucsb
+Washington Post/Ipsos,2026-07-13,,,37.0,61.0,ucsb
+Verasight,2026-07-17,,,38.0,59.0,ucsb
+CNN/SSRS,2026-07-27,1225.0,A,34.0,66.0,wikipedia
+AP-NORC,2026-07-27,,,33.0,66.0,ucsb
+The Economist/YouGov,2026-07-27,1407.0,RV,34.0,62.0,wikipedia
+Reuters/Ipsos,2026-08-03,,,35.0,63.0,ucsb
+Verasight,2026-08-19,,,37.0,60.0,ucsb
+Ipsos,2026-08-24,,,33.0,65.0,ucsb
+The Economist/YouGov,2026-08-26,,,35.0,61.0,ucsb
+Focaldata,2026-09-02,,,32.0,59.0,ucsb
+Marquette Law School,2026-09-09,,,37.0,63.0,ucsb
+CBS News/YouGov,2026-09-11,,,39.0,61.0,ucsb
+Ipsos,2026-09-14,,,35.0,62.0,ucsb
+NBC News/Hart Research Associates & Public Opinion Strategies,2026-09-15,1000.0,RV,41.0,56.0,wikipedia
+CNN/SSRS,2026-09-17,1206.0,A,33.0,67.0,wikipedia
+Quantus Insights,2026-09-18,1389.0,LV,39.6,59.1,wikipedia
+American Research Group,2026-09-20,1100.0,A,29.0,68.0,wikipedia
+Reuters/Ipsos,2026-09-20,1277.0,A,32.0,66.0,wikipedia
+Echelon Insights,2026-09-20,1002.0,LV,36.0,64.0,wikipedia
+The Economist/YouGov,2026-09-21,1401.0,RV,35.0,62.0,wikipedia
+Strength in Numbers/Verasight,2026-09-21,1528.0,A,33.0,63.0,wikipedia
+Emerson College,2026-09-22,1000.0,LV,39.0,57.9,wikipedia
+Quinnipiac University,2026-09-27,1032.0,RV,34.0,61.0,wikipedia
+AP/NORC,2026-09-28,2140.0,A,31.0,69.0,wikipedia
+Napolitan News/RMG Research,2026-09-29,2000.0,RV,41.0,58.0,wikipedia
+Issues & Insights,2026-10-01,,,39.0,52.0,ucsb
+Centerline Research & Strategy,2026-10-01,1239.0,RV,35.0,64.0,wikipedia
+Financial Times/Focaldata,2026-10-04,2275.0,RV,34.0,59.0,wikipedia
+Pew Research Center,2026-10-04,5062.0,,30.0,68.0,wikipedia
+Reuters/Ipsos,2026-10-05,4506.0,A,32.0,65.0,wikipedia
+Navigator Research,2026-10-05,1000.0,RV,36.0,62.0,wikipedia
+NBC News/Survey Monkey,2026-10-12,19135.0,A,34.0,66.0,wikipedia
+Fox News/Beacon Research and Shaw & Company Research,2026-10-12,1202.0,RV,36.0,64.0,wikipedia
+AP NORC,2026-10-12,1119.0,A,36.0,64.0,wikipedia
+Washington Post/ABC News/Ipsos,2026-10-13,2545.0,A,33.0,66.0,wikipedia
+CNN/SSRS,2026-10-18,1701.0,A,32.0,67.0,wikipedia
+New York Times/Siena College,2026-10-19,3494.0,RV,34.0,60.0,wikipedia
+Reuters/Ipsos,2026-10-19,1679.0,A,31.0,66.0,wikipedia
+Am Research Group,2026-10-20,,,29.0,67.0,ucsb
+Financial Times/Focaldata,2026-10-20,1845.0,A,34.0,59.0,wikipedia
+NPR/PBS/Marist College,2026-10-20,1289.0,RV,38.0,61.0,wikipedia
+American Research Institute,2026-10-20,1100.0,A,29.0,67.0,wikipedia
+The Rainey Center,2026-10-20,1279.0,RV,42.0,58.0,wikipedia
+Morning Consult/Deseret News and Hinckley Institute of Politics,2026-10-20,2050.0,RV,41.0,56.0,wikipedia
+Strength in Numbers/Verasight,2026-10-20,2028.0,A,34.0,62.0,wikipedia
+Clarity Campaign Labs,2026-10-21,1016.0,LV,42.0,56.0,wikipedia
+Wall Street Journal/Impact Research and National Research Inc.,2026-10-22,1500.0,RV,40.0,59.0,wikipedia
+Targoz Market Research,2026-10-22,1118.0,LV,36.0,63.0,wikipedia
+Prolific,2026-10-22,1118.0,RV,36.0,63.0,wikipedia
+The Argument/Verasight,2026-10-23,1549.0,RV,45.0,55.0,wikipedia
+Harvard/Harris,2026-10-26,2700.0,RV,39.0,59.0,wikipedia
+The Economist/YouGov,2026-10-26,1131.0,LV,41.0,58.0,wikipedia
+Reuters/Ipsos,2026-10-26,1679.0,A,32.0,66.0,wikipedia
+Napolitan News Service/RMG Research,2026-10-27,2000.0,RV,43.0,55.0,wikipedia
+Tuft Public Opinion Lab/YouGov,2026-10-27,1000.0,A,36.0,61.0,wikipedia
+I&I/TIPP Insights,2026-10-30,1480.0,A,41.0,51.0,wikipedia
+Big Data Poll,2026-10-30,3214.0,LV,40.0,58.0,wikipedia
+YouGov,2026-10-30,3915.0,LV,38.0,60.0,wikipedia
+NBC News/Hart Research Associates & Public Opinion Strategies,2026-10-30,1000.0,RV,40.0,60.0,wikipedia
+Financial Times/Focaldata,2026-11-01,2090.0,LV,35.0,61.0,wikipedia
+Reuters/Ipsos,2026-11-02,1357.0,RV,36.0,63.0,wikipedia
+John Zogby Strategies,2026-11-02,1001.0,LV,43.0,55.0,wikipedia
+The Economist/YouGov,2026-11-06,3166.0,RV,36.0,62.0,wikipedia
+Reuters/Ipsos,2026-11-09,1705.0,A,32.0,65.0,wikipedia

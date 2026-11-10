@@ -372,7 +372,7 @@ def senate_seats_2026(races, race_status):
     return up, holdovers
 
 def predict_senate_2026(generic_ballot_margin, model_bundle=None, race_status_df=None,
-                        n_sims=N_SIMS, seed=42):
+                        n_sims=N_SIMS, seed=42, races=None):
     """
     Projects every 2026 Senate race and chamber control.
 
@@ -388,7 +388,7 @@ def predict_senate_2026(generic_ballot_margin, model_bundle=None, race_status_df
     """
     model, err, pres_lean = model_bundle if model_bundle is not None else build_senate_race_model()
     race_status = race_status_df if race_status_df is not None else load_race_status()
-    races = senate_races_table()
+    races = races if races is not None else senate_races_table()
     up, holdovers = senate_seats_2026(races, race_status)
 
     rows, skipped, warnings = [], [], []

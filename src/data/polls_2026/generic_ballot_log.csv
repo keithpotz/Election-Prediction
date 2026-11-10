@@ -1,0 +1,133 @@
+date,aggregator,dem,rep,margin,market_tied
+2026-10-11,Decision Desk HQ,48.8,40.3,8.5,True
+2026-10-11,FiftyPlusOne,51.1,43.3,7.8,False
+2026-10-11,NBC News,52.0,43.0,9.0,False
+2026-10-11,RealClearPolitics,49.8,41.9,7.9,True
+2026-10-11,Silver Bulletin,49.8,40.8,9.0,True
+2026-10-11,Our average,,,8.4,False
+2026-10-13,Decision Desk HQ,48.8,40.3,8.5,True
+2026-10-13,FiftyPlusOne,51.1,43.3,7.8,False
+2026-10-13,NBC News,52.0,43.0,9.0,False
+2026-10-13,RealClearPolitics,49.8,41.9,7.9,True
+2026-10-13,Silver Bulletin,49.8,40.8,9.0,True
+2026-10-13,Our average,,,8.4,False
+2026-10-14,Decision Desk HQ,49.0,41.3,7.7,True
+2026-10-14,FiftyPlusOne,50.9,43.2,7.7,False
+2026-10-14,NBC News,52.0,43.0,9.0,False
+2026-10-14,RealClearPolitics,50.2,41.9,8.3,True
+2026-10-14,Silver Bulletin,49.7,41.1,8.6,True
+2026-10-14,Our average,,,8.35,False
+2026-10-15,Decision Desk HQ,49.2,41.3,7.9,True
+2026-10-15,FiftyPlusOne,51.4,43.2,8.2,False
+2026-10-15,NBC News,51.0,43.0,8.0,False
+2026-10-15,RealClearPolitics,50.4,42.3,8.1,True
+2026-10-15,Silver Bulletin,49.8,41.2,8.6,True
+2026-10-15,Our average,,,8.1,False
+2026-10-16,Decision Desk HQ,49.2,41.3,7.9,True
+2026-10-16,FiftyPlusOne,51.4,43.2,8.2,False
+2026-10-16,NBC News,51.0,43.0,8.0,False
+2026-10-16,RealClearPolitics,50.4,42.3,8.1,True
+2026-10-16,Silver Bulletin,49.8,41.2,8.6,True
+2026-10-16,Our average,,,8.1,False
+2026-10-18,Decision Desk HQ,50.2,42.4,7.8,True
+2026-10-18,FiftyPlusOne,51.7,43.2,8.5,False
+2026-10-18,NBC News,51.0,43.0,8.0,False
+2026-10-18,RealClearPolitics,50.8,42.6,8.2,True
+2026-10-18,Silver Bulletin,50.1,41.1,9.0,True
+2026-10-18,Our average,,,8.25,False
+2026-10-19,Decision Desk HQ,50.2,42.4,7.8,True
+2026-10-19,FiftyPlusOne,51.7,43.2,8.5,False
+2026-10-19,NBC News,51.0,43.0,8.0,False
+2026-10-19,RealClearPolitics,50.8,42.6,8.2,True
+2026-10-19,Silver Bulletin,50.1,41.1,9.0,True
+2026-10-19,Our average,,,8.25,False
+2026-10-20,Decision Desk HQ,50.2,42.4,7.8,True
+2026-10-20,FiftyPlusOne,51.7,43.2,8.5,False
+2026-10-20,NBC News,51.0,43.0,8.0,False
+2026-10-20,RealClearPolitics,50.8,42.6,8.2,True
+2026-10-20,Silver Bulletin,50.1,41.1,9.0,True
+2026-10-20,Our average,,,8.25,False
+2026-10-21,Decision Desk HQ,50.2,42.4,7.8,True
+2026-10-21,FiftyPlusOne,51.7,43.2,8.5,False
+2026-10-21,NBC News,51.0,43.0,8.0,False
+2026-10-21,RealClearPolitics,50.8,42.6,8.2,True
+2026-10-21,Silver Bulletin,50.1,41.1,9.0,True
+2026-10-21,Our average,,,8.25,False
+2026-10-22,Decision Desk HQ,50.7,42.8,7.9,True
+2026-10-22,FiftyPlusOne,51.9,42.8,9.1,False
+2026-10-22,NBC News,52.0,43.0,9.0,False
+2026-10-22,RealClearPolitics,50.4,42.1,8.3,True
+2026-10-22,Silver Bulletin,50.5,41.3,9.2,True
+2026-10-22,Our average,,,9.05,False
+2026-10-23,Decision Desk HQ,50.4,42.5,7.9,True
+2026-10-23,FiftyPlusOne,52.0,42.9,9.1,False
+2026-10-23,NBC News,52.0,43.0,9.0,False
+2026-10-23,RealClearPolitics,50.5,42.4,8.1,True
+2026-10-23,Silver Bulletin,50.5,41.4,9.1,True
+2026-10-23,Our average,,,9.05,False
+2026-10-25,Decision Desk HQ,51.1,43.1,8.0,True
+2026-10-25,FiftyPlusOne,52.2,43.0,9.2,False
+2026-10-25,NBC News,52.0,43.0,9.0,False
+2026-10-25,RealClearPolitics,51.1,42.8,8.3,True
+2026-10-25,Silver Bulletin,50.6,41.6,9.0,True
+2026-10-25,Our average,,,9.1,False
+2026-10-26,Decision Desk HQ,51.1,43.1,8.0,True
+2026-10-26,FiftyPlusOne,52.2,43.0,9.2,False
+2026-10-26,NBC News,52.0,43.0,9.0,False
+2026-10-26,RealClearPolitics,51.1,42.8,8.3,True
+2026-10-26,Silver Bulletin,50.6,41.6,9.0,True
+2026-10-26,Our average,,,9.1,False
+2026-10-27,Decision Desk HQ,50.8,43.0,7.8,True
+2026-10-27,FiftyPlusOne,52.2,43.4,8.8,False
+2026-10-27,NBC News,52.0,43.0,9.0,False
+2026-10-27,RealClearPolitics,51.6,43.3,8.3,True
+2026-10-27,Silver Bulletin,51.0,42.2,8.8,True
+2026-10-27,Our average,,,8.9,False
+2026-10-28,Decision Desk HQ,50.8,43.0,7.8,True
+2026-10-28,FiftyPlusOne,52.2,43.4,8.8,False
+2026-10-28,NBC News,52.0,43.0,9.0,False
+2026-10-28,RealClearPolitics,51.6,43.3,8.3,True
+2026-10-28,Silver Bulletin,51.0,42.2,8.8,True
+2026-10-28,Our average,,,8.9,False
+2026-10-31,Decision Desk HQ,51.5,42.6,8.9,True
+2026-10-31,FiftyPlusOne,52.2,43.4,8.8,False
+2026-10-31,NBC News,52.0,44.0,8.0,False
+2026-10-31,RealClearPolitics,51.4,43.2,8.2,True
+2026-10-31,Silver Bulletin,51.3,42.4,8.9,True
+2026-10-31,Our average,,,8.4,False
+2026-11-01,Decision Desk HQ,51.5,42.6,8.9,True
+2026-11-01,FiftyPlusOne,52.2,43.4,8.8,False
+2026-11-01,NBC News,52.0,44.0,8.0,False
+2026-11-01,RealClearPolitics,51.4,43.2,8.2,True
+2026-11-01,Silver Bulletin,51.3,42.4,8.9,True
+2026-11-01,Our average,,,8.4,False
+2026-11-02,Decision Desk HQ,51.2,42.3,8.9,True
+2026-11-02,FiftyPlusOne,52.3,43.7,8.6,False
+2026-11-02,NBC News,52.0,44.0,8.0,False
+2026-11-02,RealClearPolitics,52.0,43.1,8.9,True
+2026-11-02,Silver Bulletin,51.4,42.6,8.8,True
+2026-11-02,Our average,,,8.3,False
+2026-11-03,Decision Desk HQ,51.2,42.3,8.9,True
+2026-11-03,FiftyPlusOne,52.3,43.7,8.6,False
+2026-11-03,NBC News,52.0,44.0,8.0,False
+2026-11-03,RealClearPolitics,52.0,43.1,8.9,True
+2026-11-03,Silver Bulletin,51.4,42.6,8.8,True
+2026-11-03,Our average,,,8.3,False
+2026-11-04,Decision Desk HQ,51.4,42.8,8.6,True
+2026-11-04,FiftyPlusOne,52.8,44.1,8.7,False
+2026-11-04,NBC News,52.0,44.0,8.0,False
+2026-11-04,RealClearPolitics,52.1,43.3,8.8,True
+2026-11-04,Silver Bulletin,51.8,43.0,8.8,True
+2026-11-04,Our average,,,8.35,False
+2026-11-05,Decision Desk HQ,51.4,42.8,8.6,True
+2026-11-05,FiftyPlusOne,52.8,44.1,8.7,False
+2026-11-05,NBC News,52.0,44.0,8.0,False
+2026-11-05,RealClearPolitics,52.1,43.3,8.8,True
+2026-11-05,Silver Bulletin,51.8,43.0,8.8,True
+2026-11-05,Our average,,,8.35,False
+2026-11-10,Decision Desk HQ,51.4,42.8,8.6,True
+2026-11-10,FiftyPlusOne,52.8,44.1,8.7,False
+2026-11-10,NBC News,52.0,44.0,8.0,False
+2026-11-10,RealClearPolitics,52.1,43.3,8.8,True
+2026-11-10,Silver Bulletin,51.8,43.0,8.8,True
+2026-11-10,Our average,,,8.35,False

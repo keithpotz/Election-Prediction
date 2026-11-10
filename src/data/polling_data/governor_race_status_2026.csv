@@ -1,37 +1,37 @@
 state,is_special,incumbent,open_seat,appointed,last_election_party,cook_pvi,consensus_rating
-ALABAMA,False,Kay Ivey,True,False,REPUBLICAN,-15.0,-27.86
-ALASKA,False,Mike Dunleavy,True,False,REPUBLICAN,-6.0,6.29
-ARIZONA,False,Katie Hobbs,False,False,DEMOCRAT,-2.0,7.57
+ALABAMA,False,Kay Ivey,True,False,REPUBLICAN,-15.0,-27.0
+ALASKA,False,Mike Dunleavy,True,False,REPUBLICAN,-6.0,6.4
+ARIZONA,False,Katie Hobbs,False,False,DEMOCRAT,-2.0,11.0
 ARKANSAS,False,Sarah Huckabee Sanders,False,False,REPUBLICAN,-15.0,-30.0
 CALIFORNIA,False,Gavin Newsom,True,False,DEMOCRAT,12.0,30.0
-COLORADO,False,Jared Polis,True,False,DEMOCRAT,6.0,27.86
-CONNECTICUT,False,Ned Lamont,False,False,DEMOCRAT,8.0,27.86
-FLORIDA,False,Ron DeSantis,True,False,REPUBLICAN,-5.0,-9.29
-GEORGIA,False,Brian Kemp,True,False,REPUBLICAN,-1.0,2.14
+COLORADO,False,Jared Polis,True,False,DEMOCRAT,6.0,30.0
+CONNECTICUT,False,Ned Lamont,False,False,DEMOCRAT,8.0,30.0
+FLORIDA,False,Ron DeSantis,True,False,REPUBLICAN,-5.0,-7.0
+GEORGIA,False,Brian Kemp,True,False,REPUBLICAN,-1.0,2.0
 HAWAII,False,Josh Green,False,False,DEMOCRAT,13.0,30.0
 IDAHO,False,Brad Little,False,False,REPUBLICAN,-18.0,-30.0
-ILLINOIS,False,JB Pritzker,False,False,DEMOCRAT,6.0,27.86
-IOWA,False,Kim Reynolds,True,False,REPUBLICAN,-6.0,7.57
-KANSAS,False,Laura Kelly,True,False,DEMOCRAT,-8.0,-5.43
-MAINE,False,Janet Mills,True,False,DEMOCRAT,4.0,23.57
+ILLINOIS,False,JB Pritzker,False,False,DEMOCRAT,6.0,30.0
+IOWA,False,Kim Reynolds,True,False,REPUBLICAN,-6.0,7.0
+KANSAS,False,Laura Kelly,True,False,DEMOCRAT,-8.0,-4.8
+MAINE,False,Janet Mills,True,False,DEMOCRAT,4.0,27.0
 MARYLAND,False,Wes Moore,False,False,DEMOCRAT,15.0,30.0
 MASSACHUSETTS,False,Maura Healey,False,False,DEMOCRAT,14.0,30.0
-MICHIGAN,False,Gretchen Whitmer,True,False,DEMOCRAT,0.0,7.57
-MINNESOTA,False,Tim Walz,True,False,DEMOCRAT,3.0,21.43
-NEBRASKA,False,Jim Pillen,False,False,REPUBLICAN,-10.0,-25.71
-NEVADA,False,Joe Lombardo,False,False,REPUBLICAN,-1.0,-0.43
-NEW HAMPSHIRE,False,Kelly Ayotte,False,False,REPUBLICAN,2.0,-17.0
-NEW MEXICO,False,Michelle Lujan Grisham,True,False,DEMOCRAT,4.0,22.43
-NEW YORK,False,Kathy Hochul,False,False,DEMOCRAT,8.0,25.71
-OHIO,False,Mike DeWine,True,False,REPUBLICAN,-5.0,1.0
-OKLAHOMA,False,Kevin Stitt,True,False,REPUBLICAN,-17.0,-27.86
-OREGON,False,Tina Kotek,False,False,DEMOCRAT,8.0,10.43
+MICHIGAN,False,Gretchen Whitmer,True,False,DEMOCRAT,0.0,8.6
+MINNESOTA,False,Tim Walz,True,False,DEMOCRAT,3.0,24.0
+NEBRASKA,False,Jim Pillen,False,False,REPUBLICAN,-10.0,-11.8
+NEVADA,False,Joe Lombardo,False,False,REPUBLICAN,-1.0,1.4
+NEW HAMPSHIRE,False,Kelly Ayotte,False,False,REPUBLICAN,2.0,-16.4
+NEW MEXICO,False,Michelle Lujan Grisham,True,False,DEMOCRAT,4.0,27.0
+NEW YORK,False,Kathy Hochul,False,False,DEMOCRAT,8.0,27.0
+OHIO,False,Mike DeWine,True,False,REPUBLICAN,-5.0,6.2
+OKLAHOMA,False,Kevin Stitt,True,False,REPUBLICAN,-17.0,-18.0
+OREGON,False,Tina Kotek,False,False,DEMOCRAT,8.0,7.8
 PENNSYLVANIA,False,Josh Shapiro,False,False,DEMOCRAT,-1.0,30.0
 RHODE ISLAND,False,Dan McKee,True,False,DEMOCRAT,8.0,30.0
-SOUTH CAROLINA,False,Henry McMaster,True,False,REPUBLICAN,-8.0,-25.71
+SOUTH CAROLINA,False,Henry McMaster,True,False,REPUBLICAN,-8.0,-30.0
 SOUTH DAKOTA,False,Larry Rhoden,False,False,REPUBLICAN,-15.0,-30.0
-TENNESSEE,False,Bill Lee,True,False,REPUBLICAN,-14.0,-27.86
-TEXAS,False,Greg Abbott,False,False,REPUBLICAN,-6.0,-7.14
-VERMONT,False,Phil Scott,False,False,REPUBLICAN,17.0,-20.29
-WISCONSIN,False,Tony Evers,True,False,DEMOCRAT,0.0,3.0
+TENNESSEE,False,Bill Lee,True,False,REPUBLICAN,-14.0,-27.0
+TEXAS,False,Greg Abbott,False,False,REPUBLICAN,-6.0,-6.2
+VERMONT,False,Phil Scott,False,False,REPUBLICAN,17.0,-13.4
+WISCONSIN,False,Tony Evers,True,False,DEMOCRAT,0.0,4.8
 WYOMING,False,Mark Gordon,True,False,REPUBLICAN,-23.0,-30.0

@@ -1,0 +1,60 @@
+severity,check,race,detail
+warning,outlier poll,Governor · Rhode Island,"Opinion Diagnostics (Sep 25): corrected margin +22.1 vs race average +39.1, from wikipedia"
+warning,outlier poll,Senate · Idaho,"Advanced Targeting Research (Sep 16): corrected margin +11.0 vs race average -8.1, from wikipedia"
+warning,outlier poll,Senate · Idaho,"Peak Insights (R) (Oct 15): corrected margin -24.8 vs race average -8.1, from wikipedia"
+info,missing sample size,Governor · Connecticut,1 poll(s): Wesleyan University/YouGov
+info,missing sample size,Governor · Iowa,1 poll(s): Marist University
+info,missing sample size,Governor · Maine,1 poll(s): Marist University
+info,missing sample size,Governor · Michigan,"2 poll(s): Glengariff Group, Marist University"
+info,missing sample size,Governor · Nebraska,1 poll(s): Lake Research Partners (D)
+info,missing sample size,Governor · Nevada,"3 poll(s): Public Opinion Strategies (R), Grassroots Targeting (R), Tarrance Group (R)"
+info,missing sample size,Governor · New York,1 poll(s): Marist University
+info,missing sample size,Governor · Ohio,1 poll(s): Marist University
+info,missing sample size,Governor · Texas,1 poll(s): Marist University
+info,missing sample size,House · Alabama-2,1 poll(s): Tulchin Research (D)
+info,missing sample size,House · Connecticut-5,1 poll(s): OnMessage (R)
+info,missing sample size,House · Florida-11,1 poll(s): MDW Communications (D)
+info,missing sample size,House · Florida-22,1 poll(s): Tulchin Research (D)
+info,missing sample size,House · Florida-8,1 poll(s): Inquire LLC (R)
+info,missing sample size,House · Florida-9,1 poll(s): SEA Polling (D)
+info,missing sample size,House · Idaho-1,1 poll(s): VoteNexus Research
+info,missing sample size,House · Idaho-2,1 poll(s): VoteNexus Research
+info,missing sample size,House · Iowa-2,1 poll(s): Global Strategy Group (D)
+info,missing sample size,House · Montana-1,1 poll(s): Montana State University Billings
+info,missing sample size,House · Montana-2,1 poll(s): Montana State University Billings
+info,missing sample size,House · New Jersey-2,1 poll(s): Impact Research (D)
+info,missing sample size,House · Ohio-7,1 poll(s): co/efficient (R)
+info,missing sample size,House · Texas-15,1 poll(s): Texas Southern University
+info,missing sample size,House · Texas-9,1 poll(s): Public Policy Polling (D)
+info,missing sample size,House · Washington-3,1 poll(s): Voter Sciences (R)
+info,missing sample size,Senate · Iowa,1 poll(s): Marist University
+info,missing sample size,Senate · Louisiana,1 poll(s): Lincoln Park Strategies (D)
+info,missing sample size,Senate · Maine,1 poll(s): Marist University
+info,missing sample size,Senate · Michigan,1 poll(s): Marist University
+info,missing sample size,Senate · Nebraska,"2 poll(s): GBAO (D), GBAO (D)"
+info,missing sample size,Senate · Ohio,1 poll(s): Marist University
+info,missing sample size,Senate · Texas,1 poll(s): Marist University
+info,stale race,House · Alabama-2,latest poll 2026-08-31
+info,stale race,House · Arizona-6,"latest poll 2026-06-11; too old to use, so the forecast relies on fundamentals"
+info,stale race,House · Florida-11,latest poll 2026-07-29
+info,stale race,House · Florida-22,latest poll 2026-08-31
+info,stale race,House · Florida-8,latest poll 2026-07-29
+info,stale race,House · Illinois-4,latest poll 2026-08-01
+info,stale race,House · Iowa-3,"latest poll 2026-03-14; too old to use, so the forecast relies on fundamentals"
+info,stale race,House · Louisiana-6,latest poll 2026-08-13
+info,stale race,House · Maryland-1,latest poll 2026-07-27
+info,stale race,House · Nevada-2,latest poll 2026-09-03
+info,stale race,House · New York-1,"latest poll 2025-12-11; too old to use, so the forecast relies on fundamentals"
+info,stale race,House · North Carolina-10,"latest poll 2026-03-12; too old to use, so the forecast relies on fundamentals"
+info,stale race,House · North Carolina-14,"latest poll 2026-03-12; too old to use, so the forecast relies on fundamentals"
+info,stale race,House · North Carolina-3,latest poll 2026-08-02
+info,stale race,House · North Carolina-7,latest poll 2026-08-20
+info,stale race,House · South Carolina-7,latest poll 2026-07-28
+info,stale race,House · Tennessee-9,latest poll 2026-09-03
+info,stale race,House · Washington-4,"latest poll 2026-02-05; too old to use, so the forecast relies on fundamentals"
+info,stale race,House · Washington-5,"latest poll 2026-05-25; too old to use, so the forecast relies on fundamentals"
+info,stale race,House · Wisconsin-3,"latest poll 2026-06-25; too old to use, so the forecast relies on fundamentals"
+info,stale race,House · Wisconsin-6,"latest poll 2026-05-28; too old to use, so the forecast relies on fundamentals"
+info,stale race,Senate · Kentucky,latest poll 2026-08-27
+info,stale race,Senate · Oklahoma,latest poll 2026-08-06
+info,stale race,Senate · Virginia,"latest poll 2026-06-16; too old to use, so the forecast relies on fundamentals"

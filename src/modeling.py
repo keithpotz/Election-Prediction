@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 from xgboost import XGBRegressor
 import os
+import numpy as np
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, 'data/polling_data')
@@ -36,7 +37,9 @@ def preprocess_data(data):
     data['candidatevotes'] = pd.to_numeric(data['candidatevotes'], errors='coerce').fillna(0)
     data['totalvotes'] = pd.to_numeric(data['totalvotes'], errors='coerce').fillna(0)
     data['pct'] = pd.to_numeric(data['pct'], errors='coerce').fillna(0)
-    data = data.dropna()
+    # National conditions aren't tree inputs (see NATIONAL_CONDITION_COLS), so a gap in
+    # one of them (e.g. a failed FRED download) mustn't drop rows.
+    data = data.dropna(subset=[c for c in data.columns if c not in NATIONAL_CONDITION_COLS])
 
     print("Missing values after cleanup:")
     print(data.isnull().sum())
@@ -63,7 +66,10 @@ def select_features(data):
     if 'pct' not in data.columns:
         raise ValueError("Missing required 'pct' column")
 
-    drop_cols = ['pct', 'county_name', 'state_po', 'county_fips', 'candidatevotes']
+    # Same-election values leak the answer: that year's turnout (totalvotes, turnout_delta)
+    # isn't known before the election, and `year` can't be extrapolated by a tree model.
+    drop_cols = ['pct', 'county_name', 'state_po', 'county_fips', 'candidatevotes',
+                 'year', 'totalvotes', 'turnout_delta']
     drop_cols += NATIONAL_CONDITION_COLS
     drop_cols = [c for c in drop_cols if c in data.columns]
     features = data.drop(columns=drop_cols)
@@ -129,6 +135,35 @@ def evaluate_model(model, X_test, y_test):
     print(f"Mean Squared Error: {mse:.4f}")
     print(f"R-squared Score:    {r2:.4f}")
 
+def evaluate_honest(data=None):
+    """
+    Leave-one-election-out test: each presidential year is predicted by a model trained
+    on the other years, with features that only use elections before the predicted one.
+    Compared against the naive "the county votes exactly as it did last time".
+    Scored on Democratic and Republican county vote shares.
+    """
+    data = data if data is not None else load_data()
+    d = encode_data(preprocess_data(data.copy()))
+    X, y = select_features(d)
+    X.columns = X.columns.astype(str)
+    years = data.loc[X.index, 'year']
+    rows = []
+    for yr in sorted(years.unique()):
+        tr, te = years != yr, years == yr
+        m = XGBRegressor(objective='reg:squarederror', **XGB_PARAMS)
+        m.fit(X[tr], y[tr], sample_weight=years[tr].map(RECENCY_WEIGHTS).fillna(1.0).values)
+        pred = pd.Series(m.predict(X[te]), index=X[te].index)
+        two = data.loc[X[te].index, 'party'].isin(['DEMOCRAT', 'REPUBLICAN'])
+        actual = y[te][two]
+        # naive baseline: last election's share for the same county and party
+        sub = data.loc[X[te].index][two]
+        naive = np.where(sub['party'] == 'DEMOCRAT',
+                         50 + sub['county_last_margin'] / 2, 50 - sub['county_last_margin'] / 2)
+        rows.append({'year': int(yr), 'rows': int(two.sum()),
+                     'model_rmse': float(np.sqrt(((pred[two] - actual) ** 2).mean())),
+                     'naive_rmse': float(np.sqrt(((naive - actual.values) ** 2).mean()))})
+    return pd.DataFrame(rows)
+
 if __name__ == "__main__":
     data = load_data()
     data = preprocess_data(data)
@@ -137,3 +172,5 @@ if __name__ == "__main__":
     X_train, X_test, y_train, y_test = split_data(features, target)
     mid_model, lo_model, hi_model = train_model(X_train, y_train)
     evaluate_model(mid_model, X_test, y_test)
+    print("\nHonest leave-one-election-out test (county Dem/Rep vote share RMSE, pts):")
+    print(evaluate_honest(load_data()).round(2).to_string(index=False))

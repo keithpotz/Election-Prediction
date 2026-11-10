@@ -1,0 +1,72 @@
+office,state,dem_candidate,rep_candidate,dem_side_party,confirmed_by_candidate_list
+senate,ALABAMA,Everett Wess,Barry Moore,DEMOCRAT,True
+senate,ALASKA,Mary Peltola,Dan S. Sullivan,DEMOCRAT,True
+senate,ARKANSAS,Hallie Shoffner,Tom Cotton,DEMOCRAT,True
+senate,COLORADO,John Hickenlooper,Mark Baisley,DEMOCRAT,True
+senate,FLORIDA,Angie Nixon,Ashley Moody,DEMOCRAT,False
+senate,GEORGIA,Jon Ossoff,Mike Collins,DEMOCRAT,True
+senate,IDAHO,Todd Achilles,Jim Risch,INDEPENDENT,True
+senate,ILLINOIS,Juliana Stratton,Don Tracy,DEMOCRAT,True
+senate,IOWA,Josh Turek,Ashley Hinson,DEMOCRAT,True
+senate,KANSAS,Adam Hamilton,Roger Marshall,DEMOCRAT,True
+senate,KENTUCKY,Charles Booker,Andy Barr,DEMOCRAT,True
+senate,LOUISIANA,Jamie Davis,Julia Letlow,DEMOCRAT,True
+senate,MAINE,Troy Jackson,Susan Collins,DEMOCRAT,True
+senate,MASSACHUSETTS,Ed Markey,John Deaton,DEMOCRAT,True
+senate,MICHIGAN,Abdul El-Sayed,Mike Rogers,DEMOCRAT,True
+senate,MINNESOTA,Peggy Flanagan,Michele Tafoya,DEMOCRAT,True
+senate,MISSISSIPPI,Scott Colom,Cindy Hyde-Smith,DEMOCRAT,True
+senate,MONTANA,Alani Bankhead,Kurt Alme,DEMOCRAT,True
+senate,NEBRASKA,Dan Osborn,Pete Ricketts,INDEPENDENT,True
+senate,NEW HAMPSHIRE,Chris Pappas,John E. Sununu,DEMOCRAT,True
+senate,NEW MEXICO,Ben Ray Luján,Larry Marker,DEMOCRAT,True
+senate,NORTH CAROLINA,Roy Cooper,Michael Whatley,DEMOCRAT,True
+senate,OHIO,Sherrod Brown,Jon Husted,DEMOCRAT,False
+senate,OKLAHOMA,N'Kiyla Jasmine Thomas,Kevin Hern,DEMOCRAT,True
+senate,RHODE ISLAND,Jack Reed,Raymond McKay,DEMOCRAT,True
+senate,SOUTH CAROLINA,Annie Andrews,Darline Graham,DEMOCRAT,True
+senate,SOUTH DAKOTA,Brian Bengs,Mike Rounds,INDEPENDENT,True
+senate,TENNESSEE,Marquita Bradshaw,Bill Hagerty,DEMOCRAT,True
+senate,TEXAS,James Talarico,Ken Paxton,DEMOCRAT,True
+senate,VIRGINIA,Mark Warner,Bert Mizusawa,DEMOCRAT,True
+governor,ALABAMA,Doug Jones,Tommy Tuberville,DEMOCRAT,True
+governor,ALASKA,Jonathan Kreiss-Tomkins,Bernadette Wilson,DEMOCRAT,True
+governor,ARIZONA,Katie Hobbs,Andy Biggs,DEMOCRAT,True
+governor,ARKANSAS,Fredrick Love,Sarah Huckabee Sanders,DEMOCRAT,True
+governor,CALIFORNIA,Xavier Becerra,Steve Hilton,DEMOCRAT,True
+governor,COLORADO,Phil Weiser,Victor Marx,DEMOCRAT,True
+governor,CONNECTICUT,Ned Lamont,Ryan Fazio,DEMOCRAT,True
+governor,FLORIDA,David Jolly,Byron Donalds,DEMOCRAT,True
+governor,GEORGIA,Keisha Lance Bottoms,Rick Jackson,DEMOCRAT,True
+governor,IDAHO,Terri Pickens,Brad Little,DEMOCRAT,True
+governor,ILLINOIS,JB Pritzker,Darren Bailey,DEMOCRAT,True
+governor,IOWA,Rob Sand,Zach Lahn,DEMOCRAT,True
+governor,KANSAS,Cindy Holscher,Ty Masterson,DEMOCRAT,True
+governor,MAINE,Hannah Pingree,Robert B. Charles,DEMOCRAT,True
+governor,MARYLAND,Wes Moore,Dan Cox,DEMOCRAT,True
+governor,MASSACHUSETTS,Maura Healey,Mike Minogue,DEMOCRAT,True
+governor,MICHIGAN,Jocelyn Benson,John James,DEMOCRAT,True
+governor,MINNESOTA,Amy Klobuchar,Lisa Demuth,DEMOCRAT,True
+governor,NEBRASKA,Lynne Walz,Jim Pillen,DEMOCRAT,True
+governor,NEVADA,Aaron Ford,Joe Lombardo,DEMOCRAT,True
+governor,NEW HAMPSHIRE,Cinde Warmington,Kelly Ayotte,DEMOCRAT,True
+governor,NEW MEXICO,Deb Haaland,Gregg Hull,DEMOCRAT,True
+governor,NEW YORK,Kathy Hochul,Bruce Blakeman,DEMOCRAT,True
+governor,OHIO,Amy Acton,Vivek Ramaswamy,DEMOCRAT,True
+governor,OKLAHOMA,Cyndi Munson,Mike Mazzei,DEMOCRAT,True
+governor,OREGON,Tina Kotek,Christine Drazan,DEMOCRAT,True
+governor,PENNSYLVANIA,Josh Shapiro,Stacy Garrity,DEMOCRAT,True
+governor,RHODE ISLAND,Helena Foulkes,Aaron Guckian,DEMOCRAT,True
+governor,SOUTH CAROLINA,Jermaine Johnson,Alan Wilson,DEMOCRAT,True
+governor,SOUTH DAKOTA,Dan Ahlers,Larry Rhoden,DEMOCRAT,True
+governor,TENNESSEE,Jerri Green,Marsha Blackburn,DEMOCRAT,True
+governor,TEXAS,Gina Hinojosa,Greg Abbott,DEMOCRAT,True
+governor,VERMONT,Amanda Janoo,Phil Scott,DEMOCRAT,True
+governor,WISCONSIN,David Crowley,Tom Tiffany,DEMOCRAT,True
+senate,DELAWARE,Chris Coons,Michael Katz,DEMOCRAT,True
+senate,NEW JERSEY,Cory Booker,Justin Murphy,DEMOCRAT,True
+senate,OREGON,Jeff Merkley,David Brock Smith,DEMOCRAT,True
+senate,WEST VIRGINIA,Rachel Fetty Anderson,Shelley Moore Capito,DEMOCRAT,True
+senate,WYOMING,James W. Byrd,Harriet Hageman,DEMOCRAT,True
+governor,HAWAII,Josh Green,Gary Cordery,DEMOCRAT,True
+governor,WYOMING,Kenneth Casner,Eric Barlow,DEMOCRAT,True
