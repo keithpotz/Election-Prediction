@@ -34,28 +34,28 @@
       "days_before": 0,
       "cycles": 24,
       "weighted_dem_overstatement": 2.613688728907339,
-      "applied_correction": 1.3068443644536696,
+      "applied_correction": 0.0,
       "latest_cycle_miss": 4.175778455209928
     },
     {
       "days_before": 14,
       "cycles": 24,
       "weighted_dem_overstatement": 3.3032323987318475,
-      "applied_correction": 1.6516161993659237,
+      "applied_correction": 0.0,
       "latest_cycle_miss": 4.697491557856407
     },
     {
       "days_before": 28,
       "cycles": 24,
       "weighted_dem_overstatement": 3.5066198749262374,
-      "applied_correction": 1.7533099374631187,
+      "applied_correction": 0.0,
       "latest_cycle_miss": 4.354739803534601
     },
     {
       "days_before": 42,
       "cycles": 24,
       "weighted_dem_overstatement": 3.466463985393423,
-      "applied_correction": 1.7332319926967115,
+      "applied_correction": 0.0,
       "latest_cycle_miss": 4.005038953507503
     }
   ],
@@ -108,16 +108,16 @@
         "races": 553,
         "rmse": 6.8136,
         "winner_accuracy": 0.8969,
-        "brier": 0.0677,
-        "log_loss": 0.2168
+        "brier": 0.0674,
+        "log_loss": 0.2151
       },
       {
         "method": "Polls only (weighted, corrected)",
         "races": 553,
         "rmse": 7.0924,
         "winner_accuracy": 0.9024,
-        "brier": 0.07,
-        "log_loss": 0.225
+        "brier": 0.0696,
+        "log_loss": 0.223
       },
       {
         "method": "Simple poll average (last 30 days)",
@@ -148,18 +148,18 @@
       {
         "method": "Full model (polls + fundamentals)",
         "races": 589,
-        "rmse": 5.6975,
-        "winner_accuracy": 0.9083,
+        "rmse": 5.8071,
+        "winner_accuracy": 0.9151,
         "brier": 0.0562,
-        "log_loss": 0.177
+        "log_loss": 0.1773
       },
       {
         "method": "Polls only (weighted, corrected)",
         "races": 589,
-        "rmse": 5.8215,
-        "winner_accuracy": 0.9066,
-        "brier": 0.0562,
-        "log_loss": 0.1794
+        "rmse": 5.9538,
+        "winner_accuracy": 0.9151,
+        "brier": 0.0567,
+        "log_loss": 0.1808
       },
       {
         "method": "Simple poll average (last 30 days)",
@@ -190,18 +190,18 @@
       {
         "method": "Full model (polls + fundamentals)",
         "races": 553,
-        "rmse": 6.5813,
-        "winner_accuracy": 0.8915,
-        "brier": 0.0673,
-        "log_loss": 0.2144
+        "rmse": 6.7239,
+        "winner_accuracy": 0.8987,
+        "brier": 0.0671,
+        "log_loss": 0.2136
       },
       {
         "method": "Polls only (weighted, corrected)",
         "races": 553,
-        "rmse": 6.9119,
-        "winner_accuracy": 0.8987,
-        "brier": 0.0691,
-        "log_loss": 0.2221
+        "rmse": 7.0924,
+        "winner_accuracy": 0.9024,
+        "brier": 0.0696,
+        "log_loss": 0.223
       },
       {
         "method": "Simple poll average (last 30 days)",
@@ -291,108 +291,108 @@
     "gb_raw_28d": [
       {
         "bucket": "50-60%",
-        "races": 47,
-        "predicted": 0.547,
-        "actual": 0.532,
-        "expected_low": 0.428,
-        "expected_high": 0.667
+        "races": 46,
+        "predicted": 0.55,
+        "actual": 0.522,
+        "expected_low": 0.429,
+        "expected_high": 0.67
       },
       {
         "bucket": "60-70%",
-        "races": 42,
+        "races": 35,
         "predicted": 0.657,
-        "actual": 0.595,
-        "expected_low": 0.537,
-        "expected_high": 0.778
+        "actual": 0.6,
+        "expected_low": 0.525,
+        "expected_high": 0.789
       },
       {
         "bucket": "70-80%",
-        "races": 48,
-        "predicted": 0.758,
-        "actual": 0.792,
-        "expected_low": 0.657,
+        "races": 44,
+        "predicted": 0.753,
+        "actual": 0.727,
+        "expected_low": 0.646,
         "expected_high": 0.86
       },
       {
         "bucket": "80-90%",
-        "races": 67,
-        "predicted": 0.849,
-        "actual": 0.91,
-        "expected_low": 0.777,
+        "races": 71,
+        "predicted": 0.851,
+        "actual": 0.915,
+        "expected_low": 0.782,
         "expected_high": 0.921
       },
       {
         "bucket": "90-95%",
-        "races": 46,
-        "predicted": 0.926,
-        "actual": 0.957,
-        "expected_low": 0.863,
-        "expected_high": 0.99
+        "races": 42,
+        "predicted": 0.93,
+        "actual": 0.929,
+        "expected_low": 0.865,
+        "expected_high": 0.995
       },
       {
         "bucket": "95-99%",
-        "races": 95,
+        "races": 86,
         "predicted": 0.974,
-        "actual": 0.989,
-        "expected_low": 0.948,
+        "actual": 0.988,
+        "expected_low": 0.947,
         "expected_high": 1.0
       },
       {
         "bucket": "99%+",
-        "races": 225,
+        "races": 246,
         "predicted": 0.998,
         "actual": 1.0,
-        "expected_low": 0.993,
+        "expected_low": 0.994,
         "expected_high": 1.0
       }
     ],
     "gb_bias_corrected_0d": [
       {
         "bucket": "50-60%",
-        "races": 43,
-        "predicted": 0.557,
-        "actual": 0.442,
-        "expected_low": 0.433,
-        "expected_high": 0.682
+        "races": 39,
+        "predicted": 0.549,
+        "actual": 0.564,
+        "expected_low": 0.418,
+        "expected_high": 0.68
       },
       {
         "bucket": "60-70%",
-        "races": 47,
-        "predicted": 0.653,
-        "actual": 0.638,
-        "expected_low": 0.538,
-        "expected_high": 0.767
+        "races": 44,
+        "predicted": 0.646,
+        "actual": 0.568,
+        "expected_low": 0.527,
+        "expected_high": 0.765
       },
       {
         "bucket": "70-80%",
-        "races": 35,
+        "races": 41,
         "predicted": 0.748,
-        "actual": 0.771,
-        "expected_low": 0.628,
-        "expected_high": 0.869
+        "actual": 0.805,
+        "expected_low": 0.637,
+        "expected_high": 0.86
       },
       {
         "bucket": "80-90%",
-        "races": 50,
-        "predicted": 0.861,
-        "actual": 0.94,
-        "expected_low": 0.78,
-        "expected_high": 0.941
+        "races": 48,
+        "predicted": 0.852,
+        "actual": 0.938,
+        "expected_low": 0.768,
+        "expected_high": 0.937
       },
       {
         "bucket": "90-95%",
-        "races": 46,
-        "predicted": 0.925,
-        "actual": 0.957,
-        "expected_low": 0.861,
-        "expected_high": 0.989
+        "races": 48,
+        "predicted": 0.928,
+        "actual": 0.958,
+        "expected_low": 0.867,
+        "expected_high": 0.99
       },
       {
         "bucket": "95-99%",
-        "races": 82,
+        "races": 83,
         "predicted": 0.975,
-        "actual": 1.0,
-        "expected_low": 0.946,
+        "actual": 0.988,
+        "expected_low": 0.947,
         "expected_high": 1.0
       },
       {
@@ -407,55 +407,55 @@
     "gb_bias_corrected_28d": [
       {
         "bucket": "50-60%",
-        "races": 42,
-        "predicted": 0.545,
-        "actual": 0.452,
-        "expected_low": 0.419,
-        "expected_high": 0.672
+        "races": 45,
+        "predicted": 0.552,
+        "actual": 0.511,
+        "expected_low": 0.43,
+        "expected_high": 0.674
       },
       {
         "bucket": "60-70%",
-        "races": 43,
-        "predicted": 0.652,
-        "actual": 0.581,
-        "expected_low": 0.532,
-        "expected_high": 0.771
+        "races": 32,
+        "predicted": 0.649,
+        "actual": 0.594,
+        "expected_low": 0.51,
+        "expected_high": 0.788
       },
       {
         "bucket": "70-80%",
-        "races": 56,
-        "predicted": 0.753,
-        "actual": 0.804,
-        "expected_low": 0.658,
-        "expected_high": 0.847
+        "races": 50,
+        "predicted": 0.749,
+        "actual": 0.74,
+        "expected_low": 0.649,
+        "expected_high": 0.85
       },
       {
         "bucket": "80-90%",
-        "races": 70,
-        "predicted": 0.857,
-        "actual": 0.9,
-        "expected_low": 0.788,
-        "expected_high": 0.925
+        "races": 67,
+        "predicted": 0.852,
+        "actual": 0.91,
+        "expected_low": 0.78,
+        "expected_high": 0.923
       },
       {
         "bucket": "90-95%",
-        "races": 43,
-        "predicted": 0.928,
-        "actual": 0.977,
-        "expected_low": 0.863,
+        "races": 42,
+        "predicted": 0.927,
+        "actual": 0.952,
+        "expected_low": 0.86,
         "expected_high": 0.993
       },
       {
         "bucket": "95-99%",
-        "races": 100,
-        "predicted": 0.976,
-        "actual": 0.99,
-        "expected_low": 0.95,
+        "races": 92,
+        "predicted": 0.975,
+        "actual": 0.989,
+        "expected_low": 0.948,
         "expected_high": 1.0
       },
       {
         "bucket": "99%+",
-        "races": 216,
+        "races": 242,
         "predicted": 0.998,
         "actual": 1.0,
         "expected_low": 0.994,

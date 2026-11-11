@@ -455,7 +455,7 @@ def render_margins(g):
     c[1].metric("Average miss", fmt_margin(err.mean()), help="Result minus forecast margin, averaged. D+2 means "
                 "Democrats ran 2 points ahead of our forecast on average (a systematic lean, not random noise).")
     c[2].metric("Typical miss (RMSE)", f"{np.sqrt((err ** 2).mean()):.1f} pts",
-                help="Root mean squared error of the margin. Our 2000–2024 backtest at 28 days out: 6.6 pts.")
+                help="Root mean squared error of the margin. Our 2000–2024 backtest at 28 days out: 6.7 pts.")
     if 'race_sd' in d and d['race_sd'].notna().any():
         # The forecast's full spread is the race's own error plus the shared national error
         # (the simulation adds both), so the 90% range uses both.

@@ -252,6 +252,10 @@ def build_forecast(generic_ballot_poll_margin, today=None, n_sims=M.N_SIMS, seed
     house['predicted_margin'] = [b[0] for b in blended]
     house['race_sd'] = [b[1] for b in blended]
     house['poll_weight'] = [round(b[2], 2) for b in blended]
+    # Each district's exposure to the national miss, weighted by what it relies on, as for
+    # Senate and governor races. The district model's national error is the error in the
+    # national environment itself (the generic ballot's miss on the House vote).
+    house['shared_sd'] = [shared_sd(b[2], M.GENERIC_BALLOT_ERROR_SD, days) for b in blended]
 
     # ── Joint simulation: one national draw shared by every race ──
     rng = np.random.default_rng(seed)
@@ -278,7 +282,7 @@ def build_forecast(generic_ballot_poll_margin, today=None, n_sims=M.N_SIMS, seed
     sen_m = sim(senate, 'forecast_margin')
     gov_m = sim(governor, 'forecast_margin')
     h_local = rng.normal(0, 1, (n_sims, len(house))) * own_sd(house['race_sd'].values)
-    h_m = house['predicted_margin'].values + nat * shared_poll_miss_sd(days) + regional(house['state']) + h_local
+    h_m = house['predicted_margin'].values + nat * house['shared_sd'].values + regional(house['state']) + h_local
     h_dem = np.where(house_fixed, house_fixed_dem, h_m > 0)
 
     for df, m in ((senate, sen_m), (governor, gov_m)):

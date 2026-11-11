@@ -1,6 +1,6 @@
 # How the Ledger Forecast Works
 
-*Model version 2026.10.13. Every change to the method is dated and logged publicly before the next forecast that uses it.*
+*Model version 2026.11.12. Every change to the method is dated and logged publicly before the next forecast that uses it.*
 
 The Ledger Forecast is The Ledger's model of the 2026 midterms. The name is the promise: every forecast goes on the record, dated and versioned, and gets graded against the results. Every Senate race, every governor's race and all 435 House districts on the November 3 ballot get a forecast. Each one is a probability, not a prediction of who wins: when we say a candidate has a 70% chance, we expect them to lose about three times in ten. This piece explains where those numbers come from, what we leave out on purpose, and how we'll know afterward whether we got it right.
 
@@ -86,7 +86,7 @@ Each race now has two estimates, each with a known track record. We combine them
 - **One poll from July:** fundamentals still matter.
 - **No polls:** fundamentals carry the whole race.
 
-**State poll lean.** State and district polls have also leaned Democratic historically, less than the generic ballot. In 2024 Senate polls overstated Democrats by about 2.5 points in 17 of 22 races. We remove half of the historical lean, weighting recent elections more. At four weeks out, that's a 1.8-point shift toward Republicans in every race's polling average. Of the five versions we tested, this one scored best.
+**No state poll lean correction.** State and district polls have also leaned Democratic on average, but less consistently than the generic ballot, and in 2026 they leaned the other way. During the 2026 campaign we shifted every race's polling average 1.8 points toward Republicans to remove half of that historical lean. That shift never improved our probabilities in testing on past elections, and in 2026 it made the misses worse, so it was removed after the election (model 2026.11.11). The risk of a one-sided polling miss is now carried entirely by the shared national error in the simulations (Step 4), which can move every race in either direction.
 
 ## The House
 
@@ -104,7 +104,7 @@ All 435 districts are forecast on this year's maps, including the nine states th
 
 Polling errors aren't independent coin flips. When polls miss, they usually miss in the same direction almost everywhere, as in 2016 and 2020. So each of our 20,000 simulated elections draws:
 
-1. **One national error** that moves every race at once. It's about ±2.7 points on election eve and grows to about ±3.6 four weeks out.
+1. **One national error** that moves every race at once. For a well-polled race it's about ±2.7 points, and the same size whether the election is tomorrow or two months away. Polls alone miss by more further out, but once they're blended with fundamentals, the forecast's nationwide miss has stayed about the same size at every point we tested, from election eve to six weeks out. Senate and governor races that lean on fundamentals get a larger national error, about ±5.5 points, because the fundamentals' nationwide misses have been larger. Unpolled House districts get about ±3.0 points, which is how far our estimate of the national House vote can be off.
 2. **A regional error** shared by nearby states in six regions: the Northeast, the Rust Belt, the Plains, the South, the Mountain West and the Pacific.
 3. **Each race's own error**, sized by how accurate that race's estimate has historically been.
 
@@ -124,12 +124,12 @@ The simulations also tell us:
 We re-ran the forecast for every polled Senate and governor race from 2000 to 2024, as of four weeks before each election. That's 553 races. For each election year, the model was built only from the **other** years' data, so it never saw the answer.
 
 **Four weeks out, the full model:**
-- called 89% of winners;
-- missed the final margin by 6.6 points on average (root-mean-square);
+- called 90% of winners;
+- missed the final margin by 6.7 points on average (root-mean-square);
 - scored 0.067 on the Brier score, which measures probability quality; lower is better and a coin flip scores 0.25.
 
 **Every simpler method we compared it with did worse.** Brier scores at the same horizon:
-- polls only: 0.069
+- polls only: 0.070
 - a simple 30-day poll average: 0.089
 - fundamentals only: 0.123
 - repeating the last election's result: 0.182

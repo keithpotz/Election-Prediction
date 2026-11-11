@@ -27,8 +27,8 @@ def test_blended_sd_never_exceeds_either_input():
     _, sd, _ = blend(3.0, 12.0, -2.0, 7.0)
     assert sd < 7.0
 
-def test_shared_error_grows_with_days_and_tracks_reliance():
-    assert shared_poll_miss_sd(28) > shared_poll_miss_sd(0)
+def test_shared_error_is_flat_and_tracks_reliance():
+    assert shared_poll_miss_sd(28) == pytest.approx(shared_poll_miss_sd(0))   # flat since 2026.11.12
     assert shared_sd(1.0, 5.0, 0) == pytest.approx(shared_poll_miss_sd(0))
     assert shared_sd(0.0, 5.0, 0) == pytest.approx(5.0)
 
@@ -112,3 +112,18 @@ def test_house_incumbent_strength():
     assert H.inc_strength(100.0, 0.0, 1) == pytest.approx(H.STRENGTH_CLIP)
     # an open seat carries no incumbent strength
     assert H.inc_strength(20.0, 5.0, 0) == 0.0
+
+
+# ── Snapshot inputs ──────────────────────────────────────────────────────────
+def test_save_inputs_gzips_each_input_and_lists_missing(tmp_path):
+    import gzip, json
+    import publish_forecast as P
+    data = tmp_path / 'src' / 'data'
+    (data / 'polls_2026').mkdir(parents=True)
+    (data / 'polls_2026' / 'polls_2026.csv').write_text('race,margin\nX,1.5\n')
+    dest = P.save_inputs('2027-01-01', out_dir=tmp_path / 'out', data_dir=str(data))
+    with gzip.open(os.path.join(dest, 'polls_2026', 'polls_2026.csv.gz'), 'rt') as f:
+        assert f.read() == 'race,margin\nX,1.5\n'
+    manifest = json.load(open(os.path.join(dest, 'manifest.json')))
+    assert manifest['saved'] == ['polls_2026/polls_2026.csv.gz']
+    assert 'polling_data/house_districts_2026.csv' in manifest['missing']

@@ -81,13 +81,14 @@ People trust forecasters who explain their misses. Publish this before anyone el
 
 In rough order of impact:
 
-- [ ] **Revisit the R-lean correction.** It came from history (2016–2024 polls overstated Democrats) but went the wrong way in 2026, and it's the clearest single cause of the one-sided misses. Test no correction, a smaller one, or one that shrinks toward zero in midterms with an unpopular president.
-- [ ] **Widen the shared national error.** The misses all moving together says races were more correlated than we allowed. A bigger shared error also helps the Senate 90% coverage (79%) and the overconfident 60–70% and 90–95% buckets.
+- [x] **Revisit the R-lean correction.** *Done Nov 11 (model 2026.11.11): state-poll correction removed; generic-ballot correction kept until the 2026 House vote is final. See CHANGELOG.* It came from history (2016–2024 polls overstated Democrats) but went the wrong way in 2026, and it's the clearest single cause of the one-sided misses. Test no correction, a smaller one, or one that shrinks toward zero in midterms with an unpopular president.
+- [x] **Size the shared national error.** *Tested Nov 11 (model 2026.11.12): on election eve it's the right size in the 2000–2022 backtest, so it wasn't widened. Further out it was too big and is now held flat at its election-eve size. 2026's D+4.5 cycle-wide miss was about 1.3 times the assumed size, which is large but within range. See CHANGELOG.* The misses all moving together says races were more correlated than we allowed. A bigger shared error also helps the Senate 90% coverage (79%) and the overconfident 60–70% and 90–95% buckets.
+- [x] **Give House districts their own shared error.** *Done Nov 11 (model 2026.11.12): weighted by poll reliance, ±3.0 for unpolled districts instead of the polls' ±2.7. Small gain in the 2026 replay. See CHANGELOG.*
 - [ ] **Put a floor on unpolled races.** No race with zero polls should go above about 98–99%. An R+14 seat isn't safe in a wave. This alone fixes most of the FL-6/FL-19/PA-11 damage.
 - [ ] **Lean harder on polls where they exist.** Polls alone beat the blended model in the 59 polled races. Check whether the fundamentals weight in polled races is too high.
 - [ ] **Look at the national environment.** We used D+5.9. Compare it with the actual House popular vote once it's final.
 - [ ] **Governors.** Experts beat us here. Look at the 3 governor misses (TX, NV, GA) and whether governor fundamentals need their own tuning.
-- [ ] **Fix the Results tab's range check.** `dashboard_results.py` (line 460) tests results against `race_sd` only. The full 90% range also includes `shared_sd` (`sqrt(race_sd² + shared_sd²)`), which gives 79% for the Senate, not 67%. Fix this before quoting the number publicly.
+- [x] **Fix the Results tab's range check.** *Done Nov 10.* `dashboard_results.py` (line 460) tests results against `race_sd` only. The full 90% range also includes `shared_sd` (`sqrt(race_sd² + shared_sd²)`), which gives 79% for the Senate, not 67%. Fix this before quoting the number publicly.
 - [ ] **Fix the known poll-data issues:**
   - Idaho campaign internals (the scraper ignores Wikipedia's Sponsor column)
   - The possible copied Change Research poll

@@ -61,4 +61,8 @@ def test_state_poll_bias_estimates_weight_recent_cycles():
     frames = {28: pd.DataFrame({'cycle': [2018, 2018, 2024, 2024], 'error': [0.0, 0.0, 4.0, 4.0]})}
     row = C.state_poll_bias_estimates(frames, as_of_cycle=2026)[0]
     assert 2.0 < row['weighted_dem_overstatement'] < 4.0        # recent 2024 miss counts more than 2018
-    assert row['applied_correction'] == pytest.approx(0.5 * row['weighted_dem_overstatement'])
+    assert row['applied_correction'] == pytest.approx(C.STATE_POLL_BIAS_SCALE * row['weighted_dem_overstatement'])
+
+def test_state_poll_correction_is_off():
+    # Removed in 2026.11.11; see the comment on STATE_POLL_BIAS_SCALE.
+    assert C.STATE_POLL_BIAS_SCALE == 0.0

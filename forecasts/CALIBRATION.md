@@ -17,8 +17,8 @@ generic-ballot polls of the time, not the actual result.
 
 | Method | RMSE (pts) | Winners right | Brier | Log loss |
 |---|---|---|---|---|
-| Full model (polls + fundamentals) | 6.58 | 89% | 0.067 | 0.214 |
-| Polls only (weighted, corrected) | 6.91 | 90% | 0.069 | 0.222 |
+| Full model (polls + fundamentals) | 6.72 | 90% | 0.067 | 0.214 |
+| Polls only (weighted, corrected) | 7.09 | 90% | 0.070 | 0.223 |
 | Simple poll average (last 30 days) | 7.20 | 91% | 0.089 | 0.304 |
 | Fundamentals only | 12.44 | 82% | 0.123 | 0.390 |
 | Last election result | 19.47 | 78% | 0.182 | 0.577 |
@@ -27,8 +27,8 @@ generic-ballot polls of the time, not the actual result.
 
 | Method | RMSE (pts) | Winners right | Brier | Log loss |
 |---|---|---|---|---|
-| Full model (polls + fundamentals) | 5.70 | 91% | 0.056 | 0.177 |
-| Polls only (weighted, corrected) | 5.82 | 91% | 0.056 | 0.179 |
+| Full model (polls + fundamentals) | 5.81 | 92% | 0.056 | 0.177 |
+| Polls only (weighted, corrected) | 5.95 | 92% | 0.057 | 0.181 |
 | Simple poll average (last 30 days) | 6.09 | 91% | 0.084 | 0.290 |
 | Fundamentals only | 13.10 | 84% | 0.118 | 0.374 |
 | Last election result | 19.12 | 79% | 0.172 | 0.547 |
@@ -46,28 +46,28 @@ When the model gave the favorite a given chance, how often did the favorite win?
 
 | Forecast chance for favorite | Races | Avg forecast | Favorite actually won | Expected range if calibrated (90%) |
 |---|---|---|---|---|
-| 50-60% | 42 | 55% | 45% | 42-67% |
-| 60-70% | 43 | 65% | 58% | 53-77% |
-| 70-80% | 56 | 75% | 80% | 66-85% |
-| 80-90% | 70 | 86% | 90% | 79-92% |
-| 90-95% | 43 | 93% | 98% | 86-99% |
-| 95-99% | 100 | 98% | 99% | 95-100% |
-| 99%+ | 216 | 100% | 100% | 99-100% |
+| 50-60% | 45 | 55% | 51% | 43-67% |
+| 60-70% | 32 | 65% | 59% | 51-79% |
+| 70-80% | 50 | 75% | 74% | 65-85% |
+| 80-90% | 67 | 85% | 91% | 78-92% |
+| 90-95% | 42 | 93% | 95% | 86-99% |
+| 95-99% | 92 | 98% | 99% | 95-100% |
+| 99%+ | 242 | 100% | 100% | 99-100% |
 
 **Election eve:**
 
 | Forecast chance for favorite | Races | Avg forecast | Favorite actually won | Expected range if calibrated (90%) |
 |---|---|---|---|---|
-| 50-60% | 43 | 56% | 44% | 43-68% |
-| 60-70% | 47 | 65% | 64% | 54-77% |
-| 70-80% | 35 | 75% | 77% | 63-87% |
-| 80-90% | 50 | 86% | 94% | 78-94% |
-| 90-95% | 46 | 92% | 96% | 86-99% |
-| 95-99% | 82 | 98% | 100% | 95-100% |
+| 50-60% | 39 | 55% | 56% | 42-68% |
+| 60-70% | 44 | 65% | 57% | 53-76% |
+| 70-80% | 41 | 75% | 80% | 64-86% |
+| 80-90% | 48 | 85% | 94% | 77-94% |
+| 90-95% | 48 | 93% | 96% | 87-99% |
+| 95-99% | 83 | 98% | 99% | 95-100% |
 | 99%+ | 325 | 100% | 100% | 100-100% |
 
 - **28 days out:** all 7 buckets land inside their expected range.
-- **On election eve:** all 7 buckets land inside their expected range.
+- **On election eve:** 6 of 7 buckets inside their expected range; outside: 80-90% (won 94% vs 77-94% expected), so favorites won *more* often than forecast (underconfident).
 
 Where the model misses calibration, it leans toward *under*confidence: favorites win a bit more often than forecast. That's the safer direction to be wrong in, and it means the uncertainty in the live forecast is, if anything, slightly too wide.
 
@@ -87,23 +87,39 @@ Removing that lean (estimated from other cycles only) improved the backtest at b
 horizons, so the live forecast applies it. 2024 has no list of individual generic-ballot
 polls, so national presidential polls vs. the popular vote stand in for that year.
 
-**State and district polls** lean the same way, less strongly. In 2024 the Senate polls
-overstated Democrats by about 2.5 points in 17 of 22 races. The forecast applies half of
-the historical average lean, weighting recent cycles more, which is a correction of
-1.8 pts at four weeks out. Tested with 2024 included, at four weeks out:
+**State and district polls: no correction (since model 2026.11.11).** These polls have
+also leaned Democratic on average, less strongly and less consistently. From October 7
+to November 10, 2026, the forecast removed half of that historical lean, weighting
+recent cycles more: 1.8 pts toward Republicans at four weeks out. It was dropped after
+the 2026 election, for two reasons:
+
+- **It never helped the probabilities.** In the backtest below it tied no correction on
+  Brier (0.0673 vs. 0.0673). Its only gain was a slightly smaller margin error.
+- **It made 2026 worse.** Senate polls understated Democrats in 2026. Raw averages missed
+  by D+3.8; after the correction they missed by D+5.1. Replaying the Nov 3 forecast without it
+  improves the Senate Brier from 0.046 to 0.035 and governors from 0.053 to 0.043.
+
+The lean is real on average: four weeks out, state polls overstated Democrats in 9 of
+13 cycles from 2000 to 2024, including every cycle from 2014 on. But the size swings
+widely, and it has reversed before: Democrats were understated in 2006 and 2012, and by
+about 4 points in 2026. A lean that large and that unreliable is better handled as
+uncertainty than as a fixed shift. It's carried by the shared polling error in the
+simulations, which moves every race together in either direction.
+
+The test that led to the original choice, at four weeks out, with 2024
+included:
 
 | State-poll correction | Margin RMSE | Brier | Log loss |
 |---|---|---|---|
-| None | 6.72 | 0.0673 | 0.2155 |
+| **None (current)** | 6.72 | 0.0673 | 0.2155 |
 | Full | 6.68 | 0.0698 | 0.2200 |
 | Half | 6.64 | 0.0677 | 0.2153 |
 | Recent-weighted, full | 6.57 | 0.0695 | 0.2192 |
-| **Recent-weighted, half (adopted)** | 6.58 | 0.0673 | 0.2144 |
+| Recent-weighted, half (used Oct 7 – Nov 10, 2026) | 6.58 | 0.0673 | 0.2144 |
 
-Full-strength corrections over-correct and hurt the probabilities. The adopted version
-ties on Brier, has the best log loss, cuts the margin error, and shrinks a 2024-style
-miss from 4.4 to 3.0 points. Five variants were tried, so there is some risk of fitting
-noise; the two half-strength versions agree.
+Full-strength corrections over-correct and hurt the probabilities. The half-strength
+version tied no correction on Brier and edged it on log loss, a difference small enough
+to be noise across five variants. 2026 then went the other way.
 
 ## 4. Tested and not adopted
 

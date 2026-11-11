@@ -11,7 +11,9 @@ edits). Run once per forecast update, then commit the new files:
     git add forecasts src/data/polls_2026 && git commit -m "Forecast YYYY-MM-DD"
 """
 import os
+import gzip
 import json
+import shutil
 from datetime import datetime
 
 import pandas as pd
@@ -22,7 +24,46 @@ from polls_2026 import POLL_SOURCE_NOTE
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.join(BASE_DIR, '..', 'forecasts', '2026')
-MODEL_VERSION = '2026.10.13'  # bump with every methodology change, and log it in forecasts/CHANGELOG.md
+MODEL_VERSION = '2026.11.12'  # bump with every methodology change, and log it in forecasts/CHANGELOG.md
+
+# The scraped and fitted inputs a forecast is built from. The daily refresh overwrites
+# them, so each snapshot keeps a gzipped copy in forecasts/2026/inputs/<date>/ (about
+# 100 KB a day). With them, any published forecast can be rebuilt exactly later, e.g. to
+# test a method change on what the forecast actually knew that day.
+DATA_DIR = os.path.join(BASE_DIR, 'data')
+SNAPSHOT_INPUTS = [
+    os.path.join('polls_2026', 'polls_2026.csv'),
+    os.path.join('polls_2026', 'manual_polls.csv'),
+    os.path.join('polls_2026', 'nominees_2026.csv'),
+    os.path.join('polls_2026', 'house_ratings_2026.csv'),
+    os.path.join('polling_data', 'house_districts_2026.csv'),
+    os.path.join('polling_data', 'senate_race_status_2026.csv'),
+    os.path.join('polling_data', 'governor_race_status_2026.csv'),
+    os.path.join('polling_data', 'pollster_ratings.csv'),
+    os.path.join('polling_data', 'poll_error_model.json'),
+    os.path.join('..', '..', 'forecasts', 'calibration', 'calibration_report.json'),
+]
+
+def save_inputs(stamp, out_dir=None, data_dir=None):
+    """Gzipped copies of SNAPSHOT_INPUTS, under the same relative paths, plus a manifest.
+    Missing files are listed in the manifest rather than failing the publish."""
+    data_dir = data_dir or DATA_DIR
+    dest = os.path.join(out_dir or OUT_DIR, 'inputs', stamp)
+    saved, missing = [], []
+    for rel in SNAPSHOT_INPUTS:
+        src = os.path.normpath(os.path.join(data_dir, rel))
+        if not os.path.exists(src):
+            missing.append(rel.replace(os.sep, '/'))
+            continue
+        name = os.path.basename(src) + '.gz'
+        sub = 'calibration' if 'calibration' in rel else os.path.basename(os.path.dirname(src))
+        os.makedirs(os.path.join(dest, sub), exist_ok=True)
+        with open(src, 'rb') as fi, gzip.open(os.path.join(dest, sub, name), 'wb') as fo:
+            shutil.copyfileobj(fi, fo)
+        saved.append(f'{sub}/{name}')
+    with open(os.path.join(dest, 'manifest.json'), 'w') as fh:
+        json.dump({'model_version': MODEL_VERSION, 'saved': saved, 'missing': missing}, fh, indent=2)
+    return dest
 
 def _jsonable(x):
     if isinstance(x, dict):
@@ -76,8 +117,10 @@ def publish(generic_ballot=None):
     f['governor'].to_csv(os.path.join(OUT_DIR, f'{stamp}_governor_races.csv'), index=False)
     house_cols = ['state', 'district', 'pvi', 'incumbent', 'incumbent_party', 'incumbent_running',
                   'dem_candidate', 'rep_candidate', 'uncontested', 'predicted_margin',
-                  'dem_win_prob', 'predicted_winner', 'consensus_rating', 'n_polls', 'poll_avg']
+                  'dem_win_prob', 'predicted_winner', 'consensus_rating', 'n_polls', 'poll_avg',
+                  'poll_weight', 'race_sd', 'shared_sd']
     f['house'][house_cols].to_csv(os.path.join(OUT_DIR, f'{stamp}_house_districts.csv'), index=False)
+    save_inputs(stamp)
 
     # One line per publish: the topline history, for charting the forecast over time.
     # Read-append-write so rows from older model versions (fewer columns) stay aligned.

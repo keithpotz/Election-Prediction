@@ -67,7 +67,7 @@ Every daily 2026 forecast is in `forecasts/2026/`, one set of files per day, eac
 - **The forecast numbers were posted on X (Twitter) almost daily during the campaign** at [@keithpotz](https://x.com/keithpotz), as share images from the dashboard. X, not us, dates those posts, and the numbers in them match the snapshot files for the same days.
 - **From now on, each forecast is uploaded the day it's published,** so GitHub's own timestamps show it existed before the election it forecasts.
 
-**Historical backtest** (every polled Senate and governor race, 2000–2022, forecast 28 days out using only other cycles' data): RMSE 6.6 points, 89% of winners, Brier 0.067. See [`forecasts/CALIBRATION.md`](forecasts/CALIBRATION.md).
+**Historical backtest** (every polled Senate and governor race, 2000–2022, forecast 28 days out using only other cycles' data): RMSE 6.7 points, 90% of winners, Brier 0.067 (model 2026.11.12). See [`forecasts/CALIBRATION.md`](forecasts/CALIBRATION.md).
 
 ---
 

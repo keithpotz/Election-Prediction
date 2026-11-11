@@ -139,7 +139,10 @@ def build_backtest(office, gb, poll_frames, archive, correct_generic_bias=True, 
             err_model = fit_poll_error_model(other_polls)
             od = other_polls[other_polls['days_before'] == d]
             cycle_means = od.groupby('cycle')['error'].mean()
-            p_shared_sd = float(cycle_means.std(ddof=1))
+            # Shared poll miss at its election-eve size at every horizon, as in the live
+            # model (blend.SHARED_POLL_MISS_PER_DAY = 0)
+            eve = other_polls[other_polls['days_before'] == 0]
+            p_shared_sd = float(eve.groupby('cycle')['error'].mean().std(ddof=1))
             # Optional: remove state polls' average historical lean (other cycles only)
             if correct_poll_bias:
                 # optionally weight recent cycles more (decay per cycle of distance from this one)
@@ -176,7 +179,9 @@ def build_backtest(office, gb, poll_frames, archive, correct_generic_bias=True, 
                     'last_p': norm.cdf(last_by_po[po] / last_sd) if po in last_by_po.index else np.nan,
                     'simple_margin': simple_by_po.get(po, np.nan),
                     'simple_p': norm.cdf(simple_by_po[po] / simple_sd) if po in simple_by_po.index else np.nan,
-                    'poll_weight': w, 'gb_bias_used': gb_bias, 'poll_bias_used': poll_bias,
+                    'poll_weight': w, 'race_sd': race_sd, 'shared_sd': shared,
+                    'poll_shared_sd': p_shared_sd, 'fund_shared_sd': f_shared_sd,
+                    'gb_bias_used': gb_bias, 'poll_bias_used': poll_bias,
                 })
     return pd.DataFrame(rows)
 
@@ -254,10 +259,13 @@ def calibration_table(df, col='model_p'):
     out['expected_high'] = (out['predicted'] + 1.645 * se).clip(0, 1)
     return out.reset_index()
 
-# State/district poll lean correction (adopted 2026-10-07 after testing with 2024 included):
-# half of the cycles' average polling miss, weighting recent cycles more (0.7 per cycle
-# back). Tested alternatives: none, full, half, recent-weighted full (see CALIBRATION.md).
-STATE_POLL_BIAS_SCALE = 0.5
+# State/district poll lean correction. Adopted 2026-10-07 at half strength (recent-weighted
+# average miss x 0.5, i.e. 1.8 pts toward Republicans at four weeks out). Removed
+# 2026-11-11 (model 2026.11.11): in the 2000-2024 backtest it tied no correction on Brier
+# (0.0673 vs 0.0673), and in 2026 it pushed a D+3.8 Senate polling miss to D+5.1. The
+# direction of a cycle's polling miss isn't predictable from past cycles, so the risk
+# belongs in the shared error, not in the mean. Estimates are still computed and reported.
+STATE_POLL_BIAS_SCALE = 0.0
 STATE_POLL_BIAS_DECAY = 0.7
 
 def state_poll_bias_estimates(poll_frames, as_of_cycle=2026):
@@ -473,23 +481,39 @@ Removing that lean (estimated from other cycles only) improved the backtest at b
 horizons, so the live forecast applies it. 2024 has no list of individual generic-ballot
 polls, so national presidential polls vs. the popular vote stand in for that year.
 
-**State and district polls** lean the same way, less strongly. In 2024 the Senate polls
-overstated Democrats by about 2.5 points in 17 of 22 races. The forecast applies half of
-the historical average lean, weighting recent cycles more, which is a correction of
-{_spb_at(report, 28)} pts at four weeks out. Tested with 2024 included, at four weeks out:
+**State and district polls: no correction (since model 2026.11.11).** These polls have
+also leaned Democratic on average, less strongly and less consistently. From October 7
+to November 10, 2026, the forecast removed half of that historical lean, weighting
+recent cycles more: 1.8 pts toward Republicans at four weeks out. It was dropped after
+the 2026 election, for two reasons:
+
+- **It never helped the probabilities.** In the backtest below it tied no correction on
+  Brier (0.0673 vs. 0.0673). Its only gain was a slightly smaller margin error.
+- **It made 2026 worse.** Senate polls understated Democrats in 2026. Raw averages missed
+  by D+3.8; after the correction they missed by D+5.1. Replaying the Nov 3 forecast without it
+  improves the Senate Brier from 0.046 to 0.035 and governors from 0.053 to 0.043.
+
+The lean is real on average: four weeks out, state polls overstated Democrats in 9 of
+13 cycles from 2000 to 2024, including every cycle from 2014 on. But the size swings
+widely, and it has reversed before: Democrats were understated in 2006 and 2012, and by
+about 4 points in 2026. A lean that large and that unreliable is better handled as
+uncertainty than as a fixed shift. It's carried by the shared polling error in the
+simulations, which moves every race together in either direction.
+
+The test that led to the original choice, at four weeks out, with 2024
+included:
 
 | State-poll correction | Margin RMSE | Brier | Log loss |
 |---|---|---|---|
-| None | 6.72 | 0.0673 | 0.2155 |
+| **None (current)** | 6.72 | 0.0673 | 0.2155 |
 | Full | 6.68 | 0.0698 | 0.2200 |
 | Half | 6.64 | 0.0677 | 0.2153 |
 | Recent-weighted, full | 6.57 | 0.0695 | 0.2192 |
-| **Recent-weighted, half (adopted)** | 6.58 | 0.0673 | 0.2144 |
+| Recent-weighted, half (used Oct 7 – Nov 10, 2026) | 6.58 | 0.0673 | 0.2144 |
 
-Full-strength corrections over-correct and hurt the probabilities. The adopted version
-ties on Brier, has the best log loss, cuts the margin error, and shrinks a 2024-style
-miss from 4.4 to 3.0 points. Five variants were tried, so there is some risk of fitting
-noise; the two half-strength versions agree.
+Full-strength corrections over-correct and hurt the probabilities. The half-strength
+version tied no correction on Brier and edged it on log loss, a difference small enough
+to be noise across five variants. 2026 then went the other way.
 
 ## 4. Tested and not adopted
 

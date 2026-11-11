@@ -4,6 +4,51 @@ Every change to how forecasts are produced gets a dated entry here, *before* the
 forecast built with it is published. Forecast snapshots in `forecasts/2026/` record which
 `model_version` produced them.
 
+## 2026.11.12: Shared national error held flat instead of growing with days to go; House districts get their own
+
+**What changed.** The nationwide polling miss drawn in every simulation was about ±2.7 points on election eve and grew by 0.036 points a day: about ±3.6 at four weeks out and ±4.2 at six. It is now ±2.7 at every horizon (`SHARED_POLL_MISS_PER_DAY = 0` in `src/blend.py`). The fundamentals part of the shared error is unchanged, so races that lean on fundamentals still get more.
+
+**Why.** We checked the size of the shared error directly in the 2000–2022 backtest: for each cycle, how far the model's average miss across all its races landed, compared with the shared error it assumed.
+- **Election eve: the right size.** The assumed shared error averaged 3.0 points, and actual cycle-wide misses had a spread of 3.0.
+- **Further out: too big.** Polls alone do miss by more weeks out, but the full model's cycle-wide miss stayed about 2.7 points at 14, 28 and 42 days. The assumed size grew to 3.6, 3.9 and 4.4. At four weeks out, actual cycle misses came in at about two-thirds of what the model allowed for.
+- **2026 fits this.** The final forecast's cycle-wide miss was D+4.5 against an assumed 3.5, about 1.3 times the assumed size. That's large but within range, and the Nov 3 forecast was 3 days out, where the size barely changes.
+
+**Effect.** Early-season Senate and governor odds get a little more confident. Election-eve forecasts are essentially unchanged, and the final 2026 forecast would be the same.
+
+**Backtest after the change** (28 days out, 553 races): log loss 0.214 (was 0.215), Brier 0.067, RMSE 6.72 and 90% of winners, all unchanged. Polls only: log loss 0.223 (was 0.225). Election eve is unchanged: Brier 0.056, log loss 0.177. Calibration: all 7 buckets in range at 28 days out. On election eve, 6 of 7 are in range; the 80–90% bucket is still slightly underconfident. The cycle check now gives 0.85 of the assumed size at 28 days (was 0.68) and 1.02 on election eve (unchanged).
+
+**Caveat.** This rests on 12 cycles, so the true spread could be anywhere from about 2.2 to 3.3 points. Holding the size at its election-eve value, rather than shrinking it further at long horizons, keeps the model on the cautious side.
+
+**House districts get their own shared error.** Every House district used the polls' shared error, even though most districts have no polls and run on the district model. Each district's exposure is now weighted by what it relies on, as for Senate and governor races: the polls' ±2.7 for its polled part, and ±3.0 for its district-model part. The district model's national error is the error in the national environment itself, since a district's forecast moves one-for-one with the national House vote (`GENERIC_BALLOT_ERROR_SD`). Unpolled districts go from ±2.7 to ±3.0. The House snapshot now also records each district's `poll_weight`, `race_sd` and `shared_sd`.
+
+**How these changes would have done in 2026.** We replayed five 2026 forecasts (Oct 6, 13, 20, 27 and Nov 3) under model 2026.10.13 and under this model, and graded both against the 486 races decided so far:
+
+| Forecast date | Brier, 2026.10.13 → 2026.11.12 | Misses | Senate control (D) |
+|---|---|---|---|
+| Oct 6 | 0.052 → 0.048 | 36 → 34 | 52% → 67% |
+| Oct 13 | 0.051 → 0.046 | 35 → 33 | 53% → 68% |
+| Oct 20 | 0.049 → 0.044 | 32 → 28 | 52% → 67% |
+| Oct 27 | 0.046 → 0.042 | 31 → 27 | 58% → 72% |
+| Nov 3 | 0.046 → 0.042 | 31 → 27 | 67% → 78% |
+
+- **Nearly all of the gain comes from removing the state-poll lean (2026.11.11).** The 2026 misses were part of why it was removed, so this is partly in-sample.
+- **The flat shared error was chosen on 2000–2022 alone, so 2026 is a true out-of-sample test for it. The result is about even.** In October it helped Senate and governor races a little (Oct 6 log loss: Senate 0.186 → 0.178, governors 0.191 → 0.184). It hurt the House a little (0.161 → 0.167), because a smaller national error made districts more confident in a year with a large national miss. The House change above recovers about a quarter of that (0.167 → 0.165). On Nov 3, 3 days out, it makes no difference.
+- **Caveats.** The replays use today's poll file, so polls added to Wikipedia after a forecast date but taken before it are included. That applies equally to both versions, so the comparison between them is fair. The House replay doesn't reproduce what was published, because the district file was re-scraped after the election. The replay gives 95–99% House control against the 82–92% we published, so only the old-vs-new comparison is meaningful for the House. Senate and governor replays match on Nov 3: 67.4% vs. 67.5% Senate control.
+
+## 2026.11.11: State-poll lean correction removed; each snapshot saves its inputs
+
+**State-poll lean correction removed.** In models 2026.10.07 through 2026.10.13 (forecasts from Oct 7 to Nov 4), every state and district polling average was shifted toward Republicans by half of the historical Democratic lean in state polls, weighting recent cycles more: 1.8 pts at four weeks out, 1.3 on election eve. It is now zero (`STATE_POLL_BIAS_SCALE = 0` in `src/calibration.py`). Why:
+- **It never improved the probabilities.** In the 2000–2024 backtest it tied no correction on Brier (0.0673 vs. 0.0673). It only cut the margin error slightly (RMSE 6.58 vs. 6.72).
+- **It made 2026 worse.** Senate polls understated Democrats. Raw averages missed by D+3.8, and corrected averages by D+5.1. All 33 of the final forecast's misses were Democratic wins.
+- **Replaying the Nov 3 forecast without it:** Senate Brier 0.046 → 0.035, governors 0.053 → 0.043, Senate control 67% → 78% Democratic. (A House replay isn't exact; see the next item.)
+- **The lean is real on average but unreliable.** State polls overstated Democrats in 9 of 13 cycles from 2000 to 2024, but understated them in 2006, 2012 and 2026. That risk is carried by the shared polling error in the simulations, which moves every race in either direction.
+
+This was decided on the backtest plus one cycle, so it isn't tuned to 2026. The generic-ballot correction stays for now: it improved the backtest and has held in 12 of 14 cycles. It will be re-estimated with 2026 included once the national House vote is final.
+
+**Backtest after the change** (553 races, 28 days out): RMSE 6.72 (was 6.58), 90% of winners (was 89%), Brier 0.067 (unchanged), log loss 0.215 (was 0.214). On election eve, Brier is 0.056, unchanged. Calibration: all 7 buckets in range at 28 days out. On election eve, 6 of 7 are in range; the 80–90% bucket's favorites won slightly more often than forecast (underconfident).
+
+**Each snapshot saves its inputs.** The daily refresh overwrites the scraped data. After the election, the House district file was re-scraped with post-election details (37 defeated incumbents listed as non-incumbents), so the Nov 3 House forecast can't be rebuilt exactly. Each publish now also writes gzipped copies of the polls, nominees, district list, race status, ratings, pollster ratings, poll error model and calibration report to `forecasts/2026/inputs/<date>/`, with a manifest. That's about 100 KB a day.
+
 ## 2026.10.13: Poll-table fixes, hand-entered polls, second approval source; tipping point and election night
 
 **Poll tables read correctly in more races.**

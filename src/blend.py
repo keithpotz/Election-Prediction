@@ -23,10 +23,14 @@ import pandas as pd
 
 from polls_average import backtest_poll_averages, fit_poll_error_model, poll_error_sd, HORIZONS
 
-# How the cycle-wide shared polling miss grows with days to go (fit to the backtest:
-# 2.7 pts on election eve, 3.6 at 4 weeks, 4.2 at 6 weeks).
+# The cycle-wide shared polling miss, held flat at its election-eve size (2.7 pts).
+# Polls alone do miss by more further out (3.6 pts at 4 weeks, 4.2 at 6), and until
+# 2026.11.12 this grew to match. But the full model's own cycle-wide miss, after blending
+# in fundamentals, stays about 2.7-3.0 pts at every horizon in the 2000-2022 backtest, so
+# the growing version made early forecasts too uncertain (cycle misses at 28 days came in
+# at about two-thirds of the assumed size). See forecasts/CHANGELOG.md, 2026.11.12.
 SHARED_POLL_MISS_BASE = 2.7
-SHARED_POLL_MISS_PER_DAY = 0.036
+SHARED_POLL_MISS_PER_DAY = 0.0
 
 def shared_poll_miss_sd(days_to_election):
     return SHARED_POLL_MISS_BASE + SHARED_POLL_MISS_PER_DAY * max(days_to_election, 0)
