@@ -107,6 +107,7 @@ Polling errors aren't independent coin flips. When polls miss, they usually miss
 1. **One national error** that moves every race at once. For a well-polled race it's about ±2.7 points, and the same size whether the election is tomorrow or two months away. Polls alone miss by more further out, but once they're blended with fundamentals, the forecast's nationwide miss has stayed about the same size at every point we tested, from election eve to six weeks out. Senate and governor races that lean on fundamentals get a larger national error, about ±5.5 points, because the fundamentals' nationwide misses have been larger. Unpolled House districts get about ±3.0 points, which is how far our estimate of the national House vote can be off.
 2. **A regional error** shared by nearby states in six regions: the Northeast, the Rust Belt, the Plains, the South, the Mountain West and the Pacific.
 3. **Each race's own error**, sized by how accurate that race's estimate has historically been.
+4. **A small chance of a surprise in unpolled races.** Each contested race with no polls has a 1% chance per simulation of being decided by a coin flip, standing in for things a model of partisanship and incumbency can't see, like a scandal. No unpolled race goes above 99.5%.
 
 The regional piece changes how races move together without making any single race more or less certain.
 

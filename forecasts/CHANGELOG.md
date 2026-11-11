@@ -4,7 +4,7 @@ Every change to how forecasts are produced gets a dated entry here, *before* the
 forecast built with it is published. Forecast snapshots in `forecasts/2026/` record which
 `model_version` produced them.
 
-## 2026.11.12: Shared national error held flat instead of growing with days to go; House districts get their own
+## 2026.11.12: Shared national error held flat instead of growing with days to go; House districts get their own; unpolled races capped at 99.5%
 
 **What changed.** The nationwide polling miss drawn in every simulation was about ±2.7 points on election eve and grew by 0.036 points a day: about ±3.6 at four weeks out and ±4.2 at six. It is now ±2.7 at every horizon (`SHARED_POLL_MISS_PER_DAY = 0` in `src/blend.py`). The fundamentals part of the shared error is unchanged, so races that lean on fundamentals still get more.
 
@@ -21,7 +21,10 @@ forecast built with it is published. Forecast snapshots in `forecasts/2026/` rec
 
 **House districts get their own shared error.** Every House district used the polls' shared error, even though most districts have no polls and run on the district model. Each district's exposure is now weighted by what it relies on, as for Senate and governor races: the polls' ±2.7 for its polled part, and ±3.0 for its district-model part. The district model's national error is the error in the national environment itself, since a district's forecast moves one-for-one with the national House vote (`GENERIC_BALLOT_ERROR_SD`). Unpolled districts go from ±2.7 to ±3.0. The House snapshot now also records each district's `poll_weight`, `race_sd` and `shared_sd`.
 
-**How these changes would have done in 2026.** We replayed five 2026 forecasts (Oct 6, 13, 20, 27 and Nov 3) under model 2026.10.13 and under this model, and graded both against the 486 races decided so far:
+**Unpolled races capped at 99.5%.** In each simulation, each contested race with no polls now has a 1% chance of being decided by a coin flip instead of its simulated margin (`UNPOLLED_UPSET_RATE` in `src/forecast_2026.py`). That stands in for upsets the fundamentals can't see, like a scandal or a collapsing campaign, and caps the race at 99.5%. It's part of the simulation, so seat totals include it. Polled races are unchanged.
+- **The evidence is mixed.** In 2026, 3 of 260 unpolled House districts at 99%+ were upsets (FL-6, FL-19, PA-11), where the model expected 0.2. In 2022, 0 of 137 districts at 99%+ were. In the 2000–2024 Senate and governor backtest, 0 of 325 polled races at 99%+ were. The best fit to the 2022 and 2026 House results together is a 1.2% upset chance (a 99.4% cap). 2026 alone gives 98.9%, and 2022 alone gives no cap. 99.5% is the round number on the cautious side of that range.
+- **Effect.** It's small. The 2026 replay shows log loss 0.1502 → 0.1495 on Nov 3 (House 0.1511 → 0.1502). Brier and misses are unchanged. The unpolled Senate and governor favorites all won, so those scores are a hair worse. A cap can't do much for the Brier score, since an upset at 99.5% costs nearly as much as one at 99.9%. Its job is to keep the forecast from printing near-certainties for races nobody has polled.
+ We replayed five 2026 forecasts (Oct 6, 13, 20, 27 and Nov 3) under model 2026.10.13 and under this model, and graded both against the 486 races decided so far:
 
 | Forecast date | Brier, 2026.10.13 → 2026.11.12 | Misses | Senate control (D) |
 |---|---|---|---|
@@ -30,6 +33,8 @@ forecast built with it is published. Forecast snapshots in `forecasts/2026/` rec
 | Oct 20 | 0.049 → 0.044 | 32 → 28 | 52% → 67% |
 | Oct 27 | 0.046 → 0.042 | 31 → 27 | 58% → 72% |
 | Nov 3 | 0.046 → 0.042 | 31 → 27 | 67% → 78% |
+
+(The table includes the House shared-error change but not the unpolled cap, which moves Brier by under 0.0002.)
 
 - **Nearly all of the gain comes from removing the state-poll lean (2026.11.11).** The 2026 misses were part of why it was removed, so this is partly in-sample.
 - **The flat shared error was chosen on 2000–2022 alone, so 2026 is a true out-of-sample test for it. The result is about even.** In October it helped Senate and governor races a little (Oct 6 log loss: Senate 0.186 → 0.178, governors 0.191 → 0.184). It hurt the House a little (0.161 → 0.167), because a smaller national error made districts more confident in a year with a large national miss. The House change above recovers about a quarter of that (0.167 → 0.165). On Nov 3, 3 days out, it makes no difference.

@@ -35,6 +35,15 @@ import simulations as SIMS
 
 ELECTION_DAY = date(2026, 11, 3)
 
+# Unpolled races can be upset by things the fundamentals can't see (a scandal, a collapsing
+# campaign, a strong local candidate). In each simulation, each contested unpolled race has
+# this chance of being decided by a coin flip instead of its simulated margin, which caps
+# its win probability at 1 - UNPOLLED_UPSET_RATE / 2 = 99.5%. Fit on the House district
+# model's out-of-year results: no such upsets among 137 districts at 99%+ in 2022, but 3
+# of 260 unpolled districts at 99%+ in 2026 (expected 0.2). The best fit to both years is
+# 1.2%. See forecasts/CHANGELOG.md, 2026.11.12.
+UNPOLLED_UPSET_RATE = 0.01
+
 def days_to_election(today=None):
     return max((ELECTION_DAY - (today or date.today())).days, 0)
 
@@ -284,6 +293,19 @@ def build_forecast(generic_ballot_poll_margin, today=None, n_sims=M.N_SIMS, seed
     h_local = rng.normal(0, 1, (n_sims, len(house))) * own_sd(house['race_sd'].values)
     h_m = house['predicted_margin'].values + nat * house['shared_sd'].values + regional(house['state']) + h_local
     h_dem = np.where(house_fixed, house_fixed_dem, h_m > 0)
+
+    # Unpolled-race upsets (UNPOLLED_UPSET_RATE). A separate generator, so every other draw
+    # is unchanged. For Senate and governor races the margin's sign is flipped at random,
+    # since chamber counts and tipping points read the margins.
+    up_rng = np.random.default_rng(seed + 1)
+    def upset(n_races, unpolled):
+        hit = (up_rng.random((n_sims, n_races)) < UNPOLLED_UPSET_RATE) & np.asarray(unpolled, dtype=bool)
+        return hit, up_rng.random((n_sims, n_races)) < 0.5
+    for m, df in ((sen_m, senate), (gov_m, governor)):
+        hit, dem = upset(len(df), df['n_polls'].fillna(0).values == 0)
+        m[hit] = np.where(dem, 1, -1)[hit] * np.maximum(np.abs(m[hit]), 0.01)
+    hit, dem = upset(len(house), (house["n_polls"].fillna(0).values == 0) & ~np.asarray(house_fixed, dtype=bool))
+    h_dem = np.where(hit, dem, h_dem)
 
     for df, m in ((senate, sen_m), (governor, gov_m)):
         df['dem_side_win_prob'] = (m > 0).mean(axis=0).round(3)
