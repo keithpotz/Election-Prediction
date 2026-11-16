@@ -50,6 +50,13 @@ def test_generic_ballot_bias_interpolates(tmp_path, monkeypatch):
     assert C.generic_ballot_bias(60) == pytest.approx(3.0)     # held flat beyond the last horizon
 
 
+def test_recent_generic_ballot_counts_only_certified_rows(tmp_path):
+    p = tmp_path / 'gb.csv'
+    p.write_text('cycle,days_before,gb_avg,gb_actual,note\n2026,0,8.3,,x\n2026,28,8.45,11.0,y\n')
+    assert C._recent_generic_ballot(0, str(p)).empty
+    r = C._recent_generic_ballot(28, str(p))
+    assert r['gb_actual'].tolist() == [11.0] and not r['proxy'].any()
+
 def test_state_poll_bias_reads_report(tmp_path, monkeypatch):
     monkeypatch.setattr(C, 'OUT_DIR', str(tmp_path))
     assert C.state_poll_bias(28) == 0.0                         # no report yet

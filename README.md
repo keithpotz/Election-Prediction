@@ -22,39 +22,41 @@ The full method is in [`forecasts/METHODOLOGY.md`](forecasts/METHODOLOGY.md), al
 
 ## How the 2026 forecast did
 
-*Preliminary: 486 of 506 races graded as of November 10, 2026. The rest (Alaska, Mississippi Senate, the Louisiana runoff and some House seats) are still being counted. Full report: [`forecasts/GRADES_2026.md`](forecasts/GRADES_2026.md).*
+*Preliminary: 495 of 506 races graded as of November 16, 2026. The rest (Alaska Senate, the Louisiana runoff and some House seats) are still being counted. Full report: [`forecasts/GRADES_2026.md`](forecasts/GRADES_2026.md).*
 
 **Chamber control:** Democrats won both chambers, and the final forecast (Nov 3) favored them in both.
 
 | | Final forecast | Result |
 |---|---|---|
-| Senate | Democrats 67.5% (median 52 seats, 90% range 47–56) | Democrats, 54 seats so far ✓ |
-| House | Democrats 91.9% (median 234 seats, 90% range 215–259) | Democrats, 257 seats so far ✓ |
+| Senate | Democrats 67.5% (median 52 seats, 90% range 47–56) | Democrats, 55 seats so far ✓ |
+| House | Democrats 91.9% (median 234 seats, 90% range 215–259) | Democrats, 259 seats so far ✓ |
 
 **Race by race (final forecast):**
 
 | Method | Races | Winners right | Brier (lower is better) | Log loss |
 |---|---|---|---|---|
-| **The Ledger Forecast** | 486 | **93%** | **0.050** | **0.177** |
-| Expert consensus (Cook, Sabato, Inside Elections, …) | 432 | 94% | 0.055 | 0.195 |
-| Polls only (our corrected average, polled races) | 59 | 95% | 0.045 | 0.168 |
-| Fundamentals only | 67 | 87% | 0.104 | 0.329 |
+| **The Ledger Forecast** | 495 | **93%** | **0.053** | **0.183** |
+| Expert consensus (Cook, Sabato, Inside Elections, …) | 439 | 94% | 0.057 | 0.202 |
+| Polls only (our poll average, polled races) | 62 | 94% | 0.055 | 0.191 |
+| Fundamentals only | 70 | 83% | 0.122 | 0.373 |
 
-- **Beat the expert consensus** on probability quality: overall, in the House (0.050 vs. 0.055) and in the Senate (0.046 vs. 0.053). The experts did better on governors (0.047 vs. 0.054).
-- **Got better every week.** Brier improved from about 0.057 in early October to 0.050 on election day.
-- **The 99%+ calls held:** 325 races, 99% right.
+- **Beat the expert consensus** on probability quality: overall, in the House (0.051 vs. 0.055) and in the Senate (0.067 vs. 0.073). The experts did better on governors (0.059 vs. 0.062).
+- **Got better over the campaign.** Brier was 0.057 on Oct 6 and 0.063 the next day, when the poll correction was added, then improved steadily to 0.053 on election day.
+- **The 99%+ calls held:** 327 races, 99% right.
 
 **What went wrong** (stated plainly, since that's the point of grading):
-- **Every miss went the same way.** All 33 misses were races we had going Republican that Democrats won. Democrats beat our forecast margin by about 5 points on average, in the House, the Senate and governors alike.
+- **Nearly every miss went the same way.** 35 of our 36 misses were races we had going Republican that Democrats won, including the Mississippi Senate race (86% Republican). The exception was Maine's 2nd district. Democrats beat our forecast margin by about 5 points on average, and did better than our margin in 79% of races, in the House, the Senate and governors alike.
 - **Our poll correction backfired.** We pulled state polls 1.8 points toward Republicans, because polls overstated Democrats in 2016–2024. In 2026 they understated them. In Senate races, raw averages missed by D+3.8 and our corrected averages by D+5.1.
 - **Too confident in unpolled seats.** Three House seats with no polls (FL-6, FL-19, PA-11) were at 99.6%+ Republican, and Democrats won all three.
 - **Ranges too narrow.** 79% of Senate and governor results fell inside our 90% ranges.
+- **The House seat count was at the edge.** Democrats have 259 seats so far, at the top of our 90% range (215–259).
 - **Too cautious on the chambers.** Nate Silver's FLIPR (benchmark only, never an input) had Democrats at 82% for the Senate and 96% for the House. Same national error, seen from the other side.
 
-The fixes are tracked in [`post-election-plan.md`](post-election-plan.md):
-- rethink the correction toward Republicans
-- widen the shared national error
-- cap win chances in unpolled races
+The fixes are tracked in [`post-election-plan.md`](post-election-plan.md) and logged in [`forecasts/CHANGELOG.md`](forecasts/CHANGELOG.md):
+- **Removed** the correction toward Republicans in state polls (model 2026.11.11).
+- **Resized** the shared national error: tested against history, and held flat instead of growing with days to go (2026.11.12).
+- **Capped** win chances in unpolled races at 99.5% (2026.11.12).
+- **Replayed on 2026:** the Nov 3 forecast would have scored a Brier of 0.045 instead of 0.053, with 30 misses instead of 36. Most of the gain comes from removing the poll correction, which 2026 helped motivate, so treat this as partly in-sample.
 
 Every change goes in the [changelog](forecasts/CHANGELOG.md) before the next forecast uses it.
 

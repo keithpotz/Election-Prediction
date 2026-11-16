@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-10T09:17:54",
+  "fetched_at": "2026-11-15T16:04:03",
   "generic_ballot": {
     "margin": 8.35,
     "aggregators": [
@@ -51,7 +51,7 @@
   },
   "approval": {
     "approve": 37.4,
-    "n_polls": 33,
-    "latest_poll": "2026-11-09"
+    "n_polls": 32,
+    "latest_poll": "2026-11-11"
   }
 }

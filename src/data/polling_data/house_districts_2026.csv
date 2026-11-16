@@ -1,17 +1,17 @@
 state,district,pvi,incumbent,incumbent_party,incumbent_running,held_by,already_decided,has_dem,has_rep,dem_candidate,rep_candidate,status
 ALABAMA,1,-17.0,,,False,,False,True,True,Clyde Jones Jr.,Jerry Carl,New member elected. Republican gain.
-ALABAMA,2,-7.0,Shomari Figures,DEMOCRAT,True,DEMOCRAT,True,True,True,Shomari Figures,Rhett Marques,Incumbent re-elected.; Incumbent retired to run for U.S. Senate.[32] Republican loss.
+ALABAMA,2,-7.0,Shomari Figures,DEMOCRAT,True,DEMOCRAT,True,True,True,Shomari Figures,Rhett Marques,Incumbent re-elected.; Incumbent retired to run for U.S. Senate.[33] Republican loss.
 ALABAMA,3,-23.0,Mike Rogers,REPUBLICAN,True,REPUBLICAN,True,True,True,Lee McInnis,Mike Rogers,Incumbent re-elected.
 ALABAMA,4,-33.0,Robert Aderholt,REPUBLICAN,True,REPUBLICAN,True,True,True,Amanda Pusczek,Robert Aderholt,Incumbent re-elected.
 ALABAMA,5,-15.0,Dale Strong,REPUBLICAN,True,REPUBLICAN,True,True,True,Andrew Sneed,Dale Strong,Incumbent re-elected.
 ALABAMA,6,-17.0,Gary Palmer,REPUBLICAN,True,REPUBLICAN,True,True,True,Maurice Mercer,Gary Palmer,Incumbent re-elected.
 ALABAMA,7,10.0,Terri Sewell,DEMOCRAT,True,DEMOCRAT,True,True,True,Terri Sewell,Ammie Akin,Incumbent re-elected.
 ALASKA,0,-6.0,Nick Begich III,REPUBLICAN,True,REPUBLICAN,False,True,True,Eric Hafner,Nick Begich III,Incumbent advanced to general
-ARIZONA,1,-1.0,,,False,REPUBLICAN,False,True,True,Amish Shah,Jay Feely,Incumbent retired to run for governor.[33] Democratic gain.
+ARIZONA,1,-1.0,,,False,REPUBLICAN,False,True,True,Amish Shah,Jay Feely,Incumbent retired to run for governor.[34] Democratic gain.
 ARIZONA,2,-7.0,Eli Crane,REPUBLICAN,True,REPUBLICAN,True,True,True,Jonathan Nez,Eli Crane,Incumbent re-elected.
 ARIZONA,3,22.0,Yassamin Ansari,DEMOCRAT,True,DEMOCRAT,True,True,False,Yassamin Ansari,,Incumbent re-elected.
 ARIZONA,4,4.0,Greg Stanton,DEMOCRAT,True,DEMOCRAT,True,True,True,Greg Stanton,Zuhdi Jasser,Incumbent re-elected.
-ARIZONA,5,-10.0,,,False,REPUBLICAN,False,True,True,Elizabeth Lee,Mark Lamb,Incumbent retired to run for governor.[34] Republican hold.
+ARIZONA,5,-10.0,,,False,REPUBLICAN,False,True,True,Elizabeth Lee,Mark Lamb,Incumbent retired to run for governor.[35] Republican hold.
 ARIZONA,6,0.0,,,False,REPUBLICAN,False,True,True,JoAnna Mendoza,Juan Ciscomani,Incumbent lost re-election. Democratic gain.
 ARIZONA,7,13.0,Adelita Grijalva,DEMOCRAT,True,DEMOCRAT,True,True,True,Adelita Grijalva,Daniel Butierez,Incumbent re-elected.
 ARIZONA,8,-8.0,Abraham Hamadeh,REPUBLICAN,True,REPUBLICAN,True,True,True,Bernadette Greene-Placentia,Abraham Hamadeh,Incumbent re-elected.
@@ -26,11 +26,11 @@ CALIFORNIA,3,6.0,Ami Bera,DEMOCRAT,True,DEMOCRAT,True,True,True,Ami Bera,Robb Tu
 CALIFORNIA,4,8.0,Mike Thompson,DEMOCRAT,True,DEMOCRAT,False,True,False,Eric Jones,,Incumbent advanced to general.
 CALIFORNIA,5,-10.0,Tom McClintock,REPUBLICAN,True,REPUBLICAN,True,True,True,Michael Masuda,Tom McClintock,Incumbent re-elected.
 CALIFORNIA,6,5.0,,,False,,False,True,False,Richard Pan,,Incumbent lost re-election. Democratic gain.
-CALIFORNIA,7,7.0,Doris Matsui,DEMOCRAT,True,DEMOCRAT,False,True,False,Doris Matsui,,Incumbent advanced to general.
+CALIFORNIA,7,7.0,Doris Matsui,DEMOCRAT,True,DEMOCRAT,True,True,False,Doris Matsui,,Incumbent re-elected.
 CALIFORNIA,8,19.0,John Garamendi,DEMOCRAT,True,DEMOCRAT,True,True,True,John Garamendi,Rudy Recile,Incumbent re-elected.
 CALIFORNIA,9,8.0,Josh Harder,DEMOCRAT,True,DEMOCRAT,True,True,True,Josh Harder,John McBride,Incumbent re-elected.
 CALIFORNIA,10,18.0,Mark DeSaulnier,DEMOCRAT,True,DEMOCRAT,True,True,True,Mark DeSaulnier,Jeff Frese,Incumbent re-elected.
-CALIFORNIA,11,36.0,,,False,DEMOCRAT,False,True,False,Scott Wiener,,Incumbent retired.[6] Democratic hold.
+CALIFORNIA,11,36.0,,,False,DEMOCRAT,False,True,False,Scott Wiener,,Incumbent retired.[7] Democratic hold.
 CALIFORNIA,12,39.0,Lateefah Simon,DEMOCRAT,True,DEMOCRAT,True,True,False,Lateefah Simon,,Incumbent re-elected.
 CALIFORNIA,13,2.0,Adam Gray,DEMOCRAT,True,DEMOCRAT,True,True,True,Adam Gray,Kevin Lincoln,Incumbent re-elected.
 CALIFORNIA,14,19.0,Aisha Wahab,DEMOCRAT,True,DEMOCRAT,True,True,False,Aisha Wahab,,Incumbent re-elected.
@@ -45,7 +45,7 @@ CALIFORNIA,22,1.0,,,False,REPUBLICAN,False,True,True,Randy Villegas,David Valada
 CALIFORNIA,23,-9.0,Jay Obernolte,REPUBLICAN,True,REPUBLICAN,False,True,True,Tessa Lynn Hodge,Jay Obernolte,Incumbent advanced to general.
 CALIFORNIA,24,13.0,Salud Carbajal,DEMOCRAT,True,DEMOCRAT,True,True,True,Salud Carbajal,Bob Smith,Incumbent re-elected.
 CALIFORNIA,25,4.0,Raul Ruiz,DEMOCRAT,True,DEMOCRAT,True,True,True,Raul Ruiz,Joe Males,Incumbent re-elected.
-CALIFORNIA,26,9.0,,,False,DEMOCRAT,False,True,True,Jacqui Irwin,Sam Gallucci,Incumbent retired.[7] Democratic hold.
+CALIFORNIA,26,9.0,,,False,DEMOCRAT,False,True,True,Jacqui Irwin,Sam Gallucci,Incumbent retired.[8] Democratic hold.
 CALIFORNIA,27,6.0,George T. Whitesides,DEMOCRAT,True,DEMOCRAT,True,True,True,George T. Whitesides,Jason Gibbs,Incumbent re-elected.
 CALIFORNIA,28,14.0,Judy Chu,DEMOCRAT,True,DEMOCRAT,True,True,True,Judy Chu,April Verlato,Incumbent re-elected.
 CALIFORNIA,29,19.0,Luz Rivas,DEMOCRAT,True,DEMOCRAT,True,True,False,Luz Rivas,,Incumbent re-elected.
@@ -67,7 +67,7 @@ CALIFORNIA,44,20.0,Nanette Barragán,DEMOCRAT,True,DEMOCRAT,True,True,True,Nanet
 CALIFORNIA,45,3.0,Derek Tran,DEMOCRAT,True,DEMOCRAT,True,True,True,Derek Tran,Chuong Vo,Incumbent re-elected.
 CALIFORNIA,46,10.0,Lou Correa,DEMOCRAT,True,DEMOCRAT,True,True,True,Lou Correa,David Pan,Incumbent re-elected.
 CALIFORNIA,47,6.0,Dave Min,DEMOCRAT,True,DEMOCRAT,True,True,True,Dave Min,Jenny Le Roux,Incumbent re-elected.
-CALIFORNIA,48,2.0,,,False,REPUBLICAN,False,True,True,Marni von Wilpert,Jim Desmond,Incumbent retired.[35] Democratic gain.
+CALIFORNIA,48,2.0,,,False,REPUBLICAN,False,True,True,Marni von Wilpert,Jim Desmond,Incumbent retired.[36] Democratic gain.
 CALIFORNIA,49,7.0,Mike Levin,DEMOCRAT,True,DEMOCRAT,True,True,True,Mike Levin,Armen Kurdian,Incumbent re-elected.
 CALIFORNIA,50,10.0,Scott Peters,DEMOCRAT,True,DEMOCRAT,True,True,True,Scott Peters,Steve Cohen,Incumbent re-elected.
 CALIFORNIA,51,10.0,Sara Jacobs,DEMOCRAT,True,DEMOCRAT,True,True,True,Sara Jacobs,Ricardo Cabrera,Incumbent re-elected.
@@ -87,34 +87,34 @@ CONNECTICUT,4,13.0,Jim Himes,DEMOCRAT,True,DEMOCRAT,True,True,True,Jim Himes,Mic
 CONNECTICUT,5,3.0,Jahana Hayes,DEMOCRAT,True,DEMOCRAT,True,True,True,Jahana Hayes,Chris Shea,Incumbent re-elected.
 DELAWARE,0,8.0,Sarah McBride,DEMOCRAT,True,DEMOCRAT,True,True,True,Sarah McBride,Joseph Arminio,Incumbent re-elected.
 FLORIDA,1,-18.0,Jimmy Patronis,REPUBLICAN,True,REPUBLICAN,True,True,True,Gay Valimont,Jimmy Patronis,Incumbent re-elected.
-FLORIDA,2,-8.0,,,False,REPUBLICAN,False,True,True,Amanda Green,Austin Rogers,Incumbent retired.[36] Republican hold.
+FLORIDA,2,-8.0,,,False,REPUBLICAN,False,True,True,Amanda Green,Austin Rogers,Incumbent retired.[37] Republican hold.
 FLORIDA,3,-10.0,Kat Cammack,REPUBLICAN,True,REPUBLICAN,True,True,True,Seth Harp,Kat Cammack,Incumbent re-elected.
 FLORIDA,4,-5.0,Aaron Bean,REPUBLICAN,True,REPUBLICAN,True,True,True,LaShonda Holloway,Aaron Bean,Incumbent re-elected.
 FLORIDA,5,-10.0,John Rutherford,REPUBLICAN,True,REPUBLICAN,True,True,True,Rachel Grage,John Rutherford,Incumbent re-elected.
 FLORIDA,6,-14.0,Randy Fine,REPUBLICAN,True,REPUBLICAN,True,True,True,Eric Yonce,Randy Fine,Incumbent re-elected.
-FLORIDA,7,-5.0,,,False,REPUBLICAN,False,True,True,Bale Dalton,Ryan Elijah,Incumbent lost renomination.[81]
+FLORIDA,7,-5.0,,,False,REPUBLICAN,False,True,True,Bale Dalton,Ryan Elijah,Incumbent lost renomination.[82] Republican hold.
 FLORIDA,8,-8.0,Mike Haridopolos,REPUBLICAN,True,REPUBLICAN,True,True,True,Jennifer Jenkins,Mike Haridopolos,Incumbent re-elected.
-FLORIDA,9,-8.0,Darren Soto,DEMOCRAT,True,DEMOCRAT,True,True,True,Darren Soto,Dan Green,Incumbent re-elected.[202]
+FLORIDA,9,-8.0,Darren Soto,DEMOCRAT,True,DEMOCRAT,True,True,True,Darren Soto,Dan Green,Incumbent re-elected.
 FLORIDA,10,13.0,Maxwell Frost,DEMOCRAT,True,DEMOCRAT,True,True,False,Maxwell Frost,,Incumbent re-elected.
-FLORIDA,11,-7.0,,,False,REPUBLICAN,False,True,True,James Pericola,Joe Strada,Incumbent retired.[37] Republican hold.
+FLORIDA,11,-7.0,,,False,REPUBLICAN,False,True,True,James Pericola,Joe Strada,Incumbent retired.[38] Republican hold.
 FLORIDA,12,-7.0,Gus Bilirakis,REPUBLICAN,True,REPUBLICAN,True,True,True,Kimberly Overman,Gus Bilirakis,Incumbent re-elected.
 FLORIDA,13,-6.0,Anna Paulina Luna,REPUBLICAN,True,REPUBLICAN,True,True,True,Leela Gray,Anna Paulina Luna,Incumbent re-elected.
 FLORIDA,14,-4.0,Kathy Castor,DEMOCRAT,True,DEMOCRAT,True,True,True,Kathy Castor,Mike Beltran,Incumbent re-elected.
 FLORIDA,15,-9.0,Laurel Lee,REPUBLICAN,True,REPUBLICAN,True,True,True,Robert People,Laurel Lee,Incumbent re-elected.
-FLORIDA,16,-6.0,,,False,REPUBLICAN,False,True,True,Kelly Kirschner,Sydney Gruters,Incumbent retired.[38] Republican hold.
+FLORIDA,16,-6.0,,,False,REPUBLICAN,False,True,True,Kelly Kirschner,Sydney Gruters,Incumbent retired.[39] Republican hold.
 FLORIDA,17,-10.0,Greg Steube,REPUBLICAN,True,REPUBLICAN,True,True,True,Matthew Montavon,Greg Steube,Incumbent re-elected.
 FLORIDA,18,-8.0,Scott Franklin,REPUBLICAN,True,REPUBLICAN,True,True,True,Curtis Gibson,Scott Franklin,Incumbent re-elected.
-FLORIDA,19,-14.0,,,False,REPUBLICAN,False,True,True,Victor Arias,Jim Schwartzel,Incumbent retired to run for governor.[39] Republican hold.
+FLORIDA,19,-14.0,,,False,REPUBLICAN,False,True,True,Victor Arias,Jim Schwartzel,Incumbent retired to run for governor.[40] Republican hold.
 FLORIDA,20,20.0,Debbie Wasserman Schultz,DEMOCRAT,True,,True,True,True,Debbie Wasserman Schultz,Brent Andersen,"Rep. Sheila Cherfilus-McCormick (D) resigned April 21, 2026. Democratic loss.; Incumbent re-elected."
 FLORIDA,21,-7.0,Brian Mast,REPUBLICAN,True,REPUBLICAN,True,True,True,James Martin,Brian Mast,Incumbent re-elected.
 FLORIDA,22,-4.0,,,False,,False,True,True,Pia Dandiya,Casey Askar,New member elected. Democratic gain.
 FLORIDA,23,9.0,Lois Frankel,DEMOCRAT,True,DEMOCRAT,True,True,True,Lois Frankel,Deborah Adeimy,Incumbent re-elected.
-FLORIDA,24,22.0,,,False,DEMOCRAT,False,True,True,Oliver Gilbert,Te Mayonna Brown,Incumbent retired.[9] Democratic hold.
+FLORIDA,24,22.0,,,False,DEMOCRAT,False,True,True,Oliver Gilbert,Te Mayonna Brown,Incumbent retired.[10] Democratic hold.
 FLORIDA,25,-3.0,Jared Moskowitz,DEMOCRAT,True,DEMOCRAT,True,True,True,Jared Moskowitz,Scott Singer,Incumbent re-elected.
 FLORIDA,26,-7.0,Mario Díaz-Balart,REPUBLICAN,True,REPUBLICAN,True,True,True,Nicole Locklin,Mario Díaz-Balart,Incumbent re-elected.
-FLORIDA,27,-6.0,María Elvira Salazar,REPUBLICAN,True,REPUBLICAN,False,True,True,Eliott Rodriguez,María Elvira Salazar,Incumbent renominated
+FLORIDA,27,-6.0,María Elvira Salazar,REPUBLICAN,True,REPUBLICAN,True,True,True,Eliott Rodriguez,María Elvira Salazar,Incumbent re-elected.
 FLORIDA,28,-10.0,Carlos A. Giménez,REPUBLICAN,True,REPUBLICAN,True,True,True,Phil Ehr,Carlos A. Giménez,Incumbent re-elected.
-GEORGIA,1,-8.0,,,False,REPUBLICAN,False,True,True,Amanda Hollowell,Jim Kingston,Incumbent retired to run for U.S. Senate.[40] Republican hold.
+GEORGIA,1,-8.0,,,False,REPUBLICAN,False,True,True,Amanda Hollowell,Jim Kingston,Incumbent retired to run for U.S. Senate.[41] Republican hold.
 GEORGIA,2,4.0,Sanford Bishop,DEMOCRAT,True,DEMOCRAT,True,True,True,Sanford Bishop,Matt Day,Incumbent re-elected.
 GEORGIA,3,-15.0,Brian Jack,REPUBLICAN,True,REPUBLICAN,True,True,True,Maura Keller,Brian Jack,Incumbent re-elected.
 GEORGIA,4,27.0,Hank Johnson,DEMOCRAT,True,DEMOCRAT,True,True,True,Hank Johnson,James Duffie,Incumbent re-elected.
@@ -123,8 +123,8 @@ GEORGIA,6,25.0,Lucy McBath,DEMOCRAT,True,DEMOCRAT,True,True,True,Lucy McBath,Kev
 GEORGIA,7,-11.0,Rich McCormick,REPUBLICAN,True,REPUBLICAN,True,True,True,Tony Kozycki,Rich McCormick,Incumbent re-elected.
 GEORGIA,8,-15.0,Austin Scott,REPUBLICAN,True,REPUBLICAN,True,True,True,Kelly Esti,Austin Scott,Incumbent re-elected.
 GEORGIA,9,-17.0,Andrew Clyde,REPUBLICAN,True,REPUBLICAN,True,True,True,Caitlyn Gegen,Andrew Clyde,Incumbent re-elected.
-GEORGIA,10,-11.0,,,False,REPUBLICAN,False,True,True,Pam Delancy,Houston Gaines,Incumbent retired to run for U.S. Senate.[41] Republican hold.
-GEORGIA,11,-12.0,,,False,REPUBLICAN,False,True,True,Chris Harden,John Cowan,Incumbent retired.[42] Republican hold.
+GEORGIA,10,-11.0,,,False,REPUBLICAN,False,True,True,Pam Delancy,Houston Gaines,Incumbent retired to run for U.S. Senate.[42] Republican hold.
+GEORGIA,11,-12.0,,,False,REPUBLICAN,False,True,True,Chris Harden,John Cowan,Incumbent retired.[43] Republican hold.
 GEORGIA,12,-7.0,Rick Allen,REPUBLICAN,True,REPUBLICAN,True,True,True,Ceretta Smith,Rick Allen,Incumbent re-elected.
 GEORGIA,13,21.0,,,False,DEMOCRAT,False,True,True,Jasmine Clark,Jonathan Chavez,Incumbent lost nomination for full term; later elected to complete unexpired term.[204] Democratic hold.
 GEORGIA,14,-19.0,Clay Fuller,REPUBLICAN,True,REPUBLICAN,True,True,True,Shawn Harris,Clay Fuller,Incumbent re-elected.
@@ -133,14 +133,14 @@ HAWAII,2,12.0,Jill Tokuda,DEMOCRAT,True,DEMOCRAT,True,True,True,Jill Tokuda,Bren
 IDAHO,1,-22.0,Russ Fulcher,REPUBLICAN,True,REPUBLICAN,True,True,True,Kaylee Peterson,Russ Fulcher,Incumbent re-elected.
 IDAHO,2,-13.0,Mike Simpson,REPUBLICAN,True,REPUBLICAN,True,True,True,Ellie Gilbreath,Mike Simpson,Incumbent re-elected.
 ILLINOIS,1,18.0,Jonathan Jackson,DEMOCRAT,True,DEMOCRAT,True,True,True,Jonathan Jackson,Christian Maxwell,Incumbent re-elected.
-ILLINOIS,2,18.0,,,False,DEMOCRAT,False,True,True,Donna Miller,Michael Noack,Incumbent retired to run for U.S. Senate.[11] Democratic hold.
+ILLINOIS,2,18.0,,,False,DEMOCRAT,False,True,True,Donna Miller,Michael Noack,Incumbent retired to run for U.S. Senate.[12] Democratic hold.
 ILLINOIS,3,17.0,Delia Ramirez,DEMOCRAT,True,DEMOCRAT,True,True,True,Delia Ramirez,Angel Oakley,Incumbent re-elected.
-ILLINOIS,4,17.0,,,False,DEMOCRAT,False,True,True,Patty García,Lupe Castillo,Incumbent retired.[12] Democratic hold.
+ILLINOIS,4,17.0,,,False,DEMOCRAT,False,True,True,Patty García,Lupe Castillo,Incumbent retired.[13] Democratic hold.
 ILLINOIS,5,19.0,Mike Quigley,DEMOCRAT,True,DEMOCRAT,True,True,True,Mike Quigley,Tommy Hanson,Incumbent re-elected.
 ILLINOIS,6,3.0,Sean Casten,DEMOCRAT,True,DEMOCRAT,True,True,True,Sean Casten,Niki Conforti,Incumbent re-elected.
-ILLINOIS,7,34.0,,,False,DEMOCRAT,False,True,True,La Shawn Ford,Chad Koppie,Incumbent retired.[13] Democratic hold.
-ILLINOIS,8,5.0,,,False,DEMOCRAT,False,True,True,Melissa Bean,Jennifer Davis,Incumbent retired to run for U.S. Senate.[14] Democratic hold.
-ILLINOIS,9,19.0,,,False,DEMOCRAT,False,True,True,Daniel Biss,John Elleson,Incumbent retired.[15] Democratic hold.
+ILLINOIS,7,34.0,,,False,DEMOCRAT,False,True,True,La Shawn Ford,Chad Koppie,Incumbent retired.[14] Democratic hold.
+ILLINOIS,8,5.0,,,False,DEMOCRAT,False,True,True,Melissa Bean,Jennifer Davis,Incumbent retired to run for U.S. Senate.[15] Democratic hold.
+ILLINOIS,9,19.0,,,False,DEMOCRAT,False,True,True,Daniel Biss,John Elleson,Incumbent retired.[16] Democratic hold.
 ILLINOIS,10,12.0,Brad Schneider,DEMOCRAT,True,DEMOCRAT,True,True,True,Brad Schneider,Carl Lambrecht,Incumbent re-elected.
 ILLINOIS,11,6.0,Bill Foster,DEMOCRAT,True,DEMOCRAT,True,True,True,Bill Foster,Jeff Walter,Incumbent re-elected.
 ILLINOIS,12,-22.0,Mike Bost,REPUBLICAN,True,REPUBLICAN,True,True,True,Julie Fortier,Mike Bost,Incumbent re-elected.
@@ -159,9 +159,9 @@ INDIANA,7,21.0,André Carson,DEMOCRAT,True,DEMOCRAT,True,True,True,André Carson
 INDIANA,8,-18.0,Mark Messmer,REPUBLICAN,True,REPUBLICAN,True,True,True,Mary Allen,Mark Messmer,Incumbent re-elected.
 INDIANA,9,-15.0,Erin Houchin,REPUBLICAN,True,REPUBLICAN,True,True,True,Brad Meyer,Erin Houchin,Incumbent re-elected.
 IOWA,1,-4.0,,,False,REPUBLICAN,False,True,True,Christina Bohannan,Mariannette Miller-Meeks,Incumbent lost re-election. Democratic gain.
-IOWA,2,-4.0,,,False,REPUBLICAN,False,True,True,Lindsay James,Joe Mitchell,Incumbent retired to run for U.S. Senate.[43] Democratic gain.
+IOWA,2,-4.0,,,False,REPUBLICAN,False,True,True,Lindsay James,Joe Mitchell,Incumbent retired to run for U.S. Senate.[44] Democratic gain.
 IOWA,3,-2.0,,,False,REPUBLICAN,False,True,True,Sarah Trone Garriott,Zach Nunn,Incumbent lost re-election. Democratic gain.
-IOWA,4,-15.0,,,False,REPUBLICAN,False,True,True,David Dawson,Chris McGowan,Incumbent retired to run for governor.[44] Republican hold.
+IOWA,4,-15.0,,,False,REPUBLICAN,False,True,True,David Dawson,Chris McGowan,Incumbent retired to run for governor.[45] Republican hold.
 KANSAS,1,-16.0,Tracey Mann,REPUBLICAN,True,REPUBLICAN,True,True,True,Lauren Reinhold,Tracey Mann,Incumbent re-elected.
 KANSAS,2,-10.0,Derek Schmidt,REPUBLICAN,True,REPUBLICAN,True,True,True,Don Coover,Derek Schmidt,Incumbent re-elected.
 KANSAS,3,2.0,Sharice Davids,DEMOCRAT,True,DEMOCRAT,True,True,True,Sharice Davids,Eric Jenkins,Incumbent re-elected.
@@ -169,22 +169,22 @@ KANSAS,4,-12.0,Ron Estes,REPUBLICAN,True,REPUBLICAN,True,True,True,Katy Tyndell,
 KENTUCKY,1,-23.0,James Comer,REPUBLICAN,True,REPUBLICAN,True,True,True,Drew Williams,James Comer,Incumbent re-elected.
 KENTUCKY,2,-20.0,Brett Guthrie,REPUBLICAN,True,REPUBLICAN,True,True,True,Megan Wingfield,Brett Guthrie,Incumbent re-elected.
 KENTUCKY,3,10.0,Morgan McGarvey,DEMOCRAT,True,DEMOCRAT,True,True,True,Morgan McGarvey,Maria Rodriquez,Incumbent re-elected.
-KENTUCKY,4,-18.0,,,False,REPUBLICAN,False,True,True,Melissa Strange,Ed Gallrein,Incumbent lost renomination.[82] Republican hold.
+KENTUCKY,4,-18.0,,,False,REPUBLICAN,False,True,True,Melissa Strange,Ed Gallrein,Incumbent lost renomination.[83] Republican hold.
 KENTUCKY,5,-32.0,Hal Rogers,REPUBLICAN,True,REPUBLICAN,True,True,True,Ned Pillersdorf,Hal Rogers,Incumbent re-elected.
-KENTUCKY,6,-7.0,,,False,REPUBLICAN,False,True,True,Zach Dembo,Ralph Alvarado,Incumbent retired to run for U.S. Senate.[45] Democratic gain.
+KENTUCKY,6,-7.0,,,False,REPUBLICAN,False,True,True,Zach Dembo,Ralph Alvarado,Incumbent retired to run for U.S. Senate.[46] Democratic gain.
 LOUISIANA,1,-20.0,Steve Scalise,REPUBLICAN,True,REPUBLICAN,True,True,True,Lauren Jewett,Steve Scalise,Incumbent re-elected.
 LOUISIANA,2,25.0,Troy Carter,DEMOCRAT,True,DEMOCRAT,True,True,True,Troy Carter,Peter Williams,Incumbent re-elected.
 LOUISIANA,3,-18.0,Clay Higgins,REPUBLICAN,True,REPUBLICAN,True,True,True,John Day,Clay Higgins,Incumbent re-elected.
 LOUISIANA,4,-17.0,Mike Johnson,REPUBLICAN,True,REPUBLICAN,True,True,True,Conrad Cable,Mike Johnson,Incumbent re-elected.
-LOUISIANA,5,-17.0,,,False,REPUBLICAN,False,True,True,Patricia Moore,Gabe Firment,Incumbent retired to run for U.S. Senate.[46]
-LOUISIANA,6,-16.0,,,False,DEMOCRAT,False,True,True,Chauna Banks,Blake Miguez,Incumbent retired to run for Louisiana State Senate.[16]
+LOUISIANA,5,-17.0,,,False,REPUBLICAN,False,True,True,Patricia Moore,Gabe Firment,Incumbent retired to run for U.S. Senate.[47]
+LOUISIANA,6,-16.0,,,False,DEMOCRAT,False,True,True,Chauna Banks,Blake Miguez,Incumbent retired to run for Louisiana State Senate.[17]
 MAINE,1,11.0,Chellie Pingree,DEMOCRAT,True,DEMOCRAT,True,True,True,Chellie Pingree,Ronald Russell,Incumbent re-elected.
 MAINE,2,-4.0,,,False,DEMOCRAT,False,True,True,Matthew Dunlap,Paul LePage,Incumbent retired. Republican gain.
 MARYLAND,1,-8.0,Andy Harris,REPUBLICAN,True,REPUBLICAN,True,True,True,Dan Schwartz,Andy Harris,Incumbent re-elected.
 MARYLAND,2,10.0,Johnny Olszewski,DEMOCRAT,True,DEMOCRAT,True,True,True,Johnny Olszewski,Dave Wallace,Incumbent re-elected.
 MARYLAND,3,12.0,Sarah Elfreth,DEMOCRAT,True,DEMOCRAT,True,True,True,Sarah Elfreth,Berney Flowers,Incumbent re-elected.
 MARYLAND,4,39.0,Glenn Ivey,DEMOCRAT,True,DEMOCRAT,True,True,True,Glenn Ivey,George McDermott,Incumbent re-elected.
-MARYLAND,5,17.0,,,False,DEMOCRAT,False,True,True,Adrian Boafo,Chris Chaffee,Incumbent retiring[18] Democratic hold.
+MARYLAND,5,17.0,,,False,DEMOCRAT,False,True,True,Adrian Boafo,Chris Chaffee,Incumbent retiring[19] Democratic hold.
 MARYLAND,6,3.0,April McClain Delaney,DEMOCRAT,True,DEMOCRAT,True,True,True,April McClain Delaney,Robin Ficker,Incumbent re-elected.
 MARYLAND,7,31.0,Kweisi Mfume,DEMOCRAT,True,DEMOCRAT,True,True,True,Kweisi Mfume,Scott Collier,Incumbent re-elected.
 MARYLAND,8,30.0,Jamie Raskin,DEMOCRAT,True,DEMOCRAT,True,True,True,Jamie Raskin,Cheryl Riley,Incumbent re-elected.
@@ -193,7 +193,7 @@ MASSACHUSETTS,2,13.0,Jim McGovern,DEMOCRAT,True,DEMOCRAT,True,True,False,Jim McG
 MASSACHUSETTS,3,11.0,Lori Trahan,DEMOCRAT,True,DEMOCRAT,True,True,True,Lori Trahan,Gary Grossi,Incumbent re-elected.
 MASSACHUSETTS,4,11.0,Jake Auchincloss,DEMOCRAT,True,DEMOCRAT,True,True,True,Jake Auchincloss,Thomas Stalcup,Incumbent re-elected.
 MASSACHUSETTS,5,24.0,Katherine Clark,DEMOCRAT,True,DEMOCRAT,True,True,False,Katherine Clark,,Incumbent re-elected.
-MASSACHUSETTS,6,11.0,,,False,DEMOCRAT,False,True,True,Dan Koh,Micah Jones,Incumbent retired to run for U.S. Senate.[19] Democratic hold.
+MASSACHUSETTS,6,11.0,,,False,DEMOCRAT,False,True,True,Dan Koh,Micah Jones,Incumbent retired to run for U.S. Senate.[20] Democratic hold.
 MASSACHUSETTS,7,34.0,Ayanna Pressley,DEMOCRAT,True,DEMOCRAT,True,True,False,Ayanna Pressley,,Incumbent re-elected.
 MASSACHUSETTS,8,15.0,Stephen Lynch,DEMOCRAT,True,DEMOCRAT,True,True,True,Stephen Lynch,Robert Burke,Incumbent re-elected.
 MASSACHUSETTS,9,6.0,Bill Keating,DEMOCRAT,True,DEMOCRAT,True,True,True,Bill Keating,Tyler MacAllister,Incumbent re-elected.
@@ -206,12 +206,12 @@ MICHIGAN,6,12.0,Debbie Dingell,DEMOCRAT,True,DEMOCRAT,True,True,True,Debbie Ding
 MICHIGAN,7,0.0,,,False,REPUBLICAN,False,True,True,William Lawrence,Tom Barrett,Incumbent lost re-election. Democratic gain.
 MICHIGAN,8,-1.0,Kristen McDonald Rivet,DEMOCRAT,True,DEMOCRAT,True,True,True,Kristen McDonald Rivet,Thomas Smith,Incumbent re-elected.
 MICHIGAN,9,-16.0,Lisa McClain,REPUBLICAN,True,REPUBLICAN,True,True,True,Ray Pooley,Lisa McClain,Incumbent re-elected.
-MICHIGAN,10,-3.0,,,False,REPUBLICAN,False,True,True,Christina Hines,Mike Bouchard Jr.,Incumbent retired to run for governor.[47] Democratic gain.
-MICHIGAN,11,9.0,,,False,DEMOCRAT,False,True,True,Jeremy Moss,Ethan Baker,Incumbent retiring to run for U.S. Senate.[20] Democratic hold.
+MICHIGAN,10,-3.0,,,False,REPUBLICAN,False,True,True,Christina Hines,Mike Bouchard Jr.,Incumbent retired to run for governor.[48] Democratic gain.
+MICHIGAN,11,9.0,,,False,DEMOCRAT,False,True,True,Jeremy Moss,Ethan Baker,Incumbent retiring to run for U.S. Senate.[21] Democratic hold.
 MICHIGAN,12,21.0,Rashida Tlaib,DEMOCRAT,True,DEMOCRAT,True,True,True,Rashida Tlaib,James Hooper,Incumbent re-elected.
 MICHIGAN,13,22.0,,,False,DEMOCRAT,False,True,True,Donavan McKinney,T. P. Nykoriak,Incumbent lost renomination. Democratic hold.
-MINNESOTA,1,-6.0,,,False,REPUBLICAN,False,True,True,Jake Johnson,Brad Finstad,Incumbent lost re-election. DFL gain.
-MINNESOTA,2,3.0,,,False,DEMOCRAT,False,True,True,Matt Little,Eric Pratt,Incumbent retiring to run for U.S. Senate.[21] DFL hold.
+MINNESOTA,1,-6.0,Brad Finstad,REPUBLICAN,True,REPUBLICAN,False,True,True,Jake Johnson,Brad Finstad,Incumbent renominated.
+MINNESOTA,2,3.0,,,False,DEMOCRAT,False,True,True,Matt Little,Eric Pratt,Incumbent retiring to run for U.S. Senate.[22] DFL hold.
 MINNESOTA,3,11.0,Kelly Morrison,DEMOCRAT,True,DEMOCRAT,True,True,True,Kelly Morrison,Tyler Bass,Incumbent re-elected.
 MINNESOTA,4,18.0,Betty McCollum,DEMOCRAT,True,DEMOCRAT,True,True,True,Betty McCollum,Paul Wikstrom,Incumbent re-elected.
 MINNESOTA,5,32.0,Ilhan Omar,DEMOCRAT,True,DEMOCRAT,True,True,True,Ilhan Omar,John Nagel,Incumbent re-elected.
@@ -227,19 +227,19 @@ MISSOURI,2,-4.0,,,False,REPUBLICAN,False,True,True,Fred Wellman,Ann Wagner,Incum
 MISSOURI,3,-13.0,Bob Onder,REPUBLICAN,True,REPUBLICAN,True,True,True,Bethany Mann,Bob Onder,Incumbent re-elected.
 MISSOURI,4,-21.0,Mark Alford,REPUBLICAN,True,REPUBLICAN,True,True,True,Jordan Herrera,Mark Alford,Incumbent re-elected.
 MISSOURI,5,12.0,Emanuel Cleaver,DEMOCRAT,True,DEMOCRAT,True,True,True,Emanuel Cleaver,Rick Brattin,Incumbent re-elected.
-MISSOURI,6,-19.0,,,False,REPUBLICAN,False,True,True,Josh Smead,Chris Stigall,Incumbent retired.[48] Republican hold.
+MISSOURI,6,-19.0,,,False,REPUBLICAN,False,True,True,Josh Smead,Chris Stigall,Incumbent retired.[49] Republican hold.
 MISSOURI,7,-21.0,Eric Burlison,REPUBLICAN,True,REPUBLICAN,True,True,True,Missi Hesketh,Eric Burlison,Incumbent re-elected.
 MISSOURI,8,-27.0,Jason Smith,REPUBLICAN,True,REPUBLICAN,True,True,True,Chris Reichard,Jason Smith,Incumbent re-elected.
 MONTANA,1,-5.0,,,False,REPUBLICAN,False,True,True,Sam Forstag,Aaron Flint,Incumbent retired. Democratic gain.
 MONTANA,2,-15.0,Troy Downing,REPUBLICAN,True,REPUBLICAN,True,True,True,Brian Miller,Troy Downing,Incumbent re-elected.
 NEBRASKA,1,-6.0,Mike Flood,REPUBLICAN,True,REPUBLICAN,True,True,True,Chris Backemeyer,Mike Flood,Incumbent re-elected.
-NEBRASKA,2,3.0,,,False,REPUBLICAN,False,True,True,Denise Powell,Brinker Harding,Incumbent retired.[50] Democratic gain.
+NEBRASKA,2,3.0,,,False,REPUBLICAN,False,True,True,Denise Powell,Brinker Harding,Incumbent retired.[51] Democratic gain.
 NEBRASKA,3,-27.0,Adrian Smith,REPUBLICAN,True,REPUBLICAN,True,True,True,Becky Stille,Adrian Smith,Incumbent re-elected.
 NEVADA,1,2.0,Dina Titus,DEMOCRAT,True,DEMOCRAT,True,True,True,Dina Titus,Carrie Buck,Incumbent re-elected.
-NEVADA,2,-7.0,,,False,REPUBLICAN,False,True,True,Teresa Benitez-Thompson,David Flippo,Incumbent retired.[51] Democratic gain.
+NEVADA,2,-7.0,,,False,REPUBLICAN,False,True,True,Teresa Benitez-Thompson,David Flippo,Incumbent retired.[52] Democratic gain.
 NEVADA,3,1.0,Susie Lee,DEMOCRAT,True,DEMOCRAT,True,True,True,Susie Lee,Martin O'Donnell,Incumbent re-elected.
 NEVADA,4,2.0,Steven Horsford,DEMOCRAT,True,DEMOCRAT,True,True,True,Steven Horsford,Cody Whipple,Incumbent re-elected.
-NEW HAMPSHIRE,1,2.0,,,False,DEMOCRAT,False,True,True,Stefany Shaheen,Anthony DiLorenzo,Incumbent retired to run for U.S. Senate.[22] Democratic hold.
+NEW HAMPSHIRE,1,2.0,,,False,DEMOCRAT,False,True,True,Stefany Shaheen,Anthony DiLorenzo,Incumbent retired to run for U.S. Senate.[23] Democratic hold.
 NEW HAMPSHIRE,2,2.0,Maggie Goodlander,DEMOCRAT,True,DEMOCRAT,True,True,True,Maggie Goodlander,Lily Tang Williams,Incumbent re-elected.
 NEW JERSEY,1,10.0,Donald Norcross,DEMOCRAT,True,DEMOCRAT,True,True,True,Donald Norcross,Damon Galdo,Incumbent re-elected.
 NEW JERSEY,2,-5.0,,,False,REPUBLICAN,False,True,True,Zack Mullock,Jeff Van Drew,Incumbent lost re-election. Democratic gain.
@@ -252,7 +252,7 @@ NEW JERSEY,8,15.0,Rob Menendez,DEMOCRAT,True,DEMOCRAT,True,True,False,Rob Menend
 NEW JERSEY,9,2.0,Nellie Pou,DEMOCRAT,True,DEMOCRAT,True,True,True,Nellie Pou,Rosie Pino,Incumbent re-elected.
 NEW JERSEY,10,27.0,LaMonica McIver,DEMOCRAT,True,DEMOCRAT,True,True,True,LaMonica McIver,Carmen Bucco,Incumbent re-elected.
 NEW JERSEY,11,5.0,Analilia Mejia,DEMOCRAT,True,DEMOCRAT,True,True,True,Analilia Mejia,Joe Hathaway,Incumbent re-elected.
-NEW JERSEY,12,13.0,,,False,DEMOCRAT,False,True,True,Adam Hamawy,Gregg Mele,Incumbent retired.[23] Democratic hold.
+NEW JERSEY,12,13.0,,,False,DEMOCRAT,False,True,True,Adam Hamawy,Gregg Mele,Incumbent retired.[24] Democratic hold.
 NEW MEXICO,1,7.0,Melanie Stansbury,DEMOCRAT,True,DEMOCRAT,True,True,True,Melanie Stansbury,Didi Okpareke,Incumbent re-elected.
 NEW MEXICO,2,0.0,Gabe Vasquez,DEMOCRAT,True,DEMOCRAT,True,True,True,Gabe Vasquez,Greg Cunningham,Incumbent re-elected.
 NEW MEXICO,3,3.0,Teresa Leger Fernandez,DEMOCRAT,True,DEMOCRAT,True,True,True,Teresa Leger Fernández,Martin Zamora,Incumbent re-elected.
@@ -284,15 +284,15 @@ NEW YORK,25,10.0,Joseph Morelle,DEMOCRAT,True,DEMOCRAT,True,True,True,Joseph Mor
 NEW YORK,26,11.0,Tim Kennedy,DEMOCRAT,True,DEMOCRAT,True,True,True,Tim Kennedy,Dennis Hannon,Incumbent re-elected.
 NORTH CAROLINA,1,-5.0,Don Davis,DEMOCRAT,True,DEMOCRAT,True,True,True,Don Davis,Laurie Buckhout,Incumbent re-elected.
 NORTH CAROLINA,2,17.0,Deborah Ross,DEMOCRAT,True,DEMOCRAT,True,True,True,Deborah Ross,Eugene Douglass,Incumbent re-elected.
-NORTH CAROLINA,3,-6.0,Greg Murphy,REPUBLICAN,True,REPUBLICAN,False,True,True,Raymond Smith Jr.,Greg Murphy,Incumbent renominated
+NORTH CAROLINA,3,-6.0,,,False,REPUBLICAN,False,True,True,Raymond Smith Jr.,Greg Murphy,Incumbent lost re-election. Democratic gain.
 NORTH CAROLINA,4,23.0,Valerie Foushee,DEMOCRAT,True,DEMOCRAT,True,True,True,Valerie Foushee,Max Ganorkar,Incumbent re-elected.
-NORTH CAROLINA,5,-9.0,,,False,REPUBLICAN,False,True,True,Chuck Hubbard,Virginia Foxx,Incumbent lost re-election. Democratic gain.
+NORTH CAROLINA,5,-9.0,Virginia Foxx,REPUBLICAN,True,REPUBLICAN,False,True,True,Chuck Hubbard,Virginia Foxx,Incumbent renominated
 NORTH CAROLINA,6,-9.0,,,False,REPUBLICAN,False,True,True,Cyril Jefferson,Addison McDowell,Incumbent lost re-election. Democratic gain.
-NORTH CAROLINA,7,-7.0,David Rouzer,REPUBLICAN,True,REPUBLICAN,True,True,True,Kimberly Hardy,David Rouzer,Incumbent re-elected.
+NORTH CAROLINA,7,-7.0,David Rouzer,REPUBLICAN,True,REPUBLICAN,False,True,True,Kimberly Hardy,David Rouzer,Incumbent renominated.
 NORTH CAROLINA,8,-10.0,Mark Harris,REPUBLICAN,True,REPUBLICAN,True,True,True,Colby Watson,Mark Harris,Incumbent re-elected.
 NORTH CAROLINA,9,-8.0,,,False,REPUBLICAN,False,True,True,Richard Ojeda,Richard Hudson,Incumbent lost re-election. Democratic gain.
 NORTH CAROLINA,10,-9.0,Pat Harrigan,REPUBLICAN,True,REPUBLICAN,False,True,True,Ashley Bell,Pat Harrigan,Incumbent renominated
-NORTH CAROLINA,11,-5.0,Chuck Edwards,REPUBLICAN,True,REPUBLICAN,False,True,True,Jamie Ager,Jennifer Balkcom,Incumbent renominated[69] but withdrew.[70][71]  Democratic gain.
+NORTH CAROLINA,11,-5.0,Chuck Edwards,REPUBLICAN,True,REPUBLICAN,False,True,True,Jamie Ager,Jennifer Balkcom,Incumbent renominated[70] but withdrew.[71][72]  Democratic gain.
 NORTH CAROLINA,12,24.0,Alma Adams,DEMOCRAT,True,DEMOCRAT,True,True,True,Alma Adams,Jack Codiga,Incumbent re-elected.
 NORTH CAROLINA,13,-8.0,,,False,REPUBLICAN,False,True,True,Paul Barringer,Brad Knott,Incumbent lost re-election. Democratic gain.
 NORTH CAROLINA,14,-8.0,,,False,REPUBLICAN,False,True,True,LaKesha Womack,Tim Moore,Incumbent lost re-election. Democratic gain.
@@ -312,7 +312,7 @@ OHIO,12,-15.0,Troy Balderson,REPUBLICAN,True,REPUBLICAN,True,True,True,Jerrad Ch
 OHIO,13,2.0,Emilia Sykes,DEMOCRAT,True,DEMOCRAT,True,True,True,Emilia Sykes,Carey Coleman,Incumbent re-elected
 OHIO,14,-10.0,David Joyce,REPUBLICAN,True,REPUBLICAN,True,True,True,Maria Jukic,David Joyce,Incumbent re-elected
 OHIO,15,-5.0,,,False,REPUBLICAN,False,True,True,Don Leonard,Mike Carey,Incumbent lost re-election. Democratic gain.
-OKLAHOMA,1,-11.0,,,False,REPUBLICAN,False,True,True,John Croisant,Mark Tedford,Incumbent retired to run for U.S. Senate.[53] Republican hold.
+OKLAHOMA,1,-11.0,,,False,REPUBLICAN,False,True,True,John Croisant,Mark Tedford,Incumbent retired to run for U.S. Senate.[54] Republican hold.
 OKLAHOMA,2,-28.0,Josh Brecheen,REPUBLICAN,True,REPUBLICAN,True,True,True,Brandon Wade,Josh Brecheen,Incumbent re-elected.
 OKLAHOMA,3,-23.0,Frank Lucas,REPUBLICAN,True,REPUBLICAN,True,True,True,Suzie Byrd,Frank Lucas,Incumbent re-elected.
 OKLAHOMA,4,-17.0,Tom Cole,REPUBLICAN,True,REPUBLICAN,True,True,True,Mitchell Jacob,Tom Cole,Incumbent re-elected.
@@ -342,33 +342,33 @@ PENNSYLVANIA,16,-11.0,Mike Kelly,REPUBLICAN,True,REPUBLICAN,True,True,True,Justi
 PENNSYLVANIA,17,3.0,Chris Deluzio,DEMOCRAT,True,DEMOCRAT,True,True,True,Chris Deluzio,Tony Guy,Incumbent re-elected.
 RHODE ISLAND,1,12.0,Gabe Amo,DEMOCRAT,True,DEMOCRAT,True,True,True,Gabe Amo,Kellie Keenan,Incumbent re-elected.
 RHODE ISLAND,2,4.0,Seth Magaziner,DEMOCRAT,True,DEMOCRAT,True,True,True,Seth Magaziner,Vic Mellor,Incumbent re-elected.
-SOUTH CAROLINA,1,-6.0,,,False,REPUBLICAN,False,True,True,Nancy Lacore,Jenny Costa Honeycutt,Incumbent retired to run for governor.[54] Democratic gain.
-SOUTH CAROLINA,2,-7.0,Joe Wilson,REPUBLICAN,True,REPUBLICAN,False,True,True,Zyon Khalifa,Joe Wilson,Incumbent renominated.
+SOUTH CAROLINA,1,-6.0,,,False,REPUBLICAN,False,True,True,Nancy Lacore,Jenny Costa Honeycutt,Incumbent retired to run for governor.[55] Democratic gain.
+SOUTH CAROLINA,2,-7.0,Joe Wilson,REPUBLICAN,True,REPUBLICAN,True,True,True,Zyon Khalifa,Joe Wilson,Incumbent re-elected.
 SOUTH CAROLINA,3,-21.0,Sheri Biggs,REPUBLICAN,True,REPUBLICAN,True,True,True,Eunice Lehmacher,Sheri Biggs,Incumbent re-elected.
 SOUTH CAROLINA,4,-11.0,William Timmons,REPUBLICAN,True,REPUBLICAN,True,True,True,Courtney McClain,William Timmons,Incumbent re-elected.
-SOUTH CAROLINA,5,-11.0,,,False,REPUBLICAN,False,True,True,Mallory Dittmer,Wes Climer,Incumbent retired to run for governor.[55] Republican hold.
+SOUTH CAROLINA,5,-11.0,,,False,REPUBLICAN,False,True,True,Mallory Dittmer,Wes Climer,Incumbent retired to run for governor.[56] Republican hold.
 SOUTH CAROLINA,6,13.0,Jim Clyburn,DEMOCRAT,True,DEMOCRAT,True,True,True,Jim Clyburn,John Peterson,Incumbent re-elected.
 SOUTH CAROLINA,7,-12.0,Russell Fry,REPUBLICAN,True,REPUBLICAN,True,True,True,John Vincent,Russell Fry,Incumbent re-elected.
-SOUTH DAKOTA,0,-15.0,,,False,REPUBLICAN,False,True,True,Nikki Gronli,Marty Jackley,Incumbent retired to run for governor.[57] Republican hold.
+SOUTH DAKOTA,0,-15.0,,,False,REPUBLICAN,False,True,True,Nikki Gronli,Marty Jackley,Incumbent retired to run for governor.[58] Republican hold.
 TENNESSEE,1,-29.0,Diana Harshbarger,REPUBLICAN,True,REPUBLICAN,True,True,True,Kristi Burke,Diana Harshbarger,Incumbent re-elected.
 TENNESSEE,2,-17.0,Tim Burchett,REPUBLICAN,True,REPUBLICAN,True,True,True,Michaela Barnett,Tim Burchett,Incumbent re-elected.
 TENNESSEE,3,-18.0,Chuck Fleischmann,REPUBLICAN,True,REPUBLICAN,True,True,True,Anna Golladay,Chuck Fleischmann,Incumbent re-elected.
-TENNESSEE,4,-11.0,,,False,REPUBLICAN,False,True,True,Victoria Broderick,Scott DesJarlais,Incumbent lost re-election. Democratic gain.
+TENNESSEE,4,-11.0,Scott DesJarlais,REPUBLICAN,True,REPUBLICAN,False,True,True,Victoria Broderick,Scott DesJarlais,Incumbent renominated.
 TENNESSEE,5,-10.0,,,False,REPUBLICAN,False,True,True,Chaz Molder,Charlie Hatcher,Incumbent lost renomination. Republican hold.
-TENNESSEE,6,-13.0,,,False,REPUBLICAN,False,True,True,Mike Croley,Johnny Garrett,Incumbent retired to run for governor.[58] Republican hold.
+TENNESSEE,6,-13.0,,,False,REPUBLICAN,False,True,True,Mike Croley,Johnny Garrett,Incumbent retired to run for governor.[59] Republican hold.
 TENNESSEE,7,-11.0,Matt Van Epps,REPUBLICAN,True,REPUBLICAN,True,True,True,Darden Copeland,Matt Van Epps,Incumbent re-elected.
 TENNESSEE,8,-10.0,David Kustoff,REPUBLICAN,True,REPUBLICAN,True,True,True,Heidi Kuhn,David Kustoff,Incumbent re-elected.
-TENNESSEE,9,-9.0,,,False,DEMOCRAT,False,True,True,Justin Pearson,Brent Taylor,Incumbent retired.[27] Republican gain.
+TENNESSEE,9,-9.0,,,False,DEMOCRAT,False,True,True,Justin Pearson,Brent Taylor,Incumbent retired.[28] Republican gain.
 TEXAS,1,-24.0,Nathaniel Moran,REPUBLICAN,True,REPUBLICAN,True,True,True,Yolanda Prince,Nathaniel Moran,Incumbent re-elected.
-TEXAS,2,-11.0,,,False,REPUBLICAN,False,True,True,Shaun Finnie,Steve Toth,Incumbent lost renomination.[84] Republican hold.
+TEXAS,2,-11.0,,,False,REPUBLICAN,False,True,True,Shaun Finnie,Steve Toth,Incumbent lost renomination.[85] Republican hold.
 TEXAS,3,-11.0,Keith Self,REPUBLICAN,True,REPUBLICAN,True,True,True,Evan Hunt,Keith Self,Incumbent re-elected.
 TEXAS,4,-12.0,Pat Fallon,REPUBLICAN,True,REPUBLICAN,True,True,True,Jason Pearce,Pat Fallon,Incumbent re-elected.
 TEXAS,5,-10.0,Lance Gooden,REPUBLICAN,True,REPUBLICAN,True,True,True,Chelsey Hockett,Lance Gooden,Incumbent re-elected.
 TEXAS,6,-11.0,Jake Ellzey,REPUBLICAN,True,REPUBLICAN,True,True,True,Danny Minton,Jake Ellzey,Incumbent re-elected.
 TEXAS,7,13.0,Lizzie Fletcher,DEMOCRAT,True,DEMOCRAT,True,True,True,Lizzie Fletcher,Alexander Hale,Incumbent re-elected.
-TEXAS,8,-13.0,,,False,REPUBLICAN,False,True,True,Laura Jones,Jessica Steinmann,Incumbent retired.[59] Republican hold.
+TEXAS,8,-13.0,,,False,REPUBLICAN,False,True,True,Laura Jones,Jessica Steinmann,Incumbent retired.[60] Republican hold.
 TEXAS,9,-9.0,,,False,,False,True,True,Leticia Gutierrez,Alex Mealer,New member elected. Democratic gain.
-TEXAS,10,-10.0,,,False,REPUBLICAN,False,True,True,Caitlin Rourk,Chris Gober,Incumbent retired.[60] Republican hold.
+TEXAS,10,-10.0,,,False,REPUBLICAN,False,True,True,Caitlin Rourk,Chris Gober,Incumbent retired.[61] Republican hold.
 TEXAS,11,-17.0,August Pfluger,REPUBLICAN,True,REPUBLICAN,True,True,True,Claire Reynolds,August Pfluger,Incumbent re-elected.
 TEXAS,12,-11.0,Craig Goldman,REPUBLICAN,True,REPUBLICAN,True,True,True,Angela Rodriguez Prilliman,Craig Goldman,Incumbent re-elected.
 TEXAS,13,-23.0,Ronny Jackson,REPUBLICAN,True,REPUBLICAN,True,True,True,Mark Nair,Ronny Jackson,Incumbent re-elected.
@@ -377,13 +377,13 @@ TEXAS,15,-7.0,,,False,REPUBLICAN,False,True,True,Bobby Pulido,Monica De La Cruz,
 TEXAS,16,11.0,Veronica Escobar,DEMOCRAT,True,DEMOCRAT,True,True,True,Veronica Escobar,Adam Bauman,Incumbent re-elected.
 TEXAS,17,-10.0,Pete Sessions,REPUBLICAN,True,REPUBLICAN,True,True,True,Casey Shepard,Pete Sessions,Incumbent re-elected.
 TEXAS,18,29.0,Christian Menefee,DEMOCRAT,True,DEMOCRAT,True,True,True,Christian Menefee,Ronald Whitfield,Incumbent re-elected.; Incumbent lost renomination.[241] Democratic loss.
-TEXAS,19,-25.0,,,False,REPUBLICAN,False,True,True,Kyle Rable,Tom Sell,Incumbent retired.[61] Republican hold.
+TEXAS,19,-25.0,,,False,REPUBLICAN,False,True,True,Kyle Rable,Tom Sell,Incumbent retired.[62] Republican hold.
 TEXAS,20,16.0,Joaquin Castro,DEMOCRAT,True,DEMOCRAT,True,True,True,Joaquin Castro,Edgardo Rafael Baez,Incumbent re-elected.
-TEXAS,21,-10.0,,,False,REPUBLICAN,False,True,True,Kristin Hook,Mark Teixeira,Incumbent retired to run for Texas attorney general.[62] Republican hold.
-TEXAS,22,-11.0,,,False,REPUBLICAN,False,True,True,Marquette Greene-Scott,Trever Nehls,Incumbent retired.[63] Republican hold.
+TEXAS,21,-10.0,,,False,REPUBLICAN,False,True,True,Kristin Hook,Mark Teixeira,Incumbent retired to run for Texas attorney general.[63] Republican hold.
+TEXAS,22,-11.0,,,False,REPUBLICAN,False,True,True,Marquette Greene-Scott,Trever Nehls,Incumbent retired.[64] Republican hold.
 TEXAS,23,-7.0,,,False,,False,True,True,Katy Padilla Stout,Brandon Herrera,"Rep. Tony Gonzales (R) resigned April 14, 2026.  Democratic gain."
 TEXAS,24,-8.0,Beth Van Duyne,REPUBLICAN,True,REPUBLICAN,True,True,True,Kevin Burge,Beth Van Duyne,Incumbent re-elected.
-TEXAS,25,-11.0,Roger Williams,REPUBLICAN,True,REPUBLICAN,True,True,True,Dione Sims,Roger Williams,Incumbent re-elected.; Incumbent retired.[29] Democratic loss.
+TEXAS,25,-11.0,Roger Williams,REPUBLICAN,True,REPUBLICAN,True,True,True,Dione Sims,Roger Williams,Incumbent re-elected.; Incumbent retired.[30] Democratic loss.
 TEXAS,26,-11.0,Brandon Gill,REPUBLICAN,True,REPUBLICAN,True,True,True,Steven Shook,Brandon Gill,Incumbent re-elected.
 TEXAS,27,-10.0,Michael Cloud,REPUBLICAN,True,REPUBLICAN,True,True,True,Tanya Lloyd,Michael Cloud,Incumbent re-elected.
 TEXAS,28,-3.0,Henry Cuellar,DEMOCRAT,True,DEMOCRAT,True,True,True,Henry Cuellar,Tano Tijerina,Incumbent re-elected.
@@ -391,16 +391,16 @@ TEXAS,29,17.0,Sylvia Garcia,DEMOCRAT,True,DEMOCRAT,True,True,True,Sylvia Garcia,
 TEXAS,30,25.0,,,False,,False,True,True,Frederick Haynes III,Everett Jackson,New member elected. Democratic gain.
 TEXAS,31,-11.0,John Carter,REPUBLICAN,True,REPUBLICAN,True,True,True,Justin Early,John Carter,Incumbent re-elected.
 TEXAS,32,-8.0,,,False,,False,True,True,Dan Barrios,Jace Yarbrough,New member elected. Republican gain.
-TEXAS,33,18.0,,,False,DEMOCRAT,False,True,True,Colin Allred,Patrick Gillespie,Incumbent retired to run for U.S. Senate.[28] Democratic hold.; Incumbent lost renomination.[242] Democratic loss.
+TEXAS,33,18.0,,,False,DEMOCRAT,False,True,True,Colin Allred,Patrick Gillespie,Incumbent retired to run for U.S. Senate.[29] Democratic hold.; Incumbent lost renomination.[242] Democratic loss.
 TEXAS,34,-3.0,Vicente Gonzalez,DEMOCRAT,True,DEMOCRAT,True,True,True,Vicente Gonzalez,Eric Flores,Incumbent re-elected.
 TEXAS,35,-4.0,,,False,,False,True,True,Johnny Garcia,Carlos De La Cruz,New member elected. Democratic gain.
 TEXAS,36,-12.0,Brian Babin,REPUBLICAN,True,REPUBLICAN,True,True,True,Rhonda Hart,Brian Babin,Incumbent re-elected.
-TEXAS,37,30.0,Greg Casar,DEMOCRAT,True,DEMOCRAT,True,True,True,Greg Casar,Lauren Peña,Incumbent retired.[30] Democratic loss.; Incumbent re-elected.
-TEXAS,38,-10.0,,,False,REPUBLICAN,False,True,True,Melissa McDonough,Jon Bonck,Incumbent retired to run for U.S. Senate[64] Republican hold.
+TEXAS,37,30.0,Greg Casar,DEMOCRAT,True,DEMOCRAT,True,True,True,Greg Casar,Lauren Peña,Incumbent retired.[31] Democratic loss.; Incumbent re-elected.
+TEXAS,38,-10.0,,,False,REPUBLICAN,False,True,True,Melissa McDonough,Jon Bonck,Incumbent retired to run for U.S. Senate[65] Republican hold.
 UTAH,1,12.0,,,False,,False,True,True,Ben McAdams,Riley Owen,New member elected. Democratic gain.
 UTAH,2,-15.0,Blake Moore,REPUBLICAN,True,REPUBLICAN,True,True,True,Peter Crosby,Blake Moore,Incumbent re-elected.
 UTAH,3,-21.0,Celeste Maloy,REPUBLICAN,True,REPUBLICAN,True,True,True,Kent Udell,Celeste Maloy,Incumbent re-elected.
-UTAH,4,-17.0,Mike Kennedy,REPUBLICAN,True,REPUBLICAN,True,True,True,Jonny Larsen,Mike Kennedy,Incumbent retired.[65] Republican loss.; Incumbent re-elected.
+UTAH,4,-17.0,Mike Kennedy,REPUBLICAN,True,REPUBLICAN,True,True,True,Jonny Larsen,Mike Kennedy,Incumbent retired.[66] Republican loss.; Incumbent re-elected.
 VERMONT,0,17.0,Becca Balint,DEMOCRAT,True,DEMOCRAT,True,True,True,Becca Balint,Gerald Malloy,Incumbent re-elected.
 VIRGINIA,1,-3.0,,,False,REPUBLICAN,False,True,True,Shannon Taylor,Rob Wittman,Incumbent lost re-election. Democratic gain.
 VIRGINIA,2,0.0,,,False,REPUBLICAN,False,True,True,Elaine Luria,Jen Kiggans,Incumbent lost re-election. Democratic gain.
@@ -416,7 +416,7 @@ VIRGINIA,11,18.0,James Walkinshaw,DEMOCRAT,True,DEMOCRAT,True,True,True,James Wa
 WASHINGTON,1,15.0,Suzan DelBene,DEMOCRAT,True,DEMOCRAT,True,True,True,Suzan DelBene,Mary Silva,Incumbent re-elected.
 WASHINGTON,2,12.0,Rick Larsen,DEMOCRAT,True,DEMOCRAT,True,True,True,Rick Larsen,Edwin Feller,Incumbent re-elected.
 WASHINGTON,3,-2.0,Marie Gluesenkamp Perez,DEMOCRAT,True,DEMOCRAT,True,True,True,Marie Gluesenkamp Perez,John Braun,Incumbent re-elected.
-WASHINGTON,4,-10.0,,,False,REPUBLICAN,False,True,True,John Duresky,Amanda McKinney,Incumbent retired.[66] Republican hold.
+WASHINGTON,4,-10.0,,,False,REPUBLICAN,False,True,True,John Duresky,Amanda McKinney,Incumbent retired.[67] Republican hold.
 WASHINGTON,5,-5.0,Michael Baumgartner,REPUBLICAN,True,REPUBLICAN,True,True,True,Carmela Conroy,Michael Baumgartner,Incumbent re-elected.
 WASHINGTON,6,10.0,Emily Randall,DEMOCRAT,True,DEMOCRAT,True,True,True,Emily Randall,Teresa Fox,Incumbent re-elected.
 WASHINGTON,7,39.0,Pramila Jayapal,DEMOCRAT,True,DEMOCRAT,True,True,True,Pramila Jayapal,Nirav Sheth,Incumbent re-elected.
@@ -431,6 +431,6 @@ WISCONSIN,3,-3.0,,,False,REPUBLICAN,False,True,True,Rebecca Cooke,Derrick Van Or
 WISCONSIN,4,26.0,Gwen Moore,DEMOCRAT,True,DEMOCRAT,True,True,True,Gwen Moore,Tim Rogers,Incumbent re-elected.
 WISCONSIN,5,-11.0,Scott Fitzgerald,REPUBLICAN,True,REPUBLICAN,True,True,True,Andrew Beck,Scott Fitzgerald,Incumbent re-elected.
 WISCONSIN,6,-8.0,Glenn Grothman,REPUBLICAN,True,REPUBLICAN,True,True,True,Brad Smith,Glenn Grothman,Incumbent re-elected.
-WISCONSIN,7,-11.0,,,False,REPUBLICAN,False,True,True,Fred Clark,Michael Alfonso,Incumbent retired to run for governor.[67] Republican hold.
+WISCONSIN,7,-11.0,,,False,REPUBLICAN,False,True,True,Fred Clark,Michael Alfonso,Incumbent retired to run for governor.[68] Republican hold.
 WISCONSIN,8,-8.0,Tony Wied,REPUBLICAN,True,REPUBLICAN,True,True,True,Rick Crosson,Tony Wied,Incumbent re-elected.
-WYOMING,0,-23.0,,,False,REPUBLICAN,False,True,True,Lisa Kinney,Chuck Gray,Incumbent retired to run for U.S. Senate.[68] Republican hold.
+WYOMING,0,-23.0,,,False,REPUBLICAN,False,True,True,Lisa Kinney,Chuck Gray,Incumbent retired to run for U.S. Senate.[69] Republican hold.

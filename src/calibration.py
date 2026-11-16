@@ -42,6 +42,19 @@ SIMPLE_AVG_WINDOW_DAYS = 30
 PROB_FLOOR = 0.005  # keeps log loss finite when a forecast is ~certain and wrong
 
 # ── Inputs ────────────────────────────────────────────────────────────────────
+# Cycles too recent for the poll archive: the generic-ballot average we published and the
+# certified national House vote. A row counts only once gb_actual is filled in.
+GB_RECENT_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'polling_data',
+                             'generic_ballot_recent.csv')
+
+def _recent_generic_ballot(days_before, path=None):
+    path = path or GB_RECENT_CSV
+    if not os.path.exists(path):
+        return pd.DataFrame(columns=['cycle', 'gb_avg', 'gb_actual', 'proxy'])
+    r = pd.read_csv(path)
+    r = r[(r['days_before'] == days_before) & r['gb_actual'].notna()]
+    return r[['cycle', 'gb_avg', 'gb_actual']].assign(proxy=False)
+
 def _generic_ballot_by_horizon():
     """
     {days_before: DataFrame(cycle, gb_avg, gb_actual, proxy)} from archived generic-ballot
@@ -58,6 +71,10 @@ def _generic_ballot_by_horizon():
         if len(pres):
             gb = pd.concat([gb, pres[['cycle', 'poll_avg', 'actual']].rename(
                 columns={'poll_avg': 'gb_avg', 'actual': 'gb_actual'}).assign(proxy=True)], ignore_index=True)
+        recent = _recent_generic_ballot(d)
+        recent = recent[~recent['cycle'].isin(gb['cycle'])]
+        if len(recent):
+            gb = pd.concat([gb, recent], ignore_index=True)
         out[d] = gb.sort_values('cycle')
     return out
 
